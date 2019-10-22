@@ -32,7 +32,12 @@ module mfp_ahb
     input      [`MFP_N_PB-1 :0] IO_PB,
     output     [`MFP_N_LED-1:0] IO_LED,
     output     [`MFP_N_SEG-1:0] IO_7SEGEN_N,
-    output     [`MFP_N_SEG-1:0] IO_SEG_N   
+    output     [`MFP_N_SEG-1:0] IO_SEG_N,
+    
+    output [7           :0] IO_BotCtrl,
+    input  [31          :0] IO_BotInfo,
+    output                  IO_INT_ACK,
+    input                   IO_BotUpdt_Sync       
 );
 
 
@@ -57,7 +62,8 @@ module mfp_ahb
                               HTRANS, HWDATA, HWRITE, HRDATA1, HSEL[1]);
   // Module 2 - GPIO
   mfp_ahb_gpio mfp_ahb_gpio(HCLK, HRESETn, HADDR[5:2], HTRANS, HWDATA, HWRITE, HSEL[2], 
-                            HRDATA2, IO_Switch, IO_PB, IO_LED);
+                            HRDATA2, IO_Switch, IO_PB, IO_LED, IO_BotCtrl, IO_BotInfo,
+                            IO_INT_ACK, IO_BotUpdt_Sync);
   
   // Module 3 - seven segment
   //mfp_ahb_sevensegtimer mfp_ahb_sseg(.clk(HCLK), .resetn(HRESETn), .EN(), .HWDATA(), .HWRITE(), .HSEL[3](), .{DISPOUT,DISPENOUT}(IO_SEG));                          

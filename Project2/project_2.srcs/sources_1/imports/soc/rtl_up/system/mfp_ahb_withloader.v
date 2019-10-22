@@ -23,6 +23,11 @@ module mfp_ahb_withloader (
     output     [`MFP_N_LED-1: 0] IO_LED,
     output     [`MFP_N_LED-1:0]  IO_7SEGEN_N,
     output     [`MFP_N_LED-1:0]  IO_SEG_N,
+ 
+    output [7           :0] IO_BotCtrl,
+    input  [31          :0] IO_BotInfo,
+    output                  IO_INT_ACK,
+    input                   IO_BotUpdt_Sync,   
 
 	// for serial loading of memory using uart
     input         UART_RX,
@@ -125,8 +130,12 @@ module mfp_ahb_withloader (
         .IO_Switch        ( IO_Switch       ),
         .IO_PB            ( IO_PB           ),
         .IO_LED           ( IO_LED          ),
-        .IO_7SEGEN_N           (IO_7SEGEN_N           ),
-        .IO_SEG_N           (IO_SEG_N           )
+        .IO_7SEGEN_N      (IO_7SEGEN_N           ),
+        .IO_SEG_N         (IO_SEG_N           ),
+        .IO_BotCtrl       (   IO_BotCtrl              ),
+        .IO_BotInfo       (   IO_BotInfo              ),
+        .IO_INT_ACK       (   IO_INT_ACK              ),
+        .IO_BotUpdt_Sync  (   IO_BotUpdt_Sync         )
     );
 
 endmodule

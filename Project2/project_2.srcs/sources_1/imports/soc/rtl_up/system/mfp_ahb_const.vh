@@ -16,13 +16,21 @@
 //---------------------------------------------------
 // Memory-mapped I/O addresses
 //---------------------------------------------------
-`define H_LED_ADDR    			(32'h1f800000)
-`define H_SW_ADDR   			(32'h1f800004)
-`define H_PB_ADDR   			(32'h1f800008)
+`define H_LED_ADDR    			(32'h1f800000) //00'00_00'00
+`define H_SW_ADDR   			(32'h1f800004) //00'00_01'00
+`define H_PB_ADDR   			(32'h1f800008) //00'00_10'00
+
+//SSEG
 `define H_SEG_ADDR_en                    (32'h1F70_0000)
 `define H_SEG_ADDR_digit3_0              (32'h1F70_0008)
 `define H_SEG_ADDR_digit7_4              (32'h1F70_0004)
 `define H_SEG_ADDR_dp                    (32'h1F70_000C)
+
+//Rojobot
+`define H_PORT_BOTINFO_ADDR         (4'h3)//(32'h1f80000c)   //00'00_11'00 3
+`define H_PORT_BOTCTRL_ADDR         (4'h4)//(32'h1f800010)   //00'01_00'00
+`define H_PORT_BOTUPDT_ADDR	        (4'h5)//(32'h1f800014)  //00'01_01'00
+`define H_PORT_INTACK_ADDR		    (4'h6)//(32'h1f800018)  //00'01_10'00
 
 `define H_LED_IONUM   			(4'h0)
 `define H_SW_IONUM  			(4'h1)
