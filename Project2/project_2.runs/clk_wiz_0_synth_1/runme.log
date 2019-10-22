@@ -328,3 +328,4 @@ WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'N:/ECE540/ECE540_Project2/Project2/project_2.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file clk_wiz_0_utilization_synth.rpt -pb clk_wiz_0_utilization_synth.pb
 report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.127 . Memory (MB): peak = 809.141 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 22 09:10:28 2019...
