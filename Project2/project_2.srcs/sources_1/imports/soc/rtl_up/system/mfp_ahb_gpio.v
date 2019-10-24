@@ -62,8 +62,8 @@ module mfp_ahb_gpio(
 	     case (HADDR)
            `H_SW_IONUM: HRDATA <= { {32 - `MFP_N_SW {1'b0}}, IO_Switch };
            `H_PB_IONUM: HRDATA <= { {32 - `MFP_N_PB {1'b0}}, IO_PB };
-           `H_PORT_BOTINFO_ADDR: HRDATA <= IO_BotInfo;
-           `H_PORT_BOTUPDT_ADDR: HRDATA <= IO_BotUpdt_Sync;
+           `H_PORT_BOTINFO_ADDR: HRDATA <= {24'b0,IO_BotInfo};
+           `H_PORT_BOTUPDT_ADDR: HRDATA <= {31'b0,IO_BotUpdt_Sync};
             default:    HRDATA <= 32'h00000000;
          endcase
 		 

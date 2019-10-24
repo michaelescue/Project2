@@ -28,11 +28,26 @@ module mfp_nexys4_ddr(
 
   // Press btnCpuReset to reset the processor. 
         
-  wire clk_out; 
   wire tck_in, tck;
   wire [7:0] io_wire;
   wire [5:0] pbtn_db;
   wire [`MFP_N_SW-1 :0] swtch_db;
+  wire clk_out1, clk_out2;
+  
+  // Connections for handshake
+   wire IO_INT_ACK;
+   wire IO_BotUpdt;
+   reg IO_BotUpdt_Sync;
+  // wire IO_BotUpdt;
+   
+   //connections for Rojobot
+   wire [7 : 0] MotCtl_in;
+   wire [7 : 0] LocX_reg;
+   wire [7 : 0] LocY_reg;
+   wire [7 : 0] Sensors_reg;
+   wire [7 : 0] BotInfo_reg;
+   wire [13 : 0] worldmap_addr;
+   wire [1 : 0] worldmap_data;
   
   
   assign io_wire = {DP,CA,CB,CC,CD,CE,CF,CG};       
@@ -49,6 +64,8 @@ module mfp_nexys4_ddr(
   BUFG BUFG1(.O(tck), .I(tck_in));
   
   debounce debounce(.clk(clk_out1), .pbtn_in({BTNU,BTND,BTNL,BTNC,BTNR,CPU_RESETN}), .switch_in(SW), .pbtn_db(pbtn_db), .swtch_db(swtch_db));
+
+
 
   mfp_sys mfp_sys(
 			        .SI_Reset_N(pbtn_db[0]),
@@ -76,6 +93,7 @@ module mfp_nexys4_ddr(
                     .IO_INT_ACK(IO_INT_ACK),
                     .IO_BotUpdt_Sync(IO_BotUpdt_Sync)
                     );
+wire upd_sysregs;
                          
  //Rojobot instantiation
  rojobot31_0 rojobot(
@@ -92,11 +110,7 @@ module mfp_nexys4_ddr(
    .Bot_Config_reg(swtch_db)  // input wire [7 : 0] Bot_Config_reg    // Debounced switch signal from debounce module.
  );
  
- // Connections for handshake
- wire IO_INT_ACK;
- wire IO_BotUpdt;
- reg IO_BotUpdt_Sync;
- wire IO_BotUpdt;
+
  
  assign IO_BotUpdt  = upd_sysregs;
  
@@ -118,10 +132,12 @@ module mfp_nexys4_ddr(
    .clka(clk_out2),     // 75Mhz clock
    .addra(worldmap_addr),
    .douta(worldmap_data),
-   .clkb(),
+   .clkb(clk_out2),
    .addrb(),
    .doutb()
  );
  
+ //VGA Instantiation
+ //dtg vta(.clock(), .rst(), .horiz_sync(), .vert_sync(), .video_on(),.pixel_row(), .pixel_column());
           
 endmodule
