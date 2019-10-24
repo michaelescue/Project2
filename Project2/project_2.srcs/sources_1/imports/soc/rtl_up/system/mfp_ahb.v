@@ -65,10 +65,9 @@ module mfp_ahb
                             HRDATA2, IO_Switch, IO_PB, IO_LED, IO_BotCtrl, IO_BotInfo,
                             IO_INT_ACK, IO_BotUpdt_Sync);
   
-  // Module 3 - seven segment
-  //mfp_ahb_sevensegtimer mfp_ahb_sseg(.clk(HCLK), .resetn(HRESETn), .EN(), .HWDATA(), .HWRITE(), .HSEL[3](), .{DISPOUT,DISPENOUT}(IO_SEG));                          
+  // Module 3 - seven segment                        
     mfp_ahb_7seg mfp_ahb_sseg(HCLK, HRESETn, HADDR, HWDATA, HWRITE, HSEL[3], 
-                              IO_7SEGEN_N,IO_SEG_N);// .EN(), .HWDATA(), .HWRITE(), .HSEL[3](), .{DISPOUT,DISPENOUT}(IO_SEG));                 
+                              IO_7SEGEN_N,IO_SEG_N);
  
   ahb_decoder ahb_decoder(HADDR, HSEL);
   ahb_mux ahb_mux(HCLK, HSEL_d, HRDATA2, HRDATA1, HRDATA0, HRDATA);

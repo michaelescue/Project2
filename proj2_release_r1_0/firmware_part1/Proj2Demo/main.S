@@ -10,36 +10,36 @@
  * 	Description:
  *  ============
  *  This program demonstrate the Rojobot world emulator.  It is modelled after
- *  the the simplebot implemented in the project 1 of the course. 
- * 
+ *  the the simplebot implemented in the project 1 of the course.
+ *
  *  The demo uses the 4 pushbuttons to control the Rojobot as follows:
  * 	btn_left	- Left Motor forward
  *  btn_up		- Left Motor reverse
  * 	btn_right	- Right Motor forward
  * 	btn_down	- Right Motor reverse
- *  If neither of the two buttons that control each motor is pushed, then the motor is stopped. 
+ *  If neither of the two buttons that control each motor is pushed, then the motor is stopped.
  *  If both of the two buttons that control each motor are pushed, the actions cancel each other
  *  leaving the motor stopped.
- * 
+ *
  *  The demo takes advantage of the wider display on the Nexys4 (8 digits vs. 4) to
  *  make the rojobot state easier for follow. The digits are mapped as follows:
  * 	digit[7:5] - compass heading
  * 	digit[4] - movement (Fwd, Rev, Stopped, turning)
  * 	digits[2:1] - column position (X) in hex
  * 	digits[1:0] - row position (Y) in hex
- * 
+ *
  *  Decimal points 5 and 4 are turned on to highlight the movement display.  Decimal point 0 toggles
  *  on and off every time the Rojobot updates its state
- * 
+ *
  *  The sensors are displayed on the LEDs.
  *
  *  The Bot Info port (PORT_BOTINFO) is a 32 bit port, which is supposed to pass the sensor, bot_info, LOCx_REG
  *  and LOCy_REG in the concatinated form as shown  BotInfo_IO = {LocX_reg,LocY_reg,Sensors_reg,BotInfo_reg}
  *  and should be driven in the same order.
- *  
+ *
  *  Also an acknowledgement bit has to be set and cleared for updating the handshaking flipflop
  * which synchronises between the 75Mhz Rojobot clock domain and the 50Mhz MIPSfpga clock domain.
- * 
+ *
  *  NOTE:  NOT ALL THE CODE IN THIS EXAMPLE IS USED.  THE EXAMPLE WAS CREATED TO GIVE YOU, THE
  *  STUDENT, AN EXAMPLE OF HOW TO CONTROL THE ROJOBOT AND NEXYS4 PERIPHERALS FROM AN EMBEDDED MIPS
  *  CPU. YOU MAY (OR NOT) FIND SOME OF THIS CODE APPLICABLE TO YOUR OTHER PROJECTS
@@ -355,6 +355,7 @@ SP_TEMP: 	.word	0x00
 
 
 .globl main
+
 main:
    				lui   $12, 0xbf80    			# $12 = address of LEDs (0xbf800000)
 				li	$2,		FALSE				# clear the semaphore

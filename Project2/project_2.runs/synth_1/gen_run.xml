@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1571272906">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1571939166">
   <File Type="PA-TCL" Name="mfp_nexys4_ddr.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="mfp_nexys4_ddr_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="mfp_nexys4_ddr_reports.tcl"/>
   <File Type="RDS-RDS" Name="mfp_nexys4_ddr.vds"/>
   <File Type="RDS-UTIL" Name="mfp_nexys4_ddr_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="mfp_nexys4_ddr_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="mfp_nexys4_ddr.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="mfp_nexys4_ddr_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="mfp_nexys4_ddr_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/world_maps_part1/world_map.ngc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../proj2_release_r1_0/hdl_part1/world_maps_part1/world_map.ngc"/>
+        <Attr Name="ImportTime" Val="1571515282"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/soc/rtl_up/core/RAMB4K_S16.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../rtl_up/core/RAMB4K_S16.v"/>
@@ -1095,8 +1106,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/soc/rtl_up/system/mfp_ahb_const.vh">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../rtl_up/system/mfp_ahb_const.vh"/>
-        <Attr Name="ImportTime" Val="1570482074"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -1533,6 +1542,15 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/world_maps_part1/world_map.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../proj2_release_r1_0/hdl_part1/world_maps_part1/world_map.v"/>
+        <Attr Name="ImportTime" Val="1571515282"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/soc/rtl_up/boards/nexys4_ddr/mfp_nexys4_ddr.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../rtl_up/boards/nexys4_ddr/mfp_nexys4_ddr.v"/>
@@ -1542,11 +1560,41 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/soc/rtl_up/testbench/testbench.v">
+    <File Path="$PSRCDIR/sources_1/imports/hdl_part2/dtg.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../rtl_up/testbench/testbench.v"/>
-        <Attr Name="ImportTime" Val="1570482076"/>
+        <Attr Name="ImportPath" Val="//thoth.cecs.pdx.edu/Home03/adigundu/Desktop/proj2_release_f19/hdl_part2/dtg.v"/>
+        <Attr Name="ImportTime" Val="1571936094"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/bot31_if.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../proj2_release_r1_0/ece540_ip_repo/rojobot31/src/bot31_if.v"/>
+        <Attr Name="ImportTime" Val="1571515282"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/bot31_pgm.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../proj2_release_r1_0/ece540_ip_repo/rojobot31/src/bot31_pgm.v"/>
+        <Attr Name="ImportTime" Val="1571515282"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/kcpsm6.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../proj2_release_r1_0/ece540_ip_repo/rojobot31/src/kcpsm6.v"/>
+        <Attr Name="ImportTime" Val="1571515282"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -1632,6 +1680,16 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/soc/rtl_up/testbench/testbench.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../rtl_up/testbench/testbench.v"/>
+        <Attr Name="ImportTime" Val="1570482076"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/soc/rtl_up/testbench/testbench_boot.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
@@ -1655,6 +1713,7 @@
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="mfp_nexys4_ddr"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -1675,5 +1734,6 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="rojobot31_0"/>
   <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
 </GenRun>

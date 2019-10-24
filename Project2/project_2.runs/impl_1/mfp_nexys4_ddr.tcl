@@ -60,13 +60,15 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   open_checkpoint mfp_nexys4_ddr_routed.dcp
-  set_property webtalk.parent_dir N:/ECE540Project1-V1/project_simplebot_1.cache/wt [current_project]
+  set_property webtalk.parent_dir N:/Project2/Project2/project_2.cache/wt [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
   catch { write_mem_info -force mfp_nexys4_ddr.mmi }
   write_bitstream -force mfp_nexys4_ddr.bit 
