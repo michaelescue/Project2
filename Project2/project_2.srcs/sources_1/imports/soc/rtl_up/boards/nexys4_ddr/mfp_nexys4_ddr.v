@@ -156,7 +156,7 @@ module mfp_nexys4_ddr(
  );
  
  //VGA Instantiation
- //dtg vta(.clock(clk_out2), .rst(pbtn_db[0]), .horiz_sync(VGA_HS), .vert_sync(VGA_VS), .video_on(video_on),.pixel_row(pixel_row), .pixel_column(pixel_column));
+ dtg vta(.clock(clk_out2), .rst(~pbtn_db[0]), .horiz_sync(VGA_HS), .vert_sync(VGA_VS), .video_on(video_on),.pixel_row(pixel_row), .pixel_column(pixel_column));
  
  
  //Icon module
@@ -168,13 +168,13 @@ module mfp_nexys4_ddr(
 //     icon    );
  
  //Colorizer
-// colorizer color(   .video_on(video_on),
-//                    .world_pixel(world_pixel),    // From rojobot
-//                    .red(VGA_R), .green(VGA_G), .blue(VGA_B));
+ colorizer color(   .video_on(video_on),
+                    .world_pixel(world_pixel),    // From rojobot
+                    .red(VGA_R), .green(VGA_G), .blue(VGA_B));
  
  //Scale
-// scale scale1(  pixel_row,
-//            pixel_column,
-//            vid_addr);
+ scale scale1(  pixel_row,
+            pixel_column,
+            vid_addr);
           
 endmodule

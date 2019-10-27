@@ -30,8 +30,14 @@ module icon(
 	assign coldiff = (pixel_column - matchedcol);
 
 	assign icon_index = {coldiff[4:1], rowdiff[4:1]}; // Tied into input address of ROM
-						
 	
+	blk_mem_gen_0 your_instance_name (
+      .clka(clka),    // input wire clka
+      .ena(ena),      // input wire ena
+      .addra(addra),  // input wire [7 : 0] addra
+      .douta(douta)  // output wire [7 : 0] douta
+    );
+					
 	always @(*)
 		begin	
 			if((scaled_row == LocX_reg[6:0]) && (scaled_col == LocY_reg[6:0]))

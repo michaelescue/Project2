@@ -17,7 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param synth.incrementalSynthesisCache N:/Project2/Project2/.Xil/Vivado-9852-caplab07/incrSyn
 set_param xicom.use_bs_reader 1
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
@@ -35,6 +34,7 @@ set_property target_language Verilog [current_project]
 set_property ip_repo_paths n:/Project2/proj2_release_r1_0/ece540_ip_repo [current_project]
 set_property ip_output_repo n:/Project2/Project2/project_2.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
+add_files n:/Project2/orientation0.coe
 read_verilog {
   N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_const.vh
   N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_config.vh
@@ -46,9 +46,11 @@ read_verilog -library xil_defaultlib {
   N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/RAMB4K_S16.v
   N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/RAMB4K_S2.v
   N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/RAMB4K_S8.v
+  N:/Project2/Project2/project_2.srcs/sources_1/imports/Project2/colorizer.v
   N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/d_wsram_2k2way_xilinx.v
   N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/dataram_2k2way_xilinx.v
   N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/project_simplebot/hdl/debounce.v
+  N:/Project2/Project2/project_2.srcs/sources_1/imports/hdl_part2/dtg.v
   N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/i_wsram_2k2way_xilinx.v
   N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_alu_dsp_stub.v
   N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_alu_shft_32bit.v
@@ -207,6 +209,7 @@ read_verilog -library xil_defaultlib {
   N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/memories/ram_p1.v
   N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/memories/ram_p2.v
   N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/memories/ram_p3.v
+  N:/Project2/Project2/project_2.srcs/sources_1/imports/Project2/scale.v
   N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/tagram_2k2way_xilinx.v
   N:/Project2/Project2/project_2.srcs/sources_1/imports/world_maps_part1/world_map.v
   N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/boards/nexys4_ddr/mfp_nexys4_ddr.v

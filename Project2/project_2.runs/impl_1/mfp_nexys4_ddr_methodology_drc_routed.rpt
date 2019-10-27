@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date         : Sat Oct 26 19:31:38 2019
+| Date         : Sat Oct 26 20:18:26 2019
 | Host         : caplab07 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file mfp_nexys4_ddr_methodology_drc_routed.rpt -pb mfp_nexys4_ddr_methodology_drc_routed.pb -rpx mfp_nexys4_ddr_methodology_drc_routed.rpx
 | Design       : mfp_nexys4_ddr
@@ -23,12 +23,12 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 503
+             Violations found: 505
 +-----------+----------+------------------------------------------------+------------+
 | Rule      | Severity | Description                                    | Violations |
 +-----------+----------+------------------------------------------------+------------+
 | LUTAR-1   | Warning  | LUT drives async reset alert                   | 3          |
-| SYNTH-6   | Warning  | Timing of a block RAM might be sub-optimal     | 8          |
+| SYNTH-6   | Warning  | Timing of a block RAM might be sub-optimal     | 10         |
 | TIMING-6  | Warning  | No common primary clock between related clocks | 8          |
 | TIMING-17 | Warning  | Non-clocked sequential cell                    | 478        |
 | TIMING-18 | Warning  | Missing input or output delay                  | 6          |
@@ -38,17 +38,17 @@ Table of Contents
 -----------------
 LUTAR-1#1 Warning
 LUT drives async reset alert  
-LUT cell mfp_sys/mfp_ejtag_reset/q[3]_i_2__45, with 2 or more inputs, drives asynchronous preset/clear pin(s) mfp_sys/top/cpu/core/ejt/ejt_tap/ejt_tck/_ejtagboot/q_reg[0]/CLR, mfp_sys/top/cpu/core/ejt/ejt_tap/ejt_tck/_inst_reg0_0_0_/q_reg[0]/PRE, mfp_sys/top/cpu/core/ejt/ejt_tap/ejt_tck/_inst_reg41_4_1_/q_reg[0]/CLR, mfp_sys/top/cpu/core/ejt/ejt_tap/ejt_tck/_inst_reg41_4_1_/q_reg[1]/CLR, mfp_sys/top/cpu/core/ejt/ejt_tap/ejt_tck/_inst_reg41_4_1_/q_reg[2]/CLR, mfp_sys/top/cpu/core/ejt/ejt_tap/ejt_tck/_inst_reg41_4_1_/q_reg[3]/CLR, mfp_sys/top/cpu/core/ejt/ejt_tap/ejt_tck/_tap_ctrl_3_0_/q_reg[0]/PRE, mfp_sys/top/cpu/core/ejt/ejt_tap/ejt_tck/_tap_ctrl_3_0_/q_reg[1]/PRE, mfp_sys/top/cpu/core/ejt/ejt_tap/ejt_tck/_tap_ctrl_3_0_/q_reg[2]/PRE, mfp_sys/top/cpu/core/ejt/ejt_tap/ejt_tck/_tap_ctrl_3_0_/q_reg[3]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell mfp_sys/mfp_ejtag_reset/q[3]_i_2__56, with 2 or more inputs, drives asynchronous preset/clear pin(s) mfp_sys/top/cpu/core/ejt/ejt_tap/ejt_tck/_ejtagboot/q_reg[0]/CLR, mfp_sys/top/cpu/core/ejt/ejt_tap/ejt_tck/_inst_reg0_0_0_/q_reg[0]/PRE, mfp_sys/top/cpu/core/ejt/ejt_tap/ejt_tck/_inst_reg41_4_1_/q_reg[0]/CLR, mfp_sys/top/cpu/core/ejt/ejt_tap/ejt_tck/_inst_reg41_4_1_/q_reg[1]/CLR, mfp_sys/top/cpu/core/ejt/ejt_tap/ejt_tck/_inst_reg41_4_1_/q_reg[2]/CLR, mfp_sys/top/cpu/core/ejt/ejt_tap/ejt_tck/_inst_reg41_4_1_/q_reg[3]/CLR, mfp_sys/top/cpu/core/ejt/ejt_tap/ejt_tck/_tap_ctrl_3_0_/q_reg[0]/PRE, mfp_sys/top/cpu/core/ejt/ejt_tap/ejt_tck/_tap_ctrl_3_0_/q_reg[1]/PRE, mfp_sys/top/cpu/core/ejt/ejt_tap/ejt_tck/_tap_ctrl_3_0_/q_reg[2]/PRE, mfp_sys/top/cpu/core/ejt/ejt_tap/ejt_tck/_tap_ctrl_3_0_/q_reg[3]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#2 Warning
 LUT drives async reset alert  
-LUT cell mfp_sys/top/cpu/core/ejt/ejt_tap/ejt_tck/_reset_unsync/q[0]_i_2__212, with 2 or more inputs, drives asynchronous preset/clear pin(s) mfp_sys/top/cpu/core/ejt/ejt_tap/ejt_tck/_padone_real/q_reg[0]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell mfp_sys/top/cpu/core/ejt/ejt_tap/ejt_tck/_reset_unsync/q[0]_i_2__218, with 2 or more inputs, drives asynchronous preset/clear pin(s) mfp_sys/top/cpu/core/ejt/ejt_tap/ejt_tck/_padone_real/q_reg[0]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#3 Warning
 LUT drives async reset alert  
-LUT cell mfp_sys/top/cpu/core/siu/_siu_coldreset/q[11]_i_1__57, with 2 or more inputs, drives asynchronous preset/clear pin(s) mfp_sys/top/cpu/core/ejt/ejt_tap/ejt_tck/_reset_ff1/q_reg[0]/PRE, mfp_sys/top/cpu/core/ejt/ejt_tap/ejt_tck/_reset_ff2/q_reg[0]/PRE, mfp_sys/top/cpu/core/ejt/ejt_tap/ejt_tck/_reset_unsync/q_reg[0]/PRE, mfp_sys/top/cpu/core/ejt/ejt_tap/ejt_tck/_reset_unsynca/q_reg[0]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell mfp_sys/top/cpu/core/siu/_siu_coldreset/q[0]_i_1__457, with 2 or more inputs, drives asynchronous preset/clear pin(s) mfp_sys/top/cpu/core/ejt/ejt_tap/ejt_tck/_reset_ff1/q_reg[0]/PRE, mfp_sys/top/cpu/core/ejt/ejt_tap/ejt_tck/_reset_ff2/q_reg[0]/PRE, mfp_sys/top/cpu/core/ejt/ejt_tap/ejt_tck/_reset_unsync/q_reg[0]/PRE, mfp_sys/top/cpu/core/ejt/ejt_tap/ejt_tck/_reset_unsynca/q_reg[0]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 SYNTH-6#1 Warning
@@ -58,37 +58,47 @@ Related violations: <none>
 
 SYNTH-6#2 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance mfp_sys/top/cpu/dcache/dataram/ram__data_inst1/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance mfp_sys/top/cpu/dcache/dataram/ram__data_inst2/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#3 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance mfp_sys/top/cpu/dcache/dataram/ram__data_inst2/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance mfp_sys/top/cpu/dcache/dataram/ram__data_inst4/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#4 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance mfp_sys/top/cpu/dcache/dataram/ram__data_inst3/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance mfp_sys/top/cpu/dcache/dataram/ram__data_inst5/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#5 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance mfp_sys/top/cpu/dcache/dataram/ram__data_inst4/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance mfp_sys/top/cpu/dcache/dataram/ram__data_inst6/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#6 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance mfp_sys/top/cpu/dcache/dataram/ram__data_inst5/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance mfp_sys/top/cpu/dcache/dataram/ram__data_inst7/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#7 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance mfp_sys/top/cpu/dcache/dataram/ram__data_inst6/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance mfp_sys/top/cpu/dcache/tagram/ram__tag_inst0/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#8 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance mfp_sys/top/cpu/dcache/dataram/ram__data_inst7/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance mfp_sys/top/cpu/dcache/tagram/ram__tag_inst1/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#9 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mfp_sys/top/cpu/dcache/tagram/ram__tag_inst2/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#10 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mfp_sys/top/cpu/dcache/tagram/ram__tag_inst3/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 TIMING-6#1 Warning
