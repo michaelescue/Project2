@@ -20,9 +20,13 @@ module mfp_nexys4_ddr(
                         input                   BTNU, BTND, BTNL, BTNC, BTNR, 
                         input  [`MFP_N_SW-1 :0] SW,
                         output [`MFP_N_LED-1:0] LED,
-                        //output [`MFP_N_SEG-1:0] SEG,
+                       //Project1
                         output CA, CB, CC, CD, CE, CF, CG, DP,
                         output [7:0] AN,
+                        //Project2
+                        output [3:0] VGA_R,VGA_B, VGA_G,
+                        output VGA_HS, VGA_VS,
+                        
                         inout  [ 8          :1] JB,
                         input                   UART_TXD_IN);
 
@@ -38,7 +42,11 @@ module mfp_nexys4_ddr(
    wire IO_INT_ACK;
    wire IO_BotUpdt;
    reg IO_BotUpdt_Sync;
+   wire upd_sysregs;
+   wire d;
   // wire IO_BotUpdt;
+  
+  //assign d  = 1'b1;
    
    //connections for Rojobot
    wire [7 : 0] MotCtl_in;
@@ -49,6 +57,20 @@ module mfp_nexys4_ddr(
    wire [13 : 0] worldmap_addr;
    wire [1 : 0] worldmap_data;
   
+  
+  //icon
+  wire [11:0] pixel_column;
+  wire [11:0] pixel_row;
+  wire icon;
+  
+  //dtg to colorizer
+  wire video_on;
+  
+  //video address
+  wire [13:0] vid_addr;
+  
+  //world pixel
+  wire world_pixel;
   
   assign io_wire = {DP,CA,CB,CC,CD,CE,CF,CG};       
   
@@ -93,8 +115,20 @@ module mfp_nexys4_ddr(
                     .IO_INT_ACK(IO_INT_ACK),
                     .IO_BotUpdt_Sync(IO_BotUpdt_Sync)
                     );
-wire upd_sysregs;
-                         
+
+ //Handshaking Flip-flop
+ always @ (posedge clk_out1) begin
+     if (IO_INT_ACK == 1'b1) begin
+         IO_BotUpdt_Sync <= 1'b0;
+     end
+     else if (IO_BotUpdt == 1'b1) begin
+        IO_BotUpdt_Sync <= 1'b1;
+     end else begin
+         IO_BotUpdt_Sync <= IO_BotUpdt_Sync;
+     end
+ end // always
+ 
+                      
  //Rojobot instantiation
  rojobot31_0 rojobot(
    .MotCtl_in(MotCtl_in),            // input wire [7 : 0] MotCtl_in
@@ -105,27 +139,11 @@ wire upd_sysregs;
    .worldmap_addr(worldmap_addr),    // output wire [13 : 0] worldmap_addr
    .worldmap_data(worldmap_data),    // input wire [1 : 0] worldmap_data
    .clk_in(clk_out2),                  // input wire clk_in     //clk_out2 is the 75Mhz clock from clkwiz0.
-   .reset(pbtn_db[0]),                    // input wire reset // Reset is bit 0 of pbtn_db from debounce module. 
-   .upd_sysregs(upd_sysregs),        // output wire upd_sysregs
-   .Bot_Config_reg(swtch_db)  // input wire [7 : 0] Bot_Config_reg    // Debounced switch signal from debounce module.
+   .reset(~pbtn_db[0]),                    // input wire reset // Reset is bit 0 of pbtn_db from debounce module. 
+   .upd_sysregs(IO_BotUpdt),        // output wire upd_sysregs
+   .Bot_Config_reg(swtch_db[7:0])  // input wire [7 : 0] Bot_Config_reg    // Debounced switch signal from debounce module.
  );
  
-
- 
- assign IO_BotUpdt  = upd_sysregs;
- 
- //Handshaking Flip-flop
- always @ (posedge clk_out1) begin
-         if (IO_INT_ACK == 1'b1) begin
-         IO_BotUpdt_Sync <= 1'b0;
-     end
-     else if (IO_BotUpdt == 1'b1) begin
-        IO_BotUpdt_Sync <= 1'b1;
-     end else begin
-         IO_BotUpdt_Sync <= IO_BotUpdt_Sync;
- end
- 
- end // always
   
  // World map instantiation
  world_map world_map(
@@ -133,11 +151,30 @@ wire upd_sysregs;
    .addra(worldmap_addr),
    .douta(worldmap_data),
    .clkb(clk_out2),
-   .addrb(),
-   .doutb()
+   .addrb(vid_addr),
+   .doutb(world_pixel)
  );
  
  //VGA Instantiation
- //dtg vta(.clock(), .rst(), .horiz_sync(), .vert_sync(), .video_on(),.pixel_row(), .pixel_column());
+ //dtg vta(.clock(clk_out2), .rst(pbtn_db[0]), .horiz_sync(VGA_HS), .vert_sync(VGA_VS), .video_on(video_on),.pixel_row(pixel_row), .pixel_column(pixel_column));
+ 
+ 
+ //Icon module
+// icon icon1(LocX_reg,	// From rojobot
+//     LocY_reg,    // From rojobot
+//     BotInfo_reg,    // From rojobot
+//     pixel_row,     // From DTG
+//     pixel_column,    // From DTG
+//     icon    );
+ 
+ //Colorizer
+// colorizer color(   .video_on(video_on),
+//                    .world_pixel(world_pixel),    // From rojobot
+//                    .red(VGA_R), .green(VGA_G), .blue(VGA_B));
+ 
+ //Scale
+// scale scale1(  pixel_row,
+//            pixel_column,
+//            vid_addr);
           
 endmodule

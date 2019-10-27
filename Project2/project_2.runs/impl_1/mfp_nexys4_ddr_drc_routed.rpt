@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date         : Thu Oct 24 10:58:53 2019
-| Host         : caplab12 running 64-bit major release  (build 9200)
+| Date         : Sat Oct 26 19:31:27 2019
+| Host         : caplab07 running 64-bit major release  (build 9200)
 | Command      : report_drc -file mfp_nexys4_ddr_drc_routed.rpt -pb mfp_nexys4_ddr_drc_routed.pb -rpx mfp_nexys4_ddr_drc_routed.rpx
 | Design       : mfp_nexys4_ddr
 | Device       : xc7a100tcsg324-1
@@ -20,7 +20,7 @@ Table of Contents
 1. REPORT SUMMARY
 -----------------
             Netlist: netlist
-          Floorplan: checkpoint_mfp_nexys4_ddr
+          Floorplan: design_1
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
