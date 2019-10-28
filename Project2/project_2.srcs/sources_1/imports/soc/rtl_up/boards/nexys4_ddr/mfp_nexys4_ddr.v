@@ -70,7 +70,10 @@ module mfp_nexys4_ddr(
   wire [13:0] vid_addr;
   
   //world pixel
-  wire world_pixel;
+  wire [1:0]world_pixel;
+  
+  //icon pixel
+  wire [1:0]icon;
   
   assign io_wire = {DP,CA,CB,CC,CD,CE,CF,CG};       
   
@@ -145,7 +148,7 @@ module mfp_nexys4_ddr(
  );
  
   
- // World map instantiation
+ // World map instantiation - Works 10/28/19
  world_map world_map(
    .clka(clk_out2),     // 75Mhz clock
    .addra(worldmap_addr),
@@ -155,24 +158,27 @@ module mfp_nexys4_ddr(
    .doutb(world_pixel)
  );
  
- //VGA Instantiation
+ //VGA Instantiation - Works 10/28/19
  dtg vta(.clock(clk_out2), .rst(~pbtn_db[0]), .horiz_sync(VGA_HS), .vert_sync(VGA_VS), .video_on(video_on),.pixel_row(pixel_row), .pixel_column(pixel_column));
  
  
  //Icon module
-// icon icon1(LocX_reg,	// From rojobot
-//     LocY_reg,    // From rojobot
-//     BotInfo_reg,    // From rojobot
-//     pixel_row,     // From DTG
-//     pixel_column,    // From DTG
-//     icon    );
+ icon icon1(
+     clk_out2,  // 75Mhz clock
+     LocX_reg,	// From rojobot
+     LocY_reg,    // From rojobot
+     BotInfo_reg,    // From rojobot
+     pixel_row,     // From DTG
+     pixel_column,    // From DTG
+     icon    );
  
- //Colorizer
+ //Colorizer - Works 10/28/19
  colorizer color(   .video_on(video_on),
                     .world_pixel(world_pixel),    // From rojobot
-                    .red(VGA_R), .green(VGA_G), .blue(VGA_B));
+                    .red(VGA_R), .green(VGA_G), .blue(VGA_B),
+                    .icon(icon));
  
- //Scale
+ //Scale - Works 10/28/19
  scale scale1(  pixel_row,
             pixel_column,
             vid_addr);

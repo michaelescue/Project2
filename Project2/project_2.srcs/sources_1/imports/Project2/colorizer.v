@@ -4,7 +4,7 @@
 module colorizer(
 	input video_on,
 	input [1:0] world_pixel,	// From rojobot
-	//input [1:0] icon,
+	input [1:0] icon,
 	output reg [3:0] red, green, blue		// output to Colorizer
 	);
 	
@@ -12,6 +12,13 @@ module colorizer(
 	begin
 		if(video_on)
 			begin
+			 if(icon)
+                begin
+                    red = 0;
+                    green = 4'hF;
+                    blue = 0;
+                end	             
+			 else
 				case(world_pixel)
 					0:
 					begin
@@ -21,17 +28,17 @@ module colorizer(
 					end
 					1:
 					begin
-						red = 4'hF;
+						red = 0;
 						green = 0;
 						blue = 0;
 					end
 					2:
 					begin
-						red = 0;
+						red = 4'hF;
 						green = 0;
-						blue = 4'hF;
+						blue = 0;
 					end
-					default:
+					3:
 					begin
 						red = 0;
 						green = 0;

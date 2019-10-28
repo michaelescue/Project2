@@ -108,10 +108,10 @@ PORT_INTACK			= 0xbf800018		# (o) Bot Int Ack
 MSK_ALLBTNS		= 0x1F		# Buttons are in bits[5:0]
 MSK_PBTNS 		= 0x0F		# Mask for 4 buttons to display on LED
 MSK_BTN_CENTER 	= 0x10		# Pushbutton Center is bit 4
-MSK_BTN_LEFT 	= 0x08		# Pushbutton Left is bit 3
-MSK_BTN_UP 		= 0x04		# Pushbutton Up is bit 2
-MSK_BTN_RIGHT 	= 0x02		# Pushbutton Right is bit 25
-MSK_BTN_DOWN 	= 0x01		# Pushbutton Down is bit 0
+MSK_BTN_LEFT 	= 0x04		# Pushbutton Left is bit 3
+MSK_BTN_UP 		= 0x10		# Pushbutton Up is bit 2
+MSK_BTN_RIGHT 	= 0x01		# Pushbutton Right is bit 25
+MSK_BTN_DOWN 	= 0x08		# Pushbutton Down is bit 0
 
 MSK_SW7			= 0x80		# Slide switch 7 is bit 7
 MSK_SW6 		= 0x40		# Slide switch 6 is bit 6

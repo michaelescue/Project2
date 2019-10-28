@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date             : Sat Oct 26 20:18:35 2019
-| Host             : caplab07 running 64-bit major release  (build 9200)
+| Date             : Mon Oct 28 11:17:35 2019
+| Host             : caplab12 running 64-bit major release  (build 9200)
 | Command          : report_power -file mfp_nexys4_ddr_power_routed.rpt -pb mfp_nexys4_ddr_power_summary_routed.pb -rpx mfp_nexys4_ddr_power_routed.rpx
 | Design           : mfp_nexys4_ddr
 | Device           : xc7a100tcsg324-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.391        |
+| Total On-Chip Power (W)  | 0.398        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.289        |
+| Dynamic (W)              | 0.296        |
 | Device Static (W)        | 0.102        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 83.2         |
@@ -52,22 +52,22 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.018 |       12 |       --- |             --- |
-| Slice Logic              |     0.012 |    22122 |       --- |             --- |
-|   LUT as Logic           |     0.011 |     9978 |     63400 |           15.74 |
-|   Register               |    <0.001 |     8959 |    126800 |            7.07 |
+| Clocks                   |     0.019 |       12 |       --- |             --- |
+| Slice Logic              |     0.012 |    22190 |       --- |             --- |
+|   LUT as Logic           |     0.011 |    10006 |     63400 |           15.78 |
+|   Register               |    <0.001 |     8965 |    126800 |            7.07 |
 |   CARRY4                 |    <0.001 |      165 |     15850 |            1.04 |
 |   LUT as Distributed RAM |    <0.001 |       30 |     19000 |            0.16 |
 |   F7/F8 Muxes            |    <0.001 |      289 |     63400 |            0.46 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
 |   LUT as Shift Register  |    <0.001 |        9 |     19000 |            0.05 |
-|   Others                 |     0.000 |     1457 |       --- |             --- |
-| Signals                  |     0.023 |    17898 |       --- |             --- |
-| Block RAM                |     0.097 |     79.5 |       135 |           58.89 |
+|   Others                 |     0.000 |     1485 |       --- |             --- |
+| Signals                  |     0.025 |    17937 |       --- |             --- |
+| Block RAM                |     0.103 |     83.5 |       135 |           61.85 |
 | MMCM                     |     0.121 |        1 |         6 |           16.67 |
 | I/O                      |     0.017 |       76 |       210 |           36.19 |
 | Static Power             |     0.102 |          |           |                 |
-| Total                    |     0.391 |          |           |                 |
+| Total                    |     0.398 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -77,7 +77,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.161 |       0.143 |      0.018 |
+| Vccint    |       1.000 |     0.169 |       0.151 |      0.018 |
 | Vccaux    |       1.800 |     0.086 |       0.067 |      0.018 |
 | Vcco33    |       3.300 |     0.009 |       0.005 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -86,7 +86,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.010 |       0.008 |      0.002 |
+| Vccbram   |       1.000 |     0.011 |       0.009 |      0.002 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
@@ -153,13 +153,70 @@ Table of Contents
 +----------------------------------------------------------------------------------------------+-----------+
 | Name                                                                                         | Power (W) |
 +----------------------------------------------------------------------------------------------+-----------+
-| mfp_nexys4_ddr                                                                               |     0.289 |
+| mfp_nexys4_ddr                                                                               |     0.296 |
 |   clk_wiz_0                                                                                  |     0.121 |
 |     inst                                                                                     |     0.121 |
 |   debounce                                                                                   |    <0.001 |
-|   mfp_sys                                                                                    |     0.145 |
-|     mfp_ahb_withloader                                                                       |     0.088 |
-|       mfp_ahb                                                                                |     0.086 |
+|   icon1                                                                                      |     0.006 |
+|     orientation0                                                                             |    <0.001 |
+|       U0                                                                                     |    <0.001 |
+|         inst_blk_mem_gen                                                                     |    <0.001 |
+|           gnbram.gnativebmg.native_blk_mem_gen                                               |    <0.001 |
+|             valid.cstr                                                                       |    <0.001 |
+|               ramloop[0].ram.r                                                               |    <0.001 |
+|                 prim_init.ram                                                                |    <0.001 |
+|     orientation135                                                                           |    <0.001 |
+|       U0                                                                                     |    <0.001 |
+|         inst_blk_mem_gen                                                                     |    <0.001 |
+|           gnbram.gnativebmg.native_blk_mem_gen                                               |    <0.001 |
+|             valid.cstr                                                                       |    <0.001 |
+|               ramloop[0].ram.r                                                               |    <0.001 |
+|                 prim_init.ram                                                                |    <0.001 |
+|     orientation180                                                                           |    <0.001 |
+|       U0                                                                                     |    <0.001 |
+|         inst_blk_mem_gen                                                                     |    <0.001 |
+|           gnbram.gnativebmg.native_blk_mem_gen                                               |    <0.001 |
+|             valid.cstr                                                                       |    <0.001 |
+|               ramloop[0].ram.r                                                               |    <0.001 |
+|                 prim_init.ram                                                                |    <0.001 |
+|     orientation225                                                                           |    <0.001 |
+|       U0                                                                                     |    <0.001 |
+|         inst_blk_mem_gen                                                                     |    <0.001 |
+|           gnbram.gnativebmg.native_blk_mem_gen                                               |    <0.001 |
+|             valid.cstr                                                                       |    <0.001 |
+|               ramloop[0].ram.r                                                               |    <0.001 |
+|                 prim_init.ram                                                                |    <0.001 |
+|     orientation270                                                                           |    <0.001 |
+|       U0                                                                                     |    <0.001 |
+|         inst_blk_mem_gen                                                                     |    <0.001 |
+|           gnbram.gnativebmg.native_blk_mem_gen                                               |    <0.001 |
+|             valid.cstr                                                                       |    <0.001 |
+|               ramloop[0].ram.r                                                               |    <0.001 |
+|                 prim_init.ram                                                                |    <0.001 |
+|     orientation315                                                                           |    <0.001 |
+|       U0                                                                                     |    <0.001 |
+|         inst_blk_mem_gen                                                                     |    <0.001 |
+|           gnbram.gnativebmg.native_blk_mem_gen                                               |    <0.001 |
+|             valid.cstr                                                                       |    <0.001 |
+|               ramloop[0].ram.r                                                               |    <0.001 |
+|                 prim_init.ram                                                                |    <0.001 |
+|     orientation45                                                                            |    <0.001 |
+|       U0                                                                                     |    <0.001 |
+|         inst_blk_mem_gen                                                                     |    <0.001 |
+|           gnbram.gnativebmg.native_blk_mem_gen                                               |    <0.001 |
+|             valid.cstr                                                                       |    <0.001 |
+|               ramloop[0].ram.r                                                               |    <0.001 |
+|                 prim_init.ram                                                                |    <0.001 |
+|     orientation90                                                                            |    <0.001 |
+|       U0                                                                                     |    <0.001 |
+|         inst_blk_mem_gen                                                                     |    <0.001 |
+|           gnbram.gnativebmg.native_blk_mem_gen                                               |    <0.001 |
+|             valid.cstr                                                                       |    <0.001 |
+|               ramloop[0].ram.r                                                               |    <0.001 |
+|                 prim_init.ram                                                                |    <0.001 |
+|   mfp_sys                                                                                    |     0.146 |
+|     mfp_ahb_withloader                                                                       |     0.089 |
+|       mfp_ahb                                                                                |     0.087 |
 |         mfp_ahb_b_ram                                                                        |     0.002 |
 |           ram_b0                                                                             |    <0.001 |
 |           ram_b1                                                                             |    <0.001 |
@@ -170,18 +227,18 @@ Table of Contents
 |           ram_p0                                                                             |     0.021 |
 |           ram_p1                                                                             |     0.021 |
 |           ram_p2                                                                             |     0.021 |
-|           ram_p3                                                                             |     0.020 |
+|           ram_p3                                                                             |     0.021 |
 |         mfp_ahb_sseg                                                                         |    <0.001 |
 |           mfp_seven_seg                                                                      |    <0.001 |
 |             counter16                                                                        |    <0.001 |
 |             counterSel                                                                       |    <0.001 |
-|       mfp_srec_parser                                                                        |     0.001 |
+|       mfp_srec_parser                                                                        |     0.002 |
 |       mfp_srec_parser_to_ahb_lite_bridge                                                     |    <0.001 |
 |       mfp_uart_receiver                                                                      |    <0.001 |
 |     mfp_ejtag_reset                                                                          |    <0.001 |
 |     top                                                                                      |     0.057 |
 |       cpu                                                                                    |     0.056 |
-|         core                                                                                 |     0.043 |
+|         core                                                                                 |     0.042 |
 |           biu                                                                                |     0.003 |
 |             _HADDR_31_0_                                                                     |    <0.001 |
 |               cregister                                                                      |    <0.001 |
@@ -1257,7 +1314,7 @@ Table of Contents
 |                 cregister                                                                    |    <0.001 |
 |                   register_inst                                                              |    <0.001 |
 |               mdl_add                                                                        |    <0.001 |
-|           mmu                                                                                |     0.015 |
+|           mmu                                                                                |     0.014 |
 |             mmuc                                                                             |     0.001 |
 |               _dcachem_reg_2_0_                                                              |    <0.001 |
 |                 cregister                                                                    |    <0.001 |
@@ -1737,7 +1794,7 @@ Table of Contents
 |             _siu_coldreset                                                                   |    <0.001 |
 |             _siu_softreset                                                                   |    <0.001 |
 |             _wmreset                                                                         |    <0.001 |
-|         dcache                                                                               |     0.007 |
+|         dcache                                                                               |     0.008 |
 |           dataram                                                                            |     0.005 |
 |             ram__data_inst0                                                                  |    <0.001 |
 |             ram__data_inst1                                                                  |    <0.001 |
@@ -1850,7 +1907,7 @@ Table of Contents
 |         use_zero_flag_lut                                                                    |    <0.001 |
 |       BOTREGIF                                                                               |    <0.001 |
 |       BOTSIMPGM                                                                              |    <0.001 |
-|   vta                                                                                        |    <0.001 |
+|   vta                                                                                        |     0.001 |
 |   world_map                                                                                  |     0.001 |
 +----------------------------------------------------------------------------------------------+-----------+
 

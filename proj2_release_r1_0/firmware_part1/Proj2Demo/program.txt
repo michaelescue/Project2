@@ -928,7 +928,7 @@ Disassembly of section .debug_info:
  198:	53412055 	beql	k0,at,82f0 <MSKBOTINFO+0x81f1>
  19c:	322e3220 	andi	t6,s1,0x3220
  1a0:	30392e34 	andi	t9,at,0x2e34
- 1a4:	64800100 	0x64800100
+ 1a4:	72800100 	0x72800100
  1a8:	02000000 	0x2000000
  1ac:	00005000 	sll	t2,zero,0x0
  1b0:	52010400 	beql	s0,at,11b4 <MSKBOTINFO+0x10b5>
@@ -937,24 +937,28 @@ Disassembly of section .debug_info:
  1bc:	6d800008 	0x6d800008
  1c0:	2e6e6961 	sltiu	t6,s3,26977
  1c4:	3a4e0053 	xori	t6,s2,0x53
- 1c8:	6f72505c 	0x6f72505c
- 1cc:	7463656a 	jalx	18d95a8 <MSKLOCy+0x8e95a8>
- 1d0:	72705c32 	0x72705c32
- 1d4:	5f326a6f 	0x5f326a6f
- 1d8:	656c6572 	0x656c6572
- 1dc:	5f657361 	0x5f657361
- 1e0:	305f3172 	andi	ra,v0,0x3172
- 1e4:	7269665c 	udi12	s3,t1,t4,0x19
- 1e8:	7261776d 	s16sdi	xr13,s3,186,ptn0
- 1ec:	61705f65 	0x61705f65
- 1f0:	5c317472 	0x5c317472
- 1f4:	6a6f7250 	0x6a6f7250
- 1f8:	6d654432 	0x6d654432
- 1fc:	4e47006f 	c3	0x47006f
- 200:	53412055 	beql	k0,at,8358 <MSKBOTINFO+0x8259>
- 204:	322e3220 	andi	t6,s1,0x3220
- 208:	30392e34 	andi	t9,at,0x2e34
- 20c:	Address 0x000000000000020c is out of bounds.
+ 1c8:	4543455c 	0x4543455c
+ 1cc:	5c303435 	0x5c303435
+ 1d0:	35454345 	ori	a1,t2,0x4345
+ 1d4:	505f3034 	beql	v0,ra,c2a8 <MSKBOTINFO+0xc1a9>
+ 1d8:	656a6f72 	0x656a6f72
+ 1dc:	5c327463 	0x5c327463
+ 1e0:	6a6f7270 	0x6a6f7270
+ 1e4:	65725f32 	0x65725f32
+ 1e8:	7361656c 	s16ldi	xr5,k1,178,ptn0
+ 1ec:	31725f65 	andi	s2,t3,0x5f65
+ 1f0:	665c305f 	0x665c305f
+ 1f4:	776d7269 	jalx	db5c9a4 <MSKLOCy+0xcb6c9a4>
+ 1f8:	5f657261 	0x5f657261
+ 1fc:	74726170 	jalx	1c985c0 <MSKLOCy+0xca85c0>
+ 200:	72505c31 	d32slr	xr0,xr7,xr1,xr4,9
+ 204:	44326a6f 	0x44326a6f
+ 208:	006f6d65 	0x6f6d65
+ 20c:	20554e47 	addi	s5,v0,20039
+ 210:	32205341 	andi	zero,s1,0x5341
+ 214:	2e34322e 	sltiu	s4,s1,12846
+ 218:	01003039 	0x1003039
+ 21c:	Address 0x000000000000021c is out of bounds.
 
 
 Disassembly of section .debug_abbrev:
