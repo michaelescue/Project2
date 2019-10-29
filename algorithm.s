@@ -48,11 +48,11 @@ PORT_BOTCTRL		= 0xbf800010		# (o) Bot Control port
 #MotCtl_in[4]	LMDir		- Reverse or Forward
 #MotCtl_in[7:5]	LMSpd 3'b	- Speed of Reverse or Forward
 
-SP_LSRS 	= 0x00		# left motor off, right motor off 				[0000]
-SP_LORR 	= 0x02		# left motor off, right motor reverse			[0001]
-SP_LSRF 	= 0x03		# left motor off, right motor forward			[0010]
-SP_LSRFR	= 0x00		# left motor off, right motor fwd & rev = off	[0011]
-SP_LRRS 	= 0x20		# left motor reverse, right motor off			[0100]
+SP_LSRS 	= 0x00		#0000_0000 left motor off, right motor off 				[0000]
+SP_LORR 	= 0x02		#0000_0010 left motor off, right motor reverse			[0001]
+SP_LSRF 	= 0x03		#0000_0011 left motor off, right motor forward			[0010]
+SP_LSRFR	= 0x00		#0000_0000 left motor off, right motor fwd & rev = off	[0011]
+SP_LRRS 	= 0x20		#0010_0000 left motor reverse, right motor off			[0100]
 SP_LRRR 	= 0x22		# left motor reverse, right motor reverse		[0101]
 SP_LRRF 	= 0x23		# left motor reverse, right motor forward		[0110]
 SP_LRRFR 	= 0x20		# left motor rev, right motor fwd & rev = off	[0111]
@@ -71,20 +71,27 @@ SP_LFRRFR 	= 0x00		# left  and right motor fwd & rev = off			[1111]
 
 
 #WHILE( Forever )
-	#IF( The Robot is on a black line )
+	#IF( The Robot is on a black line )  *Sensors_reg*
 		#THEN( 
-			#Go Forward
-			#Update the known backwards direction from current direction )
-	#ELSE
-		#THEN( 
-			# Backup
-			# Rotate 45 degrees clockwise
-			# IF( Orientation is equal to known backwards direction )
+			#IF( Current Motion is Reverse )	*BotInfo_reg*
 				#THEN( 
-					# Rotate 45 degrees clockwise
-					# Go Forward )
+					# Rotate 45 degrees clockwise	*MotCtl_in reg*
+				#)
+			#ELSE IF( Current Motion is Forward)	*BotInfo_reg*
+				#THEN(
+					#Update the known backwards direction from current direction	*SP_BKWDS Variable*
+				#)
 			#ELSE
-				#THEN( Go Forward )
+				#THEN(
+					#IF(   is equal to known backwards direction ) *SP_BKWDS Variable*
+						# Rotate 45 degrees clockwise	*MotCtl_in reg*
+					#ELSE
+						# Go Forward	*MotCtl_in reg*
+				#)
+	#ELSE
+		#THEN(
+			# Reverse	*MotCtl_in reg*
+		#)
 #ENDWHILE
 
 
@@ -99,8 +106,9 @@ SP_LFRRFR 	= 0x00		# left  and right motor fwd & rev = off			[1111]
 #	$2
 #	#4
 #
-#	New Stack Pointer Variable:
+#	New Stack Pointer Variables:
 #		SP_BKWDS - Retains the last orientation that was 180 frome direction of black line traversal.
+#		SP_FWDS - Retains the last orientation that forward along black line traversal.
 #
 #-----------------------------------------------------------------------------------------------------
 		
@@ -118,11 +126,16 @@ while_loop:
 			li $25, PORT_BOTCTRL	# Load Bot control reg address.
 			li $2, SP_LFRF			# Load control to move forward.
 			sw $2, 0($25)			# Write forward to control reg.
-			#Update the known backwards direction from current direction )
+			
+			#Update the known forward direction
 			li $25, PORT_BOTINFO	# Load Bot info reg address.
 			lw $2, 0($25)			# Load Bot infor reg value.
 			ANDi $2, $2, MSKBOTINFO # Mask out all but info reg from port.
-			# Rotate the current orientation by 1/2 pi.
+			la $25, (SP_FWDS)		# Load the Forward variable address.
+			sb $2, 0($25)			# Store the Forward orientation to the variables.
+
+			#Update the known backwards direction from current direction )		#Goes in next_mvmt()
+				#Rotate the current orientation by 1/2 pi.
 			ADDi $2, $2, 0x8		
 			sra $2, $2, 1
 			la $25, (SP_BKWDS)		# Load the Backwards variable address.
@@ -132,12 +145,20 @@ while_loop:
 	no_line:
 		#THEN( 
 			# Backup
-			# Rotate 45 degrees clockwise
+			li $25, PORT_BOTCTRL	# Load Bot control reg address.
+			li $2, SP_LRRR			# Load control to reverse.
+			sw $2, 0($25)			# Write reverse to control reg.
 			# IF( Orientation is equal to known backwards direction )
 				#THEN( 
 					# Rotate 45 degrees clockwise
-					# Go Forward )
+					li $25, PORT_BOTCTRL	# Load Bot control reg address.
+					li $2, SP_LRRS			# Load control to turn right .
+					sw $2, 0($25)			# Write right turn to control reg.
+
 			#ELSE
 				#THEN( Go Forward )
+				li $25, PORT_BOTCTRL	# Load Bot control reg address.
+				li $2, SP_LFRF			# Load control to move forward.
+				sw $2, 0($25)	
 #ENDWHILE
 	

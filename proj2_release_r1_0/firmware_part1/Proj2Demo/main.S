@@ -610,6 +610,8 @@ mvmt2cc:		la	$3,		(SP_MVTBAS1)		# $3 gets base of movment conversion table
 # Modify this function for Project 2 #####
 ##########################################
 
+# Add the SP_BKWDS update in this function.
+
 # ========================================================================
 # === next_mvmt() - Calculate  digit for motion indicator              ===
 # === Registers affected: $12, $25                                     ===
