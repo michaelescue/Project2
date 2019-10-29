@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date             : Mon Oct 28 19:33:04 2019
+| Date             : Mon Oct 28 20:49:29 2019
 | Host             : caplab12 running 64-bit major release  (build 9200)
 | Command          : report_power -file mfp_nexys4_ddr_power_routed.rpt -pb mfp_nexys4_ddr_power_summary_routed.pb -rpx mfp_nexys4_ddr_power_routed.rpx
 | Design           : mfp_nexys4_ddr
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.391        |
+| Total On-Chip Power (W)  | 0.390        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.288        |
@@ -53,21 +53,21 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.019 |       12 |       --- |             --- |
-| Slice Logic              |     0.010 |    22193 |       --- |             --- |
-|   LUT as Logic           |     0.010 |    10013 |     63400 |           15.79 |
-|   Register               |    <0.001 |     8967 |    126800 |            7.07 |
-|   CARRY4                 |    <0.001 |      169 |     15850 |            1.07 |
+| Slice Logic              |     0.010 |    22211 |       --- |             --- |
+|   LUT as Logic           |     0.010 |    10020 |     63400 |           15.80 |
+|   Register               |    <0.001 |     8974 |    126800 |            7.08 |
+|   CARRY4                 |    <0.001 |      171 |     15850 |            1.08 |
 |   LUT as Distributed RAM |    <0.001 |       30 |     19000 |            0.16 |
 |   F7/F8 Muxes            |    <0.001 |      290 |     63400 |            0.46 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
 |   LUT as Shift Register  |    <0.001 |        9 |     19000 |            0.05 |
-|   Others                 |     0.000 |     1485 |       --- |             --- |
-| Signals                  |     0.021 |    17935 |       --- |             --- |
+|   Others                 |     0.000 |     1483 |       --- |             --- |
+| Signals                  |     0.020 |    17950 |       --- |             --- |
 | Block RAM                |     0.102 |     83.5 |       135 |           61.85 |
 | MMCM                     |     0.121 |        1 |         6 |           16.67 |
-| I/O                      |     0.016 |       76 |       210 |           36.19 |
+| I/O                      |     0.017 |       76 |       210 |           36.19 |
 | Static Power             |     0.102 |          |           |                 |
-| Total                    |     0.391 |          |           |                 |
+| Total                    |     0.390 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -77,9 +77,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.162 |       0.144 |      0.018 |
+| Vccint    |       1.000 |     0.161 |       0.143 |      0.018 |
 | Vccaux    |       1.800 |     0.086 |       0.067 |      0.018 |
-| Vcco33    |       3.300 |     0.008 |       0.004 |      0.004 |
+| Vcco33    |       3.300 |     0.009 |       0.005 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -156,6 +156,7 @@ Table of Contents
 | mfp_nexys4_ddr                                                                               |     0.288 |
 |   clk_wiz_0                                                                                  |     0.121 |
 |     inst                                                                                     |     0.121 |
+|   color                                                                                      |    <0.001 |
 |   debounce                                                                                   |    <0.001 |
 |   icon1                                                                                      |     0.006 |
 |     orientation0                                                                             |    <0.001 |
@@ -214,9 +215,9 @@ Table of Contents
 |             valid.cstr                                                                       |    <0.001 |
 |               ramloop[0].ram.r                                                               |    <0.001 |
 |                 prim_init.ram                                                                |    <0.001 |
-|   mfp_sys                                                                                    |     0.140 |
+|   mfp_sys                                                                                    |     0.139 |
 |     mfp_ahb_withloader                                                                       |     0.087 |
-|       mfp_ahb                                                                                |     0.086 |
+|       mfp_ahb                                                                                |     0.085 |
 |         mfp_ahb_b_ram                                                                        |     0.002 |
 |           ram_b0                                                                             |    <0.001 |
 |           ram_b1                                                                             |    <0.001 |
@@ -236,7 +237,7 @@ Table of Contents
 |       mfp_srec_parser_to_ahb_lite_bridge                                                     |    <0.001 |
 |       mfp_uart_receiver                                                                      |    <0.001 |
 |     mfp_ejtag_reset                                                                          |    <0.001 |
-|     top                                                                                      |     0.053 |
+|     top                                                                                      |     0.052 |
 |       cpu                                                                                    |     0.052 |
 |         core                                                                                 |     0.038 |
 |           biu                                                                                |     0.002 |

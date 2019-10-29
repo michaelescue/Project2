@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date         : Mon Oct 28 19:27:35 2019
+| Date         : Mon Oct 28 20:43:59 2019
 | Host         : caplab12 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file mfp_nexys4_ddr_utilization_synth.rpt -pb mfp_nexys4_ddr_utilization_synth.pb
 | Design       : mfp_nexys4_ddr
@@ -30,14 +30,14 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                | 9913 |     0 |     63400 | 15.64 |
-|   LUT as Logic             | 9898 |     0 |     63400 | 15.61 |
+| Slice LUTs*                | 9919 |     0 |     63400 | 15.65 |
+|   LUT as Logic             | 9904 |     0 |     63400 | 15.62 |
 |   LUT as Memory            |   15 |     0 |     19000 |  0.08 |
 |     LUT as Distributed RAM |    6 |     0 |           |       |
 |     LUT as Shift Register  |    9 |     0 |           |       |
-| Slice Registers            | 8801 |     0 |    126800 |  6.94 |
-|   Register as Flip Flop    | 8789 |     0 |    126800 |  6.93 |
-|   Register as Latch        |   12 |     0 |    126800 | <0.01 |
+| Slice Registers            | 8808 |     0 |    126800 |  6.95 |
+|   Register as Flip Flop    | 8808 |     0 |    126800 |  6.95 |
+|   Register as Latch        |    0 |     0 |    126800 |  0.00 |
 | F7 Muxes                   |  272 |     0 |     31700 |  0.86 |
 | F8 Muxes                   |   18 |     0 |     15850 |  0.11 |
 +----------------------------+------+-------+-----------+-------+
@@ -57,9 +57,9 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 14    |          Yes |           - |          Set |
-| 142   |          Yes |           - |        Reset |
+| 130   |          Yes |           - |        Reset |
 | 51    |          Yes |         Set |            - |
-| 8594  |          Yes |       Reset |            - |
+| 8613  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -150,14 +150,14 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     | 8594 |        Flop & Latch |
-| LUT6     | 4620 |                 LUT |
-| LUT5     | 2701 |                 LUT |
-| LUT4     | 1662 |                 LUT |
-| LUT3     | 1368 |                 LUT |
-| LUT2     |  631 |                 LUT |
+| FDRE     | 8613 |        Flop & Latch |
+| LUT6     | 4613 |                 LUT |
+| LUT5     | 2697 |                 LUT |
+| LUT4     | 1664 |                 LUT |
+| LUT3     | 1371 |                 LUT |
+| LUT2     |  648 |                 LUT |
 | MUXF7    |  272 |               MuxFx |
-| CARRY4   |  159 |          CarryLogic |
+| CARRY4   |  161 |          CarryLogic |
 | FDCE     |  130 |        Flop & Latch |
 | LUT1     |  108 |                 LUT |
 | RAMB36E1 |   65 |        Block Memory |
@@ -167,7 +167,6 @@ Table of Contents
 | IBUF     |   28 |                  IO |
 | MUXF8    |   18 |               MuxFx |
 | FDPE     |   14 |        Flop & Latch |
-| LDCE     |   12 |        Flop & Latch |
 | SRL16E   |    9 |  Distributed Memory |
 | RAMS64E  |    6 |  Distributed Memory |
 | BUFG     |    1 |               Clock |
