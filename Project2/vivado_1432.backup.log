@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Mon Oct 28 18:48:54 2019
+# Process ID: 1432
+# Current directory: N:/ECE540/ECE540_Project2/Project2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3260 N:\ECE540\ECE540_Project2\Project2\project_2.xpr
+# Log file: N:/ECE540/ECE540_Project2/Project2/vivado.log
+# Journal file: N:/ECE540/ECE540_Project2/Project2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project N:/ECE540/ECE540_Project2/Project2/project_2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'n:/ECE540/ECE540_Project2/proj2_release_r1_0/ece540_ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:30 . Memory (MB): peak = 805.023 ; gain = 154.953
+open_hw
+update_compile_order -fileset sources_1

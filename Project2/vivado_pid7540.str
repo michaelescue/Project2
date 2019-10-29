@@ -1,0 +1,514 @@
+/*
+
+Xilinx Vivado v2018.2.1 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2288692 on Thu Jul 26 18:24:02 MDT 2018
+IP Build: 2289599 on Thu Jul 26 21:09:20 MDT 2018
+
+Process ID: 7540
+License: Customer
+
+Current time: 	Mon Oct 28 18:54:39 PDT 2019
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 69 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	D:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	mescue
+User home directory: C:/Users/mescue
+User working directory: N:/ECE540/ECE540_Project2/Project2
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2018.2
+RDI_DATADIR: D:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: D:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: \\thoth.cecs.pdx.edu\profile07\mescue\Application Data/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: \\thoth.cecs.pdx.edu\profile07\mescue\Application Data/Xilinx/Vivado/2018.2/
+Vivado layouts directory: \\thoth.cecs.pdx.edu\profile07\mescue\Application Data\Xilinx\Vivado\2018.2\layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	N:/ECE540/ECE540_Project2/Project2/vivado.log
+Vivado journal file location: 	N:/ECE540/ECE540_Project2/Project2/vivado.jou
+Engine tmp dir: 	N:/ECE540/ECE540_Project2/Project2/.Xil/Vivado-7540-caplab12
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@xilinx-lic.cat.pdx.edu
+XILINX_DSP: D:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2018.2
+XILINX_SDK: D:/Xilinx/SDK/2018.2
+XILINX_VIVADO: D:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	157 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 521 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 58 MB (+58109kb) [00:00:11]
+// [Engine Memory]: 460 MB (+330381kb) [00:00:11]
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: N:\ECE540\ECE540_Project2\Project2\project_2.xpr. Version: Vivado v2018.2.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project N:/ECE540/ECE540_Project2/Project2/project_2.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// [Engine Memory]: 521 MB (+40491kb) [00:00:15]
+// HMemoryUtils.trashcanNow. Engine heap size: 528 MB. GUI used memory: 37 MB. Current time: 10/28/19 6:54:41 PM PDT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 620 MB (+76107kb) [00:00:21]
+// [GUI Memory]: 68 MB (+7376kb) [00:00:23]
+// [GUI Memory]: 78 MB (+7114kb) [00:00:25]
+// [Engine Memory]: 653 MB (+2187kb) [00:00:28]
+// Tcl Message: open_project N:/ECE540/ECE540_Project2/Project2/project_2.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'n:/ECE540/ECE540_Project2/proj2_release_r1_0/ece540_ip_repo'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 838.074 ; gain = 169.789 
+// Project name: project_2; location: N:/ECE540/ECE540_Project2/Project2; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 83 MB (+1365kb) [00:00:34]
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 91 MB (+3336kb) [00:00:37]
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 95 MB (+158kb) [00:00:47]
+// [Engine Memory]: 686 MB (+373kb) [00:00:52]
+// Elapsed time: 24 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mfp_nexys4_ddr (mfp_nexys4_ddr.v)]", 2); // B (D, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 686 MB. GUI used memory: 56 MB. Current time: 10/28/19 6:55:22 PM PDT
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mfp_nexys4_ddr (mfp_nexys4_ddr.v), icon1 : icon (icon.v)]", 10); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mfp_nexys4_ddr (mfp_nexys4_ddr.v), icon1 : icon (icon.v), icon_scale : scale (scale.v)]", 11, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mfp_nexys4_ddr (mfp_nexys4_ddr.v), icon1 : icon (icon.v)]", 10, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mfp_nexys4_ddr (mfp_nexys4_ddr.v), icon1 : icon (icon.v)]", 10, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("icon.v", 569, 326); // ce (w, ck)
+// Elapsed time: 21 seconds
+selectCodeEditor("icon.v", 563, 236); // ce (w, ck)
+// Elapsed time: 55 seconds
+selectCodeEditor("icon.v", 295, 217); // ce (w, ck)
+selectCodeEditor("icon.v", 169, 283); // ce (w, ck)
+selectCodeEditor("icon.v", 79, 278); // ce (w, ck)
+// Elapsed time: 44 seconds
+selectCodeEditor("icon.v", 146, 275); // ce (w, ck)
+selectCodeEditor("icon.v", 146, 275, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("icon.v", 210, 302); // ce (w, ck)
+selectCodeEditor("icon.v", 210, 302, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("icon.v", 209, 296); // ce (w, ck)
+selectCodeEditor("icon.v", 122, 316); // ce (w, ck)
+selectCodeEditor("icon.v", 125, 293); // ce (w, ck)
+selectCodeEditor("icon.v", 125, 293, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("icon.v", 216, 312); // ce (w, ck)
+selectCodeEditor("icon.v", 218, 297); // ce (w, ck)
+selectCodeEditor("icon.v", 218, 297, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("icon.v", 219, 392); // ce (w, ck)
+selectCodeEditor("icon.v", 101, 239); // ce (w, ck)
+selectCodeEditor("icon.v", 101, 239, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("icon.v", 183, 314); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("icon.v", 118, 272); // ce (w, ck)
+selectCodeEditor("icon.v", 118, 272, false, false, false, false, true); // ce (w, ck) - Double Click
+// [GUI Memory]: 102 MB (+1796kb) [00:04:24]
+// Elapsed time: 68 seconds
+selectCodeEditor("icon.v", 305, 263); // ce (w, ck)
+selectCodeEditor("icon.v", 309, 227); // ce (w, ck)
+selectCodeEditor("icon.v", 309, 227, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 68 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bx (ck)
+// [GUI Memory]: 107 MB (+456kb) [00:06:13]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.2.1   **** Build date : Jul 26 2018-19:38:10     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 876.398 ; gain = 0.086 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292743024A 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,337 MB. GUI used memory: 61 MB. Current time: 10/28/19 7:00:54 PM PDT
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {N:/ECE540/ECE540_Project2/Project2/project_2.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 1,340 MB (+650115kb) [00:06:29]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Elapsed time: 13 seconds
+dismissDialog("Auto Connect"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1223 ms. Increasing delay to 3000 ms.
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {N:/ECE540/ECE540_Project2/Project2/project_2.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2718 ms. Increasing delay to 4000 ms.
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 10 seconds
+dismissDialog("Program Device"); // bx (ck)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1815 ms. Increasing delay to 3000 ms.
+// Elapsed time: 30 seconds
+selectCodeEditor("icon.v", 196, 381); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mfp_nexys4_ddr (mfp_nexys4_ddr.v)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mfp_nexys4_ddr (mfp_nexys4_ddr.v)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("mfp_nexys4_ddr.v", 255, 293); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 255, 293, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("mfp_nexys4_ddr.v", 236, 290); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 236, 290, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("mfp_nexys4_ddr.v", 236, 290); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 237, 321); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 321, 211); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 47, 208); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("mfp_nexys4_ddr.v", 534, 223); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 534, 213); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 534, 213, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("mfp_nexys4_ddr.v", 534, 213); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 534, 213); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 534, 213); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 534, 261); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 531, 205); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 531, 205, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("mfp_nexys4_ddr.v", 527, 274); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 261, 296); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 242, 293); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 251, 296); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 271, 295); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 324, 166); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("mfp_nexys4_ddr.v", 272, 396); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,354 MB. GUI used memory: 64 MB. Current time: 10/28/19 7:03:12 PM PDT
+// Elapsed time: 12 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mfp_nexys4_ddr (mfp_nexys4_ddr.v)]", 2); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mfp_nexys4_ddr (mfp_nexys4_ddr.v), debounce : debounce (debounce.v)]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mfp_nexys4_ddr (mfp_nexys4_ddr.v), debounce : debounce (debounce.v)]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("debounce.v", 209, 275); // ce (w, ck)
+selectCodeEditor("debounce.v", 198, 264); // ce (w, ck)
+selectCodeEditor("debounce.v", 198, 264, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mfp_nexys4_ddr.v", 2); // k (j, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 524, 64); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 524, 64, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.v", 3); // k (j, ck)
+selectCodeEditor("debounce.v", 126, 363); // ce (w, ck)
+selectCodeEditor("debounce.v", 126, 363, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("debounce.v", 261, 212); // ce (w, ck)
+selectCodeEditor("debounce.v", 261, 212, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mfp_nexys4_ddr.v", 2); // k (j, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 192, 296); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 191, 297); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 193, 297, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("mfp_nexys4_ddr.v", 208, 301); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 191, 295); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 196, 299); // ce (w, ck)
+// Elapsed time: 19 seconds
+selectCodeEditor("mfp_nexys4_ddr.v", 231, 456); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 329, 106); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 530, 118); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 379, 110); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 379, 110, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("mfp_nexys4_ddr.v", 259, 451); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 187, 453); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 197, 453); // ce (w, ck)
+// Elapsed time: 48 seconds
+selectCodeEditor("mfp_nexys4_ddr.v", 532, 435); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 543, 498); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 616, 442); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 639, 425); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mfp_nexys4_ddr.v", 735, 346); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("mfp_nexys4_ddr.v", 665, 286); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 15 seconds
+selectCodeEditor("mfp_nexys4_ddr.v", 320, 43); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 340, 84); // ce (w, ck)
+selectCodeEditor("mfp_nexys4_ddr.v", 194, 316); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "icon.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mfp_nexys4_ddr.v", 2); // k (j, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "icon.v", 1); // k (j, ck)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6.xci' is already up-to-date 
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (bx)
+// [GUI Memory]: 115 MB (+2683kb) [00:11:33]
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Oct 28 19:06:01 2019] Launched synth_1... Run output will be captured here: N:/ECE540/ECE540_Project2/Project2/project_2.runs/synth_1/runme.log [Mon Oct 28 19:06:02 2019] Launched impl_1... Run output will be captured here: N:/ECE540/ECE540_Project2/Project2/project_2.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1575 ms. Increasing delay to 4000 ms.
+// Elapsed time: 64 seconds
+selectCodeEditor("icon.v", 979, 223); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("icon.v", 333, 394); // ce (w, ck)
+selectCodeEditor("icon.v", 330, 297); // ce (w, ck)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw
+// Elapsed time: 76 seconds
+selectCodeEditor("icon.v", 241, 254); // ce (w, ck)
+selectCodeEditor("icon.v", 216, 321); // ce (w, ck)
+// Elapsed time: 78 seconds
+selectCodeEditor("icon.v", 711, 692); // ce (w, ck)
+selectCodeEditor("icon.v", 349, 277); // ce (w, ck)
+selectCodeEditor("icon.v", 373, 380); // ce (w, ck)
+selectCodeEditor("icon.v", 370, 294); // ce (w, ck)
+selectCodeEditor("icon.v", 364, 360); // ce (w, ck)
+selectCodeEditor("icon.v", 345, 282); // ce (w, ck)
+selectCodeEditor("icon.v", 347, 277); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("icon.v", 254, 285); // ce (w, ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1484ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2906 ms. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3578 ms. Increasing delay to 5000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3899 ms. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2987 ms. Increasing delay to 6000 ms.
+// Elapsed time: 391 seconds
+selectCodeEditor("icon.v", 89, 382); // ce (w, ck)
+selectCodeEditor("icon.v", 256, 281); // ce (w, ck)
+// Elapsed time: 37 seconds
+selectCodeEditor("icon.v", 247, 287); // ce (w, ck)
+selectCodeEditor("icon.v", 249, 350); // ce (w, ck)
+selectCodeEditor("icon.v", 253, 285); // ce (w, ck)
+selectCodeEditor("icon.v", 339, 289); // ce (w, ck)
+selectCodeEditor("icon.v", 367, 283); // ce (w, ck)
+selectCodeEditor("icon.v", 363, 283, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("icon.v", 356, 282); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("icon.v", 420, 287); // ce (w, ck)
+selectCodeEditor("icon.v", 368, 259); // ce (w, ck)
+selectCodeEditor("icon.v", 361, 337); // ce (w, ck)
+selectCodeEditor("icon.v", 340, 406); // ce (w, ck)
+selectCodeEditor("icon.v", 343, 359); // ce (w, ck)
+selectCodeEditor("icon.v", 330, 277); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("icon.v", 342, 433); // ce (w, ck)
+selectCodeEditor("icon.v", 393, 358); // ce (w, ck)
+selectCodeEditor("icon.v", 200, 353); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("icon.v", 302, 280); // ce (w, ck)
+selectCodeEditor("icon.v", 302, 280, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 22 seconds
+selectCodeEditor("icon.v", 332, 279); // ce (w, ck)
+selectCodeEditor("icon.v", 351, 278); // ce (w, ck)
+selectCodeEditor("icon.v", 236, 284); // ce (w, ck)
+selectCodeEditor("icon.v", 247, 278); // ce (w, ck)
+selectCodeEditor("icon.v", 245, 319); // ce (w, ck)
+selectCodeEditor("icon.v", 290, 330); // ce (w, ck)
+selectCodeEditor("icon.v", 304, 285); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("icon.v", 314, 355); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 32 seconds
+selectCodeEditor("icon.v", 318, 351); // ce (w, ck)
+selectCodeEditor("icon.v", 288, 378); // ce (w, ck)
+selectCodeEditor("icon.v", 396, 322); // ce (w, ck)
+selectCodeEditor("icon.v", 396, 322); // ce (w, ck)
+selectCodeEditor("icon.v", 502, 446); // ce (w, ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 423ms to process. Increasing delay to 3000 ms.
+// Elapsed time: 31 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {N:/ECE540/ECE540_Project2/Project2/project_2.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6.xci' is already up-to-date 
+// TclEventType: RUN_LAUNCH
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (bx)
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Oct 28 19:20:24 2019] Launched synth_1... Run output will be captured here: N:/ECE540/ECE540_Project2/Project2/project_2.runs/synth_1/runme.log [Mon Oct 28 19:20:24 2019] Launched impl_1... Run output will be captured here: N:/ECE540/ECE540_Project2/Project2/project_2.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// [GUI Memory]: 123 MB (+1833kb) [00:26:14]
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5504 ms. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 9048 ms. Increasing delay to 7000 ms.
+// Elapsed time: 129 seconds
+selectCodeEditor("icon.v", 333, 328); // ce (w, ck)
+selectCodeEditor("icon.v", 348, 285); // ce (w, ck)
+// Elapsed time: 21 seconds
+selectCodeEditor("icon.v", 119, 228); // ce (w, ck)
+selectCodeEditor("icon.v", 119, 228, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("icon.v", 227, 333); // ce (w, ck)
+selectCodeEditor("icon.v", 118, 326); // ce (w, ck)
+selectCodeEditor("icon.v", 118, 326, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("icon.v", 105, 297); // ce (w, ck)
+selectCodeEditor("icon.v", 105, 297, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("icon.v", 99, 332); // ce (w, ck)
+selectCodeEditor("icon.v", 99, 332, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("icon.v", 100, 291); // ce (w, ck)
+// Elapsed time: 72 seconds
+selectCodeEditor("icon.v", 544, 472); // ce (w, ck)
+// Elapsed time: 111 seconds
+selectCodeEditor("icon.v", 213, 275); // ce (w, ck)
+selectCodeEditor("icon.v", 342, 276); // ce (w, ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1267ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 129 MB (+431kb) [00:36:39]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,367 MB. GUI used memory: 71 MB. Current time: 10/28/19 7:33:12 PM PDT
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 632 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {N:/ECE540/ECE540_Project2/Project2/project_2.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 24 seconds
+selectCodeEditor("icon.v", 456, 471); // ce (w, ck)
+selectCodeEditor("icon.v", 340, 338); // ce (w, ck)
+selectCodeEditor("icon.v", 231, 280); // ce (w, ck)
+selectCodeEditor("icon.v", 251, 285); // ce (w, ck)
+selectCodeEditor("icon.v", 332, 279); // ce (w, ck)
+selectCodeEditor("icon.v", 351, 281); // ce (w, ck)
+selectCodeEditor("icon.v", 351, 336); // ce (w, ck)
+selectCodeEditor("icon.v", 309, 244); // ce (w, ck)
+selectCodeEditor("icon.v", 591, 327); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET

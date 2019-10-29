@@ -14,18 +14,18 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9036 
+INFO: Helper process launched with PID 2120 
 WARNING: [Synth 8-2507] parameter declaration becomes local in debounce with formal parameter declaration list [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/project_simplebot/hdl/debounce.v:48]
 WARNING: [Synth 8-1083] icon was previously declared without a range [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/boards/nexys4_ddr/mfp_nexys4_ddr.v:76]
 WARNING: [Synth 8-976] icon has already been declared [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/boards/nexys4_ddr/mfp_nexys4_ddr.v:76]
 WARNING: [Synth 8-2654] second declaration of icon ignored [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/boards/nexys4_ddr/mfp_nexys4_ddr.v:76]
 INFO: [Synth 8-994] icon is declared here [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/boards/nexys4_ddr/mfp_nexys4_ddr.v:64]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 433.039 ; gain = 124.055
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 432.488 ; gain = 122.918
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'mfp_nexys4_ddr' [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/boards/nexys4_ddr/mfp_nexys4_ddr.v:17]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [N:/ECE540/ECE540_Project2/Project2/project_2.runs/synth_1/.Xil/Vivado-9304-caplab12/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [N:/ECE540/ECE540_Project2/Project2/project_2.runs/synth_1/.Xil/Vivado-9304-caplab12/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [N:/ECE540/ECE540_Project2/Project2/project_2.runs/synth_1/.Xil/Vivado-11256-caplab12/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [N:/ECE540/ECE540_Project2/Project2/project_2.runs/synth_1/.Xil/Vivado-11256-caplab12/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'IBUF' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19473]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
@@ -993,7 +993,7 @@ WARNING: [Synth 8-3331] design mfp_ahb_b_ram has unconnected port HADDR[27]
 WARNING: [Synth 8-3331] design mfp_ahb_b_ram has unconnected port HADDR[26]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 684.590 ; gain = 375.605
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 684.328 ; gain = 374.758
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1016,10 +1016,10 @@ WARNING: [Synth 8-3295] tying undriven pin top:BistIn[0] to constant 0 [N:/ECE54
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:29 . Memory (MB): peak = 684.590 ; gain = 375.605
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:29 . Memory (MB): peak = 684.328 ; gain = 374.758
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:29 . Memory (MB): peak = 684.590 ; gain = 375.605
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:29 . Memory (MB): peak = 684.328 ; gain = 374.758
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1061,7 +1061,7 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1083.711 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 1085.262 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'icon1/orientation0' at clock pin 'clka' is different from the actual clock period '13.333', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'icon1/orientation135' at clock pin 'clka' is different from the actual clock period '13.333', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'icon1/orientation180' at clock pin 'clka' is different from the actual clock period '13.333', this can lead to different synthesis results.
@@ -1071,12 +1071,13 @@ WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context s
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'icon1/orientation45' at clock pin 'clka' is different from the actual clock period '13.333', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'icon1/orientation90' at clock pin 'clka' is different from the actual clock period '13.333', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:37 ; elapsed = 00:00:57 . Memory (MB): peak = 1083.711 ; gain = 774.727
+Finished Constraint Validation : Time (s): cpu = 00:00:37 ; elapsed = 00:00:57 . Memory (MB): peak = 1085.262 ; gain = 775.691
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
 INFO: [Synth 8-5545] ROM "db_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "shift_pb0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5544] ROM "pbtn_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
@@ -1143,13 +1144,13 @@ INFO: [Synth 8-5545] ROM "DP" won't be mapped to RAM because address size (32) i
 INFO: [Synth 8-5544] ROM "trst_n" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "trst_delay" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "pixel_row" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-3936] Found unconnected internal register 'matchedrow_reg' and it is trimmed from '12' to '5' bits. [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/Project2/icon.v:32]
-WARNING: [Synth 8-3936] Found unconnected internal register 'matchedcol_reg' and it is trimmed from '12' to '5' bits. [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/Project2/icon.v:33]
+WARNING: [Synth 8-3936] Found unconnected internal register 'matchedrow_reg' and it is trimmed from '12' to '6' bits. [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/Project2/icon.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'matchedcol_reg' and it is trimmed from '12' to '6' bits. [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/Project2/icon.v:33]
 WARNING: [Synth 8-327] inferring latch for variable 'q_reg' [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_latchn.v:90]
 WARNING: [Synth 8-327] inferring latch for variable 'matchedcol_reg' [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/Project2/icon.v:33]
 WARNING: [Synth 8-327] inferring latch for variable 'matchedrow_reg' [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/Project2/icon.v:32]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:53 ; elapsed = 00:01:21 . Memory (MB): peak = 1083.711 ; gain = 774.727
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:53 ; elapsed = 00:01:22 . Memory (MB): peak = 1085.262 ; gain = 775.691
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'mfp_sys/top/cpu/core/clock_gate/buff_fclk' (m14k_clock_buf) to 'mfp_sys/top/cpu/core/clock_gate/buff_gclk'
 INFO: [Synth 8-223] decloning instance 'mfp_sys/top/cpu/core/clock_gate/buff_fclk' (m14k_clock_buf) to 'mfp_sys/top/cpu/core/clock_gate/buff_gtlbclk'
@@ -1170,7 +1171,7 @@ Report RTL Partitions:
 |4     |m14k_cpu__GC0       |           1|       114|
 |5     |m14k_top__GC0       |           1|       458|
 |6     |mfp_sys__GC0        |           1|      2981|
-|7     |mfp_nexys4_ddr__GC0 |           1|      2447|
+|7     |mfp_nexys4_ddr__GC0 |           1|      2445|
 +------+--------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -1186,8 +1187,9 @@ Detailed RTL Component Info :
 	   2 Input      9 Bit       Adders := 3     
 	   2 Input      8 Bit       Adders := 6     
 	   2 Input      6 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 2     
 	   2 Input      5 Bit       Adders := 3     
-	   3 Input      5 Bit       Adders := 3     
+	   3 Input      5 Bit       Adders := 1     
 	   2 Input      4 Bit       Adders := 5     
 	   2 Input      3 Bit       Adders := 4     
 	   3 Input      2 Bit       Adders := 2     
@@ -8385,7 +8387,7 @@ Detailed RTL Component Info :
 Module icon 
 Detailed RTL Component Info : 
 +---Adders : 
-	   3 Input      5 Bit       Adders := 2     
+	   3 Input      6 Bit       Adders := 2     
 +---Muxes : 
 	   2 Input      2 Bit        Muxes := 1     
 Module colorizer 
@@ -8780,7 +8782,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (corei_1/c
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (corei_1/cpz/\_cpz_taglo_0_0_/q_reg[0] )
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:05:05 ; elapsed = 00:05:52 . Memory (MB): peak = 1583.480 ; gain = 1274.496
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:05:02 ; elapsed = 00:05:49 . Memory (MB): peak = 1577.699 ; gain = 1268.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -8910,7 +8912,7 @@ Report RTL Partitions:
 |4     |m14k_cpu__GC0       |           1|        93|
 |5     |m14k_top__GC0       |           1|       439|
 |6     |mfp_sys__GC0        |           1|      1525|
-|7     |mfp_nexys4_ddr__GC0 |           1|       758|
+|7     |mfp_nexys4_ddr__GC0 |           1|       742|
 +------+--------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
@@ -8919,13 +8921,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_wiz_0/clk_out1' to pi
 INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_wiz_0/clk_out2' to pin 'clk_wiz_0/bbstub_clk_out2/O'
 INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:14 ; elapsed = 00:06:03 . Memory (MB): peak = 1583.480 ; gain = 1274.496
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:11 ; elapsed = 00:06:00 . Memory (MB): peak = 1577.699 ; gain = 1268.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:05:19 ; elapsed = 00:06:09 . Memory (MB): peak = 1583.480 ; gain = 1274.496
+Finished Timing Optimization : Time (s): cpu = 00:05:15 ; elapsed = 00:06:04 . Memory (MB): peak = 1577.699 ; gain = 1268.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -8993,7 +8995,7 @@ Report RTL Partitions:
 |4     |m14k_cpu__GC0       |           1|        93|
 |5     |m14k_top__GC0       |           1|       439|
 |6     |mfp_sys__GC0        |           1|      1525|
-|7     |mfp_nexys4_ddr__GC0 |           1|       864|
+|7     |mfp_nexys4_ddr__GC0 |           1|       742|
 +------+--------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -9040,7 +9042,7 @@ INFO: [Synth 8-4480] The timing for the instance mfp_sys/mfp_ahb_withloader/mfp_
 INFO: [Synth 8-4480] The timing for the instance mfp_sys/mfp_ahb_withloader/mfp_ahb/mfp_ahb_p_ram/ram_p1/ram_reg_1_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Common 17-14] Message 'Synth 8-4480' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:05:33 ; elapsed = 00:06:24 . Memory (MB): peak = 1583.480 ; gain = 1274.496
+Finished Technology Mapping : Time (s): cpu = 00:05:29 ; elapsed = 00:06:19 . Memory (MB): peak = 1577.699 ; gain = 1268.129
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -9068,7 +9070,7 @@ INFO: [Synth 8-6064] Net \mfp_sys/mfp_ahb_withloader/mfp_ahb/mfp_ahb_p_ram/we_ma
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:05:35 ; elapsed = 00:06:26 . Memory (MB): peak = 1583.480 ; gain = 1274.496
+Finished IO Insertion : Time (s): cpu = 00:05:31 ; elapsed = 00:06:21 . Memory (MB): peak = 1577.699 ; gain = 1268.129
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -9081,7 +9083,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:05:35 ; elapsed = 00:06:26 . Memory (MB): peak = 1583.480 ; gain = 1274.496
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:32 ; elapsed = 00:06:21 . Memory (MB): peak = 1577.699 ; gain = 1268.129
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -9093,25 +9095,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:40 ; elapsed = 00:06:31 . Memory (MB): peak = 1583.480 ; gain = 1274.496
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:36 ; elapsed = 00:06:26 . Memory (MB): peak = 1577.699 ; gain = 1268.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:05:41 ; elapsed = 00:06:33 . Memory (MB): peak = 1583.480 ; gain = 1274.496
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:38 ; elapsed = 00:06:27 . Memory (MB): peak = 1577.699 ; gain = 1268.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:05:42 ; elapsed = 00:06:34 . Memory (MB): peak = 1583.480 ; gain = 1274.496
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:38 ; elapsed = 00:06:28 . Memory (MB): peak = 1577.699 ; gain = 1268.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:05:42 ; elapsed = 00:06:34 . Memory (MB): peak = 1583.480 ; gain = 1274.496
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:39 ; elapsed = 00:06:28 . Memory (MB): peak = 1577.699 ; gain = 1268.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -9168,14 +9170,14 @@ Report Cell Usage:
 |10    |rojobot31_0   |     1|
 |11    |world_map     |     1|
 |12    |BUFG          |     1|
-|13    |CARRY4        |   155|
-|14    |LUT1          |   107|
-|15    |LUT2          |   632|
-|16    |LUT3          |  1373|
-|17    |LUT4          |  1667|
-|18    |LUT5          |  2699|
-|19    |LUT6          |  4615|
-|20    |MUXF7         |   268|
+|13    |CARRY4        |   159|
+|14    |LUT1          |   108|
+|15    |LUT2          |   631|
+|16    |LUT3          |  1368|
+|17    |LUT4          |  1662|
+|18    |LUT5          |  2701|
+|19    |LUT6          |  4620|
+|20    |MUXF7         |   269|
 |21    |MUXF8         |    18|
 |22    |RAM128X1S     |     3|
 |23    |RAMB18E1      |    24|
@@ -9190,7 +9192,7 @@ Report Cell Usage:
 |32    |FDPE          |    14|
 |33    |FDRE          |  8594|
 |34    |FDSE          |    51|
-|35    |LD            |    10|
+|35    |LD            |    12|
 |36    |IBUF          |    28|
 |37    |OBUF          |    47|
 +------+--------------+------+
@@ -9199,9 +9201,9 @@ Report Instance Areas:
 +------+---------------------------------------------------------------------------------------------+-------------------------------------------+------+
 |      |Instance                                                                                     |Module                                     |Cells |
 +------+---------------------------------------------------------------------------------------------+-------------------------------------------+------+
-|1     |top                                                                                          |                                           | 20630|
+|1     |top                                                                                          |                                           | 20634|
 |2     |  debounce                                                                                   |debounce                                   |   183|
-|3     |  icon1                                                                                      |icon                                       |    82|
+|3     |  icon1                                                                                      |icon                                       |    83|
 |4     |  mfp_sys                                                                                    |mfp_sys                                    | 20141|
 |5     |    mfp_ahb_withloader                                                                       |mfp_ahb_withloader                         |   961|
 |6     |      mfp_ahb                                                                                |mfp_ahb                                    |   427|
@@ -10661,191 +10663,3 @@ Report Instance Areas:
 |1460  |              _pend_ibe_reg                                                                  |mvp_register_165                           |     2|
 |1461  |              _pexc_x                                                                        |mvp_cregister__parameterized1_166          |     2|
 |1462  |              _poss_pend_exc_reg                                                             |mvp_register_167                           |     1|
-|1463  |              _pre_evec_sel_reg_4_0_                                                         |mvp_ucregister_wide__parameterized3        |     9|
-|1464  |                cregister                                                                    |mvp_register_ngc__parameterized3           |     9|
-|1465  |                  register_inst                                                              |mvp_register__parameterized5               |     9|
-|1466  |              _raw_debug_vect_1_0_                                                           |mvp_cregister__parameterized8              |    21|
-|1467  |              _raw_pexc_e                                                                    |mvp_register_168                           |     2|
-|1468  |              _sarop_m                                                                       |mvp_cregister__parameterized1_169          |     1|
-|1469  |              _seen_run_id                                                                   |mvp_register_170                           |     1|
-|1470  |              _set_pend_exc_reg                                                              |mvp_register_171                           |     2|
-|1471  |              _ssdi_e                                                                        |mvp_cregister__parameterized1_172          |     1|
-|1472  |              _ssdi_id                                                                       |mvp_register_173                           |     2|
-|1473  |              _ssdi_m                                                                        |mvp_cregister__parameterized1_174          |     2|
-|1474  |              _ssexc_id                                                                      |mvp_register_175                           |     1|
-|1475  |              _tlb_refill_vec_n                                                              |mvp_register_176                           |     3|
-|1476  |              _trap_in_m                                                                     |mvp_cregister__parameterized1_177          |     1|
-|1477  |              _trap_type_m                                                                   |mvp_cregister__parameterized1_178          |     1|
-|1478  |          rf                                                                                 |m14k_rf_reg                                |  1865|
-|1479  |            _src_a_srs_3_0_src_a_reg_4_0                                                     |mvp_cregister_wide__parameterized1         |     7|
-|1480  |              cregister                                                                      |mvp_cregister_ngc__parameterized1_141      |     7|
-|1481  |                cregister                                                                    |mvp_cregister__parameterized2_142          |     7|
-|1482  |            _src_b_srs_3_0                                                                   |mvp_cregister_wide__parameterized1_47      |     7|
-|1483  |              cregister                                                                      |mvp_cregister_ngc__parameterized1          |     7|
-|1484  |                cregister                                                                    |mvp_cregister__parameterized2              |     7|
-|1485  |            rf_reg0                                                                          |m14k_rf_rngc                               |  1851|
-|1486  |              _rf10_31_0_                                                                    |mvp_cregister_wide__parameterized2_48      |    32|
-|1487  |                cregister                                                                    |mvp_cregister_ngc__parameterized2_139      |    32|
-|1488  |                  cregister                                                                  |mvp_cregister__parameterized3_140          |    32|
-|1489  |              _rf11_31_0_                                                                    |mvp_cregister_wide__parameterized2_49      |   160|
-|1490  |                cregister                                                                    |mvp_cregister_ngc__parameterized2_137      |   160|
-|1491  |                  cregister                                                                  |mvp_cregister__parameterized3_138          |   160|
-|1492  |              _rf12_31_0_                                                                    |mvp_cregister_wide__parameterized2_50      |    32|
-|1493  |                cregister                                                                    |mvp_cregister_ngc__parameterized2_135      |    32|
-|1494  |                  cregister                                                                  |mvp_cregister__parameterized3_136          |    32|
-|1495  |              _rf13_31_0_                                                                    |mvp_cregister_wide__parameterized2_51      |    32|
-|1496  |                cregister                                                                    |mvp_cregister_ngc__parameterized2_133      |    32|
-|1497  |                  cregister                                                                  |mvp_cregister__parameterized3_134          |    32|
-|1498  |              _rf14_31_0_                                                                    |mvp_cregister_wide__parameterized2_52      |    32|
-|1499  |                cregister                                                                    |mvp_cregister_ngc__parameterized2_131      |    32|
-|1500  |                  cregister                                                                  |mvp_cregister__parameterized3_132          |    32|
-|1501  |              _rf15_31_0_                                                                    |mvp_cregister_wide__parameterized2_53      |    96|
-|1502  |                cregister                                                                    |mvp_cregister_ngc__parameterized2_129      |    96|
-|1503  |                  cregister                                                                  |mvp_cregister__parameterized3_130          |    96|
-|1504  |              _rf16_31_0_                                                                    |mvp_cregister_wide__parameterized2_54      |    32|
-|1505  |                cregister                                                                    |mvp_cregister_ngc__parameterized2_127      |    32|
-|1506  |                  cregister                                                                  |mvp_cregister__parameterized3_128          |    32|
-|1507  |              _rf17_31_0_                                                                    |mvp_cregister_wide__parameterized2_55      |    32|
-|1508  |                cregister                                                                    |mvp_cregister_ngc__parameterized2_125      |    32|
-|1509  |                  cregister                                                                  |mvp_cregister__parameterized3_126          |    32|
-|1510  |              _rf18_31_0_                                                                    |mvp_cregister_wide__parameterized2_56      |    32|
-|1511  |                cregister                                                                    |mvp_cregister_ngc__parameterized2_123      |    32|
-|1512  |                  cregister                                                                  |mvp_cregister__parameterized3_124          |    32|
-|1513  |              _rf19_31_0_                                                                    |mvp_cregister_wide__parameterized2_57      |   171|
-|1514  |                cregister                                                                    |mvp_cregister_ngc__parameterized2_121      |   171|
-|1515  |                  cregister                                                                  |mvp_cregister__parameterized3_122          |   171|
-|1516  |              _rf1_31_0_                                                                     |mvp_cregister_wide__parameterized2_58      |    32|
-|1517  |                cregister                                                                    |mvp_cregister_ngc__parameterized2_119      |    32|
-|1518  |                  cregister                                                                  |mvp_cregister__parameterized3_120          |    32|
-|1519  |              _rf20_31_0_                                                                    |mvp_cregister_wide__parameterized2_59      |    32|
-|1520  |                cregister                                                                    |mvp_cregister_ngc__parameterized2_117      |    32|
-|1521  |                  cregister                                                                  |mvp_cregister__parameterized3_118          |    32|
-|1522  |              _rf21_31_0_                                                                    |mvp_cregister_wide__parameterized2_60      |    32|
-|1523  |                cregister                                                                    |mvp_cregister_ngc__parameterized2_115      |    32|
-|1524  |                  cregister                                                                  |mvp_cregister__parameterized3_116          |    32|
-|1525  |              _rf22_31_0_                                                                    |mvp_cregister_wide__parameterized2_61      |    32|
-|1526  |                cregister                                                                    |mvp_cregister_ngc__parameterized2_113      |    32|
-|1527  |                  cregister                                                                  |mvp_cregister__parameterized3_114          |    32|
-|1528  |              _rf23_31_0_                                                                    |mvp_cregister_wide__parameterized2_62      |    96|
-|1529  |                cregister                                                                    |mvp_cregister_ngc__parameterized2_111      |    96|
-|1530  |                  cregister                                                                  |mvp_cregister__parameterized3_112          |    96|
-|1531  |              _rf24_31_0_                                                                    |mvp_cregister_wide__parameterized2_63      |    32|
-|1532  |                cregister                                                                    |mvp_cregister_ngc__parameterized2_109      |    32|
-|1533  |                  cregister                                                                  |mvp_cregister__parameterized3_110          |    32|
-|1534  |              _rf25_31_0_                                                                    |mvp_cregister_wide__parameterized2_64      |    32|
-|1535  |                cregister                                                                    |mvp_cregister_ngc__parameterized2_107      |    32|
-|1536  |                  cregister                                                                  |mvp_cregister__parameterized3_108          |    32|
-|1537  |              _rf26_31_0_                                                                    |mvp_cregister_wide__parameterized2_65      |    32|
-|1538  |                cregister                                                                    |mvp_cregister_ngc__parameterized2_105      |    32|
-|1539  |                  cregister                                                                  |mvp_cregister__parameterized3_106          |    32|
-|1540  |              _rf27_31_0_                                                                    |mvp_cregister_wide__parameterized2_66      |   209|
-|1541  |                cregister                                                                    |mvp_cregister_ngc__parameterized2_103      |   209|
-|1542  |                  cregister                                                                  |mvp_cregister__parameterized3_104          |   209|
-|1543  |              _rf28_31_0_                                                                    |mvp_cregister_wide__parameterized2_67      |    32|
-|1544  |                cregister                                                                    |mvp_cregister_ngc__parameterized2_101      |    32|
-|1545  |                  cregister                                                                  |mvp_cregister__parameterized3_102          |    32|
-|1546  |              _rf29_31_0_                                                                    |mvp_cregister_wide__parameterized2_68      |    32|
-|1547  |                cregister                                                                    |mvp_cregister_ngc__parameterized2_99       |    32|
-|1548  |                  cregister                                                                  |mvp_cregister__parameterized3_100          |    32|
-|1549  |              _rf2_31_0_                                                                     |mvp_cregister_wide__parameterized2_69      |    32|
-|1550  |                cregister                                                                    |mvp_cregister_ngc__parameterized2_97       |    32|
-|1551  |                  cregister                                                                  |mvp_cregister__parameterized3_98           |    32|
-|1552  |              _rf30_31_0_                                                                    |mvp_cregister_wide__parameterized2_70      |    32|
-|1553  |                cregister                                                                    |mvp_cregister_ngc__parameterized2_95       |    32|
-|1554  |                  cregister                                                                  |mvp_cregister__parameterized3_96           |    32|
-|1555  |              _rf31_31_0_                                                                    |mvp_cregister_wide__parameterized2_71      |    96|
-|1556  |                cregister                                                                    |mvp_cregister_ngc__parameterized2_93       |    96|
-|1557  |                  cregister                                                                  |mvp_cregister__parameterized3_94           |    96|
-|1558  |              _rf3_31_0_                                                                     |mvp_cregister_wide__parameterized2_72      |   191|
-|1559  |                cregister                                                                    |mvp_cregister_ngc__parameterized2_91       |   191|
-|1560  |                  cregister                                                                  |mvp_cregister__parameterized3_92           |   191|
-|1561  |              _rf4_31_0_                                                                     |mvp_cregister_wide__parameterized2_73      |    32|
-|1562  |                cregister                                                                    |mvp_cregister_ngc__parameterized2_89       |    32|
-|1563  |                  cregister                                                                  |mvp_cregister__parameterized3_90           |    32|
-|1564  |              _rf5_31_0_                                                                     |mvp_cregister_wide__parameterized2_74      |    32|
-|1565  |                cregister                                                                    |mvp_cregister_ngc__parameterized2_87       |    32|
-|1566  |                  cregister                                                                  |mvp_cregister__parameterized3_88           |    32|
-|1567  |              _rf6_31_0_                                                                     |mvp_cregister_wide__parameterized2_75      |    32|
-|1568  |                cregister                                                                    |mvp_cregister_ngc__parameterized2_85       |    32|
-|1569  |                  cregister                                                                  |mvp_cregister__parameterized3_86           |    32|
-|1570  |              _rf7_31_0_                                                                     |mvp_cregister_wide__parameterized2_76      |    96|
-|1571  |                cregister                                                                    |mvp_cregister_ngc__parameterized2_83       |    96|
-|1572  |                  cregister                                                                  |mvp_cregister__parameterized3_84           |    96|
-|1573  |              _rf8_31_0_                                                                     |mvp_cregister_wide__parameterized2_77      |    32|
-|1574  |                cregister                                                                    |mvp_cregister_ngc__parameterized2_81       |    32|
-|1575  |                  cregister                                                                  |mvp_cregister__parameterized3_82           |    32|
-|1576  |              _rf9_31_0_                                                                     |mvp_cregister_wide__parameterized2_78      |    32|
-|1577  |                cregister                                                                    |mvp_cregister_ngc__parameterized2_79       |    32|
-|1578  |                  cregister                                                                  |mvp_cregister__parameterized3_80           |    32|
-|1579  |          siu                                                                                |m14k_siu                                   |    66|
-|1580  |            _cdreset                                                                         |mvp_register_43                            |     2|
-|1581  |            _siu_coldreset                                                                   |mvp_register_44                            |    35|
-|1582  |            _siu_softreset                                                                   |mvp_register_45                            |    28|
-|1583  |            _wmreset                                                                         |mvp_register_46                            |     1|
-|1584  |        dcache                                                                               |m14k_dc                                    |    78|
-|1585  |          dataram                                                                            |dataram_2k2way_xilinx_27                   |    40|
-|1586  |            ram__data_inst0                                                                  |RAMB4K_S8_35                               |     9|
-|1587  |            ram__data_inst1                                                                  |RAMB4K_S8_36                               |     9|
-|1588  |            ram__data_inst2                                                                  |RAMB4K_S8_37                               |     9|
-|1589  |            ram__data_inst3                                                                  |RAMB4K_S8_38                               |     9|
-|1590  |            ram__data_inst4                                                                  |RAMB4K_S8_39                               |     1|
-|1591  |            ram__data_inst5                                                                  |RAMB4K_S8_40                               |     1|
-|1592  |            ram__data_inst6                                                                  |RAMB4K_S8_41                               |     1|
-|1593  |            ram__data_inst7                                                                  |RAMB4K_S8_42                               |     1|
-|1594  |          tagram                                                                             |tagram_2k2way_xilinx_28                    |    32|
-|1595  |            ram__tag_inst0                                                                   |RAMB4K_S16_31                              |    18|
-|1596  |            ram__tag_inst1                                                                   |RAMB4K_S16_32                              |    11|
-|1597  |            ram__tag_inst2                                                                   |RAMB4K_S16_33                              |     1|
-|1598  |            ram__tag_inst3                                                                   |RAMB4K_S16_34                              |     2|
-|1599  |          wsram                                                                              |d_wsram_2k2way_xilinx                      |     6|
-|1600  |            d_wsram___inst0                                                                  |RAMB4K_S2                                  |     2|
-|1601  |            d_wsram___inst1                                                                  |RAMB4K_S2_29                               |     2|
-|1602  |            d_wsram___inst2                                                                  |RAMB4K_S2_30                               |     2|
-|1603  |        icache                                                                               |m14k_ic                                    |    69|
-|1604  |          dataram                                                                            |dataram_2k2way_xilinx                      |    40|
-|1605  |            ram__data_inst0                                                                  |RAMB4K_S8                                  |     9|
-|1606  |            ram__data_inst1                                                                  |RAMB4K_S8_20                               |     9|
-|1607  |            ram__data_inst2                                                                  |RAMB4K_S8_21                               |     9|
-|1608  |            ram__data_inst3                                                                  |RAMB4K_S8_22                               |     9|
-|1609  |            ram__data_inst4                                                                  |RAMB4K_S8_23                               |     1|
-|1610  |            ram__data_inst5                                                                  |RAMB4K_S8_24                               |     1|
-|1611  |            ram__data_inst6                                                                  |RAMB4K_S8_25                               |     1|
-|1612  |            ram__data_inst7                                                                  |RAMB4K_S8_26                               |     1|
-|1613  |          tagram                                                                             |tagram_2k2way_xilinx                       |    29|
-|1614  |            ram__tag_inst0                                                                   |RAMB4K_S16                                 |    11|
-|1615  |            ram__tag_inst1                                                                   |RAMB4K_S16_17                              |     9|
-|1616  |            ram__tag_inst2                                                                   |RAMB4K_S16_18                              |     6|
-|1617  |            ram__tag_inst3                                                                   |RAMB4K_S16_19                              |     3|
-|1618  |      udi                                                                                    |m14k_udi_custom                            |   307|
-|1619  |        _UDI_stall_m_reg                                                                     |mvp_register                               |     1|
-|1620  |        _hi_31_0_                                                                            |mvp_cregister_wide__parameterized2         |    32|
-|1621  |          cregister                                                                          |mvp_cregister_ngc__parameterized2_15       |    32|
-|1622  |            cregister                                                                        |mvp_cregister__parameterized3_16           |    32|
-|1623  |        _inst_s1_5_0_                                                                        |mvp_register__parameterized12              |     7|
-|1624  |        _inst_s2_5_0_                                                                        |mvp_cregister_wide                         |   103|
-|1625  |          cregister                                                                          |mvp_cregister_ngc                          |   103|
-|1626  |            cregister                                                                        |mvp_cregister                              |   103|
-|1627  |        _lo_31_0_                                                                            |mvp_cregister_wide__parameterized2_0       |    32|
-|1628  |          cregister                                                                          |mvp_cregister_ngc__parameterized2_13       |    32|
-|1629  |            cregister                                                                        |mvp_cregister__parameterized3_14           |    32|
-|1630  |        _rs_s1_31_0_                                                                         |mvp_cregister_wide__parameterized2_1       |    32|
-|1631  |          cregister                                                                          |mvp_cregister_ngc__parameterized2_11       |    32|
-|1632  |            cregister                                                                        |mvp_cregister__parameterized3_12           |    32|
-|1633  |        _rt_s1_31_0_                                                                         |mvp_cregister_wide__parameterized2_2       |    32|
-|1634  |          cregister                                                                          |mvp_cregister_ngc__parameterized2_9        |    32|
-|1635  |            cregister                                                                        |mvp_cregister__parameterized3_10           |    32|
-|1636  |        _run_udi_s1                                                                          |mvp_register_3                             |     1|
-|1637  |        _run_udi_s2                                                                          |mvp_register_4                             |     1|
-|1638  |        _swp_hi_s2_31_0_                                                                     |mvp_cregister_wide__parameterized2_5       |    32|
-|1639  |          cregister                                                                          |mvp_cregister_ngc__parameterized2_7        |    32|
-|1640  |            cregister                                                                        |mvp_cregister__parameterized3_8            |    32|
-|1641  |        _swp_lo_s2_31_0_                                                                     |mvp_cregister_wide__parameterized2_6       |    32|
-|1642  |          cregister                                                                          |mvp_cregister_ngc__parameterized2          |    32|
-|1643  |            cregister                                                                        |mvp_cregister__parameterized3              |    32|
-|1644  |        _udi_in_m                                                                            |mvp_cregister__parameterized1              |     1|
-|1645  |  vta                                                                                        |dtg                                        |    93|
-+------+---------------------------------------------------------------------------------------------+-------------------------------------------+------+
----------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:05:43 ; elapsed = 00:06:35 . Memory (MB): peak = 1583.480 ; gain = 1274.496
----------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 995 warnings.

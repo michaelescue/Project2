@@ -108,7 +108,7 @@ module mfp_nexys4_ddr(
                     .SI_ColdReset_N(JB[8]),
                     .EJ_DINT(1'b0),
                     .IO_Switch(swtch_db),
-                    .IO_PB(pbtn_db[5:1]),
+                    .IO_PB({pbtn_db[2], pbtn_db[3], pbtn_db[5], pbtn_db[1], pbtn_db[4]}),
                     .IO_LED(LED),
                     .IO_7SEGEN_N(AN),
                     .IO_SEG_N(io_wire),

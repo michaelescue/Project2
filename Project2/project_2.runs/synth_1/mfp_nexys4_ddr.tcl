@@ -18,8 +18,6 @@ proc create_report { reportName command } {
   }
 }
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -35,13 +33,13 @@ set_property ip_repo_paths n:/ECE540/ECE540_Project2/proj2_release_r1_0/ece540_i
 set_property ip_output_repo n:/ECE540/ECE540_Project2/Project2/project_2.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 add_files N:/ECE540/ECE540_Project2/orientation0.coe
-add_files n:/ECE540/ECE540_Project2/orientation45.coe
-add_files n:/ECE540/ECE540_Project2/orientation90.coe
-add_files n:/ECE540/ECE540_Project2/orientation135.coe
-add_files n:/ECE540/ECE540_Project2/orientation180.coe
-add_files n:/ECE540/ECE540_Project2/orientation225.coe
-add_files n:/ECE540/ECE540_Project2/orientation315.coe
-add_files n:/ECE540/ECE540_Project2/orientation270.coe
+add_files N:/ECE540/ECE540_Project2/orientation45.coe
+add_files N:/ECE540/ECE540_Project2/orientation90.coe
+add_files N:/ECE540/ECE540_Project2/orientation135.coe
+add_files N:/ECE540/ECE540_Project2/orientation180.coe
+add_files N:/ECE540/ECE540_Project2/orientation225.coe
+add_files N:/ECE540/ECE540_Project2/orientation315.coe
+add_files N:/ECE540/ECE540_Project2/orientation270.coe
 read_verilog {
   N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_const.vh
   N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_config.vh
@@ -222,7 +220,7 @@ read_verilog -library xil_defaultlib {
   N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/world_maps_part1/world_map.v
   N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/boards/nexys4_ddr/mfp_nexys4_ddr.v
 }
-read_ip -quiet n:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6.xci
+read_ip -quiet N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6.xci
 set_property used_in_implementation false [get_files -all n:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6_ooc.xdc]
 
 read_ip -quiet N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
@@ -235,22 +233,22 @@ read_ip -quiet N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/ro
 read_ip -quiet N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
 set_property used_in_implementation false [get_files -all n:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
 
-read_ip -quiet n:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci
+read_ip -quiet N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci
 set_property used_in_implementation false [get_files -all n:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_ooc.xdc]
 
-read_ip -quiet n:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci
+read_ip -quiet N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci
 set_property used_in_implementation false [get_files -all n:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2_ooc.xdc]
 
-read_ip -quiet n:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci
+read_ip -quiet N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci
 set_property used_in_implementation false [get_files -all n:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3_ooc.xdc]
 
-read_ip -quiet n:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4.xci
+read_ip -quiet N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4.xci
 set_property used_in_implementation false [get_files -all n:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4_ooc.xdc]
 
-read_ip -quiet n:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5.xci
+read_ip -quiet N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5.xci
 set_property used_in_implementation false [get_files -all n:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5_ooc.xdc]
 
-read_ip -quiet n:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7.xci
+read_ip -quiet N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7.xci
 set_property used_in_implementation false [get_files -all n:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7_ooc.xdc]
 
 read_edif N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/world_maps_part1/world_map.ngc

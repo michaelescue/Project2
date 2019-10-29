@@ -32,7 +32,7 @@ module icon(
 	assign rowdiff = (pixel_row - matchedrow);
 	assign coldiff = (pixel_column - matchedcol);
 
-	assign icon_index = {rowdiff[4:1], coldiff[4:1]}; // Tied into input address of ROM
+	assign icon_index = {rowdiff[6:3], coldiff[6:3]}; // Tied into input address of ROM
 	
 	blk_mem_gen_0 orientation0 (
       .clka(clk),    // input wire clka
