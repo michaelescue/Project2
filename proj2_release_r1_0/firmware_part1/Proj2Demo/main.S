@@ -284,6 +284,10 @@ SP_MVMTF 	= 0x1B		# Fast right turn - display lower case R
 #	.data
 	.align 2    # Put next label on a word boundary
 
+# Backwards Direction Variables
+SP_BKWDS:	.byte 	0	# Used to store the heading which is backwards.
+						# Updated while 
+	
 # 7 segment display variables
 SP_DIG0:	.byte   0		
 SP_DIG1:	.byte   0		
@@ -740,9 +744,9 @@ next_step:		lb 		$25,(SENSOR_REG)
 				AND 	$2,	$2,MSKPROXR
 				AND 	$3,	$3,MSKBLKL
 
-				jal		DEB_rdbtns					# Read the pushbuttons. buttons returned in $4
+# removed		jal		DEB_rdbtns					# Read the pushbuttons. buttons returned in $4
 				nop
-				jal		btn2mot						# and calculate new MotCtl - returned in $2
+# removed		jal		btn2mot						# and calculate new MotCtl - returned in $2
 				nop
 				li 		$25, 	PORT_BOTCTRL
 				sw		$2,		0($25)				# tell Rojobot what to do
