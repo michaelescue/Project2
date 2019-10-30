@@ -165,6 +165,7 @@ module mfp_nexys4_ddr(
  //Icon module
  icon icon1(
      clk_out2,  // 75Mhz clock
+     ~pbtn_db[0],
      LocX_reg,	// From rojobot
      LocY_reg,    // From rojobot
      BotInfo_reg,    // From rojobot

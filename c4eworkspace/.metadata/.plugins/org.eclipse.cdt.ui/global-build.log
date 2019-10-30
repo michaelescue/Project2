@@ -1,0 +1,91 @@
+11:26:05 **** Build of configuration Default for project proje2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" boot.S -o boot.o
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -D_BOOTCODE crt0.S -o crt0.o
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" exceptions.S -o exceptions.o
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" dummy.S -o dummy.o
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+mips-mti-elf-size program.elf
+   text	   data	    bss	    dec	    hex	filename
+    956	   1580	      0	   2536	    9e8	program.elf
+mips-mti-elf-objdump -D -l -t program.elf > program.dis
+mips-mti-elf-objdump -D program.elf > program.txt
+mips-mti-elf-objcopy program.elf -O srec program.rec
+11:26:56 **** Incremental Build of configuration Default for project proje2 ****
+make all 
+make: Nothing to be done for `all'.
+11:27:35 **** Incremental Build of configuration Default for project proje2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+c:\PROGRA~1\IMAGIN~1\TOOLCH~1\mips-mti-elf\2016.05-03\bin\mips-mti-elf-objcopy.exe: unable to rename 'program.elf'; reason: Permission denied
+make: *** [program.elf] Error 1
+11:27:42 **** Incremental Build of configuration Default for project proje2 ****
+make all 
+make: Nothing to be done for `all'.
+11:27:49 **** Incremental Build of configuration Default for project proje2 ****
+make all 
+make: Nothing to be done for `all'.
+11:58:49 **** Incremental Build of configuration Default for project proje2 ****
+make all 
+make: Nothing to be done for `all'.
+11:59:00 **** Incremental Build of configuration Default for project proje2 ****
+make all 
+make: Nothing to be done for `all'.
+12:22:22 **** Incremental Build of configuration Default for project proje2 ****
+make all 
+make: Nothing to be done for `all'.
+12:22:54 **** Incremental Build of configuration Default for project proje2 ****
+make all 
+make: Nothing to be done for `all'.
+12:23:02 **** Incremental Build of configuration Default for project proje2 ****
+make all 
+make: Nothing to be done for `all'.
+12:23:19 **** Incremental Build of configuration Default for project proje2 ****
+make all 
+make: Nothing to be done for `all'.
+12:59:11 **** Incremental Build of configuration Default for project proje2 ****
+make all 
+make: Nothing to be done for `all'.
+13:13:39 **** Incremental Build of configuration Default for project proje2 ****
+make all 
+make: Nothing to be done for `all'.
+13:13:45 **** Incremental Build of configuration Default for project proje2 ****
+make all 
+make: Nothing to be done for `all'.
+13:13:55 **** Incremental Build of configuration Default for project proje2 ****
+make all 
+make: Nothing to be done for `all'.
+13:24:30 **** Incremental Build of configuration Default for project proje2 ****
+make all 
+make: Nothing to be done for `all'.
+14:35:28 **** Incremental Build of configuration Default for project proje2 ****
+make all 
+make: Nothing to be done for `all'.
+14:35:32 **** Incremental Build of configuration Default for project proje2 ****
+make all 
+make: Nothing to be done for `all'.
+16:23:37 **** Incremental Build of configuration Default for project proje2 ****
+make all 
+make: Nothing to be done for `all'.
+16:23:44 **** Incremental Build of configuration Default for project proje2 ****
+make all 
+make: Nothing to be done for `all'.
+17:03:16 **** Incremental Build of configuration Default for project proje2 ****
+make all 
+make: Nothing to be done for `all'.
+17:03:21 **** Incremental Build of configuration Default for project proje2 ****
+make all 
+make: Nothing to be done for `all'.
+17:30:02 **** Incremental Build of configuration Default for project proje2 ****
+make all 
+make: Nothing to be done for `all'.
+17:30:07 **** Incremental Build of configuration Default for project proje2 ****
+make all 
+make: Nothing to be done for `all'.
+17:30:09 **** Incremental Build of configuration Default for project proje2 ****
+make all 
+make: Nothing to be done for `all'.

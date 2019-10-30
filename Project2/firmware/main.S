@@ -281,7 +281,7 @@ SP_MVMTF 	= 0x1B		# Fast right turn - display lower case R
 # Different variables for lookup table, BotInfo register, LOCx_REG, LOCy_REG, Old_Heading register,
 # 7 segment displays, and other variables required. All are byte wides except SP_TEMP which is word
 # wide.
-	.data
+#	.data
 	.align 2    # Put next label on a word boundary
 
 # 7 segment display variables
