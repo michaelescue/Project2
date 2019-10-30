@@ -11,24 +11,17 @@
 source mfp_nexys4_ddr.tcl -notrace
 Command: synth_design -top mfp_nexys4_ddr -part xc7a100tcsg324-1
 Starting synth_design
-WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
-N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci
-N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4.xci
-N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5.xci
-N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7.xci
-N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6.xci
-
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 8404 
+INFO: Helper process launched with PID 12060 
 WARNING: [Synth 8-2507] parameter declaration becomes local in debounce with formal parameter declaration list [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/project_simplebot/hdl/debounce.v:48]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 432.051 ; gain = 122.887
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 432.469 ; gain = 122.820
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'mfp_nexys4_ddr' [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/boards/nexys4_ddr/mfp_nexys4_ddr.v:17]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [N:/ECE540/ECE540_Project2/Project2/project_2.runs/synth_1/.Xil/Vivado-14456-caplab12/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [N:/ECE540/ECE540_Project2/Project2/project_2.runs/synth_1/.Xil/Vivado-14456-caplab12/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [N:/ECE540/ECE540_Project2/Project2/project_2.runs/synth_1/.Xil/Vivado-11312-caplab12/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [N:/ECE540/ECE540_Project2/Project2/project_2.runs/synth_1/.Xil/Vivado-11312-caplab12/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'IBUF' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19473]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
@@ -1002,7 +995,7 @@ WARNING: [Synth 8-3331] design mfp_ahb_b_ram has unconnected port HADDR[27]
 WARNING: [Synth 8-3331] design mfp_ahb_b_ram has unconnected port HADDR[26]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 683.828 ; gain = 374.664
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 683.379 ; gain = 373.730
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1025,10 +1018,10 @@ WARNING: [Synth 8-3295] tying undriven pin top:BistIn[0] to constant 0 [N:/ECE54
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 683.828 ; gain = 374.664
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:28 . Memory (MB): peak = 683.379 ; gain = 373.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 683.828 ; gain = 374.664
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:28 . Memory (MB): peak = 683.379 ; gain = 373.730
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1068,7 +1061,7 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1084.797 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 1083.926 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'icon1/orientation0' at clock pin 'clka' is different from the actual clock period '13.333', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'icon1/orientation135' at clock pin 'clka' is different from the actual clock period '13.333', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'icon1/orientation180' at clock pin 'clka' is different from the actual clock period '13.333', this can lead to different synthesis results.
@@ -1078,7 +1071,7 @@ WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context s
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'icon1/orientation45' at clock pin 'clka' is different from the actual clock period '13.333', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'icon1/orientation90' at clock pin 'clka' is different from the actual clock period '13.333', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:52 . Memory (MB): peak = 1084.797 ; gain = 775.633
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:55 . Memory (MB): peak = 1083.926 ; gain = 774.277
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
 ---------------------------------------------------------------------------------
@@ -1158,7 +1151,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'horiz_pix_min_reg' [N:/ECE5
 WARNING: [Synth 8-327] inferring latch for variable 'vert_pix_min_reg' [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/Project2/icon.v:84]
 WARNING: [Synth 8-327] inferring latch for variable 'horiz_pix_max_reg' [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/Project2/icon.v:83]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:49 ; elapsed = 00:01:13 . Memory (MB): peak = 1084.797 ; gain = 775.633
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:48 ; elapsed = 00:01:16 . Memory (MB): peak = 1083.926 ; gain = 774.277
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'mfp_sys/top/cpu/core/clock_gate/buff_fclk' (m14k_clock_buf) to 'mfp_sys/top/cpu/core/clock_gate/buff_gclk'
 INFO: [Synth 8-223] decloning instance 'mfp_sys/top/cpu/core/clock_gate/buff_fclk' (m14k_clock_buf) to 'mfp_sys/top/cpu/core/clock_gate/buff_gtlbclk'
@@ -8793,7 +8786,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (corei_1/c
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (corei_1/cpz/\_cpz_taglo_0_0_/q_reg[0] )
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:35 ; elapsed = 00:05:13 . Memory (MB): peak = 1579.129 ; gain = 1269.965
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:24 ; elapsed = 00:05:07 . Memory (MB): peak = 1581.777 ; gain = 1272.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -8932,13 +8925,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_wiz_0/clk_out1' to pi
 INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_wiz_0/clk_out2' to pin 'clk_wiz_0/bbstub_clk_out2/O'
 INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:44 ; elapsed = 00:05:23 . Memory (MB): peak = 1579.129 ; gain = 1269.965
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:33 ; elapsed = 00:05:17 . Memory (MB): peak = 1581.777 ; gain = 1272.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:04:48 ; elapsed = 00:05:27 . Memory (MB): peak = 1579.129 ; gain = 1269.965
+Finished Timing Optimization : Time (s): cpu = 00:04:37 ; elapsed = 00:05:21 . Memory (MB): peak = 1581.777 ; gain = 1272.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -9053,7 +9046,7 @@ INFO: [Synth 8-4480] The timing for the instance mfp_sys/mfp_ahb_withloader/mfp_
 INFO: [Synth 8-4480] The timing for the instance mfp_sys/mfp_ahb_withloader/mfp_ahb/mfp_ahb_p_ram/ram_p1/ram_reg_1_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Common 17-14] Message 'Synth 8-4480' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:05:01 ; elapsed = 00:05:41 . Memory (MB): peak = 1579.129 ; gain = 1269.965
+Finished Technology Mapping : Time (s): cpu = 00:04:49 ; elapsed = 00:05:34 . Memory (MB): peak = 1581.777 ; gain = 1272.129
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -9081,7 +9074,7 @@ INFO: [Synth 8-6064] Net \mfp_sys/mfp_ahb_withloader/mfp_ahb/mfp_ahb_p_ram/we_ma
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:05:03 ; elapsed = 00:05:43 . Memory (MB): peak = 1579.129 ; gain = 1269.965
+Finished IO Insertion : Time (s): cpu = 00:04:52 ; elapsed = 00:05:36 . Memory (MB): peak = 1581.777 ; gain = 1272.129
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -9094,7 +9087,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:05:03 ; elapsed = 00:05:43 . Memory (MB): peak = 1579.129 ; gain = 1269.965
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:52 ; elapsed = 00:05:36 . Memory (MB): peak = 1581.777 ; gain = 1272.129
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -9106,25 +9099,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:07 ; elapsed = 00:05:48 . Memory (MB): peak = 1579.129 ; gain = 1269.965
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:56 ; elapsed = 00:05:41 . Memory (MB): peak = 1581.777 ; gain = 1272.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:05:08 ; elapsed = 00:05:49 . Memory (MB): peak = 1579.129 ; gain = 1269.965
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:57 ; elapsed = 00:05:42 . Memory (MB): peak = 1581.777 ; gain = 1272.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:05:09 ; elapsed = 00:05:49 . Memory (MB): peak = 1579.129 ; gain = 1269.965
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:58 ; elapsed = 00:05:42 . Memory (MB): peak = 1581.777 ; gain = 1272.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:05:09 ; elapsed = 00:05:50 . Memory (MB): peak = 1579.129 ; gain = 1269.965
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:58 ; elapsed = 00:05:43 . Memory (MB): peak = 1581.777 ; gain = 1272.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -10859,11 +10852,11 @@ Report Instance Areas:
 |1645  |  vta                                                                                        |dtg                                        |    88|
 +------+---------------------------------------------------------------------------------------------+-------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:05:09 ; elapsed = 00:05:51 . Memory (MB): peak = 1579.129 ; gain = 1269.965
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:58 ; elapsed = 00:05:44 . Memory (MB): peak = 1581.777 ; gain = 1272.129
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 995 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:04:38 ; elapsed = 00:05:32 . Memory (MB): peak = 1579.129 ; gain = 868.996
-Synthesis Optimization Complete : Time (s): cpu = 00:05:09 ; elapsed = 00:05:51 . Memory (MB): peak = 1579.129 ; gain = 1269.965
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:28 ; elapsed = 00:05:25 . Memory (MB): peak = 1581.777 ; gain = 871.582
+Synthesis Optimization Complete : Time (s): cpu = 00:04:58 ; elapsed = 00:05:44 . Memory (MB): peak = 1581.777 ; gain = 1272.129
 INFO: [Project 1-571] Translating synthesized netlist
 Release 14.7 - ngc2edif P_INT.20180321 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
@@ -10890,12 +10883,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM128X1S => RAM128X1S (MUXF7, RAMS64E, RAMS64E): 3 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-711 Infos, 332 Warnings, 0 Critical Warnings and 0 Errors encountered.
+711 Infos, 331 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:05:20 ; elapsed = 00:06:05 . Memory (MB): peak = 1579.129 ; gain = 1281.438
+synth_design: Time (s): cpu = 00:05:08 ; elapsed = 00:05:59 . Memory (MB): peak = 1581.777 ; gain = 1283.738
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'N:/ECE540/ECE540_Project2/Project2/project_2.runs/synth_1/mfp_nexys4_ddr.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1579.129 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1581.777 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file mfp_nexys4_ddr_utilization_synth.rpt -pb mfp_nexys4_ddr_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.205 . Memory (MB): peak = 1579.129 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Oct 29 23:37:22 2019...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.198 . Memory (MB): peak = 1581.777 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 30 05:00:56 2019...

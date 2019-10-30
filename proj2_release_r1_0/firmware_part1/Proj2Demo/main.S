@@ -794,6 +794,7 @@ next_step:
 		li $25, PORT_BOTINFO	# Load Bot info reg address.
 		lw $4, 0($25)			# Load Bot info reg value.
 		andi $8, $4, 0x7		# update current orientation
+		haltspin:
 		li $4, 0x7
 		subu $4, $8, $4
 		beqz $4, settgtorient
@@ -828,14 +829,16 @@ next_step:
 	fwd:
 		# Go Forward	*MotCtl_in reg*					
 		li $16, 0x0
+		subu $4, $18, $17
+		beqz $4, haltspin
 		li $19, SP_LFRF			# Load control to move forward.
 		
 	updtbkwds:
 		li $25, PORT_BOTINFO	# Load Bot info reg address.
 		lw $4, 0($25)			# Load Bot infor reg value.
 		ANDi $4, $4, 0x07 		# Mask out all but Orient info reg from port.
-		addi $4, $4, 0x8		# add 8
-		srl $4, $4, 0x1			# divide by 2
+		li $17, 0x4
+		subu $4, $4, $17		# subtract 4
 		and $4, $4, 0x7
 		move $17, $4			# Store the Backwards orientation to the backwards reg.
 		
@@ -851,10 +854,10 @@ next_step:
 		li $19, SP_LRRR			# Load control to reverse.
 		li $4, 0x2				# Reverse Flag.
 		move $16, $4			# Write to register.
-		li $15, 0x3			# Update state 
+		li $15, 0x3				# Update state
 		
 		beqz $2, sethalt		# change state if line present.
-		li $15, 0x3			# Next state is reverse.
+		li $15, 0x3				# Next state is reverse.
 		b ret_next_step		
 		
 		sethalt: li $15, 0x0	# Set next state to halt
@@ -865,17 +868,19 @@ next_step:
 		li $25, PORT_BOTINFO	# Load Bot info reg address.
 		lw $4, 0($25)			# Load Bot info reg value.
 		andi $18, $4, 0x7		# update current orientation
-		
+		andi $8, $8, 0x7
 		subu $4, $18, $8
-		beqz $4, setfwd
+		beqz $4, setfwd			# Test for matching dirctions before moving forward.
+
 
 		li $16, 0x0				# Clear reverse flag.
 		li $19, SP_LFRS			# Load control to turn right .
 		
-		li $15, 0x1			# update state 
+		li $15, 0x1				# update state
 		b ret_next_step
 		
-		setfwd:	li $15, 0x2	# Next state is fwd.
+		setfwd:
+		li $15, 0x2				# Next state is fwd.
 		b ret_next_step
 				
 
