@@ -357,10 +357,6 @@ SP_TEMP: 	.word	0x00
 .globl main
 
 main:
-				li $16, 0x0						# initialize reverse flag
-				li $25, PORT_BOTINFO	# Load Bot info reg address.
-				lw $4, 0($25)			# Load Bot info reg value.
-				ANDi $18, $4, 0x07 		# Mask out all but lower 3 Orient bits from info reg from port
 				lui   $12, 0xbf80    			# $12 = address of LEDs (0xbf800000)
 				li	$2,		FALSE				# clear the semaphore
 				jal	LED_wrleds					#
@@ -378,6 +374,7 @@ main:
 				sb $2, SP_RGTC0NT
 				li $18, 0x2						# initialize orientation.
 				li $15, 0x0						# initialize robot as stopped.
+				li $16, 0x0						# initialize reverse flag
 
 
 # ==================
@@ -831,8 +828,12 @@ next_step:
 		li $16, 0x0
 		subu $4, $18, $17
 		beqz $4, haltspin
-		li $19, SP_LFRF			# Load control to move forward.
+		li $4, SP_LFRF
+		sub $4, $19, $4			# Test to see if already moving forward.
+		beqz $4, updtbkwds
+		b line_present
 		
+
 	updtbkwds:
 		li $25, PORT_BOTINFO	# Load Bot info reg address.
 		lw $4, 0($25)			# Load Bot infor reg value.
@@ -842,8 +843,10 @@ next_step:
 		and $4, $4, 0x7
 		move $17, $4			# Store the Backwards orientation to the backwards reg.
 		
+	line_present:
 		bnez $2, setreverse		# change state to reverse if line is not present.
 		li $15, 0x2			# update next state to fwd
+		li $19, SP_LFRF			# Load control to move forward.
 		b ret_next_step
 		
 		setreverse: li $15, 0x3	#Next state is reverse 
@@ -852,9 +855,8 @@ next_step:
 	reverse:
 		# Reverse	*MotCtl_in reg*
 		li $19, SP_LRRR			# Load control to reverse.
-		li $4, 0x2				# Reverse Flag.
+		li $4, 0x2				# Reverse Flag value
 		move $16, $4			# Write to register.
-		li $15, 0x3				# Update state
 		
 		beqz $2, sethalt		# change state if line present.
 		li $15, 0x3				# Next state is reverse.
@@ -865,6 +867,7 @@ next_step:
 
 	r45:
 		# Test to see if orientation matches backwards register
+		li $16, 0x0				# Clear reverse flag.
 		li $25, PORT_BOTINFO	# Load Bot info reg address.
 		lw $4, 0($25)			# Load Bot info reg value.
 		andi $18, $4, 0x7		# update current orientation
@@ -872,8 +875,6 @@ next_step:
 		subu $4, $18, $8
 		beqz $4, setfwd			# Test for matching dirctions before moving forward.
 
-
-		li $16, 0x0				# Clear reverse flag.
 		li $19, SP_LFRS			# Load control to turn right .
 		
 		li $15, 0x1				# update state
