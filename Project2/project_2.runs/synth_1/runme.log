@@ -15,6 +15,7 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
 <<<<<<< HEAD
+<<<<<<< HEAD
 INFO: Helper process launched with PID 14720 
 WARNING: [Synth 8-2507] parameter declaration becomes local in debounce with formal parameter declaration list [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/project_simplebot/hdl/debounce.v:48]
 WARNING: [Synth 8-1083] icon was previously declared without a range [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/boards/nexys4_ddr/mfp_nexys4_ddr.v:76]
@@ -28,6 +29,8 @@ INFO: [Synth 8-6157] synthesizing module 'mfp_nexys4_ddr' [N:/ECE540/ECE540_Proj
 INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [N:/ECE540/ECE540_Project2/Project2/project_2.runs/synth_1/.Xil/Vivado-14028-caplab12/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [N:/ECE540/ECE540_Project2/Project2/project_2.runs/synth_1/.Xil/Vivado-14028-caplab12/realtime/clk_wiz_0_stub.v:5]
 =======
+=======
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 INFO: Helper process launched with PID 6844 
 WARNING: [Synth 8-2507] parameter declaration becomes local in debounce with formal parameter declaration list [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/project_simplebot/hdl/debounce.v:48]
 WARNING: [Synth 8-1083] icon was previously declared without a range [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/boards/nexys4_ddr/mfp_nexys4_ddr.v:76]
@@ -40,6 +43,9 @@ Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memor
 INFO: [Synth 8-6157] synthesizing module 'mfp_nexys4_ddr' [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/boards/nexys4_ddr/mfp_nexys4_ddr.v:17]
 INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [N:/Project2/Project2/project_2.runs/synth_1/.Xil/Vivado-8472-caplab07/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [N:/Project2/Project2/project_2.runs/synth_1/.Xil/Vivado-8472-caplab07/realtime/clk_wiz_0_stub.v:5]
+<<<<<<< HEAD
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
+=======
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 INFO: [Synth 8-6157] synthesizing module 'IBUF' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19473]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
@@ -51,7 +57,11 @@ INFO: [Synth 8-6155] done synthesizing module 'IBUF' (2#1) [D:/Xilinx/Vivado/201
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:609]
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:609]
 <<<<<<< HEAD
+<<<<<<< HEAD
 INFO: [Synth 8-6157] synthesizing module 'debounce' [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/project_simplebot/hdl/debounce.v:26]
+=======
+INFO: [Synth 8-6157] synthesizing module 'debounce' [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/project_simplebot/hdl/debounce.v:26]
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 INFO: [Synth 8-6157] synthesizing module 'debounce' [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/project_simplebot/hdl/debounce.v:26]
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -62,6 +72,7 @@ INFO: [Synth 8-6157] synthesizing module 'debounce' [N:/Project2/Project2/projec
 	Parameter SIMULATE bound to: 0 - type: integer 
 	Parameter SIMULATE_FREQUENCY_CNT bound to: 5 - type: integer 
 	Parameter pb0_in bound to: 4'b0001 
+<<<<<<< HEAD
 <<<<<<< HEAD
 INFO: [Synth 8-155] case statement is not full and has no default [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/project_simplebot/hdl/debounce.v:104]
 INFO: [Synth 8-155] case statement is not full and has no default [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/project_simplebot/hdl/debounce.v:105]
@@ -360,6 +371,8 @@ INFO: [Synth 8-6157] synthesizing module 'm14k_cpz_pc__parameterized0' [N:/ECE54
 INFO: [Synth 8-6155] done synthesizing module 'm14k_cpz_pc__parameterized0' (27#1) [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_cpz_pc.v:77]
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister_wide__parameterized12' [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_cregister_wide.v:69]
 =======
+=======
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 INFO: [Synth 8-155] case statement is not full and has no default [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/project_simplebot/hdl/debounce.v:104]
 INFO: [Synth 8-155] case statement is not full and has no default [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/project_simplebot/hdl/debounce.v:105]
 INFO: [Synth 8-155] case statement is not full and has no default [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/project_simplebot/hdl/debounce.v:106]
@@ -656,11 +669,15 @@ INFO: [Synth 8-6157] synthesizing module 'm14k_cpz_pc__parameterized0' [N:/Proje
 	Parameter EXL bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'm14k_cpz_pc__parameterized0' (27#1) [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_cpz_pc.v:77]
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister_wide__parameterized12' [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_cregister_wide.v:69]
+<<<<<<< HEAD
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
+=======
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 	Parameter WIDTH bound to: 21 - type: integer 
 	Parameter WIDTH bound to: 21 - type: integer 
 	Parameter WIDTH bound to: 21 - type: integer 
+<<<<<<< HEAD
 <<<<<<< HEAD
 INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized15' (27#1) [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_cregister.v:74]
 INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_ngc__parameterized12' (27#1) [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_cregister_ngc.v:71]
@@ -721,6 +738,8 @@ INFO: [Synth 8-226] default block is never used [N:/ECE540/ECE540_Project2/Proje
 	Parameter WIDTH bound to: 1 - type: integer 
 INFO: [Synth 8-226] default block is never used [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_mux2.v:88]
 =======
+=======
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized15' (27#1) [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_cregister.v:74]
 INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_ngc__parameterized12' (27#1) [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_cregister_ngc.v:71]
 INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_wide__parameterized12' (27#1) [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_cregister_wide.v:69]
@@ -779,6 +798,9 @@ INFO: [Synth 8-226] default block is never used [N:/Project2/Project2/project_2.
 INFO: [Synth 8-226] default block is never used [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_mux2.v:88]
 	Parameter WIDTH bound to: 1 - type: integer 
 INFO: [Synth 8-226] default block is never used [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_mux2.v:88]
+<<<<<<< HEAD
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
+=======
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 	Parameter SPECIAL bound to: 6'b000000 
 	Parameter SPECIAL2 bound to: 6'b011100 
@@ -816,7 +838,11 @@ INFO: [Synth 8-226] default block is never used [N:/Project2/Project2/project_2.
 	Parameter WIDTH bound to: 21 - type: integer 
 	Parameter WIDTH bound to: 21 - type: integer 
 <<<<<<< HEAD
+<<<<<<< HEAD
 INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_mdl_ctl.v:539]
+=======
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_mdl_ctl.v:539]
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_mdl_ctl.v:539]
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -839,15 +865,21 @@ INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mis
 	Parameter WIDTH bound to: 6 - type: integer 
 	Parameter WIDTH bound to: 2 - type: integer 
 <<<<<<< HEAD
+<<<<<<< HEAD
 WARNING: [Synth 8-3848] Net mpc_g_exc_e in module/entity m14k_mpc does not have driver. [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_mpc.v:1564]
 WARNING: [Synth 8-3848] Net prefx_e in module/entity m14k_mpc does not have driver. [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_mpc.v:873]
 INFO: [Synth 8-226] default block is never used [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_rf_rngc.v:277]
 INFO: [Synth 8-226] default block is never used [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_rf_rngc.v:277]
 =======
+=======
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 WARNING: [Synth 8-3848] Net mpc_g_exc_e in module/entity m14k_mpc does not have driver. [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_mpc.v:1564]
 WARNING: [Synth 8-3848] Net prefx_e in module/entity m14k_mpc does not have driver. [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_mpc.v:873]
 INFO: [Synth 8-226] default block is never used [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_rf_rngc.v:277]
 INFO: [Synth 8-226] default block is never used [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_rf_rngc.v:277]
+<<<<<<< HEAD
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
+=======
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 	Parameter WIDTH bound to: 32 - type: integer 
 	Parameter JW bound to: 28 - type: integer 
@@ -915,7 +947,11 @@ INFO: [Synth 8-226] default block is never used [N:/Project2/Project2/project_2.
 	Parameter M14K_TLB_UTLB_MSB bound to: 66 - type: integer 
 	Parameter WIDTH bound to: 22 - type: integer 
 <<<<<<< HEAD
+<<<<<<< HEAD
 INFO: [Synth 8-226] default block is never used [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_mux2.v:88]
+=======
+INFO: [Synth 8-226] default block is never used [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_mux2.v:88]
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 INFO: [Synth 8-226] default block is never used [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_mux2.v:88]
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -928,7 +964,11 @@ INFO: [Synth 8-226] default block is never used [N:/Project2/Project2/project_2.
 	Parameter WIDTH bound to: 3 - type: integer 
 	Parameter WIDTH bound to: 3 - type: integer 
 <<<<<<< HEAD
+<<<<<<< HEAD
 WARNING: [Synth 8-3848] Net guest_mode in module/entity m14k_tlb does not have driver. [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_tlb.v:264]
+=======
+WARNING: [Synth 8-3848] Net guest_mode in module/entity m14k_tlb does not have driver. [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_tlb.v:264]
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 WARNING: [Synth 8-3848] Net guest_mode in module/entity m14k_tlb does not have driver. [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_tlb.v:264]
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -989,6 +1029,7 @@ WARNING: [Synth 8-3848] Net guest_mode in module/entity m14k_tlb does not have d
 	Parameter D_BYTES bound to: 8 - type: integer 
 	Parameter WIDTH bound to: 10 - type: integer 
 <<<<<<< HEAD
+<<<<<<< HEAD
 INFO: [Synth 8-226] default block is never used [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_mux2.v:88]
 	Parameter WIDTH bound to: 18 - type: integer 
 INFO: [Synth 8-226] default block is never used [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_mux2.v:88]
@@ -997,6 +1038,8 @@ INFO: [Synth 8-226] default block is never used [N:/ECE540/ECE540_Project2/Proje
 	Parameter WIDTH bound to: 24 - type: integer 
 INFO: [Synth 8-226] default block is never used [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_mux2.v:88]
 =======
+=======
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 INFO: [Synth 8-226] default block is never used [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_mux2.v:88]
 	Parameter WIDTH bound to: 18 - type: integer 
 INFO: [Synth 8-226] default block is never used [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_mux2.v:88]
@@ -1004,6 +1047,9 @@ INFO: [Synth 8-226] default block is never used [N:/Project2/Project2/project_2.
 INFO: [Synth 8-226] default block is never used [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_mux2.v:88]
 	Parameter WIDTH bound to: 24 - type: integer 
 INFO: [Synth 8-226] default block is never used [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_mux2.v:88]
+<<<<<<< HEAD
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
+=======
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 	Parameter PARITY bound to: 0 - type: integer 
 	Parameter T_BITS bound to: 24 - type: integer 
@@ -1034,7 +1080,11 @@ INFO: [Synth 8-226] default block is never used [N:/Project2/Project2/project_2.
 	Parameter WIDTH bound to: 128 - type: integer 
 	Parameter WIDTH bound to: 128 - type: integer 
 <<<<<<< HEAD
+<<<<<<< HEAD
 INFO: [Synth 8-226] default block is never used [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_mux2.v:88]
+=======
+INFO: [Synth 8-226] default block is never used [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_mux2.v:88]
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 INFO: [Synth 8-226] default block is never used [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_mux2.v:88]
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -1058,7 +1108,11 @@ INFO: [Synth 8-226] default block is never used [N:/Project2/Project2/project_2.
 	Parameter WIDTH bound to: 34 - type: integer 
 	Parameter WIDTH bound to: 34 - type: integer 
 <<<<<<< HEAD
+<<<<<<< HEAD
 INFO: [Synth 8-226] default block is never used [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_mux2.v:88]
+=======
+INFO: [Synth 8-226] default block is never used [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_mux2.v:88]
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 INFO: [Synth 8-226] default block is never used [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_mux2.v:88]
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -1077,6 +1131,7 @@ INFO: [Synth 8-226] default block is never used [N:/Project2/Project2/project_2.
 	Parameter WIDTH bound to: 98 - type: integer 
 	Parameter WIDTH bound to: 98 - type: integer 
 <<<<<<< HEAD
+<<<<<<< HEAD
 INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_ejt_tck.v:884]
 INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_ejt_tck.v:884]
 	Parameter WIDTH bound to: 44 - type: integer 
@@ -1084,12 +1139,17 @@ INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mis
 	Parameter WIDTH bound to: 44 - type: integer 
 INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_ejt_tck.v:884]
 =======
+=======
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_ejt_tck.v:884]
 INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_ejt_tck.v:884]
 	Parameter WIDTH bound to: 44 - type: integer 
 	Parameter WIDTH bound to: 44 - type: integer 
 	Parameter WIDTH bound to: 44 - type: integer 
 INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_ejt_tck.v:884]
+<<<<<<< HEAD
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
+=======
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 	Parameter WIDTH bound to: 36 - type: integer 
 	Parameter TRIPSYNC bound to: 0 - type: integer 
@@ -1104,7 +1164,11 @@ INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mis
 	Parameter CM_ACK bound to: 4 - type: integer 
 	Parameter CM_PEND bound to: 8 - type: integer 
 <<<<<<< HEAD
+<<<<<<< HEAD
 INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_ejt_async_snd.v:240]
+=======
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_ejt_async_snd.v:240]
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_ejt_async_snd.v:240]
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -1120,7 +1184,11 @@ INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mis
 	Parameter CM_ACK bound to: 4 - type: integer 
 	Parameter CM_PEND bound to: 8 - type: integer 
 <<<<<<< HEAD
+<<<<<<< HEAD
 INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_ejt_async_snd.v:240]
+=======
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_ejt_async_snd.v:240]
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_ejt_async_snd.v:240]
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -1138,7 +1206,11 @@ INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mis
 	Parameter CM_ACK bound to: 4 - type: integer 
 	Parameter CM_PEND bound to: 8 - type: integer 
 <<<<<<< HEAD
+<<<<<<< HEAD
 INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_ejt_async_snd.v:240]
+=======
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_ejt_async_snd.v:240]
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_ejt_async_snd.v:240]
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -1151,6 +1223,7 @@ INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mis
 	Parameter CHANNEL bound to: 0 - type: integer 
 	Parameter WIDTH bound to: 32 - type: integer 
 <<<<<<< HEAD
+<<<<<<< HEAD
 WARNING: [Synth 8-3848] Net TC_CRMax in module/entity m14k_ejt does not have driver. [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_ejt.v:506]
 WARNING: [Synth 8-3848] Net TC_CRMin in module/entity m14k_ejt does not have driver. [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_ejt.v:507]
 WARNING: [Synth 8-3848] Net TC_ProbeWidth in module/entity m14k_ejt does not have driver. [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_ejt.v:514]
@@ -1161,6 +1234,8 @@ WARNING: [Synth 8-3848] Net CP1_inst31_0 in module/entity m14k_core does not hav
 WARNING: [Synth 8-3848] Net cpz_g_iap_um in module/entity m14k_core does not have driver. [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_core.v:564]
 WARNING: [Synth 8-3848] Net dcc_g_intkill_w in module/entity m14k_core does not have driver. [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_core.v:752]
 =======
+=======
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 WARNING: [Synth 8-3848] Net TC_CRMax in module/entity m14k_ejt does not have driver. [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_ejt.v:506]
 WARNING: [Synth 8-3848] Net TC_CRMin in module/entity m14k_ejt does not have driver. [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_ejt.v:507]
 WARNING: [Synth 8-3848] Net TC_ProbeWidth in module/entity m14k_ejt does not have driver. [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_ejt.v:514]
@@ -1170,6 +1245,9 @@ WARNING: [Synth 8-3848] Net TC_ChipTrigIn in module/entity m14k_ejt does not hav
 WARNING: [Synth 8-3848] Net CP1_inst31_0 in module/entity m14k_core does not have driver. [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_core.v:1451]
 WARNING: [Synth 8-3848] Net cpz_g_iap_um in module/entity m14k_core does not have driver. [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_core.v:564]
 WARNING: [Synth 8-3848] Net dcc_g_intkill_w in module/entity m14k_core does not have driver. [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_core.v:752]
+<<<<<<< HEAD
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
+=======
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 	Parameter PARITY bound to: 0 - type: integer 
 	Parameter T_BITS bound to: 24 - type: integer 
@@ -1216,6 +1294,7 @@ WARNING: [Synth 8-3848] Net dcc_g_intkill_w in module/entity m14k_core does not 
 	Parameter DATA_BIST_TO_WIDTH bound to: 1 - type: integer 
 	Parameter DATA_BIST_FROM_WIDTH bound to: 1 - type: integer 
 <<<<<<< HEAD
+<<<<<<< HEAD
 WARNING: [Synth 8-3848] Net CP1_excs_1 in module/entity m14k_cop1_stub does not have driver. [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_cop1_stub.v:135]
 WARNING: [Synth 8-3848] Net CP1_exc_1 in module/entity m14k_cop1_stub does not have driver. [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_cop1_stub.v:136]
 WARNING: [Synth 8-3848] Net CP1_exccode_1 in module/entity m14k_cop1_stub does not have driver. [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_cop1_stub.v:137]
@@ -1227,6 +1306,8 @@ WARNING: [Synth 8-3848] Net CP1_inst32_0 in module/entity m14k_cpu does not have
 	Parameter clock_cycles_in_symbol bound to: 434 - type: integer 
 WARNING: [Synth 8-5788] Register byte_data_reg in module mfp_uart_receiver is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_uart_receiver.v:85]
 =======
+=======
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 WARNING: [Synth 8-3848] Net CP1_excs_1 in module/entity m14k_cop1_stub does not have driver. [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_cop1_stub.v:135]
 WARNING: [Synth 8-3848] Net CP1_exc_1 in module/entity m14k_cop1_stub does not have driver. [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_cop1_stub.v:136]
 WARNING: [Synth 8-3848] Net CP1_exccode_1 in module/entity m14k_cop1_stub does not have driver. [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_cop1_stub.v:137]
@@ -1237,6 +1318,9 @@ WARNING: [Synth 8-3848] Net CP1_inst32_0 in module/entity m14k_cpu does not have
 	Parameter baud_rate bound to: 115200 - type: integer 
 	Parameter clock_cycles_in_symbol bound to: 434 - type: integer 
 WARNING: [Synth 8-5788] Register byte_data_reg in module mfp_uart_receiver is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_uart_receiver.v:85]
+<<<<<<< HEAD
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
+=======
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 	Parameter WAITING_S bound to: 5'b00000 
 	Parameter GET_TYPE bound to: 5'b00001 
@@ -1265,6 +1349,7 @@ WARNING: [Synth 8-5788] Register byte_data_reg in module mfp_uart_receiver is ha
 	Parameter CHAR_A bound to: 8'b01000001 
 	Parameter CHAR_F bound to: 8'b01000110 
 	Parameter CHAR_S bound to: 8'b01010011 
+<<<<<<< HEAD
 <<<<<<< HEAD
 INFO: [Synth 8-155] case statement is not full and has no default [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_srec_parser.v:92]
 INFO: [Synth 8-155] case statement is not full and has no default [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_srec_parser.v:217]
@@ -1299,6 +1384,8 @@ INFO: [Synth 8-155] case statement is not full and has no default [N:/ECE540/ECE
 WARNING: [Synth 8-5788] Register IO_BotCtrl_reg in module mfp_ahb_gpio is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_ahb_gpio.v:54]
 WARNING: [Synth 8-5788] Register IO_INT_ACK_reg in module mfp_ahb_gpio is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_ahb_gpio.v:55]
 =======
+=======
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 INFO: [Synth 8-155] case statement is not full and has no default [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_srec_parser.v:92]
 INFO: [Synth 8-155] case statement is not full and has no default [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_srec_parser.v:217]
 WARNING: [Synth 8-5788] Register checksum_reg in module mfp_srec_parser is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_srec_parser.v:221]
@@ -1331,6 +1418,9 @@ WARNING: [Synth 8-3936] Found unconnected internal register 'HADDR_d_reg' and it
 INFO: [Synth 8-155] case statement is not full and has no default [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_ahb_gpio.v:52]
 WARNING: [Synth 8-5788] Register IO_BotCtrl_reg in module mfp_ahb_gpio is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_ahb_gpio.v:54]
 WARNING: [Synth 8-5788] Register IO_INT_ACK_reg in module mfp_ahb_gpio is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_ahb_gpio.v:55]
+<<<<<<< HEAD
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
+=======
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 	Parameter seg_a bound to: 7'b0111111 
 	Parameter seg_b bound to: 7'b1011111 
@@ -1349,6 +1439,7 @@ WARNING: [Synth 8-5788] Register IO_INT_ACK_reg in module mfp_ahb_gpio is has bo
 	Parameter WIDTH bound to: 3 - type: integer 
 	Parameter WIDTH bound to: 8 - type: integer 
 <<<<<<< HEAD
+<<<<<<< HEAD
 INFO: [Synth 8-226] default block is never used [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/project_simplebot/hdl/mfp_ahb_sevensegtimer.v:76]
 	Parameter WIDTH bound to: 6 - type: integer 
 INFO: [Synth 8-226] default block is never used [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/project_simplebot/hdl/mfp_ahb_sevensegtimer.v:76]
@@ -1364,6 +1455,8 @@ WARNING: [Synth 8-689] width (8) of port connection 'IO_SEG_N' does not match po
 WARNING: [Synth 8-3848] Net gscanin in module/entity mfp_sys does not have driver. [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_sys.v:116]
 WARNING: [Synth 8-3848] Net BistIn in module/entity mfp_sys does not have driver. [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_sys.v:136]
 =======
+=======
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 INFO: [Synth 8-226] default block is never used [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/project_simplebot/hdl/mfp_ahb_sevensegtimer.v:76]
 	Parameter WIDTH bound to: 6 - type: integer 
 INFO: [Synth 8-226] default block is never used [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/project_simplebot/hdl/mfp_ahb_sevensegtimer.v:76]
@@ -1378,6 +1471,9 @@ WARNING: [Synth 8-689] width (8) of port connection 'IO_7SEGEN_N' does not match
 WARNING: [Synth 8-689] width (8) of port connection 'IO_SEG_N' does not match port width (16) of module 'mfp_ahb_withloader' [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_sys.v:311]
 WARNING: [Synth 8-3848] Net gscanin in module/entity mfp_sys does not have driver. [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_sys.v:116]
 WARNING: [Synth 8-3848] Net BistIn in module/entity mfp_sys does not have driver. [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_sys.v:136]
+<<<<<<< HEAD
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
+=======
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 	Parameter HORIZ_PIXELS bound to: 1024 - type: integer 
 	Parameter HCNT_MAX bound to: 1327 - type: integer 
@@ -1387,6 +1483,7 @@ WARNING: [Synth 8-3848] Net BistIn in module/entity mfp_sys does not have driver
 	Parameter VCNT_MAX bound to: 805 - type: integer 
 	Parameter VSYNC_START bound to: 773 - type: integer 
 	Parameter VSYNC_END bound to: 779 - type: integer 
+<<<<<<< HEAD
 <<<<<<< HEAD
 WARNING: [Synth 8-689] width (8) of port connection 'douta' does not match port width (2) of module 'blk_mem_gen_0' [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/Project2/icon.v:41]
 WARNING: [Synth 8-689] width (8) of port connection 'douta' does not match port width (2) of module 'blk_mem_gen_1' [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/Project2/icon.v:48]
@@ -1407,6 +1504,8 @@ WARNING: [Synth 8-3848] Net CF in module/entity mfp_nexys4_ddr does not have dri
 WARNING: [Synth 8-3848] Net CG in module/entity mfp_nexys4_ddr does not have driver. [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/boards/nexys4_ddr/mfp_nexys4_ddr.v:24]
 WARNING: [Synth 8-3848] Net DP in module/entity mfp_nexys4_ddr does not have driver. [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/boards/nexys4_ddr/mfp_nexys4_ddr.v:24]
 =======
+=======
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 WARNING: [Synth 8-689] width (8) of port connection 'douta' does not match port width (2) of module 'blk_mem_gen_0' [N:/Project2/Project2/project_2.srcs/sources_1/imports/Project2/icon.v:102]
 WARNING: [Synth 8-689] width (8) of port connection 'douta' does not match port width (2) of module 'blk_mem_gen_1' [N:/Project2/Project2/project_2.srcs/sources_1/imports/Project2/icon.v:109]
 WARNING: [Synth 8-689] width (8) of port connection 'douta' does not match port width (2) of module 'blk_mem_gen_2' [N:/Project2/Project2/project_2.srcs/sources_1/imports/Project2/icon.v:116]
@@ -1426,6 +1525,9 @@ WARNING: [Synth 8-3848] Net CE in module/entity mfp_nexys4_ddr does not have dri
 WARNING: [Synth 8-3848] Net CF in module/entity mfp_nexys4_ddr does not have driver. [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/boards/nexys4_ddr/mfp_nexys4_ddr.v:24]
 WARNING: [Synth 8-3848] Net CG in module/entity mfp_nexys4_ddr does not have driver. [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/boards/nexys4_ddr/mfp_nexys4_ddr.v:24]
 WARNING: [Synth 8-3848] Net DP in module/entity mfp_nexys4_ddr does not have driver. [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/boards/nexys4_ddr/mfp_nexys4_ddr.v:24]
+<<<<<<< HEAD
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
+=======
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 WARNING: [Synth 8-3331] design icon has unconnected port LocX_reg[7]
 WARNING: [Synth 8-3331] design icon has unconnected port LocY_reg[7]
@@ -1530,7 +1632,11 @@ WARNING: [Synth 8-3331] design mfp_ahb_b_ram has unconnected port HADDR[26]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 683.656 ; gain = 374.734
+=======
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 684.492 ; gain = 375.305
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 684.492 ; gain = 375.305
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -1543,6 +1649,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 <<<<<<< HEAD
+<<<<<<< HEAD
 WARNING: [Synth 8-3295] tying undriven pin cpz_pc:g_eic_mode to constant 0 [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_cpz.v:3504]
 WARNING: [Synth 8-3295] tying undriven pin cpz_pc:mpc_tlb_i_side to constant 0 [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_cpz.v:3504]
 WARNING: [Synth 8-3295] tying undriven pin cpz_pc:mpc_tlb_d_side to constant 0 [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_cpz.v:3504]
@@ -1554,6 +1661,8 @@ WARNING: [Synth 8-3295] tying undriven pin mpc:cpz_g_iap_um to constant 0 [N:/EC
 WARNING: [Synth 8-3295] tying undriven pin top:gscanin[0] to constant 0 [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_sys.v:185]
 WARNING: [Synth 8-3295] tying undriven pin top:BistIn[0] to constant 0 [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_sys.v:185]
 =======
+=======
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 WARNING: [Synth 8-3295] tying undriven pin cpz_pc:g_eic_mode to constant 0 [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_cpz.v:3504]
 WARNING: [Synth 8-3295] tying undriven pin cpz_pc:mpc_tlb_i_side to constant 0 [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_cpz.v:3504]
 WARNING: [Synth 8-3295] tying undriven pin cpz_pc:mpc_tlb_d_side to constant 0 [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_cpz.v:3504]
@@ -1564,21 +1673,30 @@ WARNING: [Synth 8-3295] tying undriven pin tlbarray:guest_mode to constant 0 [N:
 WARNING: [Synth 8-3295] tying undriven pin mpc:cpz_g_iap_um to constant 0 [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_core.v:2963]
 WARNING: [Synth 8-3295] tying undriven pin top:gscanin[0] to constant 0 [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_sys.v:185]
 WARNING: [Synth 8-3295] tying undriven pin top:BistIn[0] to constant 0 [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_sys.v:185]
+<<<<<<< HEAD
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
+=======
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 683.656 ; gain = 374.734
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 683.656 ; gain = 374.734
 =======
+=======
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:28 . Memory (MB): peak = 684.492 ; gain = 375.305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:28 . Memory (MB): peak = 684.492 ; gain = 375.305
+<<<<<<< HEAD
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
+=======
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
@@ -1588,6 +1706,7 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
+<<<<<<< HEAD
 <<<<<<< HEAD
 Parsing XDC File [n:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6/blk_mem_gen_5_in_context.xdc] for cell 'icon1/orientation270'
 Finished Parsing XDC File [n:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6/blk_mem_gen_5_in_context.xdc] for cell 'icon1/orientation270'
@@ -1618,6 +1737,8 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/mfp_nexys4_d
 Parsing XDC File [N:/ECE540/ECE540_Project2/Project2/project_2.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [N:/ECE540/ECE540_Project2/Project2/project_2.runs/synth_1/dont_touch.xdc]
 =======
+=======
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 Parsing XDC File [n:/Project2/Project2/project_2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz_0'
 Finished Parsing XDC File [n:/Project2/Project2/project_2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz_0'
 Parsing XDC File [n:/Project2/Project2/project_2.srcs/sources_1/ip/rojobot31_0/rojobot31_0/rojobot31_0_in_context.xdc] for cell 'rojobot'
@@ -1644,6 +1765,9 @@ INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as o
 Finished Parsing XDC File [N:/Project2/Project2/project_2.srcs/constrs_1/imports/constraints/mfp_nexys4_ddr.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [N:/Project2/Project2/project_2.srcs/constrs_1/imports/constraints/mfp_nexys4_ddr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mfp_nexys4_ddr_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/mfp_nexys4_ddr_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+<<<<<<< HEAD
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
+=======
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 Completed Processing XDC Constraints
 
@@ -1651,7 +1775,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1084.742 ; gain = 0.000
+=======
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1085.270 ; gain = 0.000
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1085.270 ; gain = 0.000
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -1665,7 +1793,11 @@ WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context s
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'icon1/orientation90' at clock pin 'clka' is different from the actual clock period '13.333', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 Finished Constraint Validation : Time (s): cpu = 00:00:37 ; elapsed = 00:00:57 . Memory (MB): peak = 1084.742 ; gain = 775.820
+=======
+Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:00:57 . Memory (MB): peak = 1085.270 ; gain = 776.082
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:00:57 . Memory (MB): peak = 1085.270 ; gain = 776.082
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -1710,7 +1842,11 @@ INFO: [Synth 8-5544] ROM "pbus_type_e4" won't be mapped to Block RAM because add
 INFO: [Synth 8-5544] ROM "pbus_type_e5" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "pbus_type_e6" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 <<<<<<< HEAD
+<<<<<<< HEAD
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_mpc_ctl.v:2780]
+=======
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_mpc_ctl.v:2780]
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/m14k_mpc_ctl.v:2780]
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -1729,8 +1865,13 @@ INFO: [Synth 8-5544] ROM "wrb_word20" won't be mapped to Block RAM because addre
 INFO: [Synth 8-5544] ROM "wr_be_mask1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "be_nxt_size1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 <<<<<<< HEAD
+<<<<<<< HEAD
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_srec_parser.v:217]
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_srec_parser.v:92]
+=======
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_srec_parser.v:217]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_srec_parser.v:92]
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_srec_parser.v:217]
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_srec_parser.v:92]
@@ -1751,17 +1892,23 @@ INFO: [Synth 8-5544] ROM "trst_n" won't be mapped to Block RAM because address s
 INFO: [Synth 8-5544] ROM "trst_delay" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "pixel_row" won't be mapped to RAM because it is too sparse
 <<<<<<< HEAD
+<<<<<<< HEAD
 WARNING: [Synth 8-3936] Found unconnected internal register 'matchedcol_reg' and it is trimmed from '12' to '9' bits. [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/Project2/icon.v:33]
 WARNING: [Synth 8-3936] Found unconnected internal register 'matchedrow_reg' and it is trimmed from '12' to '9' bits. [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/Project2/icon.v:32]
 WARNING: [Synth 8-327] inferring latch for variable 'q_reg' [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_latchn.v:90]
 ---------------------------------------------------------------------------------
 Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:53 ; elapsed = 00:01:22 . Memory (MB): peak = 1084.742 ; gain = 775.820
 =======
+=======
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 INFO: [Synth 8-5546] ROM "count_row" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-327] inferring latch for variable 'q_reg' [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_latchn.v:90]
 WARNING: [Synth 8-327] inferring latch for variable 'icon_index_reg' [N:/Project2/Project2/project_2.srcs/sources_1/imports/Project2/icon.v:80]
 ---------------------------------------------------------------------------------
 Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:50 ; elapsed = 00:01:19 . Memory (MB): peak = 1085.270 ; gain = 776.082
+<<<<<<< HEAD
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
+=======
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'mfp_sys/top/cpu/core/clock_gate/buff_fclk' (m14k_clock_buf) to 'mfp_sys/top/cpu/core/clock_gate/buff_gclk'
@@ -1784,7 +1931,11 @@ Report RTL Partitions:
 |5     |m14k_top__GC0       |           1|       458|
 |6     |mfp_sys__GC0        |           1|      2981|
 <<<<<<< HEAD
+<<<<<<< HEAD
 |7     |mfp_nexys4_ddr__GC0 |           1|      2458|
+=======
+|7     |mfp_nexys4_ddr__GC0 |           1|      2501|
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 |7     |mfp_nexys4_ddr__GC0 |           1|      2501|
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -1802,8 +1953,12 @@ Detailed RTL Component Info :
 	   2 Input     11 Bit       Adders := 1     
 	   2 Input      9 Bit       Adders := 3     
 <<<<<<< HEAD
+<<<<<<< HEAD
 	   3 Input      9 Bit       Adders := 2     
 	   2 Input      8 Bit       Adders := 6     
+=======
+	   2 Input      8 Bit       Adders := 8     
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 	   2 Input      8 Bit       Adders := 8     
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -1858,8 +2013,13 @@ Detailed RTL Component Info :
 	               11 Bit    Registers := 2     
 	               10 Bit    Registers := 9     
 <<<<<<< HEAD
+<<<<<<< HEAD
 	                9 Bit    Registers := 9     
 	                8 Bit    Registers := 72    
+=======
+	                9 Bit    Registers := 7     
+	                8 Bit    Registers := 74    
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 	                9 Bit    Registers := 7     
 	                8 Bit    Registers := 74    
@@ -1870,7 +2030,11 @@ Detailed RTL Component Info :
 	                4 Bit    Registers := 78    
 	                3 Bit    Registers := 27    
 <<<<<<< HEAD
+<<<<<<< HEAD
 	                2 Bit    Registers := 44    
+=======
+	                2 Bit    Registers := 43    
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 	                2 Bit    Registers := 43    
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -1912,7 +2076,11 @@ Detailed RTL Component Info :
 	   4 Input      9 Bit        Muxes := 1     
 	   2 Input      9 Bit        Muxes := 7     
 <<<<<<< HEAD
+<<<<<<< HEAD
 	   2 Input      8 Bit        Muxes := 77    
+=======
+	   2 Input      8 Bit        Muxes := 78    
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 	   2 Input      8 Bit        Muxes := 78    
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -1924,15 +2092,21 @@ Detailed RTL Component Info :
 	   2 Input      5 Bit        Muxes := 47    
 	   5 Input      5 Bit        Muxes := 1     
 <<<<<<< HEAD
+<<<<<<< HEAD
 	   2 Input      4 Bit        Muxes := 128   
 	   3 Input      4 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 4     
 	   6 Input      4 Bit        Muxes := 1     
 =======
+=======
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 	   2 Input      4 Bit        Muxes := 124   
 	   3 Input      4 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 3     
 	   6 Input      4 Bit        Muxes := 3     
+<<<<<<< HEAD
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
+=======
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 	   2 Input      3 Bit        Muxes := 61    
 	   4 Input      3 Bit        Muxes := 4     
@@ -1942,7 +2116,11 @@ Detailed RTL Component Info :
 	   9 Input      3 Bit        Muxes := 1     
 	  11 Input      3 Bit        Muxes := 1     
 <<<<<<< HEAD
+<<<<<<< HEAD
 	   2 Input      2 Bit        Muxes := 83    
+=======
+	   2 Input      2 Bit        Muxes := 84    
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 	   2 Input      2 Bit        Muxes := 84    
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -1955,7 +2133,11 @@ Detailed RTL Component Info :
 	  11 Input      2 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 14    
 <<<<<<< HEAD
+<<<<<<< HEAD
 	   2 Input      1 Bit        Muxes := 478   
+=======
+	   2 Input      1 Bit        Muxes := 481   
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 	   2 Input      1 Bit        Muxes := 481   
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -9036,6 +9218,7 @@ Module icon
 Detailed RTL Component Info : 
 +---Adders : 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	   3 Input      9 Bit       Adders := 2     
 +---Registers : 
 	                9 Bit    Registers := 2     
@@ -9047,6 +9230,8 @@ Detailed RTL Component Info :
 	   4 Input      4 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 4     
 =======
+=======
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 	   2 Input      8 Bit       Adders := 2     
 +---Registers : 
 	                8 Bit    Registers := 2     
@@ -9058,6 +9243,9 @@ Module colorizer
 Detailed RTL Component Info : 
 +---Muxes : 
 	   6 Input      4 Bit        Muxes := 3     
+<<<<<<< HEAD
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
+=======
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
@@ -9075,6 +9263,7 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
+<<<<<<< HEAD
 <<<<<<< HEAD
 WARNING: [Synth 8-6014] Unused sequential element _cpz_count_31_0_/q_reg was removed.  [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_register.v:89]
 WARNING: [Synth 8-6014] Unused sequential element _instn_vld_w/q_reg was removed.  [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_cregister.v:103]
@@ -9102,6 +9291,8 @@ WARNING: [Synth 8-6014] Unused sequential element mfp_ahb_withloader/mfp_ahb/mfp
 WARNING: [Synth 8-6014] Unused sequential element mfp_ahb_withloader/mfp_ahb/mfp_ahb_gpio/HWRITE_d_reg was removed.  [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_ahb_gpio.v:40]
 WARNING: [Synth 8-6014] Unused sequential element mfp_ahb_withloader/mfp_ahb/mfp_ahb_sseg/HWRITE_d_reg was removed.  [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_ahb_7seg.v:43]
 =======
+=======
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 WARNING: [Synth 8-6014] Unused sequential element _cpz_count_31_0_/q_reg was removed.  [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_register.v:89]
 WARNING: [Synth 8-6014] Unused sequential element _instn_vld_w/q_reg was removed.  [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_cregister.v:103]
 WARNING: [Synth 8-6014] Unused sequential element _cp0_g_eret_w/q_reg was removed.  [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/mvp_cregister.v:103]
@@ -9127,6 +9318,9 @@ WARNING: [Synth 8-6014] Unused sequential element mfp_ahb_withloader/mfp_ahb/mfp
 WARNING: [Synth 8-6014] Unused sequential element mfp_ahb_withloader/mfp_ahb/mfp_ahb_gpio/HTRANS_d_reg was removed.  [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_ahb_gpio.v:42]
 WARNING: [Synth 8-6014] Unused sequential element mfp_ahb_withloader/mfp_ahb/mfp_ahb_gpio/HWRITE_d_reg was removed.  [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_ahb_gpio.v:40]
 WARNING: [Synth 8-6014] Unused sequential element mfp_ahb_withloader/mfp_ahb/mfp_ahb_sseg/HWRITE_d_reg was removed.  [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_ahb_7seg.v:43]
+<<<<<<< HEAD
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
+=======
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 INFO: [Synth 8-5546] ROM "mfp_ahb_withloader/mfp_srec_parser/in_progress" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "debounce/swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
@@ -9149,6 +9343,7 @@ INFO: [Synth 8-5545] ROM "debounce/db_count" won't be mapped to RAM because addr
 INFO: [Synth 8-5545] ROM "debounce/shift_pb0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "vta/pixel_row" won't be mapped to RAM because it is too sparse
 <<<<<<< HEAD
+<<<<<<< HEAD
 WARNING: [Synth 8-3936] Found unconnected internal register 'icache/tagram/ram__tag_inst1/DO_reg' and it is trimmed from '16' to '8' bits. [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/RAMB4K_S16.v:83]
 INFO: [Synth 8-5784] Optimized 0 bits of RAM "icache/tagram/ram__tag_inst1/mem_reg" due to constant propagation. Old ram width 8 bits, new ram width 8 bits.
 WARNING: [Synth 8-3936] Found unconnected internal register 'icache/tagram/ram__tag_inst3/DO_reg' and it is trimmed from '16' to '8' bits. [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/RAMB4K_S16.v:83]
@@ -9163,6 +9358,8 @@ WARNING: [Synth 8-3936] Found unconnected internal register 'dcache/wsram/d_wsra
 WARNING: [Synth 8-3936] Found unconnected internal register 'dcache/wsram/d_wsram___inst1/DO_reg' and it is trimmed from '2' to '1' bits. [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/RAMB4K_S2.v:84]
 WARNING: [Synth 8-3936] Found unconnected internal register 'dcache/wsram/d_wsram___inst2/DO_reg' and it is trimmed from '2' to '1' bits. [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/RAMB4K_S2.v:84]
 =======
+=======
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 INFO: [Synth 8-5546] ROM "icon1/count_row" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-3936] Found unconnected internal register 'icache/tagram/ram__tag_inst1/DO_reg' and it is trimmed from '16' to '8' bits. [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/RAMB4K_S16.v:83]
 INFO: [Synth 8-5784] Optimized 0 bits of RAM "icache/tagram/ram__tag_inst1/mem_reg" due to constant propagation. Old ram width 8 bits, new ram width 8 bits.
@@ -9177,6 +9374,9 @@ INFO: [Synth 8-5784] Optimized 0 bits of RAM "dcache/tagram/ram__tag_inst3/mem_r
 WARNING: [Synth 8-3936] Found unconnected internal register 'dcache/wsram/d_wsram___inst0/DO_reg' and it is trimmed from '2' to '1' bits. [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/RAMB4K_S2.v:84]
 WARNING: [Synth 8-3936] Found unconnected internal register 'dcache/wsram/d_wsram___inst1/DO_reg' and it is trimmed from '2' to '1' bits. [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/RAMB4K_S2.v:84]
 WARNING: [Synth 8-3936] Found unconnected internal register 'dcache/wsram/d_wsram___inst2/DO_reg' and it is trimmed from '2' to '1' bits. [N:/Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/core/RAMB4K_S2.v:84]
+<<<<<<< HEAD
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
+=======
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM mfp_ahb_withloader/mfp_ahb/mfp_ahb_b_ram/ram_b0/ram_reg to conserve power
 INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM mfp_ahb_withloader/mfp_ahb/mfp_ahb_b_ram/ram_b1/ram_reg to conserve power
@@ -9481,7 +9681,10 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (corei_3/d
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (corei_3/biu/\_HBURST_2_0_/q_reg[2] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (corei_3/dcc/\_cp2_storeissued_m_legit/q_reg[0] )
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'i_0/icon1/icon_index_reg[7]__0/Q' [N:/Project2/Project2/project_2.srcs/sources_1/imports/Project2/icon.v:60]
 CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [N:/Project2/Project2/project_2.srcs/sources_1/imports/Project2/icon.v:60]
 CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [N:/Project2/Project2/project_2.srcs/sources_1/imports/Project2/icon.v:60]
@@ -9506,6 +9709,9 @@ CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant dri
 CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'i_0/icon1/icon_index_reg[0]__0/Q' [N:/Project2/Project2/project_2.srcs/sources_1/imports/Project2/icon.v:60]
 CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [N:/Project2/Project2/project_2.srcs/sources_1/imports/Project2/icon.v:60]
 CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [N:/Project2/Project2/project_2.srcs/sources_1/imports/Project2/icon.v:60]
+<<<<<<< HEAD
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
+=======
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (corei_1/mpc/\mpc_ctl/_mpc_macro_m/q_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (corei_1/cpz/cpz_pc/\alu_cp0_pc1/_pc_cnt_evt_reg_255_0_/cregister/register_inst/q_reg[28] )
@@ -9518,7 +9724,11 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (corei_1/c
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:59 ; elapsed = 00:05:53 . Memory (MB): peak = 1576.621 ; gain = 1267.699
+=======
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:27 ; elapsed = 00:05:14 . Memory (MB): peak = 1584.184 ; gain = 1274.996
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:27 ; elapsed = 00:05:14 . Memory (MB): peak = 1584.184 ; gain = 1274.996
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -9652,7 +9862,11 @@ Report RTL Partitions:
 |5     |m14k_top__GC0       |           1|       439|
 |6     |mfp_sys__GC0        |           1|      1525|
 <<<<<<< HEAD
+<<<<<<< HEAD
 |7     |mfp_nexys4_ddr__GC0 |           1|       746|
+=======
+|7     |mfp_nexys4_ddr__GC0 |           1|       684|
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 |7     |mfp_nexys4_ddr__GC0 |           1|       684|
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -9665,7 +9879,11 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_wiz_0/clk_out2' to pi
 INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:09 ; elapsed = 00:06:03 . Memory (MB): peak = 1576.621 ; gain = 1267.699
+=======
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:36 ; elapsed = 00:05:24 . Memory (MB): peak = 1584.184 ; gain = 1274.996
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:36 ; elapsed = 00:05:24 . Memory (MB): peak = 1584.184 ; gain = 1274.996
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -9675,7 +9893,11 @@ Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 Finished Timing Optimization : Time (s): cpu = 00:05:13 ; elapsed = 00:06:08 . Memory (MB): peak = 1576.621 ; gain = 1267.699
+=======
+Finished Timing Optimization : Time (s): cpu = 00:04:40 ; elapsed = 00:05:28 . Memory (MB): peak = 1584.184 ; gain = 1274.996
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 Finished Timing Optimization : Time (s): cpu = 00:04:40 ; elapsed = 00:05:28 . Memory (MB): peak = 1584.184 ; gain = 1274.996
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -9747,7 +9969,11 @@ Report RTL Partitions:
 |5     |m14k_top__GC0       |           1|       439|
 |6     |mfp_sys__GC0        |           1|      1525|
 <<<<<<< HEAD
+<<<<<<< HEAD
 |7     |mfp_nexys4_ddr__GC0 |           1|       734|
+=======
+|7     |mfp_nexys4_ddr__GC0 |           1|       684|
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 |7     |mfp_nexys4_ddr__GC0 |           1|       684|
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -9798,7 +10024,11 @@ INFO: [Synth 8-4480] The timing for the instance mfp_sys/mfp_ahb_withloader/mfp_
 INFO: [Common 17-14] Message 'Synth 8-4480' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 Finished Technology Mapping : Time (s): cpu = 00:05:27 ; elapsed = 00:06:23 . Memory (MB): peak = 1576.621 ; gain = 1267.699
+=======
+Finished Technology Mapping : Time (s): cpu = 00:04:52 ; elapsed = 00:05:41 . Memory (MB): peak = 1584.184 ; gain = 1274.996
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 Finished Technology Mapping : Time (s): cpu = 00:04:52 ; elapsed = 00:05:41 . Memory (MB): peak = 1584.184 ; gain = 1274.996
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -9830,7 +10060,11 @@ Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 Finished IO Insertion : Time (s): cpu = 00:05:29 ; elapsed = 00:06:25 . Memory (MB): peak = 1576.621 ; gain = 1267.699
+=======
+Finished IO Insertion : Time (s): cpu = 00:04:54 ; elapsed = 00:05:43 . Memory (MB): peak = 1584.184 ; gain = 1274.996
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 Finished IO Insertion : Time (s): cpu = 00:04:54 ; elapsed = 00:05:43 . Memory (MB): peak = 1584.184 ; gain = 1274.996
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -9847,7 +10081,11 @@ Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 Finished Renaming Generated Instances : Time (s): cpu = 00:05:29 ; elapsed = 00:06:25 . Memory (MB): peak = 1576.621 ; gain = 1267.699
+=======
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:55 ; elapsed = 00:05:43 . Memory (MB): peak = 1584.184 ; gain = 1274.996
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 Finished Renaming Generated Instances : Time (s): cpu = 00:04:55 ; elapsed = 00:05:43 . Memory (MB): peak = 1584.184 ; gain = 1274.996
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -9863,7 +10101,11 @@ Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:34 ; elapsed = 00:06:30 . Memory (MB): peak = 1576.621 ; gain = 1267.699
+=======
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:59 ; elapsed = 00:05:48 . Memory (MB): peak = 1584.184 ; gain = 1274.996
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:59 ; elapsed = 00:05:48 . Memory (MB): peak = 1584.184 ; gain = 1274.996
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -9873,7 +10115,11 @@ Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 Finished Renaming Generated Ports : Time (s): cpu = 00:05:35 ; elapsed = 00:06:31 . Memory (MB): peak = 1576.621 ; gain = 1267.699
+=======
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:00 ; elapsed = 00:05:49 . Memory (MB): peak = 1584.184 ; gain = 1274.996
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 Finished Renaming Generated Ports : Time (s): cpu = 00:05:00 ; elapsed = 00:05:49 . Memory (MB): peak = 1584.184 ; gain = 1274.996
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -9883,7 +10129,11 @@ Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 Finished Handling Custom Attributes : Time (s): cpu = 00:05:36 ; elapsed = 00:06:32 . Memory (MB): peak = 1576.621 ; gain = 1267.699
+=======
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:01 ; elapsed = 00:05:50 . Memory (MB): peak = 1584.184 ; gain = 1274.996
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 Finished Handling Custom Attributes : Time (s): cpu = 00:05:01 ; elapsed = 00:05:50 . Memory (MB): peak = 1584.184 ; gain = 1274.996
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -9893,7 +10143,11 @@ Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 Finished Renaming Generated Nets : Time (s): cpu = 00:05:36 ; elapsed = 00:06:32 . Memory (MB): peak = 1576.621 ; gain = 1267.699
+=======
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:01 ; elapsed = 00:05:50 . Memory (MB): peak = 1584.184 ; gain = 1274.996
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 Finished Renaming Generated Nets : Time (s): cpu = 00:05:01 ; elapsed = 00:05:50 . Memory (MB): peak = 1584.184 ; gain = 1274.996
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -9954,6 +10208,7 @@ Report Cell Usage:
 |11    |world_map     |     1|
 |12    |BUFG          |     1|
 <<<<<<< HEAD
+<<<<<<< HEAD
 |13    |CARRY4        |   161|
 |14    |LUT1          |   108|
 |15    |LUT2          |   648|
@@ -9963,6 +10218,8 @@ Report Cell Usage:
 |19    |LUT6          |  4613|
 |20    |MUXF7         |   269|
 =======
+=======
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 |13    |CARRY4        |   155|
 |14    |LUT1          |   107|
 |15    |LUT2          |   629|
@@ -9971,6 +10228,9 @@ Report Cell Usage:
 |18    |LUT5          |  2701|
 |19    |LUT6          |  4610|
 |20    |MUXF7         |   268|
+<<<<<<< HEAD
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
+=======
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 |21    |MUXF8         |    18|
 |22    |RAM128X1S     |     3|
@@ -9985,7 +10245,11 @@ Report Cell Usage:
 |31    |FDCE          |   130|
 |32    |FDPE          |    14|
 <<<<<<< HEAD
+<<<<<<< HEAD
 |33    |FDRE          |  8613|
+=======
+|33    |FDRE          |  8594|
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 |33    |FDRE          |  8594|
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -9998,6 +10262,7 @@ Report Instance Areas:
 +------+---------------------------------------------------------------------------------------------+-------------------------------------------+------+
 |      |Instance                                                                                     |Module                                     |Cells |
 +------+---------------------------------------------------------------------------------------------+-------------------------------------------+------+
+<<<<<<< HEAD
 <<<<<<< HEAD
 |1     |top                                                                                          |                                           | 20636|
 |2     |  color                                                                                      |colorizer                                  |     3|
@@ -11653,6 +11918,8 @@ Synthesis finished with 0 errors, 0 critical warnings and 993 warnings.
 Synthesis Optimization Runtime : Time (s): cpu = 00:05:03 ; elapsed = 00:06:14 . Memory (MB): peak = 1576.621 ; gain = 866.613
 Synthesis Optimization Complete : Time (s): cpu = 00:05:36 ; elapsed = 00:06:34 . Memory (MB): peak = 1576.621 ; gain = 1267.699
 =======
+=======
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 |1     |top                                                                                          |                                           | 20559|
 |2     |  debounce                                                                                   |debounce                                   |   183|
 |3     |  icon1                                                                                      |icon                                       |    18|
@@ -13305,6 +13572,9 @@ Finished Writing Synthesis Report : Time (s): cpu = 00:05:01 ; elapsed = 00:05:5
 Synthesis finished with 0 errors, 24 critical warnings and 992 warnings.
 Synthesis Optimization Runtime : Time (s): cpu = 00:04:30 ; elapsed = 00:05:30 . Memory (MB): peak = 1584.184 ; gain = 874.219
 Synthesis Optimization Complete : Time (s): cpu = 00:05:01 ; elapsed = 00:05:51 . Memory (MB): peak = 1584.184 ; gain = 1274.996
+<<<<<<< HEAD
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
+=======
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 INFO: [Project 1-571] Translating synthesized netlist
 Release 14.7 - ngc2edif P_INT.20180321 (nt64)
@@ -13317,6 +13587,7 @@ Processing design ...
   finished :Prep
 Writing EDIF netlist file world_map.edif ...
 <<<<<<< HEAD
+<<<<<<< HEAD
 ngc2edif: Total memory usage is 4320648 kilobytes
 
 Reading core file 'N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/world_maps_part1/world_map.ngc' for (cell view 'world_map', library 'work')
@@ -13324,12 +13595,17 @@ Parsing EDIF File [./.ngc2edfcache/world_map_ngc_f6383983.edif]
 Finished Parsing EDIF File [./.ngc2edfcache/world_map_ngc_f6383983.edif]
 INFO: [Netlist 29-17] Analyzing 572 Unisim elements for replacement
 =======
+=======
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 ngc2edif: Total memory usage is 4320456 kilobytes
 
 Reading core file 'N:/Project2/Project2/project_2.srcs/sources_1/imports/world_maps_part1/world_map.ngc' for (cell view 'world_map', library 'work')
 Parsing EDIF File [./.ngc2edfcache/world_map_ngc_4723c213.edif]
 Finished Parsing EDIF File [./.ngc2edfcache/world_map_ngc_4723c213.edif]
 INFO: [Netlist 29-17] Analyzing 565 Unisim elements for replacement
+<<<<<<< HEAD
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
+=======
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-479] Netlist was created with Xilinx ngc2edif P_INT.20180321
@@ -13341,6 +13617,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 
 INFO: [Common 17-83] Releasing license: Synthesis
 <<<<<<< HEAD
+<<<<<<< HEAD
 710 Infos, 336 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
 synth_design: Time (s): cpu = 00:05:47 ; elapsed = 00:06:53 . Memory (MB): peak = 1576.621 ; gain = 1280.016
@@ -13351,6 +13628,8 @@ INFO: [runtcl-4] Executing : report_utilization -file mfp_nexys4_ddr_utilization
 report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.213 . Memory (MB): peak = 1576.621 ; gain = 0.000
 INFO: [Common 17-206] Exiting Vivado at Mon Oct 28 20:43:59 2019...
 =======
+=======
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 712 Infos, 336 Warnings, 24 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
 synth_design: Time (s): cpu = 00:05:11 ; elapsed = 00:06:06 . Memory (MB): peak = 1584.184 ; gain = 1286.469
@@ -13360,4 +13639,7 @@ write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): p
 INFO: [runtcl-4] Executing : report_utilization -file mfp_nexys4_ddr_utilization_synth.rpt -pb mfp_nexys4_ddr_utilization_synth.pb
 report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.194 . Memory (MB): peak = 1584.184 ; gain = 0.000
 INFO: [Common 17-206] Exiting Vivado at Tue Oct 29 17:23:50 2019...
+<<<<<<< HEAD
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
+=======
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0

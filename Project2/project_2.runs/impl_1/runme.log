@@ -752,13 +752,19 @@ Writing bitstream ./mfp_nexys4_ddr.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Common 17-83] Releasing license: Implementation
 <<<<<<< HEAD
+<<<<<<< HEAD
 177 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
 write_bitstream: Time (s): cpu = 00:00:37 ; elapsed = 00:00:29 . Memory (MB): peak = 2401.879 ; gain = 448.734
 INFO: [Common 17-206] Exiting Vivado at Mon Oct 28 20:50:05 2019...
 =======
+=======
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 169 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
 write_bitstream: Time (s): cpu = 00:00:35 ; elapsed = 00:00:24 . Memory (MB): peak = 2367.492 ; gain = 446.938
 INFO: [Common 17-206] Exiting Vivado at Tue Oct 29 17:29:25 2019...
+<<<<<<< HEAD
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
+=======
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0

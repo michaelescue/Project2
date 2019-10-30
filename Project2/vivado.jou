@@ -3,6 +3,7 @@
 # SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
 # IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Start of session at: Tue Oct 29 13:56:26 2019
 # Process ID: 14844
 # Current directory: N:/ECE540/ECE540_Project2/Project2
@@ -10,19 +11,27 @@
 # Log file: N:/ECE540/ECE540_Project2/Project2/vivado.log
 # Journal file: N:/ECE540/ECE540_Project2/Project2\vivado.jou
 =======
+=======
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 # Start of session at: Tue Oct 29 10:13:09 2019
 # Process ID: 4864
 # Current directory: N:/Project2/Project2
 # Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8224 N:\Project2\Project2\project_2.xpr
 # Log file: N:/Project2/Project2/vivado.log
 # Journal file: N:/Project2/Project2\vivado.jou
+<<<<<<< HEAD
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
+=======
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 #-----------------------------------------------------------
 start_gui
 open_project N:/Project2/Project2/project_2.xpr
 update_compile_order -fileset sources_1
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 reset_run synth_1
 reset_run blk_mem_gen_0_synth_1
 reset_run blk_mem_gen_1_synth_1
@@ -228,4 +237,7 @@ close_hw
 close_design
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
+<<<<<<< HEAD
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
+=======
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0

@@ -4,7 +4,11 @@
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
 <<<<<<< HEAD
+<<<<<<< HEAD
 <application name="pa" timeStamp="Tue Oct 29 17:39:21 2019">
+=======
+<application name="pa" timeStamp="Tue Oct 29 17:42:01 2019">
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 <application name="pa" timeStamp="Tue Oct 29 17:42:01 2019">
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -84,7 +88,11 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="CmdMsgDialog_OPEN_MESSAGES_VIEW" value="1" type="GuiHandlerData"/>
 <property name="CoreTreeTablePanel_CORE_TREE_TABLE" value="48" type="GuiHandlerData"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <property name="FileSetPanel_FILE_SET_PANEL_TREE" value="689" type="GuiHandlerData"/>
+=======
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="752" type="GuiHandlerData"/>
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 <property name="FileSetPanel_FILE_SET_PANEL_TREE" value="752" type="GuiHandlerData"/>
 >>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
@@ -209,9 +217,15 @@ This means code written to parse this file will need to be revisited each subseq
 </item>
 <item name="Other">
 <<<<<<< HEAD
+<<<<<<< HEAD
 <property name="GuiMode" value="41" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
 <property name="TclMode" value="28" type="TclMode"/>
+=======
+<property name="GuiMode" value="23" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="18" type="TclMode"/>
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 <property name="GuiMode" value="23" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>

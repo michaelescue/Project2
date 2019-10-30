@@ -10,6 +10,7 @@
 
 source blk_mem_gen_2.tcl -notrace
 <<<<<<< HEAD
+<<<<<<< HEAD
 Command: synth_design -top blk_mem_gen_2 -part xc7a100tcsg324-1 -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
@@ -441,6 +442,10 @@ INFO: [Common 17-1381] The checkpoint 'N:/ECE540/ECE540_Project2/Project2/projec
 INFO: [runtcl-4] Executing : report_utilization -file blk_mem_gen_2_utilization_synth.rpt -pb blk_mem_gen_2_utilization_synth.pb
 report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 808.137 ; gain = 0.000
 INFO: [Common 17-206] Exiting Vivado at Mon Oct 28 20:36:37 2019...
+=======
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP blk_mem_gen_2, cache-ID = fc8ab5666fc96895.
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 29 11:41:41 2019...
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 =======
 INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP blk_mem_gen_2, cache-ID = fc8ab5666fc96895.
 INFO: [Common 17-206] Exiting Vivado at Tue Oct 29 11:41:41 2019...
