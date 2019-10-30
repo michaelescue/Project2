@@ -746,14 +746,17 @@ next_step:		lb 		$25,(SENSOR_REG)
 				AND 	$2,	$2,MSKPROXR
 				AND 	$3,	$3,MSKBLKL
 
+###############################################################################################
 # removed		jal		DEB_rdbtns					# Read the pushbuttons. buttons returned in $4
-				nop
+#				nop
 # removed		jal		btn2mot						# and calculate new MotCtl - returned in $2
-				nop
-				li 		$25, 	PORT_BOTCTRL
-				sw		$2,		0($25)				# tell Rojobot what to do
-				beq		$0, $0, ret_next_step
-				nop
+#				nop
+#				li 		$25, 	PORT_BOTCTRL
+#				sw		$2,		0($25)				# tell Rojobot what to do
+#				beq		$0, $0, ret_next_step
+#				nop
+############################################################################################
+
 
 
 #*************************
