@@ -1,0 +1,6 @@
+17:30:09 **** Incremental Build of configuration Default for project proje2 ****
+make all 
+make: Nothing to be done for `all'.
+
+17:30:09 Build Finished (took 291ms)
+

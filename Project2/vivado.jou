@@ -2,13 +2,230 @@
 # Vivado v2018.2.1 (64-bit)
 # SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
 # IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+<<<<<<< HEAD
 # Start of session at: Tue Oct 29 13:56:26 2019
 # Process ID: 14844
 # Current directory: N:/ECE540/ECE540_Project2/Project2
 # Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9596 N:\ECE540\ECE540_Project2\Project2\project_2.xpr
 # Log file: N:/ECE540/ECE540_Project2/Project2/vivado.log
 # Journal file: N:/ECE540/ECE540_Project2/Project2\vivado.jou
+=======
+# Start of session at: Tue Oct 29 10:13:09 2019
+# Process ID: 4864
+# Current directory: N:/Project2/Project2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8224 N:\Project2\Project2\project_2.xpr
+# Log file: N:/Project2/Project2/vivado.log
+# Journal file: N:/Project2/Project2\vivado.jou
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0
 #-----------------------------------------------------------
 start_gui
-open_project N:/ECE540/ECE540_Project2/Project2/project_2.xpr
+open_project N:/Project2/Project2/project_2.xpr
 update_compile_order -fileset sources_1
+<<<<<<< HEAD
+=======
+reset_run synth_1
+reset_run blk_mem_gen_0_synth_1
+reset_run blk_mem_gen_1_synth_1
+reset_run blk_mem_gen_2_synth_1
+reset_run blk_mem_gen_3_synth_1
+reset_run blk_mem_gen_4_synth_1
+reset_run blk_mem_gen_5_synth_1
+reset_run blk_mem_gen_7_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {N:/Project2/Project2/project_2.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {N:/Project2/Project2/project_2.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+synth_design -rtl -name rtl_1
+close_design
+close_hw
+set_property -dict [list CONFIG.Write_Width_A {2} CONFIG.Write_Depth_A {256} CONFIG.Read_Width_A {2} CONFIG.Write_Width_B {2} CONFIG.Read_Width_B {2}] [get_ips blk_mem_gen_7]
+generate_target all [get_files  N:/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7.xci]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_7] }
+export_ip_user_files -of_objects [get_files N:/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7.xci] -no_script -sync -force -quiet
+reset_run blk_mem_gen_7_synth_1
+launch_runs -jobs 4 blk_mem_gen_7_synth_1
+export_simulation -of_objects [get_files N:/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7.xci] -directory N:/Project2/Project2/project_2.ip_user_files/sim_scripts -ip_user_files_dir N:/Project2/Project2/project_2.ip_user_files -ipstatic_source_dir N:/Project2/Project2/project_2.ip_user_files/ipstatic -lib_map_path [list {modelsim=N:/Project2/Project2/project_2.cache/compile_simlib/modelsim} {questa=N:/Project2/Project2/project_2.cache/compile_simlib/questa} {riviera=N:/Project2/Project2/project_2.cache/compile_simlib/riviera} {activehdl=N:/Project2/Project2/project_2.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Write_Width_A {2} CONFIG.Write_Depth_A {256} CONFIG.Read_Width_A {2} CONFIG.Write_Width_B {2} CONFIG.Read_Width_B {2}] [get_ips blk_mem_gen_6]
+generate_target all [get_files  N:/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6.xci]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_6] }
+export_ip_user_files -of_objects [get_files N:/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6.xci] -no_script -sync -force -quiet
+reset_run blk_mem_gen_6_synth_1
+launch_runs -jobs 4 blk_mem_gen_6_synth_1
+export_simulation -of_objects [get_files N:/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6.xci] -directory N:/Project2/Project2/project_2.ip_user_files/sim_scripts -ip_user_files_dir N:/Project2/Project2/project_2.ip_user_files -ipstatic_source_dir N:/Project2/Project2/project_2.ip_user_files/ipstatic -lib_map_path [list {modelsim=N:/Project2/Project2/project_2.cache/compile_simlib/modelsim} {questa=N:/Project2/Project2/project_2.cache/compile_simlib/questa} {riviera=N:/Project2/Project2/project_2.cache/compile_simlib/riviera} {activehdl=N:/Project2/Project2/project_2.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Write_Width_A {2} CONFIG.Write_Depth_A {256} CONFIG.Read_Width_A {2} CONFIG.Write_Width_B {2} CONFIG.Read_Width_B {2}] [get_ips blk_mem_gen_5]
+generate_target all [get_files  N:/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5.xci]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_5] }
+export_ip_user_files -of_objects [get_files N:/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5.xci] -no_script -sync -force -quiet
+reset_run blk_mem_gen_5_synth_1
+launch_runs -jobs 4 blk_mem_gen_5_synth_1
+export_simulation -of_objects [get_files N:/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5.xci] -directory N:/Project2/Project2/project_2.ip_user_files/sim_scripts -ip_user_files_dir N:/Project2/Project2/project_2.ip_user_files -ipstatic_source_dir N:/Project2/Project2/project_2.ip_user_files/ipstatic -lib_map_path [list {modelsim=N:/Project2/Project2/project_2.cache/compile_simlib/modelsim} {questa=N:/Project2/Project2/project_2.cache/compile_simlib/questa} {riviera=N:/Project2/Project2/project_2.cache/compile_simlib/riviera} {activehdl=N:/Project2/Project2/project_2.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Write_Width_A {2} CONFIG.Write_Depth_A {256} CONFIG.Read_Width_A {2} CONFIG.Write_Width_B {2} CONFIG.Read_Width_B {2}] [get_ips blk_mem_gen_4]
+generate_target all [get_files  N:/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4.xci]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_4] }
+export_ip_user_files -of_objects [get_files N:/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4.xci] -no_script -sync -force -quiet
+reset_run blk_mem_gen_4_synth_1
+launch_runs -jobs 4 blk_mem_gen_4_synth_1
+export_simulation -of_objects [get_files N:/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4.xci] -directory N:/Project2/Project2/project_2.ip_user_files/sim_scripts -ip_user_files_dir N:/Project2/Project2/project_2.ip_user_files -ipstatic_source_dir N:/Project2/Project2/project_2.ip_user_files/ipstatic -lib_map_path [list {modelsim=N:/Project2/Project2/project_2.cache/compile_simlib/modelsim} {questa=N:/Project2/Project2/project_2.cache/compile_simlib/questa} {riviera=N:/Project2/Project2/project_2.cache/compile_simlib/riviera} {activehdl=N:/Project2/Project2/project_2.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Write_Width_A {2} CONFIG.Write_Depth_A {256} CONFIG.Read_Width_A {2} CONFIG.Write_Width_B {2} CONFIG.Read_Width_B {2}] [get_ips blk_mem_gen_3]
+generate_target all [get_files  N:/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_3] }
+export_ip_user_files -of_objects [get_files N:/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci] -no_script -sync -force -quiet
+reset_run blk_mem_gen_3_synth_1
+launch_runs -jobs 4 blk_mem_gen_3_synth_1
+export_simulation -of_objects [get_files N:/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci] -directory N:/Project2/Project2/project_2.ip_user_files/sim_scripts -ip_user_files_dir N:/Project2/Project2/project_2.ip_user_files -ipstatic_source_dir N:/Project2/Project2/project_2.ip_user_files/ipstatic -lib_map_path [list {modelsim=N:/Project2/Project2/project_2.cache/compile_simlib/modelsim} {questa=N:/Project2/Project2/project_2.cache/compile_simlib/questa} {riviera=N:/Project2/Project2/project_2.cache/compile_simlib/riviera} {activehdl=N:/Project2/Project2/project_2.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files  N:/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci]
+export_ip_user_files -of_objects [get_files N:/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci] -no_script -sync -force -quiet
+reset_run blk_mem_gen_2_synth_1
+launch_runs -jobs 4 blk_mem_gen_2_synth_1
+export_simulation -of_objects [get_files N:/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci] -directory N:/Project2/Project2/project_2.ip_user_files/sim_scripts -ip_user_files_dir N:/Project2/Project2/project_2.ip_user_files -ipstatic_source_dir N:/Project2/Project2/project_2.ip_user_files/ipstatic -lib_map_path [list {modelsim=N:/Project2/Project2/project_2.cache/compile_simlib/modelsim} {questa=N:/Project2/Project2/project_2.cache/compile_simlib/questa} {riviera=N:/Project2/Project2/project_2.cache/compile_simlib/riviera} {activehdl=N:/Project2/Project2/project_2.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files  N:/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci]
+export_ip_user_files -of_objects [get_files N:/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci] -no_script -sync -force -quiet
+reset_run blk_mem_gen_1_synth_1
+launch_runs -jobs 4 blk_mem_gen_1_synth_1
+export_simulation -of_objects [get_files N:/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci] -directory N:/Project2/Project2/project_2.ip_user_files/sim_scripts -ip_user_files_dir N:/Project2/Project2/project_2.ip_user_files -ipstatic_source_dir N:/Project2/Project2/project_2.ip_user_files/ipstatic -lib_map_path [list {modelsim=N:/Project2/Project2/project_2.cache/compile_simlib/modelsim} {questa=N:/Project2/Project2/project_2.cache/compile_simlib/questa} {riviera=N:/Project2/Project2/project_2.cache/compile_simlib/riviera} {activehdl=N:/Project2/Project2/project_2.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {N:/Project2/Project2/project_2.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {N:/Project2/Project2/project_2.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {N:/Project2/Project2/project_2.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {N:/Project2/Project2/project_2.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {N:/Project2/Project2/project_2.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {N:/Project2/Project2/project_2.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {N:/Project2/Project2/project_2.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {N:/Project2/Project2/project_2.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {N:/Project2/Project2/project_2.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {N:/Project2/Project2/project_2.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+import_files -norecurse {N:/Project2/counter_row.v N:/Project2/counter_column.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {N:/Project2/Project2/project_2.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {N:/Project2/Project2/project_2.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {N:/Project2/Project2/project_2.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {N:/Project2/Project2/project_2.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+refresh_design
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {N:/Project2/Project2/project_2.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {N:/Project2/Project2/project_2.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+close_design
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+>>>>>>> 4ade2f28a711b5bfb0fe82a58b19ec55d7d98ec0

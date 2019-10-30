@@ -12,10 +12,10 @@ module colorizer(
 	begin
 		if(video_on)
 			begin
-			 if(icon)
+			 if(icon != 0)
                 begin
                     red = 0;
-                    green = 4'hF;
+                    green = 0;
                     blue = 0;
                 end	             
 			 else
@@ -28,8 +28,8 @@ module colorizer(
 					end
 					1:
 					begin
-						red = 0;
-						green = 0;
+						red = 4'h8;
+						green = 4'hA;
 						blue = 0;
 					end
 					2:

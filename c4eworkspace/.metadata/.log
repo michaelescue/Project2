@@ -1,0 +1,52 @@
+!SESSION 2019-10-29 11:25:11.895 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_77
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-10-29 11:26:01.377
+!MESSAGE Indexed 'proje2' (0 sources, 0 headers) in 0.116 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.img.codescape 1 1 2019-10-29 11:26:24.669
+!MESSAGE Backend library: System.loadLibrary(DAscript)
+
+!ENTRY com.img.codescape 1 1 2019-10-29 11:26:41.196
+!MESSAGE Virtual Probe: C:\Program Files\Imagination Technologies\Codescape-For-Eclipse-8.6\virtual_probe.exe
+
+!ENTRY org.eclipse.ui 4 4 2019-10-29 11:26:55.019
+!MESSAGE Referenced part does not exist yet: com.img.codescape.stat.profiler.multi.view.
+
+!ENTRY com.codescape.debug.codescapeLaunch 4 0 2019-10-29 12:23:07.471
+!MESSAGE RuntimeException: LoadProgramFileError : Error: Failed to send data to target at
+address 0x80000000 (memory type 0) in section 
+
+The errors encountered were :
+
+[0x80000000,0x80000848) Failed - comms returned failure : write_memory : CON: Command fatal error : Reset Occurred while executing code sequence
+
+!STACK 1
+org.eclipse.core.runtime.CoreException: RuntimeException: LoadProgramFileError : Error: Failed to send data to target at
+address 0x80000000 (memory type 0) in section 
+
+The errors encountered were :
+
+[0x80000000,0x80000848) Failed - comms returned failure : write_memory : CON: Command fatal error : Reset Occurred while executing code sequence
+
+	at com.img.codescape.da.debug.launch.AbstractCodescapeLaunchDelegate.launchDebugSession(AbstractCodescapeLaunchDelegate.java:289)
+	at com.img.codescape.da.debug.launch.AbstractCodescapeLaunchDelegate.createCDISession(AbstractCodescapeLaunchDelegate.java:272)
+	at com.img.codescape.da.debug.launch.AbstractCodescapeLaunchDelegate.launch(AbstractCodescapeLaunchDelegate.java:252)
+	at com.img.codescape.da.debug.launch.BareMetalLaunchDelegate.launch(BareMetalLaunchDelegate.java:59)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:883)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.codescape.debug.codescapeLaunch 4 0 2019-10-29 12:23:07.494
+!MESSAGE RuntimeException: LoadProgramFileError : Error: Failed to send data to target at
+address 0x80000000 (memory type 0) in section 
+
+The errors encountered were :
+
+[0x80000000,0x80000848) Failed - comms returned failure : write_memory : CON: Command fatal error : Reset Occurred while executing code sequence
+

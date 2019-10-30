@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date         : Mon Oct 28 10:25:03 2019
-| Host         : caplab12 running 64-bit major release  (build 9200)
+| Date         : Tue Oct 29 11:41:12 2019
+| Host         : caplab07 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file blk_mem_gen_4_utilization_synth.rpt -pb blk_mem_gen_4_utilization_synth.pb
 | Design       : blk_mem_gen_4
 | Device       : 7a100tcsg324-1

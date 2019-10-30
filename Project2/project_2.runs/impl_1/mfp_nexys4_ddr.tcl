@@ -60,34 +60,37 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param synth.incrementalSynthesisCache N:/Project2/Project2/.Xil/Vivado-8468-caplab07/incrSyn
   set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a100tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir N:/ECE540/ECE540_Project2/Project2/project_2.cache/wt [current_project]
-  set_property parent.project_path N:/ECE540/ECE540_Project2/Project2/project_2.xpr [current_project]
-  set_property ip_repo_paths N:/ECE540/ECE540_Project2/proj2_release_r1_0/ece540_ip_repo [current_project]
-  set_property ip_output_repo N:/ECE540/ECE540_Project2/Project2/project_2.cache/ip [current_project]
+  set_property webtalk.parent_dir N:/Project2/Project2/project_2.cache/wt [current_project]
+  set_property parent.project_path N:/Project2/Project2/project_2.xpr [current_project]
+  set_property ip_repo_paths N:/Project2/proj2_release_r1_0/ece540_ip_repo [current_project]
+  set_property ip_output_repo N:/Project2/Project2/project_2.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  add_files -quiet N:/ECE540/ECE540_Project2/Project2/project_2.runs/synth_1/mfp_nexys4_ddr.dcp
-  read_ip -quiet N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6.xci
-  read_ip -quiet N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-  read_ip -quiet N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/rojobot31_0/rojobot31_0.xci
-  read_ip -quiet N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
-  read_ip -quiet N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci
-  read_ip -quiet N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci
-  read_ip -quiet N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci
-  read_ip -quiet N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4.xci
-  read_ip -quiet N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5.xci
-  read_ip -quiet N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7.xci
-  read_edif N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/world_maps_part1/world_map.ngc
-  read_xdc N:/ECE540/ECE540_Project2/Project2/project_2.srcs/constrs_1/imports/constraints/mfp_nexys4_ddr.xdc
+  add_files -quiet N:/Project2/Project2/project_2.runs/synth_1/mfp_nexys4_ddr.dcp
+  read_ip -quiet N:/Project2/Project2/project_2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+  read_ip -quiet N:/Project2/Project2/project_2.srcs/sources_1/ip/rojobot31_0/rojobot31_0.xci
+  read_ip -quiet N:/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+  read_ip -quiet N:/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci
+  read_ip -quiet N:/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci
+  read_ip -quiet N:/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci
+  read_ip -quiet N:/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4.xci
+  read_ip -quiet N:/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5.xci
+  read_ip -quiet N:/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7.xci
+  read_ip -quiet N:/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6.xci
+  read_edif N:/Project2/Project2/project_2.srcs/sources_1/imports/world_maps_part1/world_map.ngc
+  read_xdc N:/Project2/Project2/project_2.srcs/constrs_1/imports/constraints/mfp_nexys4_ddr.xdc
   link_design -top mfp_nexys4_ddr -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]
