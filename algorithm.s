@@ -83,7 +83,7 @@ SP_LFRRFR 	= 0x00		# left  and right motor fwd & rev = off			[1111]
 				#)
 			#ELSE
 				#THEN(
-					#IF(   is equal to known backwards direction ) *SP_BKWDS Variable*
+					#IF( Orientation is equal to known backwards direction ) *SP_BKWDS Variable*
 						# Rotate 45 degrees clockwise	*MotCtl_in reg*
 					#ELSE
 						# Go Forward	*MotCtl_in reg*
@@ -117,39 +117,57 @@ while_loop:
 	#IF( The Robot is on a black line )  *Sensors_reg*
 	li $25, PORT_BOTINFO	# Load Bot info reg address for sensor info.
 	lw $2, 0($25)			# Load Bot info reg value.
-	ANDi $2, $2, MSKBLKL	# Mask out all but the black line sensor bits.
-	ORi $2, $2, 0			# Test to see if all bits are 0 or 1s
+	ANDi $2, $2, 0x0300	# Mask out all but the black line sensor bits.
+	addi $2, $2, 0x0			# Test to see if all bits are 0 or 1s
 	BNEZ no_line			# Branch to Else if no black line detected.
 		#THEN( 
 			#IF( Current Motion is Reverse )	*BotInfo_reg*
-			...
+				case0:
+				li $25, PORT_BOTINFO	# Load Bot info reg address for sensor info.
+				lw $2, 0($25)			# Load Bot info reg value.
+				ANDi $2, $2, 0xF0	# Mask out all but the Mvmt bits.
+				subi $2, $2, 0x80	# Test to see if Mvmt bits are in reverse.
+				BNEZ case1			# Branch to next case if not in reverse.
 				#THEN( 
 					# Rotate 45 degrees clockwise	*MotCtl_in reg*
 					r45:
 					li $25, PORT_BOTCTRL	# Load Bot control reg address.
-					li $2, SP_LRRS			# Load control to turn right .
+					li $2, SP_LFRR			# Load control to turn right .
 					sw $2, 0($25)			# Write right turn to control reg.
 					b while_loop
 				#)
 			#ELSE IF( Current Motion is Forward)	*BotInfo_reg*
-			...
+				case1:
+				li $25, PORT_BOTINFO	# Load Bot info reg address for sensor info.
+				lw $2, 0($25)			# Load Bot info reg value.
+				ANDi $2, $2, 0xF0	# Mask out all but the Mvmt bits.
+				subi $2, $2, 0x40	# Test to see if Mvmt bits are in reverse.
+				BNEZ case2
 				#THEN(
 					#Update the known backwards direction from current direction	*SP_BKWDS Variable*
 					li $25, PORT_BOTINFO	# Load Bot info reg address.
 					lw $2, 0($25)			# Load Bot infor reg value.
-					ANDi $2, $2, MSKBOTINFO # Mask out all but info reg from port.
-					la $25, (SP_FWDS)		# Load the Forward variable address.
-					sb $2, 0($25)			# Store the Forward orientation to the variables.
+					ANDi $2, $2, 0x07 		# Mask out all but info reg from port.
+					la $25, (SP_BKWDS)		# Load the Backwards variable address.
+					sb $2, 0($25)			# Store the Backwards orientation to the variables.
 					b while_loop
 				#)
 			#ELSE
 				#THEN(
-					#IF(   is equal to known backwards direction ) *SP_BKWDS Variable*
-					...
+					#IF( Orientation is equal to known backwards direction ) *SP_BKWDS Variable*
+						case2:
+						li $25, PORT_BOTINFO	# Load Bot info reg address for sensor info.
+						lw $2, 0($25)			# Load Bot info reg value.
+						ANDi $2, $2, 0x7	# Mask out all but the black line sensor bits.
+						la $25, (SP_BKWDS)
+						lw $4, $25
+						subi $2, $2, $4			# Test to see if all bits are 0 or 1s
+						BNEZ fwd
 						# Rotate 45 degrees clockwise	*MotCtl_in reg*
-						# beq r45:
+						beq r45:
 					#ELSE
 						# Go Forward	*MotCtl_in reg*
+						fwd:
 						li $25, PORT_BOTCTRL	# Load Bot control reg address.
 						li $2, SP_LFRF			# Load control to move forward.
 						sw $2, 0($25)			# Write forward to control reg.
@@ -162,6 +180,7 @@ while_loop:
 			li $25, PORT_BOTCTRL	# Load Bot control reg address.
 			li $2, SP_LRRR			# Load control to reverse.
 			sw $2, 0($25)			# Write reverse to control reg.
+			b while_loop
 		#)
 #ENDWHILE
 	
