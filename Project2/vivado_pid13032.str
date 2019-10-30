@@ -3245,3 +3245,40 @@ selectCodeEditor("icon.v", 218, 267, false, false, false, false, true); // ce (w
 selectCodeEditor("icon.v", 407, 372); // ce (w, ck)
 selectCodeEditor("icon.v", 407, 372, false, false, false, false, true); // ce (w, ck) - Double Click
 selectCodeEditor("icon.v", 402, 458); // ce (w, ck)
+selectCodeEditor("icon.v", 151, 264); // ce (w, ck)
+selectCodeEditor("icon.v", 608, 274); // ce (w, ck)
+selectCodeEditor("icon.v", 608, 274); // ce (w, ck)
+// Elapsed time: 92 seconds
+selectCodeEditor("icon.v", 1057, 304); // ce (w, ck)
+selectCodeEditor("icon.v", 189, 247); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Oct 29 21:17:45 2019] Launched synth_1... Run output will be captured here: N:/ECE540/ECE540_Project2/Project2/project_2.runs/synth_1/runme.log [Tue Oct 29 21:17:46 2019] Launched impl_1... Run output will be captured here: N:/ECE540/ECE540_Project2/Project2/project_2.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 566ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2103 ms. Increasing delay to 5000 ms.
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE

@@ -2,8 +2,8 @@
 # Vivado v2018.2.1 (64-bit)
 # SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
 # IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Tue Oct 29 20:53:52 2019
-# Process ID: 9016
+# Start of session at: Tue Oct 29 21:17:48 2019
+# Process ID: 9340
 # Current directory: N:/ECE540/ECE540_Project2/Project2/project_2.runs/synth_1
 # Command line: vivado.exe -log mfp_nexys4_ddr.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mfp_nexys4_ddr.tcl
 # Log file: N:/ECE540/ECE540_Project2/Project2/project_2.runs/synth_1/mfp_nexys4_ddr.vds
@@ -15,18 +15,18 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4988 
+INFO: Helper process launched with PID 11360 
 WARNING: [Synth 8-2507] parameter declaration becomes local in debounce with formal parameter declaration list [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/project_simplebot/hdl/debounce.v:48]
 WARNING: [Synth 8-1083] icon was previously declared without a range [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/boards/nexys4_ddr/mfp_nexys4_ddr.v:76]
 WARNING: [Synth 8-976] icon has already been declared [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/boards/nexys4_ddr/mfp_nexys4_ddr.v:76]
 WARNING: [Synth 8-2654] second declaration of icon ignored [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/boards/nexys4_ddr/mfp_nexys4_ddr.v:76]
 INFO: [Synth 8-994] icon is declared here [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/boards/nexys4_ddr/mfp_nexys4_ddr.v:64]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 432.879 ; gain = 123.090
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 432.336 ; gain = 122.742
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'mfp_nexys4_ddr' [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/boards/nexys4_ddr/mfp_nexys4_ddr.v:17]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [N:/ECE540/ECE540_Project2/Project2/project_2.runs/synth_1/.Xil/Vivado-9016-caplab12/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [N:/ECE540/ECE540_Project2/Project2/project_2.runs/synth_1/.Xil/Vivado-9016-caplab12/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [N:/ECE540/ECE540_Project2/Project2/project_2.runs/synth_1/.Xil/Vivado-9340-caplab12/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [N:/ECE540/ECE540_Project2/Project2/project_2.runs/synth_1/.Xil/Vivado-9340-caplab12/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'IBUF' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19473]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
@@ -833,9 +833,7 @@ INFO: [Synth 8-3876] $readmem data file 'ram_p2.txt' is read successfully [N:/EC
 	Parameter ADDR_WIDTH bound to: 16 - type: integer 
 INFO: [Synth 8-3876] $readmem data file 'ram_p3.txt' is read successfully [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/memories/ram_p3.v:19]
 WARNING: [Synth 8-3936] Found unconnected internal register 'HADDR_d_reg' and it is trimmed from '32' to '18' bits. [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/memories/mfp_ahb_p_ram.v:35]
-INFO: [Synth 8-155] case statement is not full and has no default [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_ahb_gpio.v:52]
-WARNING: [Synth 8-5788] Register IO_BotCtrl_reg in module mfp_ahb_gpio is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_ahb_gpio.v:54]
-WARNING: [Synth 8-5788] Register IO_INT_ACK_reg in module mfp_ahb_gpio is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_ahb_gpio.v:55]
+INFO: [Synth 8-155] case statement is not full and has no default [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/soc/rtl_up/system/mfp_ahb_gpio.v:54]
 	Parameter seg_a bound to: 7'b0111111 
 	Parameter seg_b bound to: 7'b1011111 
 	Parameter seg_c bound to: 7'b1101111 
@@ -878,8 +876,8 @@ WARNING: [Synth 8-3848] Net BistIn in module/entity mfp_sys does not have driver
 	Parameter HCNT_MAX bound to: 1327 - type: integer 
 	Parameter HSYNC_START bound to: 1053 - type: integer 
 	Parameter HSYNC_END bound to: 1189 - type: integer 
-	Parameter HORIZ_SIZE bound to: 64 - type: integer 
-	Parameter VERT_SIZE bound to: 64 - type: integer 
+	Parameter HORIZ_SIZE bound to: 32 - type: integer 
+	Parameter VERT_SIZE bound to: 32 - type: integer 
 	Parameter VERT_PIXELS bound to: 768 - type: integer 
 	Parameter VCNT_MAX bound to: 805 - type: integer 
 	Parameter VSYNC_START bound to: 773 - type: integer 
@@ -1004,7 +1002,7 @@ WARNING: [Synth 8-3331] design mfp_ahb_b_ram has unconnected port HADDR[27]
 WARNING: [Synth 8-3331] design mfp_ahb_b_ram has unconnected port HADDR[26]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 683.961 ; gain = 374.172
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 683.773 ; gain = 374.180
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1027,10 +1025,10 @@ WARNING: [Synth 8-3295] tying undriven pin top:BistIn[0] to constant 0 [N:/ECE54
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 683.961 ; gain = 374.172
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:27 . Memory (MB): peak = 683.773 ; gain = 374.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 683.961 ; gain = 374.172
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:27 . Memory (MB): peak = 683.773 ; gain = 374.180
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1070,7 +1068,7 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1084.742 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1083.820 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'icon1/orientation0' at clock pin 'clka' is different from the actual clock period '13.333', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'icon1/orientation135' at clock pin 'clka' is different from the actual clock period '13.333', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'icon1/orientation180' at clock pin 'clka' is different from the actual clock period '13.333', this can lead to different synthesis results.
@@ -1080,7 +1078,7 @@ WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context s
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'icon1/orientation45' at clock pin 'clka' is different from the actual clock period '13.333', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'icon1/orientation90' at clock pin 'clka' is different from the actual clock period '13.333', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:52 . Memory (MB): peak = 1084.742 ; gain = 774.953
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:52 . Memory (MB): peak = 1083.820 ; gain = 774.227
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
 ---------------------------------------------------------------------------------
@@ -1088,7 +1086,7 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:53 . Memory (MB): peak = 1084.742 ; gain = 774.953
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:53 . Memory (MB): peak = 1083.820 ; gain = 774.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -1106,7 +1104,7 @@ Applied set_property DONT_TOUCH = true for icon1/orientation225. (constraint fil
 Applied set_property DONT_TOUCH = true for icon1/orientation315. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for icon1/orientation270. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:53 . Memory (MB): peak = 1084.742 ; gain = 774.953
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:53 . Memory (MB): peak = 1083.820 ; gain = 774.227
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "db_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "shift_pb0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -1181,7 +1179,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'horiz_pix_min_reg' [N:/ECE5
 WARNING: [Synth 8-327] inferring latch for variable 'vert_pix_min_reg' [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/Project2/icon.v:84]
 WARNING: [Synth 8-327] inferring latch for variable 'horiz_pix_max_reg' [N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/Project2/icon.v:83]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:46 ; elapsed = 00:01:14 . Memory (MB): peak = 1084.742 ; gain = 774.953
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:46 ; elapsed = 00:01:13 . Memory (MB): peak = 1083.820 ; gain = 774.227
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'mfp_sys/top/cpu/core/clock_gate/buff_fclk' (m14k_clock_buf) to 'mfp_sys/top/cpu/core/clock_gate/buff_gclk'
 INFO: [Synth 8-223] decloning instance 'mfp_sys/top/cpu/core/clock_gate/buff_fclk' (m14k_clock_buf) to 'mfp_sys/top/cpu/core/clock_gate/buff_gtlbclk'
@@ -1201,7 +1199,7 @@ Report RTL Partitions:
 |3     |m14k_core__GB2      |           1|     19308|
 |4     |m14k_cpu__GC0       |           1|       114|
 |5     |m14k_top__GC0       |           1|       458|
-|6     |mfp_sys__GC0        |           1|      2981|
+|6     |mfp_sys__GC0        |           1|      2988|
 |7     |mfp_nexys4_ddr__GC0 |           1|      3034|
 +------+--------------------+------------+----------+
 ---------------------------------------------------------------------------------
@@ -8816,7 +8814,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (corei_1/c
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (corei_1/cpz/\_cpz_taglo_0_0_/q_reg[0] )
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:14 ; elapsed = 00:04:57 . Memory (MB): peak = 1582.137 ; gain = 1272.348
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:09 ; elapsed = 00:04:55 . Memory (MB): peak = 1577.723 ; gain = 1268.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -8945,8 +8943,8 @@ Report RTL Partitions:
 |3     |m14k_core__GB2      |           1|     12622|
 |4     |m14k_cpu__GC0       |           1|        93|
 |5     |m14k_top__GC0       |           1|       439|
-|6     |mfp_sys__GC0        |           1|      1525|
-|7     |mfp_nexys4_ddr__GC0 |           1|       923|
+|6     |mfp_sys__GC0        |           1|      1533|
+|7     |mfp_nexys4_ddr__GC0 |           1|      1064|
 +------+--------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
@@ -8955,13 +8953,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_wiz_0/clk_out1' to pi
 INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_wiz_0/clk_out2' to pin 'clk_wiz_0/bbstub_clk_out2/O'
 INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:22 ; elapsed = 00:05:06 . Memory (MB): peak = 1582.137 ; gain = 1272.348
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:18 ; elapsed = 00:05:05 . Memory (MB): peak = 1577.723 ; gain = 1268.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:04:26 ; elapsed = 00:05:11 . Memory (MB): peak = 1582.137 ; gain = 1272.348
+Finished Timing Optimization : Time (s): cpu = 00:04:21 ; elapsed = 00:05:09 . Memory (MB): peak = 1577.723 ; gain = 1268.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -9028,8 +9026,8 @@ Report RTL Partitions:
 |3     |m14k_core__GB2      |           1|     12622|
 |4     |m14k_cpu__GC0       |           1|        93|
 |5     |m14k_top__GC0       |           1|       439|
-|6     |mfp_sys__GC0        |           1|      1525|
-|7     |mfp_nexys4_ddr__GC0 |           1|       923|
+|6     |mfp_sys__GC0        |           1|      1533|
+|7     |mfp_nexys4_ddr__GC0 |           1|       935|
 +------+--------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -9076,7 +9074,7 @@ INFO: [Synth 8-4480] The timing for the instance mfp_sys/mfp_ahb_withloader/mfp_
 INFO: [Synth 8-4480] The timing for the instance mfp_sys/mfp_ahb_withloader/mfp_ahb/mfp_ahb_p_ram/ram_p1/ram_reg_1_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Common 17-14] Message 'Synth 8-4480' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:04:38 ; elapsed = 00:05:23 . Memory (MB): peak = 1582.137 ; gain = 1272.348
+Finished Technology Mapping : Time (s): cpu = 00:04:33 ; elapsed = 00:05:22 . Memory (MB): peak = 1577.723 ; gain = 1268.129
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -9104,7 +9102,7 @@ INFO: [Synth 8-6064] Net \mfp_sys/mfp_ahb_withloader/mfp_ahb/mfp_ahb_p_ram/we_ma
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:04:40 ; elapsed = 00:05:25 . Memory (MB): peak = 1582.137 ; gain = 1272.348
+Finished IO Insertion : Time (s): cpu = 00:04:36 ; elapsed = 00:05:24 . Memory (MB): peak = 1577.723 ; gain = 1268.129
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -9117,7 +9115,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:04:40 ; elapsed = 00:05:26 . Memory (MB): peak = 1582.137 ; gain = 1272.348
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:36 ; elapsed = 00:05:24 . Memory (MB): peak = 1577.723 ; gain = 1268.129
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -9129,25 +9127,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:44 ; elapsed = 00:05:30 . Memory (MB): peak = 1582.137 ; gain = 1272.348
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:40 ; elapsed = 00:05:28 . Memory (MB): peak = 1577.723 ; gain = 1268.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:04:45 ; elapsed = 00:05:31 . Memory (MB): peak = 1582.137 ; gain = 1272.348
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:41 ; elapsed = 00:05:29 . Memory (MB): peak = 1577.723 ; gain = 1268.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:04:46 ; elapsed = 00:05:31 . Memory (MB): peak = 1582.137 ; gain = 1272.348
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:41 ; elapsed = 00:05:30 . Memory (MB): peak = 1577.723 ; gain = 1268.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:04:46 ; elapsed = 00:05:32 . Memory (MB): peak = 1582.137 ; gain = 1272.348
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:42 ; elapsed = 00:05:30 . Memory (MB): peak = 1577.723 ; gain = 1268.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -9205,12 +9203,12 @@ Report Cell Usage:
 |11    |world_map     |     1|
 |12    |BUFG          |     2|
 |13    |CARRY4        |   173|
-|14    |LUT1          |   112|
-|15    |LUT2          |   642|
-|16    |LUT3          |  1371|
-|17    |LUT4          |  1718|
-|18    |LUT5          |  2696|
-|19    |LUT6          |  4610|
+|14    |LUT1          |   109|
+|15    |LUT2          |   618|
+|16    |LUT3          |  1370|
+|17    |LUT4          |  1712|
+|18    |LUT5          |  2703|
+|19    |LUT6          |  4626|
 |20    |MUXF7         |   268|
 |21    |MUXF8         |    18|
 |22    |RAM128X1S     |     3|
@@ -9222,11 +9220,11 @@ Report Cell Usage:
 |28    |RAMB36E1      |    32|
 |29    |RAMB36E1_1    |    32|
 |30    |SRL16E        |     9|
-|31    |FDCE          |   130|
+|31    |FDCE          |   139|
 |32    |FDPE          |    14|
-|33    |FDRE          |  8619|
+|33    |FDRE          |  8610|
 |34    |FDSE          |    51|
-|35    |LD            |    38|
+|35    |LD            |    40|
 |36    |IBUF          |    28|
 |37    |OBUF          |    47|
 +------+--------------+------+
@@ -9235,40 +9233,40 @@ Report Instance Areas:
 +------+---------------------------------------------------------------------------------------------+-------------------------------------------+------+
 |      |Instance                                                                                     |Module                                     |Cells |
 +------+---------------------------------------------------------------------------------------------+-------------------------------------------+------+
-|1     |top                                                                                          |                                           | 20710|
+|1     |top                                                                                          |                                           | 20701|
 |2     |  debounce                                                                                   |debounce                                   |   183|
-|3     |  icon1                                                                                      |icon                                       |   165|
-|4     |  mfp_sys                                                                                    |mfp_sys                                    | 20141|
-|5     |    mfp_ahb_withloader                                                                       |mfp_ahb_withloader                         |   961|
+|3     |  icon1                                                                                      |icon                                       |   169|
+|4     |  mfp_sys                                                                                    |mfp_sys                                    | 20127|
+|5     |    mfp_ahb_withloader                                                                       |mfp_ahb_withloader                         |   949|
 |6     |      mfp_ahb                                                                                |mfp_ahb                                    |   427|
-|7     |        mfp_ahb_b_ram                                                                        |mfp_ahb_b_ram                              |    41|
+|7     |        mfp_ahb_b_ram                                                                        |mfp_ahb_b_ram                              |    40|
 |8     |          ram_b0                                                                             |ram_b0                                     |     2|
 |9     |          ram_b1                                                                             |ram_b1                                     |     2|
 |10    |          ram_b2                                                                             |ram_b2                                     |     2|
 |11    |          ram_b3                                                                             |ram_b3                                     |     2|
-|12    |        mfp_ahb_gpio                                                                         |mfp_ahb_gpio                               |    79|
-|13    |        mfp_ahb_p_ram                                                                        |mfp_ahb_p_ram                              |   147|
-|14    |          ram_p0                                                                             |ram_p0                                     |    18|
-|15    |          ram_p1                                                                             |ram_p1                                     |    20|
-|16    |          ram_p2                                                                             |ram_p2                                     |    18|
-|17    |          ram_p3                                                                             |ram_p3                                     |    19|
-|18    |        mfp_ahb_sseg                                                                         |mfp_ahb_7seg                               |   153|
+|12    |        mfp_ahb_gpio                                                                         |mfp_ahb_gpio                               |    76|
+|13    |        mfp_ahb_p_ram                                                                        |mfp_ahb_p_ram                              |   145|
+|14    |          ram_p0                                                                             |ram_p0                                     |    20|
+|15    |          ram_p1                                                                             |ram_p1                                     |    21|
+|16    |          ram_p2                                                                             |ram_p2                                     |    19|
+|17    |          ram_p3                                                                             |ram_p3                                     |    18|
+|18    |        mfp_ahb_sseg                                                                         |mfp_ahb_7seg                               |   159|
 |19    |          mfp_seven_seg                                                                      |mfp_ahb_sevensegtimer                      |    61|
 |20    |            counter16                                                                        |counter                                    |    21|
 |21    |            counterSel                                                                       |counter__parameterized0                    |    40|
-|22    |      mfp_srec_parser                                                                        |mfp_srec_parser                            |   335|
+|22    |      mfp_srec_parser                                                                        |mfp_srec_parser                            |   332|
 |23    |      mfp_srec_parser_to_ahb_lite_bridge                                                     |mfp_srec_parser_to_ahb_lite_bridge         |    64|
-|24    |      mfp_uart_receiver                                                                      |mfp_uart_receiver                          |   135|
+|24    |      mfp_uart_receiver                                                                      |mfp_uart_receiver                          |   126|
 |25    |    mfp_ejtag_reset                                                                          |mfp_ejtag_reset                            |    12|
-|26    |    top                                                                                      |m14k_top                                   | 19168|
-|27    |      cpu                                                                                    |m14k_cpu                                   | 18861|
-|28    |        core                                                                                 |m14k_core                                  | 18714|
-|29    |          biu                                                                                |m14k_biu                                   |  1492|
-|30    |            _HADDR_31_0_                                                                     |mvp_cregister_wide__parameterized2_1266    |   262|
-|31    |              cregister                                                                      |mvp_cregister_ngc__parameterized2_1392     |   262|
-|32    |                cregister                                                                    |mvp_cregister__parameterized3_1393         |   262|
+|26    |    top                                                                                      |m14k_top                                   | 19166|
+|27    |      cpu                                                                                    |m14k_cpu                                   | 18859|
+|28    |        core                                                                                 |m14k_core                                  | 18712|
+|29    |          biu                                                                                |m14k_biu                                   |  1490|
+|30    |            _HADDR_31_0_                                                                     |mvp_cregister_wide__parameterized2_1266    |   258|
+|31    |              cregister                                                                      |mvp_cregister_ngc__parameterized2_1392     |   258|
+|32    |                cregister                                                                    |mvp_cregister__parameterized3_1393         |   258|
 |33    |            _HBURST_2_0_                                                                     |mvp_cregister__parameterized14_1267        |     1|
-|34    |            _HSIZE_2_0_                                                                      |mvp_cregister__parameterized14_1268        |     4|
+|34    |            _HSIZE_2_0_                                                                      |mvp_cregister__parameterized14_1268        |     6|
 |35    |            _HTRANS_1_0_                                                                     |mvp_cregister__parameterized8_1269         |     5|
 |36    |            _HWDATA_31_0_                                                                    |mvp_cregister_wide__parameterized2_1270    |    45|
 |37    |              cregister                                                                      |mvp_cregister_ngc__parameterized2_1390     |    45|
@@ -10879,14 +10877,14 @@ Report Instance Areas:
 |1642  |          cregister                                                                          |mvp_cregister_ngc__parameterized2          |    32|
 |1643  |            cregister                                                                        |mvp_cregister__parameterized3              |    32|
 |1644  |        _udi_in_m                                                                            |mvp_cregister__parameterized1              |     1|
-|1645  |  vta                                                                                        |dtg                                        |    89|
+|1645  |  vta                                                                                        |dtg                                        |    90|
 +------+---------------------------------------------------------------------------------------------+-------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:04:46 ; elapsed = 00:05:33 . Memory (MB): peak = 1582.137 ; gain = 1272.348
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:42 ; elapsed = 00:05:31 . Memory (MB): peak = 1577.723 ; gain = 1268.129
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 995 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:04:17 ; elapsed = 00:05:15 . Memory (MB): peak = 1582.137 ; gain = 871.566
-Synthesis Optimization Complete : Time (s): cpu = 00:04:46 ; elapsed = 00:05:33 . Memory (MB): peak = 1582.137 ; gain = 1272.348
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:13 ; elapsed = 00:05:14 . Memory (MB): peak = 1577.723 ; gain = 868.082
+Synthesis Optimization Complete : Time (s): cpu = 00:04:42 ; elapsed = 00:05:32 . Memory (MB): peak = 1577.723 ; gain = 1268.129
 INFO: [Project 1-571] Translating synthesized netlist
 Release 14.7 - ngc2edif P_INT.20180321 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
@@ -10897,28 +10895,28 @@ Processing design ...
    Preping design's macros ...
   finished :Prep
 Writing EDIF netlist file world_map.edif ...
-ngc2edif: Total memory usage is 4320072 kilobytes
+ngc2edif: Total memory usage is 4320456 kilobytes
 
 Reading core file 'N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/imports/world_maps_part1/world_map.ngc' for (cell view 'world_map', library 'work')
 Parsing EDIF File [./.ngc2edfcache/world_map_ngc_f6383983.edif]
 Finished Parsing EDIF File [./.ngc2edfcache/world_map_ngc_f6383983.edif]
-INFO: [Netlist 29-17] Analyzing 621 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Netlist 29-17] Analyzing 623 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Xilinx ngc2edif P_INT.20180321
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 41 instances were transformed.
-  LD => LDCE: 38 instances
+  A total of 43 instances were transformed.
+  LD => LDCE: 40 instances
   RAM128X1S => RAM128X1S (MUXF7, RAMS64E, RAMS64E): 3 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-712 Infos, 338 Warnings, 0 Critical Warnings and 0 Errors encountered.
+712 Infos, 336 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:04:56 ; elapsed = 00:05:46 . Memory (MB): peak = 1582.137 ; gain = 1284.230
+synth_design: Time (s): cpu = 00:04:52 ; elapsed = 00:05:45 . Memory (MB): peak = 1577.723 ; gain = 1279.602
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'N:/ECE540/ECE540_Project2/Project2/project_2.runs/synth_1/mfp_nexys4_ddr.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1582.137 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1577.723 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file mfp_nexys4_ddr_utilization_synth.rpt -pb mfp_nexys4_ddr_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.192 . Memory (MB): peak = 1582.137 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Oct 29 21:00:00 2019...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.193 . Memory (MB): peak = 1577.723 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 29 21:23:53 2019...
