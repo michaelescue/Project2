@@ -47,7 +47,9 @@ module mfp_ahb_gpio(
 
     always @(posedge HCLK or negedge HRESETn)
        if (~HRESETn) begin
-         IO_LED <= `MFP_N_LED'b0;  
+         IO_LED <= `MFP_N_LED'b0;
+         IO_BotCtrl <= 8'b0;
+         IO_INT_ACK <= 1'b0;
        end else if (we)
          case (HADDR_d)
            `H_LED_IONUM: IO_LED <= HWDATA[`MFP_N_LED-1:0];

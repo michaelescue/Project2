@@ -2,11 +2,11 @@
 # Vivado v2018.2.1 (64-bit)
 # SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
 # IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Tue Oct 29 11:41:33 2019
-# Process ID: 1168
-# Current directory: N:/Project2/Project2/project_2.runs/blk_mem_gen_2_synth_1
+# Start of session at: Tue Oct 29 18:17:13 2019
+# Process ID: 12292
+# Current directory: N:/ECE540/ECE540_Project2/Project2/project_2.runs/blk_mem_gen_2_synth_1
 # Command line: vivado.exe -log blk_mem_gen_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blk_mem_gen_2.tcl
-# Log file: N:/Project2/Project2/project_2.runs/blk_mem_gen_2_synth_1/blk_mem_gen_2.vds
-# Journal file: N:/Project2/Project2/project_2.runs/blk_mem_gen_2_synth_1\vivado.jou
+# Log file: N:/ECE540/ECE540_Project2/Project2/project_2.runs/blk_mem_gen_2_synth_1/blk_mem_gen_2.vds
+# Journal file: N:/ECE540/ECE540_Project2/Project2/project_2.runs/blk_mem_gen_2_synth_1\vivado.jou
 #-----------------------------------------------------------
 source blk_mem_gen_2.tcl -notrace

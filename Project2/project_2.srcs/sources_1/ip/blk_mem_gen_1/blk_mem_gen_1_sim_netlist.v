@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-// Date        : Mon Oct 28 20:36:00 2019
+// Date        : Tue Oct 29 18:36:21 2019
 // Host        : caplab12 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top blk_mem_gen_1 -prefix
-//               blk_mem_gen_1_ blk_mem_gen_1_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim
+//               N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_sim_netlist.v
 // Design      : blk_mem_gen_1
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -189,6 +189,7 @@ module blk_mem_gen_1
         .web(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "blk_mem_gen_generic_cstr" *) 
 module blk_mem_gen_1_blk_mem_gen_generic_cstr
    (douta,
     clka,
@@ -211,6 +212,7 @@ module blk_mem_gen_1_blk_mem_gen_generic_cstr
         .ena(ena));
 endmodule
 
+(* ORIG_REF_NAME = "blk_mem_gen_prim_width" *) 
 module blk_mem_gen_1_blk_mem_gen_prim_width
    (douta,
     clka,
@@ -233,6 +235,7 @@ module blk_mem_gen_1_blk_mem_gen_prim_width
         .ena(ena));
 endmodule
 
+(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
 module blk_mem_gen_1_blk_mem_gen_prim_wrapper_init
    (douta,
     clka,
@@ -408,6 +411,7 @@ module blk_mem_gen_1_blk_mem_gen_prim_wrapper_init
         .WEBWE({1'b0,1'b0,1'b0,1'b0}));
 endmodule
 
+(* ORIG_REF_NAME = "blk_mem_gen_top" *) 
 module blk_mem_gen_1_blk_mem_gen_top
    (douta,
     clka,
@@ -454,7 +458,7 @@ endmodule
 (* C_USE_URAM = "0" *) (* C_WEA_WIDTH = "1" *) (* C_WEB_WIDTH = "1" *) 
 (* C_WRITE_DEPTH_A = "256" *) (* C_WRITE_DEPTH_B = "256" *) (* C_WRITE_MODE_A = "WRITE_FIRST" *) 
 (* C_WRITE_MODE_B = "WRITE_FIRST" *) (* C_WRITE_WIDTH_A = "2" *) (* C_WRITE_WIDTH_B = "2" *) 
-(* C_XDEVICEFAMILY = "artix7" *) (* downgradeipidentifiedwarnings = "yes" *) 
+(* C_XDEVICEFAMILY = "artix7" *) (* ORIG_REF_NAME = "blk_mem_gen_v8_4_1" *) (* downgradeipidentifiedwarnings = "yes" *) 
 module blk_mem_gen_1_blk_mem_gen_v8_4_1
    (clka,
     rsta,
@@ -642,6 +646,7 @@ module blk_mem_gen_1_blk_mem_gen_v8_4_1
         .ena(ena));
 endmodule
 
+(* ORIG_REF_NAME = "blk_mem_gen_v8_4_1_synth" *) 
 module blk_mem_gen_1_blk_mem_gen_v8_4_1_synth
    (douta,
     clka,

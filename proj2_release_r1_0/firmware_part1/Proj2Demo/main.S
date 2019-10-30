@@ -284,9 +284,7 @@ SP_MVMTF 	= 0x1B		# Fast right turn - display lower case R
 #	.data
 	.align 2    # Put next label on a word boundary
 
-# Backwards Direction Variables
-SP_BKWDS:	.byte 	0	# Used to store the heading which is backwards.
-						# Updated while 
+
 	
 # 7 segment display variables
 SP_DIG0:	.byte   0		
@@ -355,8 +353,6 @@ SP_MVTBAS15:.byte 	0
 SP_MVTBAS16:.byte 	0
 SP_RGTC0NT:	.byte 	0
 SP_TEMP: 	.word	0x00
-
-
 
 .globl main
 
@@ -610,7 +606,6 @@ mvmt2cc:		la	$3,		(SP_MVTBAS1)		# $3 gets base of movment conversion table
 # Modify this function for Project 2 #####
 ##########################################
 
-# Add the SP_BKWDS update in this function.
 
 # ========================================================================
 # === next_mvmt() - Calculate  digit for motion indicator              ===
@@ -757,7 +752,76 @@ next_step:		lb 		$25,(SENSOR_REG)
 #				nop
 ############################################################################################
 
-
+#WHILE( Forever )
+#while_loop:
+	#IF( The Robot is on a black line )  *Sensors_reg*
+	li $25, PORT_BOTINFO	# Load Bot info reg address for sensor info.
+	lw $2, 0($25)			# Load Bot info reg value.
+	ANDi $2, $2, 0x0300	# Mask out all but the black line sensor bits.
+	addi $2, $2, 0x0			# Test to see if all bits are 0 or 1s
+	BNEZ $2, no_line			# Branch to Else if no black line detected.
+		#THEN( 
+			#IF( Current Motion is Reverse )	*BotInfo_reg*
+				case0:
+				li $25, PORT_BOTINFO	# Load Bot info reg address for sensor info.
+				lw $2, 0($25)			# Load Bot info reg value.
+				ANDi $2, $2, 0xF0	# Mask out all but the Mvmt bits.
+				li $4, 0x80
+				subu $2, $2, $4	# Test to see if Mvmt bits are in reverse.
+				BNEZ $2, case1			# Branch to next case if not in reverse.
+				#THEN( 
+					# Rotate 45 degrees clockwise	*MotCtl_in reg*
+					r45:
+					li $25, PORT_BOTCTRL	# Load Bot control reg address.
+					li $2, SP_LFRR			# Load control to turn right .
+					sw $2, 0($25)			# Write right turn to control reg.
+					b ret_next_step
+				#)
+			#ELSE IF( Current Motion is Forward)	*BotInfo_reg*
+				case1:
+				li $25, PORT_BOTINFO	# Load Bot info reg address for sensor info.
+				lw $2, 0($25)			# Load Bot info reg value.
+				ANDi $2, $2, 0xF0	# Mask out all but the Mvmt bits.
+				li $4, 0x40
+				subu $2, $2, $4	# Test to see if Mvmt bits are in reverse.
+				BNEZ $2, case2
+				#THEN(
+					#Update the known backwards direction from current direction
+					li $25, PORT_BOTINFO	# Load Bot info reg address.
+					lw $2, 0($25)			# Load Bot infor reg value.
+					ANDi $2, $2, 0x07 		# Mask out all but info reg from port.
+					sb $2, 0($15)			# Store the Backwards orientation to the variables.
+					b ret_next_step
+				#)
+			#ELSE
+				#THEN(
+					#IF( Orientation is equal to known backwards direction )
+						case2:
+						li $25, PORT_BOTINFO	# Load Bot info reg address for sensor info.
+						lw $2, 0($25)			# Load Bot info reg value.
+						ANDi $2, $2, 0x7	# Mask out all but the black line sensor bits.
+						subu $2, $2, $15			# Test to see if all bits are 0 or 1s
+						BNEZ $2, fwd
+						# Rotate 45 degrees clockwise	*MotCtl_in reg*
+						b r45
+					#ELSE
+						# Go Forward	*MotCtl_in reg*
+						fwd:
+						li $25, PORT_BOTCTRL	# Load Bot control reg address.
+						li $2, SP_LFRF			# Load control to move forward.
+						sw $2, 0($25)			# Write forward to control reg.
+						b ret_next_step						
+				#)
+	#ELSE
+	no_line:
+		#THEN(
+			# Reverse	*MotCtl_in reg*
+			li $25, PORT_BOTCTRL	# Load Bot control reg address.
+			li $2, SP_LRRR			# Load control to reverse.
+			sw $2, 0($25)			# Write reverse to control reg.
+			b ret_next_step
+		#)
+#ENDWHILE
 
 #*************************
 # Nexy$5 I/O Functions

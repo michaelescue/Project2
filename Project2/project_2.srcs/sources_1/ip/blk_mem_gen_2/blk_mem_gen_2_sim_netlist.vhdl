@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
--- Date        : Mon Oct 28 20:36:36 2019
+-- Date        : Tue Oct 29 18:18:44 2019
 -- Host        : caplab12 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim -rename_top blk_mem_gen_2 -prefix
---               blk_mem_gen_2_ blk_mem_gen_2_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim
+--               N:/ECE540/ECE540_Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2_sim_netlist.vhdl
 -- Design      : blk_mem_gen_2
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -21,6 +21,8 @@ entity blk_mem_gen_2_blk_mem_gen_prim_wrapper_init is
     ena : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of blk_mem_gen_2_blk_mem_gen_prim_wrapper_init : entity is "blk_mem_gen_prim_wrapper_init";
 end blk_mem_gen_2_blk_mem_gen_prim_wrapper_init;
 
 architecture STRUCTURE of blk_mem_gen_2_blk_mem_gen_prim_wrapper_init is
@@ -235,6 +237,8 @@ entity blk_mem_gen_2_blk_mem_gen_prim_width is
     ena : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of blk_mem_gen_2_blk_mem_gen_prim_width : entity is "blk_mem_gen_prim_width";
 end blk_mem_gen_2_blk_mem_gen_prim_width;
 
 architecture STRUCTURE of blk_mem_gen_2_blk_mem_gen_prim_width is
@@ -258,6 +262,8 @@ entity blk_mem_gen_2_blk_mem_gen_generic_cstr is
     ena : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of blk_mem_gen_2_blk_mem_gen_generic_cstr : entity is "blk_mem_gen_generic_cstr";
 end blk_mem_gen_2_blk_mem_gen_generic_cstr;
 
 architecture STRUCTURE of blk_mem_gen_2_blk_mem_gen_generic_cstr is
@@ -281,6 +287,8 @@ entity blk_mem_gen_2_blk_mem_gen_top is
     ena : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of blk_mem_gen_2_blk_mem_gen_top : entity is "blk_mem_gen_top";
 end blk_mem_gen_2_blk_mem_gen_top;
 
 architecture STRUCTURE of blk_mem_gen_2_blk_mem_gen_top is
@@ -304,6 +312,8 @@ entity blk_mem_gen_2_blk_mem_gen_v8_4_1_synth is
     ena : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of blk_mem_gen_2_blk_mem_gen_v8_4_1_synth : entity is "blk_mem_gen_v8_4_1_synth";
 end blk_mem_gen_2_blk_mem_gen_v8_4_1_synth;
 
 architecture STRUCTURE of blk_mem_gen_2_blk_mem_gen_v8_4_1_synth is
@@ -409,7 +419,7 @@ entity blk_mem_gen_2_blk_mem_gen_v8_4_1 is
   attribute C_CTRL_ECC_ALGO : string;
   attribute C_CTRL_ECC_ALGO of blk_mem_gen_2_blk_mem_gen_v8_4_1 : entity is "NONE";
   attribute C_DEFAULT_DATA : string;
-  attribute C_DEFAULT_DATA of blk_mem_gen_2_blk_mem_gen_v8_4_1 : entity is "0";
+  attribute C_DEFAULT_DATA of blk_mem_gen_2_blk_mem_gen_v8_4_1 : entity is "1";
   attribute C_DISABLE_WARN_BHV_COLL : integer;
   attribute C_DISABLE_WARN_BHV_COLL of blk_mem_gen_2_blk_mem_gen_v8_4_1 : entity is 0;
   attribute C_DISABLE_WARN_BHV_RANGE : integer;
@@ -507,7 +517,7 @@ entity blk_mem_gen_2_blk_mem_gen_v8_4_1 is
   attribute C_USE_BYTE_WEB : integer;
   attribute C_USE_BYTE_WEB of blk_mem_gen_2_blk_mem_gen_v8_4_1 : entity is 0;
   attribute C_USE_DEFAULT_DATA : integer;
-  attribute C_USE_DEFAULT_DATA of blk_mem_gen_2_blk_mem_gen_v8_4_1 : entity is 0;
+  attribute C_USE_DEFAULT_DATA of blk_mem_gen_2_blk_mem_gen_v8_4_1 : entity is 1;
   attribute C_USE_ECC : integer;
   attribute C_USE_ECC of blk_mem_gen_2_blk_mem_gen_v8_4_1 : entity is 0;
   attribute C_USE_SOFTECC : integer;
@@ -532,6 +542,8 @@ entity blk_mem_gen_2_blk_mem_gen_v8_4_1 is
   attribute C_WRITE_WIDTH_B of blk_mem_gen_2_blk_mem_gen_v8_4_1 : entity is 2;
   attribute C_XDEVICEFAMILY : string;
   attribute C_XDEVICEFAMILY of blk_mem_gen_2_blk_mem_gen_v8_4_1 : entity is "artix7";
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of blk_mem_gen_2_blk_mem_gen_v8_4_1 : entity is "blk_mem_gen_v8_4_1";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of blk_mem_gen_2_blk_mem_gen_v8_4_1 : entity is "yes";
 end blk_mem_gen_2_blk_mem_gen_v8_4_1;
@@ -660,7 +672,7 @@ architecture STRUCTURE of blk_mem_gen_2 is
   attribute C_CTRL_ECC_ALGO : string;
   attribute C_CTRL_ECC_ALGO of U0 : label is "NONE";
   attribute C_DEFAULT_DATA : string;
-  attribute C_DEFAULT_DATA of U0 : label is "0";
+  attribute C_DEFAULT_DATA of U0 : label is "1";
   attribute C_DISABLE_WARN_BHV_COLL : integer;
   attribute C_DISABLE_WARN_BHV_COLL of U0 : label is 0;
   attribute C_DISABLE_WARN_BHV_RANGE : integer;
@@ -758,7 +770,7 @@ architecture STRUCTURE of blk_mem_gen_2 is
   attribute C_USE_BYTE_WEB : integer;
   attribute C_USE_BYTE_WEB of U0 : label is 0;
   attribute C_USE_DEFAULT_DATA : integer;
-  attribute C_USE_DEFAULT_DATA of U0 : label is 0;
+  attribute C_USE_DEFAULT_DATA of U0 : label is 1;
   attribute C_USE_ECC : integer;
   attribute C_USE_ECC of U0 : label is 0;
   attribute C_USE_SOFTECC : integer;
