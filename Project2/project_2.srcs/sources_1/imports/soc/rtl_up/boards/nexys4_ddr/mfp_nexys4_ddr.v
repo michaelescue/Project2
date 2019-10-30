@@ -61,7 +61,7 @@ module mfp_nexys4_ddr(
   //icon
   wire [11:0] pixel_column;
   wire [11:0] pixel_row;
-  wire icon;
+  wire [1:0]icon;
   
   //dtg to colorizer
   wire video_on;
@@ -71,10 +71,7 @@ module mfp_nexys4_ddr(
   
   //world pixel
   wire [1:0]world_pixel;
-  
-  //icon pixel
-  wire [1:0]icon;
-  
+
   assign io_wire = {DP,CA,CB,CC,CD,CE,CF,CG};       
   
   clk_wiz_0 clk_wiz_0

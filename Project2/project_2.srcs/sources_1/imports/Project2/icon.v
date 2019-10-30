@@ -35,8 +35,8 @@ parameter
             HSYNC_START  = 1053,  
             HSYNC_END = 1189,
             
-            HORIZ_SIZE = 32,
-            VERT_SIZE = 32,
+            HORIZ_SIZE = 16,
+            VERT_SIZE = 16,
     
             VERT_PIXELS  = 768,  
             VCNT_MAX  = 805,

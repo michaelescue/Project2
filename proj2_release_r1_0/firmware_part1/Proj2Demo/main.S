@@ -357,7 +357,11 @@ SP_TEMP: 	.word	0x00
 .globl main
 
 main:
-   				lui   $12, 0xbf80    			# $12 = address of LEDs (0xbf800000)
+				li $16, 0x0						# initialize reverse flag
+				li $25, PORT_BOTINFO	# Load Bot info reg address.
+				lw $4, 0($25)			# Load Bot info reg value.
+				ANDi $18, $4, 0x07 		# Mask out all but lower 3 Orient bits from info reg from port
+				lui   $12, 0xbf80    			# $12 = address of LEDs (0xbf800000)
 				li	$2,		FALSE				# clear the semaphore
 				jal	LED_wrleds					#
 				nop
@@ -372,7 +376,8 @@ main:
 				nop
 				li	$2, FALSE
 				sb $2, SP_RGTC0NT
-
+				li $18, 0x2						# initialize orientation.
+				li $15, 0x0						# initialize robot as stopped.
 
 
 # ==================
@@ -383,6 +388,7 @@ main_L0:		li    $13, PORT_BOTUPDT			#	while(25) {  // main loop is an infinite l
 				lw 	  $21, 0($13) 				#	while (upd_sysreg == 0)  {}   // loop until isr updates rojobot registers
 				beq	  $21, $0, main_L0
 				nop
+
 				li 	  $13, PORT_INTACK			#   Load the Acknowledgement port address 
 				li 	  $21, INT_ACK				#   Set the Acknowledgement bit 
 				sw 	  $21, 0($13)				# 	Write the Acknowledgement bit
@@ -617,7 +623,11 @@ next_mvmt:		lb	$25,	(BOTINF_REG)		# $25[3:0] = BOTINF_REG[7:4]
 				srl		$25, $25, 4				#
 				beq $0, $0,	mvmt2cc				# translate movement to char code
 				nop
+
 back_mvmt2cc:
+updt_motctl:
+				li $25, PORT_BOTCTRL	# Load Bot control reg address.
+				sb $19, 0($25)			# Write right turn to control reg.
 				sb	$2,		SP_DIG4				# and move to digit 4.
 				jr 	$ra							# digit 4 is in the scratchpad RAM
 				nop
@@ -734,15 +744,15 @@ next_loc:		lb		$25,	(LOCx_REG)			# Dig[3:2] gets X-coordinate
 # === This version reads the pushbuttons, calculates the new Motor Control   ===
 # === register value and then writes MotCtl so Rojobot knows what to do      ===
 # ==============================================================================
-next_step:		lb 		$25,(SENSOR_REG)
-				lb 		$2,	(SENSOR_REG)
-				lb 		$3,	(SENSOR_REG)
-				AND 	$25,	$25,MSKPROXL
-				AND 	$2,	$2,MSKPROXR
-				AND 	$3,	$3,MSKBLKL
+next_step:		
 
 ###############################################################################################
-# removed		jal		DEB_rdbtns					# Read the pushbuttons. buttons returned in $4
+# removed		lb 		$25,(SENSOR_REG)
+#				lb 		$2,	(SENSOR_REG)
+#				lb 		$3,	(SENSOR_REG)
+#				AND 	$25,	$25,MSKPROXL
+#				AND 	$2,	$2,MSKPROXR
+#				AND 	$3,	$3,MSKBLKLjal		DEB_rdbtns					# Read the pushbuttons. buttons returned in $4
 #				nop
 # removed		jal		btn2mot						# and calculate new MotCtl - returned in $2
 #				nop
@@ -752,76 +762,122 @@ next_step:		lb 		$25,(SENSOR_REG)
 #				nop
 ############################################################################################
 
-#WHILE( Forever )
-#while_loop:
-	#IF( The Robot is on a black line )  *Sensors_reg*
-	li $25, PORT_BOTINFO	# Load Bot info reg address for sensor info.
-	lw $2, 0($25)			# Load Bot info reg value.
-	ANDi $2, $2, 0x0300	# Mask out all but the black line sensor bits.
-	addi $2, $2, 0x0			# Test to see if all bits are 0 or 1s
-	BNEZ $2, no_line			# Branch to Else if no black line detected.
-		#THEN( 
-			#IF( Current Motion is Reverse )	*BotInfo_reg*
-				case0:
-				li $25, PORT_BOTINFO	# Load Bot info reg address for sensor info.
-				lw $2, 0($25)			# Load Bot info reg value.
-				ANDi $2, $2, 0xF0	# Mask out all but the Mvmt bits.
-				li $4, 0x80
-				subu $2, $2, $4	# Test to see if Mvmt bits are in reverse.
-				BNEZ $2, case1			# Branch to next case if not in reverse.
-				#THEN( 
-					# Rotate 45 degrees clockwise	*MotCtl_in reg*
-					r45:
-					li $25, PORT_BOTCTRL	# Load Bot control reg address.
-					li $2, SP_LFRR			# Load control to turn right .
-					sw $2, 0($25)			# Write right turn to control reg.
-					b ret_next_step
-				#)
-			#ELSE IF( Current Motion is Forward)	*BotInfo_reg*
-				case1:
-				li $25, PORT_BOTINFO	# Load Bot info reg address for sensor info.
-				lw $2, 0($25)			# Load Bot info reg value.
-				ANDi $2, $2, 0xF0	# Mask out all but the Mvmt bits.
-				li $4, 0x40
-				subu $2, $2, $4	# Test to see if Mvmt bits are in reverse.
-				BNEZ $2, case2
-				#THEN(
-					#Update the known backwards direction from current direction
-					li $25, PORT_BOTINFO	# Load Bot info reg address.
-					lw $2, 0($25)			# Load Bot infor reg value.
-					ANDi $2, $2, 0x07 		# Mask out all but info reg from port.
-					sb $2, 0($15)			# Store the Backwards orientation to the variables.
-					b ret_next_step
-				#)
-			#ELSE
-				#THEN(
-					#IF( Orientation is equal to known backwards direction )
-						case2:
-						li $25, PORT_BOTINFO	# Load Bot info reg address for sensor info.
-						lw $2, 0($25)			# Load Bot info reg value.
-						ANDi $2, $2, 0x7	# Mask out all but the black line sensor bits.
-						subu $2, $2, $15			# Test to see if all bits are 0 or 1s
-						BNEZ $2, fwd
-						# Rotate 45 degrees clockwise	*MotCtl_in reg*
-						b r45
-					#ELSE
-						# Go Forward	*MotCtl_in reg*
-						fwd:
-						li $25, PORT_BOTCTRL	# Load Bot control reg address.
-						li $2, SP_LFRF			# Load control to move forward.
-						sw $2, 0($25)			# Write forward to control reg.
-						b ret_next_step						
-				#)
-	#ELSE
-	no_line:
-		#THEN(
-			# Reverse	*MotCtl_in reg*
-			li $25, PORT_BOTCTRL	# Load Bot control reg address.
-			li $2, SP_LRRR			# Load control to reverse.
-			sw $2, 0($25)			# Write reverse to control reg.
-			b ret_next_step
-		#)
-#ENDWHILE
+	linecheck:
+		li $20, PORT_BOTINFO
+		lw $20, 0($20)
+		li $21, PORT_BOTCTRL
+		lw $21, 0($21)
+		li $25, PORT_BOTINFO	# Load Bot info reg address for sensor info.
+		lw $2, 0($25)			# Load Bot info reg value.
+		ANDi $2, $2, 0x0200		# Mask out all but the black line sensor bits.
+		SRL $2, $2, 9			# shift eight to put the value in the bit 0 spot.
+		#$2[0] holds the line status
+	state:
+		#$15 holds the current state. 
+		#00 - halt
+		andi $15, $15, 0x3	# Mask the lower two bits.
+		beqz $15, halt
+		li $4, 0x3			# Testing for reverse state 11
+		subu $4, $15, $4	
+		beqz $4, reverse
+		li $4, 0x2			# Testing for fwd state 10
+		subu $4, $15, $4
+		beqz $4, fwd
+		li $4, 0x1			# Testing for rotate state 01
+		subu $4, $15, $4
+		beqz $4, r45
+
+	halt:
+	
+		li $19, SP_LSRS			# Load control to halt.
+	
+		li $25, PORT_BOTINFO	# Load Bot info reg address.
+		lw $4, 0($25)			# Load Bot info reg value.
+		andi $8, $4, 0x7		# update current orientation
+		li $4, 0x7
+		subu $4, $8, $4
+		beqz $4, settgtorient
+
+		addi $8, $8, 0x1		# increment clockwise, the next target rotation value.
+		b cont_halt
+
+		settgtorient:
+		li $8, 0x0
+
+		cont_halt:
+		ADD $4, $16, $2			# combine reverse and line flags
+		andi $4, $4, 0x3		# mask lower 2 bits.
+		li $25, 0x3 			# test for reverse
+		subu $25, $4, $25
+		beqz $25, setreverse
+		
+		li $25, 0x2				# Test for rotate
+		subu $25, $4, $25	
+		beqz $25, setr45
+		
+		li $25, 0x0
+		subu $25, $4, $25
+		beqz $25, setfwd
+		
+		li $15, 0x0			# load state flag as halted.
+		b ret_next_step
+				
+		setr45:	li $15, 0x1
+		b ret_next_step
+
+	fwd:
+		# Go Forward	*MotCtl_in reg*					
+		li $16, 0x0
+		li $19, SP_LFRF			# Load control to move forward.
+		
+	updtbkwds:
+		li $25, PORT_BOTINFO	# Load Bot info reg address.
+		lw $4, 0($25)			# Load Bot infor reg value.
+		ANDi $4, $4, 0x07 		# Mask out all but Orient info reg from port.
+		addi $4, $4, 0x8		# add 8
+		srl $4, $4, 0x1			# divide by 2
+		and $4, $4, 0x7
+		move $17, $4			# Store the Backwards orientation to the backwards reg.
+		
+		bnez $2, setreverse		# change state to reverse if line is not present.
+		li $15, 0x2			# update next state to fwd
+		b ret_next_step
+		
+		setreverse: li $15, 0x3	#Next state is reverse 
+		b ret_next_step
+		
+	reverse:
+		# Reverse	*MotCtl_in reg*
+		li $19, SP_LRRR			# Load control to reverse.
+		li $4, 0x2				# Reverse Flag.
+		move $16, $4			# Write to register.
+		li $15, 0x3			# Update state 
+		
+		beqz $2, sethalt		# change state if line present.
+		li $15, 0x3			# Next state is reverse.
+		b ret_next_step		
+		
+		sethalt: li $15, 0x0	# Set next state to halt
+		b ret_next_step		
+
+	r45:
+		# Test to see if orientation matches backwards register
+		li $25, PORT_BOTINFO	# Load Bot info reg address.
+		lw $4, 0($25)			# Load Bot info reg value.
+		andi $18, $4, 0x7		# update current orientation
+		
+		subu $4, $18, $8
+		beqz $4, setfwd
+
+		li $16, 0x0				# Clear reverse flag.
+		li $19, SP_LFRS			# Load control to turn right .
+		
+		li $15, 0x1			# update state 
+		b ret_next_step
+		
+		setfwd:	li $15, 0x2	# Next state is fwd.
+		b ret_next_step
+				
 
 #*************************
 # Nexy$5 I/O Functions

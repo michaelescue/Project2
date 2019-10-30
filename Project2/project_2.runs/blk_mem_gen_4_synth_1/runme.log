@@ -10,3 +10,4 @@
 
 source blk_mem_gen_4.tcl -notrace
 INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP blk_mem_gen_4, cache-ID = 34ac817da77cec9b.
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 29 18:35:08 2019...
