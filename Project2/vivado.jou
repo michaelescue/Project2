@@ -9,3 +9,6 @@
 # Log file: N:/ECE540/ECE540_Project2/Project2/vivado.log
 # Journal file: N:/ECE540/ECE540_Project2/Project2\vivado.jou
 #-----------------------------------------------------------
+start_gui
+open_project N:/ECE540/ECE540_Project2/Project2/project_2.xpr
+update_compile_order -fileset sources_1

@@ -9,3 +9,12 @@
 # Log file: N:/ECE540/ECE540_Project2/Project2/vivado.log
 # Journal file: N:/ECE540/ECE540_Project2/Project2\vivado.jou
 #-----------------------------------------------------------
+start_gui
+open_project N:/ECE540/ECE540_Project2/Project2/project_2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'n:/ECE540/ECE540_Project2/proj2_release_r1_0/ece540_ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 808.625 ; gain = 163.637
+update_compile_order -fileset sources_1
