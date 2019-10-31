@@ -147,11 +147,11 @@ module mfp_nexys4_ddr(
   
  // World map instantiation - Works 10/28/19
  world_map world_map(
-   .clka(clk_out2),     // 75Mhz clock
-   .addra(worldmap_addr),
-   .douta(worldmap_data),
-   .clkb(clk_out2),
-   .addrb(vid_addr),
+   .clka(clk_out2),             // 75Mhz clock
+   .addra(worldmap_addr),       //address to the world map
+   .douta(worldmap_data),       //data from the world map
+   .clkb(clk_out2),             
+   .addrb(vid_addr),            
    .doutb(world_pixel)
  );
  

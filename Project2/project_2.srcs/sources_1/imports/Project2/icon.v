@@ -35,8 +35,8 @@ parameter
             HSYNC_START  = 1053,  
             HSYNC_END = 1189,
             
-            HORIZ_SIZE = 16,
-            VERT_SIZE = 16,
+            HORIZ_SIZE = 32,
+            VERT_SIZE = 32,
     
             VERT_PIXELS  = 768,  
             VCNT_MAX  = 805,
@@ -64,8 +64,10 @@ always @(posedge clk) begin
 			count_column <= count_column + 12'd1;
 			
 		// increment vertical sync ounter.  Wrap if at end of display.  Increment if end of row
-		if ((pixel_row >= VCNT_MAX) && (count_column >= HCNT_MAX))
+		if ((pixel_row >= VCNT_MAX) && (count_column >= HCNT_MAX)) begin
 			count_row <= 12'd0;
+			count_column <= 12'd0;
+			end
 		else if (count_column == HCNT_MAX)
 			count_row <= count_row + 12'd1;
 									
@@ -79,10 +81,10 @@ end
             if((scaled_row == LocY_reg[6:0]) && (scaled_col == LocX_reg[6:0])) begin
                matchedrow = pixel_row; 
                matchedcol = pixel_column;
-               horiz_pix_min = matchedcol;
-               horiz_pix_max = horiz_pix_min + HORIZ_SIZE;
-               vert_pix_min = matchedrow;
-               vert_pix_max = vert_pix_min + VERT_SIZE;
+               horiz_pix_min = matchedcol - (HORIZ_SIZE/4);
+               horiz_pix_max = matchedcol + (HORIZ_SIZE/4);          
+               vert_pix_min = matchedrow - (VERT_SIZE/4);
+               vert_pix_max = matchedrow + (VERT_SIZE/4);
             end
         end
 	

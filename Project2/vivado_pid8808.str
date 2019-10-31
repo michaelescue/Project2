@@ -1,0 +1,121 @@
+/*
+
+Xilinx Vivado v2018.2.1 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2288692 on Thu Jul 26 18:24:02 MDT 2018
+IP Build: 2289599 on Thu Jul 26 21:09:20 MDT 2018
+
+Process ID: 8808
+License: Customer
+
+Current time: 	Wed Oct 30 19:38:46 PDT 2019
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 75 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	D:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	adigundu
+User home directory: C:/Users/adigundu
+User working directory: N:/Project2/Project2
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2018.2
+RDI_DATADIR: D:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: D:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: \\thoth.cecs.pdx.edu\profile07\adigundu\Application Data/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: \\thoth.cecs.pdx.edu\profile07\adigundu\Application Data/Xilinx/Vivado/2018.2/
+Vivado layouts directory: \\thoth.cecs.pdx.edu\profile07\adigundu\Application Data\Xilinx\Vivado\2018.2\layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	N:/Project2/Project2/vivado.log
+Vivado journal file location: 	N:/Project2/Project2/vivado.jou
+Engine tmp dir: 	N:/Project2/Project2/.Xil/Vivado-8808-caplab07
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@xilinx-lic.cat.pdx.edu
+XILINX_DSP: D:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2018.2
+XILINX_SDK: D:/Xilinx/SDK/2018.2
+XILINX_VIVADO: D:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	118 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 516 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 57 MB (+57620kb) [00:00:12]
+// [Engine Memory]: 469 MB (+340376kb) [00:00:12]
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: N:\Project2\Project2\project_2.xpr. Version: Vivado v2018.2.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project N:/Project2/Project2/project_2.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// [Engine Memory]: 521 MB (+29726kb) [00:00:15]
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 525 MB. GUI used memory: 38 MB. Current time: 10/30/19 7:38:48 PM PDT
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 585 MB (+39588kb) [00:00:25]
+// [GUI Memory]: 63 MB (+2674kb) [00:00:26]
+// [Engine Memory]: 627 MB (+13857kb) [00:00:27]
+// [GUI Memory]: 68 MB (+2071kb) [00:00:27]
+// [GUI Memory]: 76 MB (+5366kb) [00:00:28]
+// Tcl Message: open_project N:/Project2/Project2/project_2.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'n:/Project2/proj2_release_r1_0/ece540_ip_repo'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 656 MB. GUI used memory: 51 MB. Current time: 10/30/19 7:39:03 PM PDT
+// [Engine Memory]: 667 MB (+8366kb) [00:00:33]
+// Project name: project_2; location: N:/Project2/Project2; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 797.125 ; gain = 151.449 
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 81 MB (+821kb) [00:00:52]
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 19, true); // u (O, ck) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 19, true); // u (O, ck) - Node
+// [GUI Memory]: 87 MB (+2256kb) [00:00:56]
+// HMemoryUtils.trashcanNow. Engine heap size: 689 MB. GUI used memory: 51 MB. Current time: 10/30/19 7:39:28 PM PDT
+// PAPropertyPanels.initPanels (mfp_nexys4_ddr.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mfp_nexys4_ddr (mfp_nexys4_ddr.v)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mfp_nexys4_ddr (mfp_nexys4_ddr.v), debounce : debounce (debounce.v)]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false, false, false, false, false, true); // u (O, ck) - Double Click
+// [GUI Memory]: 95 MB (+3379kb) [00:01:04]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false, false, false, false, false, true); // u (O, ck) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Elapsed time: 13 seconds
+closeMainWindow("project_2 - [N:/Project2/Project2/project_2.xpr] - Vivado 2018.2.1"); // ck
+selectButton("PAResourceItoN.MainWindow_PROCESS_RUNNING_YOU_SURE_YOU_Cancel", "Cancel"); // JButton (A, G)

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='N:/ECE540/ECE540_Project2/Project2/project_2.runs/blk_mem_gen_0_synth_1'
+HD_PWD='N:/Project2/Project2/project_2.runs/blk_mem_gen_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

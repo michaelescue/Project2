@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date             : Wed Oct 30 05:05:55 2019
+| Date             : Wed Oct 30 21:13:03 2019
 | Host             : caplab12 running 64-bit major release  (build 9200)
 | Command          : report_power -file mfp_nexys4_ddr_power_routed.rpt -pb mfp_nexys4_ddr_power_summary_routed.pb -rpx mfp_nexys4_ddr_power_routed.rpx
 | Design           : mfp_nexys4_ddr
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.397        |
+| Total On-Chip Power (W)  | 0.396        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.294        |
@@ -53,21 +53,21 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.018 |       12 |       --- |             --- |
-| Slice Logic              |     0.010 |    22319 |       --- |             --- |
-|   LUT as Logic           |     0.010 |    10038 |     63400 |           15.83 |
-|   Register               |    <0.001 |     9022 |    126800 |            7.12 |
-|   CARRY4                 |    <0.001 |      185 |     15850 |            1.17 |
+| Slice Logic              |     0.011 |    22343 |       --- |             --- |
+|   LUT as Logic           |     0.010 |    10076 |     63400 |           15.89 |
+|   Register               |    <0.001 |     9024 |    126800 |            7.12 |
+|   CARRY4                 |    <0.001 |      191 |     15850 |            1.21 |
 |   LUT as Distributed RAM |    <0.001 |       30 |     19000 |            0.16 |
 |   F7/F8 Muxes            |    <0.001 |      289 |     63400 |            0.46 |
 |   BUFG                   |    <0.001 |        2 |        32 |            6.25 |
 |   LUT as Shift Register  |    <0.001 |        9 |     19000 |            0.05 |
 |   Others                 |     0.000 |     1476 |       --- |             --- |
-| Signals                  |     0.021 |    18032 |       --- |             --- |
-| Block RAM                |     0.108 |     83.5 |       135 |           61.85 |
+| Signals                  |     0.021 |    18034 |       --- |             --- |
+| Block RAM                |     0.107 |     83.5 |       135 |           61.85 |
 | MMCM                     |     0.121 |        1 |         6 |           16.67 |
 | I/O                      |     0.016 |       76 |       210 |           36.19 |
 | Static Power             |     0.102 |          |           |                 |
-| Total                    |     0.397 |          |           |                 |
+| Total                    |     0.396 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -215,15 +215,15 @@ Table of Contents
 |               ramloop[0].ram.r                                                               |     0.001 |
 |                 prim_init.ram                                                                |     0.001 |
 |   mfp_sys                                                                                    |     0.140 |
-|     mfp_ahb_withloader                                                                       |     0.088 |
+|     mfp_ahb_withloader                                                                       |     0.087 |
 |       mfp_ahb                                                                                |     0.086 |
-|         mfp_ahb_b_ram                                                                        |     0.003 |
+|         mfp_ahb_b_ram                                                                        |     0.002 |
 |           ram_b0                                                                             |    <0.001 |
 |           ram_b1                                                                             |    <0.001 |
 |           ram_b2                                                                             |    <0.001 |
 |           ram_b3                                                                             |    <0.001 |
 |         mfp_ahb_gpio                                                                         |    <0.001 |
-|         mfp_ahb_p_ram                                                                        |     0.082 |
+|         mfp_ahb_p_ram                                                                        |     0.083 |
 |           ram_p0                                                                             |     0.020 |
 |           ram_p1                                                                             |     0.020 |
 |           ram_p2                                                                             |     0.020 |
@@ -237,7 +237,7 @@ Table of Contents
 |       mfp_uart_receiver                                                                      |    <0.001 |
 |     mfp_ejtag_reset                                                                          |    <0.001 |
 |     top                                                                                      |     0.052 |
-|       cpu                                                                                    |     0.052 |
+|       cpu                                                                                    |     0.051 |
 |         core                                                                                 |     0.038 |
 |           biu                                                                                |     0.002 |
 |             _HADDR_31_0_                                                                     |    <0.001 |
@@ -880,7 +880,7 @@ Table of Contents
 |             _bbus_imm_e_31_0_                                                                |    <0.001 |
 |             _car30_m                                                                         |    <0.001 |
 |             _car31_m                                                                         |    <0.001 |
-|             _edp_alu_m_31_0_                                                                 |     0.002 |
+|             _edp_alu_m_31_0_                                                                 |     0.001 |
 |             _edp_bbus_e_31_0_                                                                |    <0.001 |
 |             _edp_dva_e_31_0_                                                                 |    <0.001 |
 |             _edp_epc_e_31_0_                                                                 |    <0.001 |
@@ -1578,7 +1578,7 @@ Table of Contents
 |                     _jtlb1entry_pipe_out                                                     |    <0.001 |
 |                       cregister                                                              |    <0.001 |
 |                         cregister                                                            |    <0.001 |
-|           mpc                                                                                |     0.004 |
+|           mpc                                                                                |     0.003 |
 |             mpc_ctl                                                                          |     0.002 |
 |               _alu_sel_m                                                                     |    <0.001 |
 |               _busty_ed_2_0_                                                                 |    <0.001 |
@@ -1641,10 +1641,10 @@ Table of Contents
 |                 cregister                                                                    |    <0.001 |
 |                   cregister                                                                  |    <0.001 |
 |               _wr_dspc_m                                                                     |    <0.001 |
-|             mpc_dec                                                                          |     0.002 |
-|               _int_ir_e_31_0_                                                                |     0.002 |
-|                 cregister                                                                    |     0.002 |
-|                   cregister                                                                  |     0.002 |
+|             mpc_dec                                                                          |     0.001 |
+|               _int_ir_e_31_0_                                                                |     0.001 |
+|                 cregister                                                                    |     0.001 |
+|                   cregister                                                                  |     0.001 |
 |               _mpc_lnksel_e_countdown_1_0_                                                   |    <0.001 |
 |             mpc_exc                                                                          |    <0.001 |
 |               _atomic_w_reg                                                                  |    <0.001 |

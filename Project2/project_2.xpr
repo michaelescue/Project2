@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="N:/ECE540/ECE540_Project2/Project2/project_2.xpr">
+<Project Version="7" Minor="38" Path="N:/Project2/Project2/project_2.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="75c56332b755412aa83a4ef7e6ac55f5"/>

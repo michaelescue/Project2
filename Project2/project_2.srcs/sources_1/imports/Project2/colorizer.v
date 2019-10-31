@@ -14,10 +14,10 @@ module colorizer(
 			begin
 			 if(icon == 2'b01)
                 begin
-                    red = 4'hF;
-                    green = 4'hF;
-                    blue = 0;
-                end	             
+                    red = 4'h0;
+                    green = 4'h0;
+                    blue = 4'hF;
+                end      
 			 else
 				case(world_pixel)
 					0:
