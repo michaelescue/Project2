@@ -285,7 +285,7 @@ SP_MVMTF 	= 0x1B		# Fast right turn - display lower case R
 	.align 2    # Put next label on a word boundary
 
 
-	
+
 # 7 segment display variables
 SP_DIG0:	.byte   0		
 SP_DIG1:	.byte   0		
@@ -375,6 +375,8 @@ main:
 				li $18, 0x2						# initialize orientation.
 				li $15, 0x0						# initialize robot as stopped.
 				li $16, 0x0						# initialize reverse flag
+				li $23, 0x0
+				li $17, 0x6
 
 
 # ==================
@@ -770,12 +772,12 @@ next_step:
 		SRL $2, $2, 9			# shift eight to put the value in the bit 0 spot.
 		#$2[0] holds the line status
 	state:
-		#$15 holds the current state. 
+		#$15 holds the current state.
 		#00 - halt
 		andi $15, $15, 0x3	# Mask the lower two bits.
 		beqz $15, halt
 		li $4, 0x3			# Testing for reverse state 11
-		subu $4, $15, $4	
+		subu $4, $15, $4
 		beqz $4, reverse
 		li $4, 0x2			# Testing for fwd state 10
 		subu $4, $15, $4
@@ -785,9 +787,9 @@ next_step:
 		beqz $4, r45
 
 	halt:
-	
+
 		li $19, SP_LSRS			# Load control to halt.
-	
+
 		li $25, PORT_BOTINFO	# Load Bot info reg address.
 		lw $4, 0($25)			# Load Bot info reg value.
 		andi $8, $4, 0x7		# update current orientation
@@ -808,15 +810,15 @@ next_step:
 		li $25, 0x3 			# test for reverse
 		subu $25, $4, $25
 		beqz $25, setreverse
-		
+
 		li $25, 0x2				# Test for rotate
-		subu $25, $4, $25	
+		subu $25, $4, $25
 		beqz $25, setr45
-		
+
 		li $25, 0x0
 		subu $25, $4, $25
 		beqz $25, setfwd
-		
+
 		li $15, 0x0			# load state flag as halted.
 		b ret_next_step
 				
@@ -824,15 +826,16 @@ next_step:
 		b ret_next_step
 
 	fwd:
-		# Go Forward	*MotCtl_in reg*					
+		# Go Forward	*MotCtl_in reg*
 		li $16, 0x0
+		add $23, $23, 0x1
 		subu $4, $18, $17
 		beqz $4, haltspin
-		li $4, SP_LFRF
-		sub $4, $19, $4			# Test to see if already moving forward.
+		li $4, 0x2
+		sub $4, $23, $4			# Test to see if moved forward twice
 		beqz $4, updtbkwds
 		b line_present
-		
+
 
 	updtbkwds:
 		li $25, PORT_BOTINFO	# Load Bot info reg address.
@@ -842,32 +845,34 @@ next_step:
 		subu $4, $4, $17		# subtract 4
 		and $4, $4, 0x7
 		move $17, $4			# Store the Backwards orientation to the backwards reg.
-		
+
 	line_present:
 		bnez $2, setreverse		# change state to reverse if line is not present.
-		li $15, 0x2			# update next state to fwd
+		li $15, 0x2				# update next state to fwd
 		li $19, SP_LFRF			# Load control to move forward.
 		b ret_next_step
-		
-		setreverse: li $15, 0x3	#Next state is reverse 
+
+		setreverse: li $15, 0x3	#Next state is reverse
 		b ret_next_step
-		
+
 	reverse:
 		# Reverse	*MotCtl_in reg*
 		li $19, SP_LRRR			# Load control to reverse.
+		li $23, 0x0
 		li $4, 0x2				# Reverse Flag value
 		move $16, $4			# Write to register.
-		
+
 		beqz $2, sethalt		# change state if line present.
 		li $15, 0x3				# Next state is reverse.
-		b ret_next_step		
-		
+		b ret_next_step
+
 		sethalt: li $15, 0x0	# Set next state to halt
-		b ret_next_step		
+		b ret_next_step
 
 	r45:
 		# Test to see if orientation matches backwards register
 		li $16, 0x0				# Clear reverse flag.
+		li $23, 0x0
 		li $25, PORT_BOTINFO	# Load Bot info reg address.
 		lw $4, 0($25)			# Load Bot info reg value.
 		andi $18, $4, 0x7		# update current orientation
@@ -876,10 +881,10 @@ next_step:
 		beqz $4, setfwd			# Test for matching dirctions before moving forward.
 
 		li $19, SP_LFRS			# Load control to turn right .
-		
+
 		li $15, 0x1				# update state
 		b ret_next_step
-		
+
 		setfwd:
 		li $15, 0x2				# Next state is fwd.
 		b ret_next_step
@@ -944,7 +949,6 @@ SS_wrdpts:		lb		$25,	SP_OLDDP				# Copy the decimal points to $25 to leave $2 un
 				sw		$25,		0($2)	# write the decimal points to the display
 				jr    $ra
 				nop
-
 
 
 

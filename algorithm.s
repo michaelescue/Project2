@@ -124,6 +124,7 @@ SP_LFRF	 	= 0x33		# left motor forward, right motor forward		[1010]
 #	$17 - Current Backwards orientation register
 #	$18 - Current Orientation register
 #	$19	- Next Motion register
+#	$23	- movement count register
 #
 #	New Stack Pointer Variables:
 #		SP_BKWDS - Retains the last orientation that was 180 frome direction of black line traversal.

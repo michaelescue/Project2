@@ -57,13 +57,13 @@ always @(posedge clk) begin
 		icon_on     <= 0;
 	end
 	else begin
-		// increment horizontal sync counter.  Wrap if at end of row
+		// increment horizontal column counter.  Wrap if at end of row
 		if (count_column == HCNT_MAX)	
 			count_column <= 12'd0;
 		else	
 			count_column <= count_column + 12'd1;
 			
-		// increment vertical sync ounter.  Wrap if at end of display.  Increment if end of row
+		// increment vertical row counter.  Wrap if at end of display.  Increment if end of row
 		if ((pixel_row >= VCNT_MAX) && (count_column >= HCNT_MAX)) begin
 			count_row <= 12'd0;
 			count_column <= 12'd0;
@@ -71,31 +71,30 @@ always @(posedge clk) begin
 		else if (count_column == HCNT_MAX)
 			count_row <= count_row + 12'd1;
 									
-		// generate the video_on signals and the pixel counts
+		// generate the icon_on signals 
 		icon_on <= ((count_column < horiz_pix_max) && (count_row < vert_pix_max)&&(count_column > horiz_pix_min) && (count_row > vert_pix_min));
 	end
 end
 
     always @(*)
         begin
-            if((scaled_row == LocY_reg[6:0]) && (scaled_col == LocX_reg[6:0])) begin
-               matchedrow = pixel_row; 
-               matchedcol = pixel_column;
-               horiz_pix_min = matchedcol - (HORIZ_SIZE/4);
-               horiz_pix_max = matchedcol + (HORIZ_SIZE/4);          
-               vert_pix_min = matchedrow - (VERT_SIZE/4);
-               vert_pix_max = matchedrow + (VERT_SIZE/4);
+            if((scaled_row == LocY_reg[6:0]) && (scaled_col == LocX_reg[6:0])) begin        //if the location matches
+               matchedrow <= pixel_row; 
+               matchedcol <= pixel_column;
+               horiz_pix_min = matchedcol - (HORIZ_SIZE/2);                                 //for scaling
+               horiz_pix_max = matchedcol + (HORIZ_SIZE/2);          
+               vert_pix_min = matchedrow - (VERT_SIZE/2);
+               vert_pix_max = matchedrow + (VERT_SIZE/2);
             end
         end
 	
 	always@(*)
         begin
-            icon_index = {count_row[3:0], count_column[3:0]};
-            
             if(icon_on) begin
+                icon_index = {count_row[3:0], count_column[3:0]};                          //the address to the icon ROM
                 case(BotInfo_reg[2:0])
                         // Each of these needs to be compared to the current pixel location and output correct icon color value.
-                        3'b000:    icon = douta0[1:0];	
+                        3'b000:    icon = douta0[1:0];
                         3'b001:    icon = douta1[1:0];
                         3'b010:    icon = douta2[1:0];
                         3'b011:    icon = douta3[1:0];

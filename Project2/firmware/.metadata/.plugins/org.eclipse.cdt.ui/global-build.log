@@ -257,3 +257,686 @@ make: Nothing to be done for `all'.
 21:14:12 **** Incremental Build of configuration Default for project pro2 ****
 make all 
 make: Nothing to be done for `all'.
+10:31:43 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+10:31:48 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+10:47:51 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+10:47:56 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+11:32:47 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+11:32:51 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+11:53:15 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+11:53:18 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+12:11:04 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+12:11:09 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+12:32:08 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+12:32:11 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+13:20:24 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+main.S: Assembler messages:
+main.S:831: Error: operand 3 out of range `andi $4,$23,0xFFFFFFFF'
+make: *** [main.o] Error 1
+13:21:07 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+mips-mti-elf-size program.elf
+   text	   data	    bss	    dec	    hex	filename
+   2956	      0	      0	   2956	    b8c	program.elf
+mips-mti-elf-objdump -D -l -t program.elf > program.dis
+mips-mti-elf-objdump -D program.elf > program.txt
+mips-mti-elf-objcopy program.elf -O srec program.rec
+13:21:11 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+13:24:06 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+c:\PROGRA~1\IMAGIN~1\TOOLCH~1\mips-mti-elf\2016.05-03\bin\mips-mti-elf-objcopy.exe: unable to rename 'program.elf'; reason: Permission denied
+make: *** [program.elf] Error 1
+13:24:11 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+13:24:13 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+13:24:15 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+13:30:03 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+13:34:20 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+mips-mti-elf-size program.elf
+   text	   data	    bss	    dec	    hex	filename
+   2960	      0	      0	   2960	    b90	program.elf
+mips-mti-elf-objdump -D -l -t program.elf > program.dis
+mips-mti-elf-objdump -D program.elf > program.txt
+mips-mti-elf-objcopy program.elf -O srec program.rec
+13:34:23 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+13:36:23 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+mips-mti-elf-size program.elf
+   text	   data	    bss	    dec	    hex	filename
+   2956	      0	      0	   2956	    b8c	program.elf
+mips-mti-elf-objdump -D -l -t program.elf > program.dis
+mips-mti-elf-objdump -D program.elf > program.txt
+mips-mti-elf-objcopy program.elf -O srec program.rec
+13:36:29 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+13:42:01 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+mips-mti-elf-size program.elf
+   text	   data	    bss	    dec	    hex	filename
+   2944	      0	      0	   2944	    b80	program.elf
+mips-mti-elf-objdump -D -l -t program.elf > program.dis
+mips-mti-elf-objdump -D program.elf > program.txt
+mips-mti-elf-objcopy program.elf -O srec program.rec
+13:42:05 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+13:46:50 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+13:48:09 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+mips-mti-elf-size program.elf
+   text	   data	    bss	    dec	    hex	filename
+   2944	      0	      0	   2944	    b80	program.elf
+mips-mti-elf-objdump -D -l -t program.elf > program.dis
+mips-mti-elf-objdump -D program.elf > program.txt
+mips-mti-elf-objcopy program.elf -O srec program.rec
+13:48:13 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+13:48:16 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+13:55:11 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+c:\PROGRA~1\IMAGIN~1\TOOLCH~1\mips-mti-elf\2016.05-03\bin\mips-mti-elf-objcopy.exe: unable to rename 'program.elf'; reason: Permission denied
+make: *** [program.elf] Error 1
+13:55:16 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+13:55:18 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+14:03:40 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+mips-mti-elf-size program.elf
+   text	   data	    bss	    dec	    hex	filename
+   2948	      0	      0	   2948	    b84	program.elf
+mips-mti-elf-objdump -D -l -t program.elf > program.dis
+mips-mti-elf-objdump -D program.elf > program.txt
+mips-mti-elf-objcopy program.elf -O srec program.rec
+14:03:43 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+14:11:21 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+mips-mti-elf-size program.elf
+   text	   data	    bss	    dec	    hex	filename
+   2936	      0	      0	   2936	    b78	program.elf
+mips-mti-elf-objdump -D -l -t program.elf > program.dis
+mips-mti-elf-objdump -D program.elf > program.txt
+mips-mti-elf-objcopy program.elf -O srec program.rec
+14:11:47 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+14:11:49 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+mips-mti-elf-size program.elf
+   text	   data	    bss	    dec	    hex	filename
+   2936	      0	      0	   2936	    b78	program.elf
+mips-mti-elf-objdump -D -l -t program.elf > program.dis
+mips-mti-elf-objdump -D program.elf > program.txt
+mips-mti-elf-objcopy program.elf -O srec program.rec
+14:15:38 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+mips-mti-elf-size program.elf
+   text	   data	    bss	    dec	    hex	filename
+   2952	      0	      0	   2952	    b88	program.elf
+mips-mti-elf-objdump -D -l -t program.elf > program.dis
+mips-mti-elf-objdump -D program.elf > program.txt
+mips-mti-elf-objcopy program.elf -O srec program.rec
+14:15:42 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+14:16:56 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+mips-mti-elf-size program.elf
+   text	   data	    bss	    dec	    hex	filename
+   2952	      0	      0	   2952	    b88	program.elf
+mips-mti-elf-objdump -D -l -t program.elf > program.dis
+mips-mti-elf-objdump -D program.elf > program.txt
+mips-mti-elf-objcopy program.elf -O srec program.rec
+14:18:08 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+mips-mti-elf-size program.elf
+   text	   data	    bss	    dec	    hex	filename
+   2952	      0	      0	   2952	    b88	program.elf
+mips-mti-elf-objdump -D -l -t program.elf > program.dis
+mips-mti-elf-objdump -D program.elf > program.txt
+mips-mti-elf-objcopy program.elf -O srec program.rec
+14:18:12 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+14:23:22 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+c:\PROGRA~1\IMAGIN~1\TOOLCH~1\mips-mti-elf\2016.05-03\bin\mips-mti-elf-objcopy.exe: unable to rename 'program.elf'; reason: Permission denied
+make: *** [program.elf] Error 1
+14:23:25 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+14:23:29 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+14:28:05 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+c:\PROGRA~1\IMAGIN~1\TOOLCH~1\mips-mti-elf\2016.05-03\bin\mips-mti-elf-objcopy.exe: unable to rename 'program.elf'; reason: Permission denied
+make: *** [program.elf] Error 1
+14:28:07 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+14:28:09 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+14:31:35 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+mips-mti-elf-size program.elf
+   text	   data	    bss	    dec	    hex	filename
+   2948	      0	      0	   2948	    b84	program.elf
+mips-mti-elf-objdump -D -l -t program.elf > program.dis
+mips-mti-elf-objdump -D program.elf > program.txt
+mips-mti-elf-objcopy program.elf -O srec program.rec
+14:31:39 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+14:33:15 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+14:35:01 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+mips-mti-elf-size program.elf
+   text	   data	    bss	    dec	    hex	filename
+   2948	      0	      0	   2948	    b84	program.elf
+mips-mti-elf-objdump -D -l -t program.elf > program.dis
+mips-mti-elf-objdump -D program.elf > program.txt
+mips-mti-elf-objcopy program.elf -O srec program.rec
+14:35:04 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+14:35:43 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+mips-mti-elf-size program.elf
+   text	   data	    bss	    dec	    hex	filename
+   2952	      0	      0	   2952	    b88	program.elf
+mips-mti-elf-objdump -D -l -t program.elf > program.dis
+mips-mti-elf-objdump -D program.elf > program.txt
+mips-mti-elf-objcopy program.elf -O srec program.rec
+14:35:49 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+14:38:52 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+mips-mti-elf-size program.elf
+   text	   data	    bss	    dec	    hex	filename
+   2928	      0	      0	   2928	    b70	program.elf
+mips-mti-elf-objdump -D -l -t program.elf > program.dis
+mips-mti-elf-objdump -D program.elf > program.txt
+mips-mti-elf-objcopy program.elf -O srec program.rec
+14:38:54 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+14:40:40 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+c:\PROGRA~1\IMAGIN~1\TOOLCH~1\mips-mti-elf\2016.05-03\bin\mips-mti-elf-objcopy.exe: unable to rename 'program.elf'; reason: Permission denied
+make: *** [program.elf] Error 1
+14:40:42 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+14:40:45 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+14:41:52 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+mips-mti-elf-size program.elf
+   text	   data	    bss	    dec	    hex	filename
+   2936	      0	      0	   2936	    b78	program.elf
+mips-mti-elf-objdump -D -l -t program.elf > program.dis
+mips-mti-elf-objdump -D program.elf > program.txt
+mips-mti-elf-objcopy program.elf -O srec program.rec
+14:41:55 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+14:43:17 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+mips-mti-elf-size program.elf
+   text	   data	    bss	    dec	    hex	filename
+   2940	      0	      0	   2940	    b7c	program.elf
+mips-mti-elf-objdump -D -l -t program.elf > program.dis
+mips-mti-elf-objdump -D program.elf > program.txt
+mips-mti-elf-objcopy program.elf -O srec program.rec
+14:43:21 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+14:44:43 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+mips-mti-elf-size program.elf
+   text	   data	    bss	    dec	    hex	filename
+   2948	      0	      0	   2948	    b84	program.elf
+mips-mti-elf-objdump -D -l -t program.elf > program.dis
+mips-mti-elf-objdump -D program.elf > program.txt
+mips-mti-elf-objcopy program.elf -O srec program.rec
+14:44:47 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+14:45:38 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+mips-mti-elf-size program.elf
+   text	   data	    bss	    dec	    hex	filename
+   2948	      0	      0	   2948	    b84	program.elf
+mips-mti-elf-objdump -D -l -t program.elf > program.dis
+mips-mti-elf-objdump -D program.elf > program.txt
+mips-mti-elf-objcopy program.elf -O srec program.rec
+14:45:44 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+14:46:51 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+17:16:34 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+c:\PROGRA~1\IMAGIN~1\TOOLCH~1\mips-mti-elf\2016.05-03\bin\mips-mti-elf-objcopy.exe: unable to rename 'program.elf'; reason: Permission denied
+make: *** [program.elf] Error 1
+17:16:40 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+17:16:43 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+17:19:23 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+17:22:15 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+18:05:55 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+18:05:57 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+18:19:58 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+c:\PROGRA~1\IMAGIN~1\TOOLCH~1\mips-mti-elf\2016.05-03\bin\mips-mti-elf-objcopy.exe: unable to rename 'program.elf'; reason: Permission denied
+make: *** [program.elf] Error 1
+18:20:02 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+18:22:27 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+c:\PROGRA~1\IMAGIN~1\TOOLCH~1\mips-mti-elf\2016.05-03\bin\mips-mti-elf-objcopy.exe: unable to rename 'program.elf'; reason: Permission denied
+make: *** [program.elf] Error 1
+18:22:46 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+18:22:52 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+18:32:21 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+18:32:25 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+18:36:33 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+18:36:38 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+18:45:08 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+18:45:17 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+19:14:56 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+19:15:07 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+19:15:33 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+19:40:19 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+main.S:859:14: error: "is" after #line is not a positive integer
+       # line is present
+              ^
+make: *** [main.o] Error 1
+19:41:45 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+main.S:859:14: error: "is" after #line is not a positive integer
+       # line is present
+              ^
+make: *** [main.o] Error 1
+19:42:15 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+main.S:859:14: error: "is" after #line is not a positive integer
+       # line is present
+              ^
+make: *** [main.o] Error 1
+19:42:57 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+main.o: In function `l_rotate':
+(.text+0x6b8): undefined reference to `cc_state_return'
+collect2.exe: error: ld returned 1 exit status
+make: *** [program.elf] Error 1
+19:59:49 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+mips-mti-elf-size program.elf
+   text	   data	    bss	    dec	    hex	filename
+   2788	      0	      0	   2788	    ae4	program.elf
+mips-mti-elf-objdump -D -l -t program.elf > program.dis
+mips-mti-elf-objdump -D program.elf > program.txt
+mips-mti-elf-objcopy program.elf -O srec program.rec
+19:59:59 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+20:00:19 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+20:00:51 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+20:00:56 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+20:02:22 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+mips-mti-elf-size program.elf
+   text	   data	    bss	    dec	    hex	filename
+   2788	      0	      0	   2788	    ae4	program.elf
+mips-mti-elf-objdump -D -l -t program.elf > program.dis
+mips-mti-elf-objdump -D program.elf > program.txt
+mips-mti-elf-objcopy program.elf -O srec program.rec
+20:02:29 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+20:02:50 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+20:02:57 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+20:05:18 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+20:05:51 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+20:05:54 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+20:13:24 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+mips-mti-elf-size program.elf
+   text	   data	    bss	    dec	    hex	filename
+   2800	      0	      0	   2800	    af0	program.elf
+mips-mti-elf-objdump -D -l -t program.elf > program.dis
+mips-mti-elf-objdump -D program.elf > program.txt
+mips-mti-elf-objcopy program.elf -O srec program.rec
+20:13:29 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+20:14:28 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+20:18:25 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+20:19:07 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+20:22:10 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+20:28:16 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+20:35:39 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+main.S:861:14: error: "is" after #line is not a positive integer
+       # line is present
+              ^
+make: *** [main.o] Error 1
+20:36:13 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+mips-mti-elf-size program.elf
+   text	   data	    bss	    dec	    hex	filename
+   2804	      0	      0	   2804	    af4	program.elf
+mips-mti-elf-objdump -D -l -t program.elf > program.dis
+mips-mti-elf-objdump -D program.elf > program.txt
+mips-mti-elf-objcopy program.elf -O srec program.rec
+20:36:17 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+20:36:20 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+20:37:28 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+20:37:31 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+20:41:12 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+20:45:34 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+20:48:11 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+mips-mti-elf-size program.elf
+   text	   data	    bss	    dec	    hex	filename
+   2804	      0	      0	   2804	    af4	program.elf
+mips-mti-elf-objdump -D -l -t program.elf > program.dis
+mips-mti-elf-objdump -D program.elf > program.txt
+mips-mti-elf-objcopy program.elf -O srec program.rec
+20:48:16 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+20:52:30 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+mips-mti-elf-size program.elf
+   text	   data	    bss	    dec	    hex	filename
+   2804	      0	      0	   2804	    af4	program.elf
+mips-mti-elf-objdump -D -l -t program.elf > program.dis
+mips-mti-elf-objdump -D program.elf > program.txt
+mips-mti-elf-objcopy program.elf -O srec program.rec
+20:52:54 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+20:52:59 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+20:53:31 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+20:54:51 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+20:55:47 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+21:04:38 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+main.S: Assembler messages:
+main.S:798: Error: invalid operands `li $4,0($25)'
+make: *** [main.o] Error 1
+21:05:30 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+mips-mti-elf-size program.elf
+   text	   data	    bss	    dec	    hex	filename
+   2804	      0	      0	   2804	    af4	program.elf
+mips-mti-elf-objdump -D -l -t program.elf > program.dis
+mips-mti-elf-objdump -D program.elf > program.txt
+mips-mti-elf-objcopy program.elf -O srec program.rec
+21:05:36 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+21:28:17 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.
+21:51:02 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+mips-mti-elf-gcc -c -EL -g -march=m14kc -msoft-float -O0 -I"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" main.S -o main.o
+mips-mti-elf-gcc  -EL -march=m14kc -msoft-float -nostartfiles -Wl,-Map=program.map -L"C:\PROGRA~1\IMAGIN~1\TOOLCH~1\MIPS-M~1\2016~1.05-/share/mips/addons/libfdc/" -Wl,--defsym,__stack=0x80040000 -Wl,--defsym,__memory_size=0x1f800 -T uhi32.ld -Wl,--defsym,__flash_start=0xbfc00000 -Wl,--defsym,__flash_app_start=0x80000000 -Wl,--defsym,__app_start=0x80000000 -Wl,--defsym,__isr_vec_count=0 -Wl,-e,0xbfc00000 boot.o exceptions.o dummy.o main.o -lfdc -o program.elf
+mips-mti-elf-objcopy --remove-section .MIPS.abiflags --remove-section .reginfo program.elf
+mips-mti-elf-size program.elf
+   text	   data	    bss	    dec	    hex	filename
+   2948	      0	      0	   2948	    b84	program.elf
+mips-mti-elf-objdump -D -l -t program.elf > program.dis
+mips-mti-elf-objdump -D program.elf > program.txt
+mips-mti-elf-objcopy program.elf -O srec program.rec
+21:51:07 **** Incremental Build of configuration Default for project pro2 ****
+make all 
+make: Nothing to be done for `all'.

@@ -1,6 +1,6 @@
-21:14:12 **** Incremental Build of configuration Default for project pro2 ****
+21:51:07 **** Incremental Build of configuration Default for project pro2 ****
 make all 
 make: Nothing to be done for `all'.
 
-21:14:12 Build Finished (took 290ms)
+21:51:07 Build Finished (took 253ms)
 

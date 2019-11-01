@@ -1,0 +1,7 @@
+MasterSashPatternWeight=500
+MasterSashTriggerWeight=500
+PatternSashDetailWeight=650
+PatternSashListWeight=350
+TriggerSashDetailWeight=750
+TriggerSashListWeight=250
+eclipse.preferences.version=1

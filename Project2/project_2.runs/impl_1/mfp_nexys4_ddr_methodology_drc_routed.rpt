@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date         : Wed Oct 30 21:12:54 2019
+| Date         : Thu Oct 31 13:19:06 2019
 | Host         : caplab12 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file mfp_nexys4_ddr_methodology_drc_routed.rpt -pb mfp_nexys4_ddr_methodology_drc_routed.pb -rpx mfp_nexys4_ddr_methodology_drc_routed.rpx
 | Design       : mfp_nexys4_ddr
@@ -23,16 +23,16 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 547
+             Violations found: 585
 +-----------+----------+------------------------------------------------+------------+
 | Rule      | Severity | Description                                    | Violations |
 +-----------+----------+------------------------------------------------+------------+
 | LUTAR-1   | Warning  | LUT drives async reset alert                   | 3          |
-| SYNTH-6   | Warning  | Timing of a block RAM might be sub-optimal     | 8          |
+| SYNTH-6   | Warning  | Timing of a block RAM might be sub-optimal     | 16         |
 | TIMING-6  | Warning  | No common primary clock between related clocks | 8          |
 | TIMING-17 | Warning  | Non-clocked sequential cell                    | 478        |
 | TIMING-18 | Warning  | Missing input or output delay                  | 6          |
-| TIMING-20 | Warning  | Non-clocked latch                              | 44         |
+| TIMING-20 | Warning  | Non-clocked latch                              | 74         |
 +-----------+----------+------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -74,22 +74,62 @@ Related violations: <none>
 
 SYNTH-6#5 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance mfp_sys/top/cpu/dcache/dataram/ram__data_inst6/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance mfp_sys/top/cpu/dcache/dataram/ram__data_inst4/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#6 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance mfp_sys/top/cpu/dcache/dataram/ram__data_inst7/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance mfp_sys/top/cpu/dcache/dataram/ram__data_inst5/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#7 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance mfp_sys/top/cpu/icache/dataram/ram__data_inst3/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance mfp_sys/top/cpu/dcache/dataram/ram__data_inst6/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#8 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance mfp_sys/top/cpu/icache/dataram/ram__data_inst7/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance mfp_sys/top/cpu/dcache/dataram/ram__data_inst7/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#9 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mfp_sys/top/cpu/dcache/tagram/ram__tag_inst0/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#10 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mfp_sys/top/cpu/dcache/tagram/ram__tag_inst1/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#11 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mfp_sys/top/cpu/dcache/tagram/ram__tag_inst2/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#12 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mfp_sys/top/cpu/dcache/tagram/ram__tag_inst3/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#13 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mfp_sys/top/cpu/icache/dataram/ram__data_inst4/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#14 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mfp_sys/top/cpu/icache/tagram/ram__tag_inst0/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#15 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mfp_sys/top/cpu/icache/tagram/ram__tag_inst1/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#16 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance mfp_sys/top/cpu/icache/tagram/ram__tag_inst3/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 TIMING-6#1 Warning
@@ -2564,210 +2604,360 @@ Related violations: <none>
 
 TIMING-20#3 Warning
 Non-clocked latch  
-The latch icon1/horiz_pix_max_reg[2] cannot be properly analyzed as its control pin icon1/horiz_pix_max_reg[2]/G is not reached by a timing clock
+The latch icon1/horiz_pix_max_reg[3] cannot be properly analyzed as its control pin icon1/horiz_pix_max_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#4 Warning
 Non-clocked latch  
-The latch icon1/horiz_pix_max_reg[3] cannot be properly analyzed as its control pin icon1/horiz_pix_max_reg[3]/G is not reached by a timing clock
+The latch icon1/horiz_pix_max_reg[4] cannot be properly analyzed as its control pin icon1/horiz_pix_max_reg[4]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#5 Warning
 Non-clocked latch  
-The latch icon1/horiz_pix_max_reg[4] cannot be properly analyzed as its control pin icon1/horiz_pix_max_reg[4]/G is not reached by a timing clock
+The latch icon1/horiz_pix_max_reg[5] cannot be properly analyzed as its control pin icon1/horiz_pix_max_reg[5]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#6 Warning
 Non-clocked latch  
-The latch icon1/horiz_pix_max_reg[5] cannot be properly analyzed as its control pin icon1/horiz_pix_max_reg[5]/G is not reached by a timing clock
+The latch icon1/horiz_pix_max_reg[6] cannot be properly analyzed as its control pin icon1/horiz_pix_max_reg[6]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#7 Warning
 Non-clocked latch  
-The latch icon1/horiz_pix_max_reg[6] cannot be properly analyzed as its control pin icon1/horiz_pix_max_reg[6]/G is not reached by a timing clock
+The latch icon1/horiz_pix_max_reg[7] cannot be properly analyzed as its control pin icon1/horiz_pix_max_reg[7]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#8 Warning
 Non-clocked latch  
-The latch icon1/horiz_pix_max_reg[7] cannot be properly analyzed as its control pin icon1/horiz_pix_max_reg[7]/G is not reached by a timing clock
+The latch icon1/horiz_pix_max_reg[8] cannot be properly analyzed as its control pin icon1/horiz_pix_max_reg[8]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#9 Warning
 Non-clocked latch  
-The latch icon1/horiz_pix_max_reg[8] cannot be properly analyzed as its control pin icon1/horiz_pix_max_reg[8]/G is not reached by a timing clock
+The latch icon1/horiz_pix_max_reg[9] cannot be properly analyzed as its control pin icon1/horiz_pix_max_reg[9]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#10 Warning
 Non-clocked latch  
-The latch icon1/horiz_pix_max_reg[9] cannot be properly analyzed as its control pin icon1/horiz_pix_max_reg[9]/G is not reached by a timing clock
+The latch icon1/horiz_pix_min_reg[0] cannot be properly analyzed as its control pin icon1/horiz_pix_min_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#11 Warning
 Non-clocked latch  
-The latch icon1/horiz_pix_min_reg[0] cannot be properly analyzed as its control pin icon1/horiz_pix_min_reg[0]/G is not reached by a timing clock
+The latch icon1/horiz_pix_min_reg[10] cannot be properly analyzed as its control pin icon1/horiz_pix_min_reg[10]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#12 Warning
 Non-clocked latch  
-The latch icon1/horiz_pix_min_reg[10] cannot be properly analyzed as its control pin icon1/horiz_pix_min_reg[10]/G is not reached by a timing clock
+The latch icon1/horiz_pix_min_reg[11] cannot be properly analyzed as its control pin icon1/horiz_pix_min_reg[11]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#13 Warning
 Non-clocked latch  
-The latch icon1/horiz_pix_min_reg[11] cannot be properly analyzed as its control pin icon1/horiz_pix_min_reg[11]/G is not reached by a timing clock
+The latch icon1/horiz_pix_min_reg[1] cannot be properly analyzed as its control pin icon1/horiz_pix_min_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#14 Warning
 Non-clocked latch  
-The latch icon1/horiz_pix_min_reg[1] cannot be properly analyzed as its control pin icon1/horiz_pix_min_reg[1]/G is not reached by a timing clock
+The latch icon1/horiz_pix_min_reg[2] cannot be properly analyzed as its control pin icon1/horiz_pix_min_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#15 Warning
 Non-clocked latch  
-The latch icon1/horiz_pix_min_reg[2] cannot be properly analyzed as its control pin icon1/horiz_pix_min_reg[2]/G is not reached by a timing clock
+The latch icon1/horiz_pix_min_reg[3] cannot be properly analyzed as its control pin icon1/horiz_pix_min_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#16 Warning
 Non-clocked latch  
-The latch icon1/horiz_pix_min_reg[3] cannot be properly analyzed as its control pin icon1/horiz_pix_min_reg[3]/G is not reached by a timing clock
+The latch icon1/horiz_pix_min_reg[4] cannot be properly analyzed as its control pin icon1/horiz_pix_min_reg[4]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#17 Warning
 Non-clocked latch  
-The latch icon1/horiz_pix_min_reg[4] cannot be properly analyzed as its control pin icon1/horiz_pix_min_reg[4]/G is not reached by a timing clock
+The latch icon1/horiz_pix_min_reg[5] cannot be properly analyzed as its control pin icon1/horiz_pix_min_reg[5]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#18 Warning
 Non-clocked latch  
-The latch icon1/horiz_pix_min_reg[5] cannot be properly analyzed as its control pin icon1/horiz_pix_min_reg[5]/G is not reached by a timing clock
+The latch icon1/horiz_pix_min_reg[6] cannot be properly analyzed as its control pin icon1/horiz_pix_min_reg[6]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#19 Warning
 Non-clocked latch  
-The latch icon1/horiz_pix_min_reg[6] cannot be properly analyzed as its control pin icon1/horiz_pix_min_reg[6]/G is not reached by a timing clock
+The latch icon1/horiz_pix_min_reg[7] cannot be properly analyzed as its control pin icon1/horiz_pix_min_reg[7]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#20 Warning
 Non-clocked latch  
-The latch icon1/horiz_pix_min_reg[7] cannot be properly analyzed as its control pin icon1/horiz_pix_min_reg[7]/G is not reached by a timing clock
+The latch icon1/horiz_pix_min_reg[8] cannot be properly analyzed as its control pin icon1/horiz_pix_min_reg[8]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#21 Warning
 Non-clocked latch  
-The latch icon1/horiz_pix_min_reg[8] cannot be properly analyzed as its control pin icon1/horiz_pix_min_reg[8]/G is not reached by a timing clock
+The latch icon1/horiz_pix_min_reg[9] cannot be properly analyzed as its control pin icon1/horiz_pix_min_reg[9]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#22 Warning
 Non-clocked latch  
-The latch icon1/horiz_pix_min_reg[9] cannot be properly analyzed as its control pin icon1/horiz_pix_min_reg[9]/G is not reached by a timing clock
+The latch icon1/icon_index_reg[0] cannot be properly analyzed as its control pin icon1/icon_index_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#23 Warning
 Non-clocked latch  
-The latch icon1/vert_pix_max_reg[0] cannot be properly analyzed as its control pin icon1/vert_pix_max_reg[0]/G is not reached by a timing clock
+The latch icon1/icon_index_reg[1] cannot be properly analyzed as its control pin icon1/icon_index_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#24 Warning
 Non-clocked latch  
-The latch icon1/vert_pix_max_reg[10] cannot be properly analyzed as its control pin icon1/vert_pix_max_reg[10]/G is not reached by a timing clock
+The latch icon1/icon_index_reg[2] cannot be properly analyzed as its control pin icon1/icon_index_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#25 Warning
 Non-clocked latch  
-The latch icon1/vert_pix_max_reg[11] cannot be properly analyzed as its control pin icon1/vert_pix_max_reg[11]/G is not reached by a timing clock
+The latch icon1/icon_index_reg[3] cannot be properly analyzed as its control pin icon1/icon_index_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#26 Warning
 Non-clocked latch  
-The latch icon1/vert_pix_max_reg[1] cannot be properly analyzed as its control pin icon1/vert_pix_max_reg[1]/G is not reached by a timing clock
+The latch icon1/icon_index_reg[4] cannot be properly analyzed as its control pin icon1/icon_index_reg[4]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#27 Warning
 Non-clocked latch  
-The latch icon1/vert_pix_max_reg[2] cannot be properly analyzed as its control pin icon1/vert_pix_max_reg[2]/G is not reached by a timing clock
+The latch icon1/icon_index_reg[5] cannot be properly analyzed as its control pin icon1/icon_index_reg[5]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#28 Warning
 Non-clocked latch  
-The latch icon1/vert_pix_max_reg[3] cannot be properly analyzed as its control pin icon1/vert_pix_max_reg[3]/G is not reached by a timing clock
+The latch icon1/icon_index_reg[6] cannot be properly analyzed as its control pin icon1/icon_index_reg[6]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#29 Warning
 Non-clocked latch  
-The latch icon1/vert_pix_max_reg[4] cannot be properly analyzed as its control pin icon1/vert_pix_max_reg[4]/G is not reached by a timing clock
+The latch icon1/icon_index_reg[7] cannot be properly analyzed as its control pin icon1/icon_index_reg[7]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#30 Warning
 Non-clocked latch  
-The latch icon1/vert_pix_max_reg[5] cannot be properly analyzed as its control pin icon1/vert_pix_max_reg[5]/G is not reached by a timing clock
+The latch icon1/matchedcol_reg[0] cannot be properly analyzed as its control pin icon1/matchedcol_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#31 Warning
 Non-clocked latch  
-The latch icon1/vert_pix_max_reg[6] cannot be properly analyzed as its control pin icon1/vert_pix_max_reg[6]/G is not reached by a timing clock
+The latch icon1/matchedcol_reg[10] cannot be properly analyzed as its control pin icon1/matchedcol_reg[10]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#32 Warning
 Non-clocked latch  
-The latch icon1/vert_pix_max_reg[7] cannot be properly analyzed as its control pin icon1/vert_pix_max_reg[7]/G is not reached by a timing clock
+The latch icon1/matchedcol_reg[11] cannot be properly analyzed as its control pin icon1/matchedcol_reg[11]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#33 Warning
 Non-clocked latch  
-The latch icon1/vert_pix_max_reg[8] cannot be properly analyzed as its control pin icon1/vert_pix_max_reg[8]/G is not reached by a timing clock
+The latch icon1/matchedcol_reg[1] cannot be properly analyzed as its control pin icon1/matchedcol_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#34 Warning
 Non-clocked latch  
-The latch icon1/vert_pix_max_reg[9] cannot be properly analyzed as its control pin icon1/vert_pix_max_reg[9]/G is not reached by a timing clock
+The latch icon1/matchedcol_reg[2] cannot be properly analyzed as its control pin icon1/matchedcol_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#35 Warning
 Non-clocked latch  
-The latch icon1/vert_pix_min_reg[10] cannot be properly analyzed as its control pin icon1/vert_pix_min_reg[10]/G is not reached by a timing clock
+The latch icon1/matchedcol_reg[3] cannot be properly analyzed as its control pin icon1/matchedcol_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#36 Warning
 Non-clocked latch  
-The latch icon1/vert_pix_min_reg[11] cannot be properly analyzed as its control pin icon1/vert_pix_min_reg[11]/G is not reached by a timing clock
+The latch icon1/matchedcol_reg[4] cannot be properly analyzed as its control pin icon1/matchedcol_reg[4]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#37 Warning
 Non-clocked latch  
-The latch icon1/vert_pix_min_reg[2] cannot be properly analyzed as its control pin icon1/vert_pix_min_reg[2]/G is not reached by a timing clock
+The latch icon1/matchedcol_reg[5] cannot be properly analyzed as its control pin icon1/matchedcol_reg[5]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#38 Warning
 Non-clocked latch  
-The latch icon1/vert_pix_min_reg[3] cannot be properly analyzed as its control pin icon1/vert_pix_min_reg[3]/G is not reached by a timing clock
+The latch icon1/matchedcol_reg[6] cannot be properly analyzed as its control pin icon1/matchedcol_reg[6]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#39 Warning
 Non-clocked latch  
-The latch icon1/vert_pix_min_reg[4] cannot be properly analyzed as its control pin icon1/vert_pix_min_reg[4]/G is not reached by a timing clock
+The latch icon1/matchedcol_reg[7] cannot be properly analyzed as its control pin icon1/matchedcol_reg[7]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#40 Warning
 Non-clocked latch  
-The latch icon1/vert_pix_min_reg[5] cannot be properly analyzed as its control pin icon1/vert_pix_min_reg[5]/G is not reached by a timing clock
+The latch icon1/matchedcol_reg[8] cannot be properly analyzed as its control pin icon1/matchedcol_reg[8]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#41 Warning
 Non-clocked latch  
-The latch icon1/vert_pix_min_reg[6] cannot be properly analyzed as its control pin icon1/vert_pix_min_reg[6]/G is not reached by a timing clock
+The latch icon1/matchedcol_reg[9] cannot be properly analyzed as its control pin icon1/matchedcol_reg[9]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#42 Warning
 Non-clocked latch  
-The latch icon1/vert_pix_min_reg[7] cannot be properly analyzed as its control pin icon1/vert_pix_min_reg[7]/G is not reached by a timing clock
+The latch icon1/matchedrow_reg[0] cannot be properly analyzed as its control pin icon1/matchedrow_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#43 Warning
 Non-clocked latch  
-The latch icon1/vert_pix_min_reg[8] cannot be properly analyzed as its control pin icon1/vert_pix_min_reg[8]/G is not reached by a timing clock
+The latch icon1/matchedrow_reg[10] cannot be properly analyzed as its control pin icon1/matchedrow_reg[10]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#44 Warning
+Non-clocked latch  
+The latch icon1/matchedrow_reg[11] cannot be properly analyzed as its control pin icon1/matchedrow_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#45 Warning
+Non-clocked latch  
+The latch icon1/matchedrow_reg[1] cannot be properly analyzed as its control pin icon1/matchedrow_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#46 Warning
+Non-clocked latch  
+The latch icon1/matchedrow_reg[2] cannot be properly analyzed as its control pin icon1/matchedrow_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#47 Warning
+Non-clocked latch  
+The latch icon1/matchedrow_reg[3] cannot be properly analyzed as its control pin icon1/matchedrow_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#48 Warning
+Non-clocked latch  
+The latch icon1/matchedrow_reg[4] cannot be properly analyzed as its control pin icon1/matchedrow_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#49 Warning
+Non-clocked latch  
+The latch icon1/matchedrow_reg[5] cannot be properly analyzed as its control pin icon1/matchedrow_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#50 Warning
+Non-clocked latch  
+The latch icon1/matchedrow_reg[6] cannot be properly analyzed as its control pin icon1/matchedrow_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#51 Warning
+Non-clocked latch  
+The latch icon1/matchedrow_reg[7] cannot be properly analyzed as its control pin icon1/matchedrow_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#52 Warning
+Non-clocked latch  
+The latch icon1/matchedrow_reg[8] cannot be properly analyzed as its control pin icon1/matchedrow_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#53 Warning
+Non-clocked latch  
+The latch icon1/matchedrow_reg[9] cannot be properly analyzed as its control pin icon1/matchedrow_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#54 Warning
+Non-clocked latch  
+The latch icon1/vert_pix_max_reg[0] cannot be properly analyzed as its control pin icon1/vert_pix_max_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#55 Warning
+Non-clocked latch  
+The latch icon1/vert_pix_max_reg[10] cannot be properly analyzed as its control pin icon1/vert_pix_max_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#56 Warning
+Non-clocked latch  
+The latch icon1/vert_pix_max_reg[11] cannot be properly analyzed as its control pin icon1/vert_pix_max_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#57 Warning
+Non-clocked latch  
+The latch icon1/vert_pix_max_reg[1] cannot be properly analyzed as its control pin icon1/vert_pix_max_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#58 Warning
+Non-clocked latch  
+The latch icon1/vert_pix_max_reg[2] cannot be properly analyzed as its control pin icon1/vert_pix_max_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#59 Warning
+Non-clocked latch  
+The latch icon1/vert_pix_max_reg[3] cannot be properly analyzed as its control pin icon1/vert_pix_max_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#60 Warning
+Non-clocked latch  
+The latch icon1/vert_pix_max_reg[4] cannot be properly analyzed as its control pin icon1/vert_pix_max_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#61 Warning
+Non-clocked latch  
+The latch icon1/vert_pix_max_reg[5] cannot be properly analyzed as its control pin icon1/vert_pix_max_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#62 Warning
+Non-clocked latch  
+The latch icon1/vert_pix_max_reg[6] cannot be properly analyzed as its control pin icon1/vert_pix_max_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#63 Warning
+Non-clocked latch  
+The latch icon1/vert_pix_max_reg[7] cannot be properly analyzed as its control pin icon1/vert_pix_max_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#64 Warning
+Non-clocked latch  
+The latch icon1/vert_pix_max_reg[8] cannot be properly analyzed as its control pin icon1/vert_pix_max_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#65 Warning
+Non-clocked latch  
+The latch icon1/vert_pix_max_reg[9] cannot be properly analyzed as its control pin icon1/vert_pix_max_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#66 Warning
+Non-clocked latch  
+The latch icon1/vert_pix_min_reg[10] cannot be properly analyzed as its control pin icon1/vert_pix_min_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#67 Warning
+Non-clocked latch  
+The latch icon1/vert_pix_min_reg[11] cannot be properly analyzed as its control pin icon1/vert_pix_min_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#68 Warning
+Non-clocked latch  
+The latch icon1/vert_pix_min_reg[3] cannot be properly analyzed as its control pin icon1/vert_pix_min_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#69 Warning
+Non-clocked latch  
+The latch icon1/vert_pix_min_reg[4] cannot be properly analyzed as its control pin icon1/vert_pix_min_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#70 Warning
+Non-clocked latch  
+The latch icon1/vert_pix_min_reg[5] cannot be properly analyzed as its control pin icon1/vert_pix_min_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#71 Warning
+Non-clocked latch  
+The latch icon1/vert_pix_min_reg[6] cannot be properly analyzed as its control pin icon1/vert_pix_min_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#72 Warning
+Non-clocked latch  
+The latch icon1/vert_pix_min_reg[7] cannot be properly analyzed as its control pin icon1/vert_pix_min_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#73 Warning
+Non-clocked latch  
+The latch icon1/vert_pix_min_reg[8] cannot be properly analyzed as its control pin icon1/vert_pix_min_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#74 Warning
 Non-clocked latch  
 The latch icon1/vert_pix_min_reg[9] cannot be properly analyzed as its control pin icon1/vert_pix_min_reg[9]/G is not reached by a timing clock
 Related violations: <none>

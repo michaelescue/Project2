@@ -2,8 +2,8 @@
 # Vivado v2018.2.1 (64-bit)
 # SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
 # IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Wed Oct 30 21:02:29 2019
-# Process ID: 5336
+# Start of session at: Thu Oct 31 13:08:26 2019
+# Process ID: 9952
 # Current directory: N:/Project2/Project2/project_2.runs/synth_1
 # Command line: vivado.exe -log mfp_nexys4_ddr.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mfp_nexys4_ddr.tcl
 # Log file: N:/Project2/Project2/project_2.runs/synth_1/mfp_nexys4_ddr.vds
