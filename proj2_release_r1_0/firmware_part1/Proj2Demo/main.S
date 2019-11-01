@@ -203,6 +203,7 @@ HALT_STATE		=	0x00
 FORWARD_STATE	=	0x01
 REVERSE_STATE	=	0x02
 ROTATE_STATE	=	0x03
+POST_ROTATE		=	0x04
 
 
 # ======================
@@ -376,9 +377,9 @@ main:
 				nop
 				li	$2, FALSE
 				sb $2, SP_RGTC0NT
-				li $15, FORWARD_STATE
-
-
+				li $23, 0x6						# Initial backwards orientation is West.
+				li $18, 0x2						# Initial heading
+				li $19, HALT_STATE			# Initial state
 # ==================
 # === Main  Loop ===
 # ==================
@@ -756,8 +757,13 @@ next_step:
 				####################################################################################################
 
 				state_decode:
-				# $19 is the current state register.
-				# $4 is the working register.
+				# $15 (t7) is the motion register.
+				# $19 (s3) is the current state register.
+				# $16 (s0) is the line sensor register. (Active LOW)
+				# $18 (s2) is the next heading register.
+				# $23 (s7) is the backwards orientation register.
+				# $4 (a0) is the working register.
+				# $25 (s9) is the bot info reg
 
 					li $4, FORWARD_STATE
 					beq $19, $4, forward
@@ -788,16 +794,19 @@ next_step:
 					b next_state
 
 				next_state:
-				# #2 is the current state register.
-				# $16 is the line sensor register. (Active LOW)
-				# $17 is the rotation count register.
-				# $4 is the working register.
+				# $15 (t7) is the motion register. 
+				# $19 (s3) is the current state register.
+				# $16 (s0) is the line sensor register. (Active LOW)
+				# $18 (s2) is the next heading register.
+				# $23 (s7) is the backwards orientation register. 
+				# $4 (a0) is the working register.
+				# $25 (s9) is the bot info reg
 
 
-					li $25, SENSOR_REG	# Load Sensor_reg address
-					lw $4, 0($25)		# Read the Sensors_reg
-					andi $4, $4, 0x2	# Mask out the center Black line sensor bit
-					srl $16, $4, 1		# Shift the bit into lsb of register $16
+					li $4, PORT_BOTINFO	# Load Sensor_reg address
+					lw $25, 0($4)		# Read the Sensors_reg
+					andi $4, $25, 0x200	# Mask out the center Black line sensor bit
+					srl $16, $4, 9		# Shift the bit into lsb of register $16
 
 					beqz $16, line_present	# Branch if 0 (line present) to line present next state logic
 											# Else continue with logic when line is not present.
@@ -824,6 +833,11 @@ next_step:
 
 					nl_reverse:
 						li $19, REVERSE_STATE 	# No line is present, if in reverse state, stay in reverse state.
+						
+						li $4, 0x7
+						subu $18, $25, $4		# Find next rotation state to find line.
+						andi $18, $18, 0x3		# Mask the lower 3 bits for orientation testing. 
+						
 						b state_return			# State = Next State
 
 					nl_rotate:
@@ -832,6 +846,9 @@ next_step:
 
 				line_present:	# This section decodes based off line being present
 
+					li $4, POST_ROTATE
+					beq $19, $4, l_post_rotate
+					
 					li $4, FORWARD_STATE
 					beq $19, $4, l_forward
 
@@ -844,26 +861,44 @@ next_step:
 					li $4, ROTATE_STATE
 					beq $19, $4, l_rotate
 
+					l_post_rotate:
+						Li $19, FORWARD_STATE
+						b state_return 
+						
 					l_forward:
-						li $19, FORWARD_STATE	# line is present, stay in forward state
-						li $17, 0x0				# Clear the rotation count (now moving along a line)
+					# $18 (s2) is the next heading register.
+					# $25 (t9) is the bot info reg
+					# $23 (s7) is the backwards orientation register.
+
+						li $19, FORWARD_STATE								
+						li $4, 0x4
+						subu $23, $25, $4		# Find opposite orientation.
+						andi $23, $23, 0x3		# Keep only lower 3 bits in the backwards register.
+						
 						b state_return			# State = Next State
 
 					l_halt:
 						li $19, ROTATE_STATE		# line is present, go to rotate.
-						b state_return			# State = Next State
+						b state_return				# State = Next State
 
 					l_reverse:
 						li $19, HALT_STATE		# line is present, go to halt.
 						b state_return			# State = Next State
 
 					l_rotate:
-
-						addi $17, $17, 0x1 			# increment rotation counter.
-						li $4, 0x4					# Check rotation count
-						beq $17, $4, state_return	# If rotation count is 4, next state is rotate (no next state change)
-
-						li $4, FORWARD_STATE		# If rotation count !=4 go to forward to test for line in new direction.
+						andi $4, $25, 0x3			# Select orientation bits.
+						add $2, $23, 0x0					# Trying a different approach.
+						beq $4, $2, rotate_next 	# If the current orientation is equal to backwards, rotate. 
+						
+						andi $4, $25, 0x3			# Select orientation bits.
+						beq $4, $18, post_rotate_forward_next	# If the current orientation doesn't equal next heading rotate
+						
+						rotate_next:
+						li $19, ROTATE_STATE
+						b state_return
+						
+						post_rotate_forward_next:
+							li $19, POST_ROTATE #forward without backwards update.
 
 				state_return:
 					beq		$0, $0, ret_next_step
