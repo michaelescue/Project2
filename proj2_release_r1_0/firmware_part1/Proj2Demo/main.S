@@ -776,6 +776,9 @@ next_step:
 
 					li $4, ROTATE_STATE
 					beq $19, $4, rotate
+					
+					li $4, POST_ROTATE
+					beq $19, $4, forward
 
 				halt:
 					li $15,SP_LSRS		# In halt, both motors are stopped.
@@ -814,6 +817,9 @@ next_step:
 					li $4, FORWARD_STATE
 					beq $19, $4, nl_forward
 
+					li $4, POST_ROTATE
+					beq $19, $4, nl_postrotate
+
 					li $4, HALT_STATE
 					beq $19, $4, nl_halt
 
@@ -843,6 +849,10 @@ next_step:
 					nl_rotate:
 						li $19, FORWARD_STATE	# No line is present, if in rotate state (shouldn't make it here), stay in rotate.
 						b state_return			# State = Next State
+						
+					nl_postrotate:
+						li $19, REVERSE_STATE
+						b state_return
 
 				line_present:	# This section decodes based off line being present
 
@@ -862,7 +872,7 @@ next_step:
 					beq $19, $4, l_rotate
 
 					l_post_rotate:
-						Li $19, FORWARD_STATE
+						li $19, FORWARD_STATE
 						b state_return 
 						
 					l_forward:
@@ -870,15 +880,17 @@ next_step:
 					# $25 (t9) is the bot info reg
 					# $23 (s7) is the backwards orientation register.
 
-						li $19, FORWARD_STATE								
-						li $4, 0x4
-						subu $23, $25, $4		# Find opposite orientation.
-						andi $23, $23, 0x3		# Keep only lower 3 bits in the backwards register.
-						
+						li $19, FORWARD_STATE
+					#	li $4, 0x4
+					#	subu $23, $25, $4		# Find opposite orientation.
+					#	andi $23, $23, 0x3		# Keep only lower 3 bits in the backwards register.						
 						b state_return			# State = Next State
 
 					l_halt:
 						li $19, ROTATE_STATE		# line is present, go to rotate.
+						andi $24, $25, 0xF0
+						add $24, $24, $25
+						srl $24, $24, 4
 						b state_return				# State = Next State
 
 					l_reverse:
@@ -886,19 +898,22 @@ next_step:
 						b state_return			# State = Next State
 
 					l_rotate:
-						andi $4, $25, 0x3			# Select orientation bits.
-						add $2, $23, 0x0					# Trying a different approach.
-						beq $4, $2, rotate_next 	# If the current orientation is equal to backwards, rotate. 
-						
+											
+						li $4, 0x3					# Check if count is 4
+						beq $4, $23, rotate_next 	# If the count != 4 rotate. 
+
+
+						# See if orientation is at next heading.  
 						andi $4, $25, 0x3			# Select orientation bits.
 						beq $4, $18, post_rotate_forward_next	# If the current orientation doesn't equal next heading rotate
 						
 						rotate_next:
-						li $19, ROTATE_STATE
-						b state_return
+							li $19, ROTATE_STATE
+							b state_return
 						
 						post_rotate_forward_next:
-							li $19, POST_ROTATE #forward without backwards update.
+							addi $23, $23, 0x1	# Increment counter on forward.
+							li $19, POST_ROTATE # Forward without backwards update.
 
 				state_return:
 					beq		$0, $0, ret_next_step
