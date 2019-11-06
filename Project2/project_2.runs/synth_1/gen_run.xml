@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1572635108">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1572980706">
   <File Type="PA-TCL" Name="mfp_nexys4_ddr.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="mfp_nexys4_ddr_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="mfp_nexys4_ddr_reports.tcl"/>
@@ -11,10 +11,10 @@
   <File Type="VDS-TIMING-PB" Name="mfp_nexys4_ddr_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/imports/world_maps_part1/world_map.ngc">
+    <File Path="$PSRCDIR/sources_1/imports/world_map_lr/world_map.ngc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../proj2_release_r1_0/hdl_part1/world_maps_part1/world_map.ngc"/>
-        <Attr Name="ImportTime" Val="1571515282"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/proj2_release_r1_0/world_maps/world_map_lr/world_map.ngc"/>
+        <Attr Name="ImportTime" Val="1572620611"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>

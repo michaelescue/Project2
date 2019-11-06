@@ -239,54 +239,56 @@ ff000000 l       *ABS*	00000000 MSKLOCx
 80000238 l       .text	00000000 SP_MVTBAS16
 80000239 l       .text	00000000 SP_RGTC0NT
 8000023c l       .text	00000000 SP_TEMP
-8000095c l       .text	00000000 LED_wrleds
-800003c0 l       .text	00000000 init_btnluptbl
-800004b4 l       .text	00000000 init_mvmttbl
-80000978 l       .text	00000000 SS_wrdpts
-800002a4 l       .text	00000000 main_L0
-800002cc l       .text	00000000 main_L1
-80000740 l       .text	00000000 next_loc
-800005a8 l       .text	00000000 next_mvmt
-800005e8 l       .text	00000000 next_hdg
-80000338 l       .text	00000000 main_L2
-80000380 l       .text	00000000 wr_alldigits
-8000079c l       .text	00000000 next_step
-80000374 l       .text	00000000 ret_next_step
-80000490 l       .text	00000000 btn2mot
-80000584 l       .text	00000000 mvmt2cc
-800005c8 l       .text	00000000 back_mvmt2cc
-800005fc l       .text	00000000 nh_caseORN
-80000620 l       .text	00000000 nh_caseORNE
-8000071c l       .text	00000000 nh_endcase
-80000648 l       .text	00000000 nh_caseORE
-80000670 l       .text	00000000 nh_caseORSE
-80000698 l       .text	00000000 nh_caseORS
-800006c0 l       .text	00000000 nh_caseORSW
-800006e8 l       .text	00000000 nh_caseORW
-80000710 l       .text	00000000 nh_caseORNW
-8000079c l       .text	00000000 state_decode
-800007d8 l       .text	00000000 forward
-800007cc l       .text	00000000 halt
-800007e4 l       .text	00000000 reverse
-800007f0 l       .text	00000000 rotate
-800007fc l       .text	00000000 next_state
-80000890 l       .text	00000000 line_present
-80000854 l       .text	00000000 nl_forward
-80000860 l       .text	00000000 nl_halt
-8000086c l       .text	00000000 nl_reverse
-80000884 l       .text	00000000 nl_rotate
-80000934 l       .text	00000000 state_return
-800008cc l       .text	00000000 l_post_rotate
-800008d8 l       .text	00000000 l_forward
-800008f0 l       .text	00000000 l_halt
-800008fc l       .text	00000000 l_reverse
-80000908 l       .text	00000000 l_rotate
-80000924 l       .text	00000000 rotate_next
-80000930 l       .text	00000000 post_rotate_forward_next
-80000940 l       .text	00000000 DEB_rdbtns
+8000099c l       .text	00000000 LED_wrleds
+800003c4 l       .text	00000000 init_btnluptbl
+800004b8 l       .text	00000000 init_mvmttbl
+800009b8 l       .text	00000000 SS_wrdpts
+800002a8 l       .text	00000000 main_L0
+800002d0 l       .text	00000000 main_L1
+80000744 l       .text	00000000 next_loc
+800005ac l       .text	00000000 next_mvmt
+800005ec l       .text	00000000 next_hdg
+8000033c l       .text	00000000 main_L2
+80000384 l       .text	00000000 wr_alldigits
+800007a0 l       .text	00000000 next_step
+80000378 l       .text	00000000 ret_next_step
+80000494 l       .text	00000000 btn2mot
+80000588 l       .text	00000000 mvmt2cc
+800005cc l       .text	00000000 back_mvmt2cc
+80000600 l       .text	00000000 nh_caseORN
+80000624 l       .text	00000000 nh_caseORNE
+80000720 l       .text	00000000 nh_endcase
+8000064c l       .text	00000000 nh_caseORE
+80000674 l       .text	00000000 nh_caseORSE
+8000069c l       .text	00000000 nh_caseORS
+800006c4 l       .text	00000000 nh_caseORSW
+800006ec l       .text	00000000 nh_caseORW
+80000714 l       .text	00000000 nh_caseORNW
+800007a0 l       .text	00000000 state_decode
+800007e8 l       .text	00000000 forward
+800007dc l       .text	00000000 halt
+800007f4 l       .text	00000000 reverse
+80000800 l       .text	00000000 rotate
+8000080c l       .text	00000000 next_state
+800008ac l       .text	00000000 line_present
+80000864 l       .text	00000000 nl_forward
+800008a0 l       .text	00000000 nl_postrotate
+80000870 l       .text	00000000 nl_halt
+8000087c l       .text	00000000 nl_reverse
+80000894 l       .text	00000000 nl_rotate
+80000974 l       .text	00000000 state_return
+800008e8 l       .text	00000000 l_post_rotate
+80000908 l       .text	00000000 l_forward
+80000918 l       .text	00000000 l_halt
+80000930 l       .text	00000000 l_reverse
+8000093c l       .text	00000000 l_rotate
+80000950 l       .text	00000000 rotate_continue
+80000968 l       .text	00000000 post_rotate_forward_next
+8000095c l       .text	00000000 rotate_next
+80000980 l       .text	00000000 DEB_rdbtns
 80000200  w    F .text	00000000 __exception_handle_verbose
-80000998 g       .text	00000000 _etext
-800089b0 g       *ABS*	00000000 _gp
+800009d8 g       .text	00000000 _etext
+800089f0 g       *ABS*	00000000 _gp
 00000020 g       *ABS*	00000000 __isr_vec_space
 00000000 g       *ABS*	00000000 __DYNAMIC
 00000001 g       *ABS*	00000000 __use_excpt_boot
@@ -311,7 +313,7 @@ bfc00000 g       *ABS*	00000000 __entry
 bfc00000 g       *ABS*	00000000 __flash_start
 9fc00000 g     F .bootrom	00000144 __reset_vector
 0001f800 g       *ABS*	00000000 __memory_size
-800089b0 g       *ABS*	00000000 __global
+800089f0 g       *ABS*	00000000 __global
 80000200  w    F .text	00000000 __isr_vec
 00000000 g       *ABS*	00000000 __isr_vec_count
 
@@ -504,16 +506,16 @@ N:\ECE540\ECE540_Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/crt0.S:16
 9fc00144:	03e08025 	move	s0,ra
 N:\ECE540\ECE540_Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/crt0.S:18
 9fc00148:	3c1c8001 	lui	gp,0x8001
-9fc0014c:	279c89b0 	addiu	gp,gp,-30288
+9fc0014c:	279c89f0 	addiu	gp,gp,-30224
 N:\ECE540\ECE540_Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/crt0.S:20
 9fc00150:	3c1d8004 	lui	sp,0x8004
 9fc00154:	27bd0000 	addiu	sp,sp,0
 N:\ECE540\ECE540_Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/crt0.S:22
 9fc00158:	3c028000 	lui	v0,0x8000
-9fc0015c:	244209b0 	addiu	v0,v0,2480
+9fc0015c:	244209f0 	addiu	v0,v0,2544
 N:\ECE540\ECE540_Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/crt0.S:23
 9fc00160:	3c038000 	lui	v1,0x8000
-9fc00164:	246309b0 	addiu	v1,v1,2480
+9fc00164:	246309f0 	addiu	v1,v1,2544
 N:\ECE540\ECE540_Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/crt0.S:24
 9fc00168:	10430005 	beq	v0,v1,9fc00180 <_start+0x3c>
 9fc0016c:	00000000 	nop
@@ -780,7 +782,7 @@ N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/m
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:366
 80000244:	24020000 	li	v0,0
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:367
-80000248:	0c000257 	jal	8000095c <LED_wrleds>
+80000248:	0c000267 	jal	8000099c <LED_wrleds>
 8000024c:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:368
 80000250:	00000000 	nop
@@ -793,17 +795,17 @@ N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/m
 80000260:	3c018000 	lui	at,0x8000
 80000264:	a0220213 	sb	v0,531(at)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:372
-80000268:	0c0000f0 	jal	800003c0 <init_btnluptbl>
+80000268:	0c0000f1 	jal	800003c4 <init_btnluptbl>
 8000026c:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:373
 80000270:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:374
-80000274:	0c00012d 	jal	800004b4 <init_mvmttbl>
+80000274:	0c00012e 	jal	800004b8 <init_mvmttbl>
 80000278:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:375
 8000027c:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:376
-80000280:	0c00025e 	jal	80000978 <SS_wrdpts>
+80000280:	0c00026e 	jal	800009b8 <SS_wrdpts>
 80000284:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:377
 80000288:	00000000 	nop
@@ -817,878 +819,910 @@ N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/m
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:381
 8000029c:	24120002 	li	s2,2
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:382
-800002a0:	24130000 	li	s3,0
+800002a0:	24130001 	li	s3,1
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:383
+800002a4:	24080000 	li	t0,0
 
-800002a4 <main_L0>:
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:387
-800002a4:	3c0dbf80 	lui	t5,0xbf80
-800002a8:	35ad0014 	ori	t5,t5,0x14
+800002a8 <main_L0>:
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:388
-800002ac:	8db50000 	lw	s5,0(t5)
+800002a8:	3c0dbf80 	lui	t5,0xbf80
+800002ac:	35ad0014 	ori	t5,t5,0x14
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:389
-800002b0:	12a0fffc 	beqz	s5,800002a4 <main_L0>
-800002b4:	00000000 	nop
+800002b0:	8db50000 	lw	s5,0(t5)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:390
+800002b4:	12a0fffc 	beqz	s5,800002a8 <main_L0>
 800002b8:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:391
-800002bc:	3c0dbf80 	lui	t5,0xbf80
-800002c0:	35ad0018 	ori	t5,t5,0x18
+800002bc:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:392
-800002c4:	24150001 	li	s5,1
+800002c0:	3c0dbf80 	lui	t5,0xbf80
+800002c4:	35ad0018 	ori	t5,t5,0x18
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:393
-800002c8:	adb50000 	sw	s5,0(t5)
+800002c8:	24150001 	li	s5,1
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:394
+800002cc:	adb50000 	sw	s5,0(t5)
 
-800002cc <main_L1>:
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:395
-800002cc:	3c0dbf80 	lui	t5,0xbf80
-800002d0:	35ad000c 	ori	t5,t5,0xc
+800002d0 <main_L1>:
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:396
-800002d4:	8db50000 	lw	s5,0(t5)
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:398
-800002d8:	32b600ff 	andi	s6,s5,0xff
+800002d0:	3c0dbf80 	lui	t5,0xbf80
+800002d4:	35ad000c 	ori	t5,t5,0xc
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:397
+800002d8:	8db50000 	lw	s5,0(t5)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:399
-800002dc:	3c018000 	lui	at,0x8000
-800002e0:	a036020f 	sb	s6,527(at)
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:401
-800002e4:	0015aa02 	srl	s5,s5,0x8
+800002dc:	32b600ff 	andi	s6,s5,0xff
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:400
+800002e0:	3c018000 	lui	at,0x8000
+800002e4:	a036020f 	sb	s6,527(at)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:402
-800002e8:	32b600ff 	andi	s6,s5,0xff
+800002e8:	0015aa02 	srl	s5,s5,0x8
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:403
-800002ec:	3c018000 	lui	at,0x8000
-800002f0:	a036020e 	sb	s6,526(at)
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:405
-800002f4:	0015aa02 	srl	s5,s5,0x8
+800002ec:	32b600ff 	andi	s6,s5,0xff
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:404
+800002f0:	3c018000 	lui	at,0x8000
+800002f4:	a036020e 	sb	s6,526(at)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:406
-800002f8:	32b600ff 	andi	s6,s5,0xff
+800002f8:	0015aa02 	srl	s5,s5,0x8
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:407
-800002fc:	3c018000 	lui	at,0x8000
-80000300:	a036020d 	sb	s6,525(at)
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:409
-80000304:	0015aa02 	srl	s5,s5,0x8
+800002fc:	32b600ff 	andi	s6,s5,0xff
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:408
+80000300:	3c018000 	lui	at,0x8000
+80000304:	a036020d 	sb	s6,525(at)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:410
-80000308:	32b600ff 	andi	s6,s5,0xff
+80000308:	0015aa02 	srl	s5,s5,0x8
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:411
-8000030c:	3c018000 	lui	at,0x8000
-80000310:	a036020c 	sb	s6,524(at)
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:413
-80000314:	0c0001d0 	jal	80000740 <next_loc>
-80000318:	00000000 	nop
+8000030c:	32b600ff 	andi	s6,s5,0xff
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:412
+80000310:	3c018000 	lui	at,0x8000
+80000314:	a036020c 	sb	s6,524(at)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:414
+80000318:	0c0001d1 	jal	80000744 <next_loc>
 8000031c:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:415
-80000320:	0c00016a 	jal	800005a8 <next_mvmt>
-80000324:	00000000 	nop
+80000320:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:416
+80000324:	0c00016b 	jal	800005ac <next_mvmt>
 80000328:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:417
-8000032c:	0c00017a 	jal	800005e8 <next_hdg>
-80000330:	00000000 	nop
+8000032c:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:418
+80000330:	0c00017b 	jal	800005ec <next_hdg>
 80000334:	00000000 	nop
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:419
+80000338:	00000000 	nop
 
-80000338 <main_L2>:
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:420
-80000338:	0c0000e0 	jal	80000380 <wr_alldigits>
-8000033c:	00000000 	nop
+8000033c <main_L2>:
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:421
+8000033c:	0c0000e1 	jal	80000384 <wr_alldigits>
 80000340:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:422
-80000344:	3c028000 	lui	v0,0x8000
-80000348:	8042020e 	lb	v0,526(v0)
+80000344:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:423
-8000034c:	0c000257 	jal	8000095c <LED_wrleds>
-80000350:	00000000 	nop
+80000348:	3c028000 	lui	v0,0x8000
+8000034c:	8042020e 	lb	v0,526(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:424
+80000350:	0c000267 	jal	8000099c <LED_wrleds>
 80000354:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:425
-80000358:	3c0dbf80 	lui	t5,0xbf80
-8000035c:	35ad0018 	ori	t5,t5,0x18
+80000358:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:426
-80000360:	24150000 	li	s5,0
+8000035c:	3c0dbf80 	lui	t5,0xbf80
+80000360:	35ad0018 	ori	t5,t5,0x18
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:427
-80000364:	adb50000 	sw	s5,0(t5)
+80000364:	24150000 	li	s5,0
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:428
-80000368:	1000010c 	b	8000079c <next_step>
-8000036c:	00000000 	nop
+80000368:	adb50000 	sw	s5,0(t5)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:429
+8000036c:	1000010c 	b	800007a0 <next_step>
 80000370:	00000000 	nop
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:430
+80000374:	00000000 	nop
 
-80000374 <ret_next_step>:
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:432
-80000374:	1000ffcb 	b	800002a4 <main_L0>
-80000378:	00000000 	nop
+80000378 <ret_next_step>:
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:433
+80000378:	1000ffcb 	b	800002a8 <main_L0>
 8000037c:	00000000 	nop
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:434
+80000380:	00000000 	nop
 
-80000380 <wr_alldigits>:
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:449
-80000380:	3c198000 	lui	t9,0x8000
-80000384:	8f390204 	lw	t9,516(t9)
+80000384 <wr_alldigits>:
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:450
-80000388:	3c02bf70 	lui	v0,0xbf70
-8000038c:	34420008 	ori	v0,v0,0x8
+80000384:	3c198000 	lui	t9,0x8000
+80000388:	8f390204 	lw	t9,516(t9)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:451
-80000390:	ac590000 	sw	t9,0(v0)
+8000038c:	3c02bf70 	lui	v0,0xbf70
+80000390:	34420008 	ori	v0,v0,0x8
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:452
-80000394:	3c198000 	lui	t9,0x8000
-80000398:	8f390208 	lw	t9,520(t9)
+80000394:	ac590000 	sw	t9,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:453
-8000039c:	3c02bf70 	lui	v0,0xbf70
-800003a0:	34420004 	ori	v0,v0,0x4
+80000398:	3c198000 	lui	t9,0x8000
+8000039c:	8f390208 	lw	t9,520(t9)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:454
-800003a4:	ac590000 	sw	t9,0(v0)
+800003a0:	3c02bf70 	lui	v0,0xbf70
+800003a4:	34420004 	ori	v0,v0,0x4
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:455
-800003a8:	24190000 	li	t9,0
+800003a8:	ac590000 	sw	t9,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:456
-800003ac:	3c02bf70 	lui	v0,0xbf70
+800003ac:	24190000 	li	t9,0
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:457
-800003b0:	ac590000 	sw	t9,0(v0)
+800003b0:	3c02bf70 	lui	v0,0xbf70
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:458
-800003b4:	03e00008 	jr	ra
-800003b8:	00000000 	nop
+800003b4:	ac590000 	sw	t9,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:459
+800003b8:	03e00008 	jr	ra
 800003bc:	00000000 	nop
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:460
+800003c0:	00000000 	nop
 
-800003c0 <init_btnluptbl>:
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:470
-800003c0:	3c028000 	lui	v0,0x8000
-800003c4:	24420219 	addiu	v0,v0,537
+800003c4 <init_btnluptbl>:
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:471
-800003c8:	24030000 	li	v1,0
+800003c4:	3c028000 	lui	v0,0x8000
+800003c8:	24420219 	addiu	v0,v0,537
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:472
-800003cc:	a0430000 	sb	v1,0(v0)
+800003cc:	24030000 	li	v1,0
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:473
-800003d0:	20420001 	addi	v0,v0,1
+800003d0:	a0430000 	sb	v1,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:474
-800003d4:	24030002 	li	v1,2
+800003d4:	20420001 	addi	v0,v0,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:475
-800003d8:	a0430000 	sb	v1,0(v0)
+800003d8:	24030002 	li	v1,2
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:476
-800003dc:	20420001 	addi	v0,v0,1
+800003dc:	a0430000 	sb	v1,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:477
-800003e0:	24030003 	li	v1,3
+800003e0:	20420001 	addi	v0,v0,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:478
-800003e4:	a0430000 	sb	v1,0(v0)
+800003e4:	24030003 	li	v1,3
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:479
-800003e8:	20420001 	addi	v0,v0,1
+800003e8:	a0430000 	sb	v1,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:480
-800003ec:	24030000 	li	v1,0
+800003ec:	20420001 	addi	v0,v0,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:481
-800003f0:	a0430000 	sb	v1,0(v0)
+800003f0:	24030000 	li	v1,0
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:482
-800003f4:	20420001 	addi	v0,v0,1
+800003f4:	a0430000 	sb	v1,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:483
-800003f8:	24030020 	li	v1,32
+800003f8:	20420001 	addi	v0,v0,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:484
-800003fc:	a0430000 	sb	v1,0(v0)
+800003fc:	24030020 	li	v1,32
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:485
-80000400:	20420001 	addi	v0,v0,1
+80000400:	a0430000 	sb	v1,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:486
-80000404:	24030022 	li	v1,34
+80000404:	20420001 	addi	v0,v0,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:487
-80000408:	a0430000 	sb	v1,0(v0)
+80000408:	24030022 	li	v1,34
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:488
-8000040c:	20420001 	addi	v0,v0,1
+8000040c:	a0430000 	sb	v1,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:489
-80000410:	24030023 	li	v1,35
+80000410:	20420001 	addi	v0,v0,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:490
-80000414:	a0430000 	sb	v1,0(v0)
+80000414:	24030023 	li	v1,35
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:491
-80000418:	20420001 	addi	v0,v0,1
+80000418:	a0430000 	sb	v1,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:492
-8000041c:	24030020 	li	v1,32
+8000041c:	20420001 	addi	v0,v0,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:493
-80000420:	a0430000 	sb	v1,0(v0)
+80000420:	24030020 	li	v1,32
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:494
-80000424:	20420001 	addi	v0,v0,1
+80000424:	a0430000 	sb	v1,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:495
-80000428:	24030030 	li	v1,48
+80000428:	20420001 	addi	v0,v0,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:496
-8000042c:	a0430000 	sb	v1,0(v0)
+8000042c:	24030030 	li	v1,48
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:497
-80000430:	20420001 	addi	v0,v0,1
+80000430:	a0430000 	sb	v1,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:498
-80000434:	24030032 	li	v1,50
+80000434:	20420001 	addi	v0,v0,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:499
-80000438:	a0430000 	sb	v1,0(v0)
+80000438:	24030032 	li	v1,50
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:500
-8000043c:	20420001 	addi	v0,v0,1
+8000043c:	a0430000 	sb	v1,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:501
-80000440:	24030033 	li	v1,51
+80000440:	20420001 	addi	v0,v0,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:502
-80000444:	a0430000 	sb	v1,0(v0)
+80000444:	24030033 	li	v1,51
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:503
-80000448:	20420001 	addi	v0,v0,1
+80000448:	a0430000 	sb	v1,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:504
-8000044c:	24030030 	li	v1,48
+8000044c:	20420001 	addi	v0,v0,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:505
-80000450:	a0430000 	sb	v1,0(v0)
+80000450:	24030030 	li	v1,48
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:506
-80000454:	20420001 	addi	v0,v0,1
+80000454:	a0430000 	sb	v1,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:507
-80000458:	24030000 	li	v1,0
+80000458:	20420001 	addi	v0,v0,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:508
-8000045c:	a0430000 	sb	v1,0(v0)
+8000045c:	24030000 	li	v1,0
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:509
-80000460:	20420001 	addi	v0,v0,1
+80000460:	a0430000 	sb	v1,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:510
-80000464:	24030002 	li	v1,2
+80000464:	20420001 	addi	v0,v0,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:511
-80000468:	a0430000 	sb	v1,0(v0)
+80000468:	24030002 	li	v1,2
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:512
-8000046c:	20420001 	addi	v0,v0,1
+8000046c:	a0430000 	sb	v1,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:513
-80000470:	24030003 	li	v1,3
+80000470:	20420001 	addi	v0,v0,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:514
-80000474:	a0430000 	sb	v1,0(v0)
+80000474:	24030003 	li	v1,3
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:515
-80000478:	20420001 	addi	v0,v0,1
+80000478:	a0430000 	sb	v1,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:516
-8000047c:	24030000 	li	v1,0
+8000047c:	20420001 	addi	v0,v0,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:517
-80000480:	a0430000 	sb	v1,0(v0)
+80000480:	24030000 	li	v1,0
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:518
-80000484:	03e00008 	jr	ra
-80000488:	00000000 	nop
+80000484:	a0430000 	sb	v1,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:519
+80000488:	03e00008 	jr	ra
 8000048c:	00000000 	nop
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:520
+80000490:	00000000 	nop
 
-80000490 <btn2mot>:
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:529
-80000490:	3c038000 	lui	v1,0x8000
-80000494:	24630219 	addiu	v1,v1,537
+80000494 <btn2mot>:
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:530
-80000498:	20820000 	addi	v0,a0,0
+80000494:	3c038000 	lui	v1,0x8000
+80000498:	24630219 	addiu	v1,v1,537
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:531
-8000049c:	3042000f 	andi	v0,v0,0xf
+8000049c:	20820000 	addi	v0,a0,0
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:532
-800004a0:	00621820 	add	v1,v1,v0
+800004a0:	3042000f 	andi	v0,v0,0xf
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:533
-800004a4:	80620000 	lb	v0,0(v1)
+800004a4:	00621820 	add	v1,v1,v0
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:534
-800004a8:	03e00008 	jr	ra
-800004ac:	00000000 	nop
+800004a8:	80620000 	lb	v0,0(v1)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:535
+800004ac:	03e00008 	jr	ra
 800004b0:	00000000 	nop
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:536
+800004b4:	00000000 	nop
 
-800004b4 <init_mvmttbl>:
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:542
-800004b4:	3c028000 	lui	v0,0x8000
-800004b8:	24420229 	addiu	v0,v0,553
+800004b8 <init_mvmttbl>:
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:543
-800004bc:	24030017 	li	v1,23
+800004b8:	3c028000 	lui	v0,0x8000
+800004bc:	24420229 	addiu	v0,v0,553
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:544
-800004c0:	a0430000 	sb	v1,0(v0)
+800004c0:	24030017 	li	v1,23
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:545
-800004c4:	20420001 	addi	v0,v0,1
+800004c4:	a0430000 	sb	v1,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:546
-800004c8:	2403001c 	li	v1,28
+800004c8:	20420001 	addi	v0,v0,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:547
-800004cc:	a0430000 	sb	v1,0(v0)
+800004cc:	2403001c 	li	v1,28
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:548
-800004d0:	20420001 	addi	v0,v0,1
+800004d0:	a0430000 	sb	v1,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:549
-800004d4:	2403001c 	li	v1,28
+800004d4:	20420001 	addi	v0,v0,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:550
-800004d8:	a0430000 	sb	v1,0(v0)
+800004d8:	2403001c 	li	v1,28
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:551
-800004dc:	20420001 	addi	v0,v0,1
+800004dc:	a0430000 	sb	v1,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:552
-800004e0:	2403001c 	li	v1,28
+800004e0:	20420001 	addi	v0,v0,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:553
-800004e4:	a0430000 	sb	v1,0(v0)
+800004e4:	2403001c 	li	v1,28
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:554
-800004e8:	20420001 	addi	v0,v0,1
+800004e8:	a0430000 	sb	v1,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:555
-800004ec:	2403000f 	li	v1,15
+800004ec:	20420001 	addi	v0,v0,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:556
-800004f0:	a0430000 	sb	v1,0(v0)
+800004f0:	2403000f 	li	v1,15
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:557
-800004f4:	20420001 	addi	v0,v0,1
+800004f4:	a0430000 	sb	v1,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:558
-800004f8:	2403001c 	li	v1,28
+800004f8:	20420001 	addi	v0,v0,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:559
-800004fc:	a0430000 	sb	v1,0(v0)
+800004fc:	2403001c 	li	v1,28
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:560
-80000500:	20420001 	addi	v0,v0,1
+80000500:	a0430000 	sb	v1,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:561
-80000504:	2403001c 	li	v1,28
+80000504:	20420001 	addi	v0,v0,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:562
-80000508:	a0430000 	sb	v1,0(v0)
+80000508:	2403001c 	li	v1,28
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:563
-8000050c:	20420001 	addi	v0,v0,1
+8000050c:	a0430000 	sb	v1,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:564
-80000510:	2403001c 	li	v1,28
+80000510:	20420001 	addi	v0,v0,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:565
-80000514:	a0430000 	sb	v1,0(v0)
+80000514:	2403001c 	li	v1,28
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:566
-80000518:	20420001 	addi	v0,v0,1
+80000518:	a0430000 	sb	v1,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:567
-8000051c:	2403000b 	li	v1,11
+8000051c:	20420001 	addi	v0,v0,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:568
-80000520:	a0430000 	sb	v1,0(v0)
+80000520:	2403000b 	li	v1,11
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:569
-80000524:	20420001 	addi	v0,v0,1
+80000524:	a0430000 	sb	v1,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:570
-80000528:	2403001c 	li	v1,28
+80000528:	20420001 	addi	v0,v0,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:571
-8000052c:	a0430000 	sb	v1,0(v0)
+8000052c:	2403001c 	li	v1,28
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:572
-80000530:	20420001 	addi	v0,v0,1
+80000530:	a0430000 	sb	v1,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:573
-80000534:	2403001c 	li	v1,28
+80000534:	20420001 	addi	v0,v0,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:574
-80000538:	a0430000 	sb	v1,0(v0)
+80000538:	2403001c 	li	v1,28
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:575
-8000053c:	20420001 	addi	v0,v0,1
+8000053c:	a0430000 	sb	v1,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:576
-80000540:	2403001c 	li	v1,28
+80000540:	20420001 	addi	v0,v0,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:577
-80000544:	a0430000 	sb	v1,0(v0)
+80000544:	2403001c 	li	v1,28
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:578
-80000548:	20420001 	addi	v0,v0,1
+80000548:	a0430000 	sb	v1,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:579
-8000054c:	24030018 	li	v1,24
+8000054c:	20420001 	addi	v0,v0,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:580
-80000550:	a0430000 	sb	v1,0(v0)
+80000550:	24030018 	li	v1,24
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:581
-80000554:	20420001 	addi	v0,v0,1
+80000554:	a0430000 	sb	v1,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:582
-80000558:	2403001a 	li	v1,26
+80000558:	20420001 	addi	v0,v0,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:583
-8000055c:	a0430000 	sb	v1,0(v0)
+8000055c:	2403001a 	li	v1,26
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:584
-80000560:	20420001 	addi	v0,v0,1
+80000560:	a0430000 	sb	v1,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:585
-80000564:	24030019 	li	v1,25
+80000564:	20420001 	addi	v0,v0,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:586
-80000568:	a0430000 	sb	v1,0(v0)
+80000568:	24030019 	li	v1,25
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:587
-8000056c:	20420001 	addi	v0,v0,1
+8000056c:	a0430000 	sb	v1,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:588
-80000570:	2403001b 	li	v1,27
+80000570:	20420001 	addi	v0,v0,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:589
-80000574:	a0430000 	sb	v1,0(v0)
+80000574:	2403001b 	li	v1,27
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:590
-80000578:	03e00008 	jr	ra
-8000057c:	00000000 	nop
+80000578:	a0430000 	sb	v1,0(v0)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:591
+8000057c:	03e00008 	jr	ra
 80000580:	00000000 	nop
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:592
+80000584:	00000000 	nop
 
-80000584 <mvmt2cc>:
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:601
-80000584:	3c038000 	lui	v1,0x8000
-80000588:	24630229 	addiu	v1,v1,553
+80000588 <mvmt2cc>:
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:602
-8000058c:	23220000 	addi	v0,t9,0
+80000588:	3c038000 	lui	v1,0x8000
+8000058c:	24630229 	addiu	v1,v1,553
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:603
-80000590:	3042000f 	andi	v0,v0,0xf
+80000590:	23220000 	addi	v0,t9,0
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:604
-80000594:	00621820 	add	v1,v1,v0
+80000594:	3042000f 	andi	v0,v0,0xf
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:605
-80000598:	80620000 	lb	v0,0(v1)
+80000598:	00621820 	add	v1,v1,v0
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:606
-8000059c:	1000000a 	b	800005c8 <back_mvmt2cc>
-800005a0:	00000000 	nop
+8000059c:	80620000 	lb	v0,0(v1)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:607
+800005a0:	1000000a 	b	800005cc <back_mvmt2cc>
 800005a4:	00000000 	nop
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:608
+800005a8:	00000000 	nop
 
-800005a8 <next_mvmt>:
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:619
-800005a8:	3c198000 	lui	t9,0x8000
-800005ac:	8339020f 	lb	t9,527(t9)
+800005ac <next_mvmt>:
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:620
-800005b0:	3c018000 	lui	at,0x8000
-800005b4:	a0390211 	sb	t9,529(at)
+800005ac:	3c198000 	lui	t9,0x8000
+800005b0:	8339020f 	lb	t9,527(t9)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:621
-800005b8:	0019c902 	srl	t9,t9,0x4
+800005b4:	3c018000 	lui	at,0x8000
+800005b8:	a0390211 	sb	t9,529(at)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:622
-800005bc:	1000fff1 	b	80000584 <mvmt2cc>
-800005c0:	00000000 	nop
+800005bc:	0019c902 	srl	t9,t9,0x4
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:623
+800005c0:	1000fff1 	b	80000588 <mvmt2cc>
 800005c4:	00000000 	nop
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:624
+800005c8:	00000000 	nop
 
-800005c8 <back_mvmt2cc>:
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:625
-800005c8:	3c018000 	lui	at,0x8000
-800005cc:	a0220208 	sb	v0,520(at)
+800005cc <back_mvmt2cc>:
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:626
-800005d0:	3c19bf80 	lui	t9,0xbf80
-800005d4:	37390010 	ori	t9,t9,0x10
+800005cc:	3c018000 	lui	at,0x8000
+800005d0:	a0220208 	sb	v0,520(at)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:627
-800005d8:	af2f0000 	sw	t7,0(t9)
+800005d4:	3c19bf80 	lui	t9,0xbf80
+800005d8:	37390010 	ori	t9,t9,0x10
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:628
-800005dc:	03e00008 	jr	ra
-800005e0:	00000000 	nop
+800005dc:	af2f0000 	sw	t7,0(t9)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:629
+800005e0:	03e00008 	jr	ra
 800005e4:	00000000 	nop
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:630
+800005e8:	00000000 	nop
 
-800005e8 <next_hdg>:
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:637
-800005e8:	3c198000 	lui	t9,0x8000
-800005ec:	8339020f 	lb	t9,527(t9)
+800005ec <next_hdg>:
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:638
-800005f0:	33390007 	andi	t9,t9,0x7
+800005ec:	3c198000 	lui	t9,0x8000
+800005f0:	8339020f 	lb	t9,527(t9)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:639
-800005f4:	3c018000 	lui	at,0x8000
-800005f8:	a0390212 	sb	t9,530(at)
+800005f4:	33390007 	andi	t9,t9,0x7
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:640
+800005f8:	3c018000 	lui	at,0x8000
+800005fc:	a0390212 	sb	t9,530(at)
 
-800005fc <nh_caseORN>:
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:641
-800005fc:	17200008 	bnez	t9,80000620 <nh_caseORNE>
-80000600:	00000000 	nop
+80000600 <nh_caseORN>:
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:642
+80000600:	17200008 	bnez	t9,80000624 <nh_caseORNE>
 80000604:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:643
-80000608:	24050000 	li	a1,0
+80000608:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:644
-8000060c:	24060000 	li	a2,0
+8000060c:	24050000 	li	a1,0
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:645
-80000610:	24070000 	li	a3,0
+80000610:	24060000 	li	a2,0
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:646
-80000614:	10000041 	b	8000071c <nh_endcase>
-80000618:	00000000 	nop
+80000614:	24070000 	li	a3,0
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:647
+80000618:	10000041 	b	80000720 <nh_endcase>
 8000061c:	00000000 	nop
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:648
+80000620:	00000000 	nop
 
-80000620 <nh_caseORNE>:
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:649
-80000620:	24010001 	li	at,1
-80000624:	17210008 	bne	t9,at,80000648 <nh_caseORE>
-80000628:	00000000 	nop
+80000624 <nh_caseORNE>:
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:650
+80000624:	24010001 	li	at,1
+80000628:	17210008 	bne	t9,at,8000064c <nh_caseORE>
 8000062c:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:651
-80000630:	24050000 	li	a1,0
+80000630:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:652
-80000634:	24060004 	li	a2,4
+80000634:	24050000 	li	a1,0
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:653
-80000638:	24070005 	li	a3,5
+80000638:	24060004 	li	a2,4
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:654
-8000063c:	10000037 	b	8000071c <nh_endcase>
-80000640:	00000000 	nop
+8000063c:	24070005 	li	a3,5
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:655
+80000640:	10000037 	b	80000720 <nh_endcase>
 80000644:	00000000 	nop
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:656
+80000648:	00000000 	nop
 
-80000648 <nh_caseORE>:
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:657
-80000648:	24010002 	li	at,2
-8000064c:	17210008 	bne	t9,at,80000670 <nh_caseORSE>
-80000650:	00000000 	nop
+8000064c <nh_caseORE>:
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:658
+8000064c:	24010002 	li	at,2
+80000650:	17210008 	bne	t9,at,80000674 <nh_caseORSE>
 80000654:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:659
-80000658:	24050000 	li	a1,0
+80000658:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:660
-8000065c:	24060009 	li	a2,9
+8000065c:	24050000 	li	a1,0
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:661
-80000660:	24070000 	li	a3,0
+80000660:	24060009 	li	a2,9
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:662
-80000664:	1000002d 	b	8000071c <nh_endcase>
-80000668:	00000000 	nop
+80000664:	24070000 	li	a3,0
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:663
+80000668:	1000002d 	b	80000720 <nh_endcase>
 8000066c:	00000000 	nop
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:664
+80000670:	00000000 	nop
 
-80000670 <nh_caseORSE>:
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:665
-80000670:	24010003 	li	at,3
-80000674:	17210008 	bne	t9,at,80000698 <nh_caseORS>
-80000678:	00000000 	nop
+80000674 <nh_caseORSE>:
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:666
+80000674:	24010003 	li	at,3
+80000678:	17210008 	bne	t9,at,8000069c <nh_caseORS>
 8000067c:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:667
-80000680:	24050001 	li	a1,1
+80000680:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:668
-80000684:	24060003 	li	a2,3
+80000684:	24050001 	li	a1,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:669
-80000688:	24070005 	li	a3,5
+80000688:	24060003 	li	a2,3
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:670
-8000068c:	10000023 	b	8000071c <nh_endcase>
-80000690:	00000000 	nop
+8000068c:	24070005 	li	a3,5
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:671
+80000690:	10000023 	b	80000720 <nh_endcase>
 80000694:	00000000 	nop
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:672
+80000698:	00000000 	nop
 
-80000698 <nh_caseORS>:
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:673
-80000698:	24010004 	li	at,4
-8000069c:	17210008 	bne	t9,at,800006c0 <nh_caseORSW>
-800006a0:	00000000 	nop
+8000069c <nh_caseORS>:
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:674
+8000069c:	24010004 	li	at,4
+800006a0:	17210008 	bne	t9,at,800006c4 <nh_caseORSW>
 800006a4:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:675
-800006a8:	24050001 	li	a1,1
+800006a8:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:676
-800006ac:	24060008 	li	a2,8
+800006ac:	24050001 	li	a1,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:677
-800006b0:	24070000 	li	a3,0
+800006b0:	24060008 	li	a2,8
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:678
-800006b4:	10000019 	b	8000071c <nh_endcase>
-800006b8:	00000000 	nop
+800006b4:	24070000 	li	a3,0
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:679
+800006b8:	10000019 	b	80000720 <nh_endcase>
 800006bc:	00000000 	nop
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:680
+800006c0:	00000000 	nop
 
-800006c0 <nh_caseORSW>:
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:681
-800006c0:	24010005 	li	at,5
-800006c4:	17210008 	bne	t9,at,800006e8 <nh_caseORW>
-800006c8:	00000000 	nop
+800006c4 <nh_caseORSW>:
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:682
+800006c4:	24010005 	li	at,5
+800006c8:	17210008 	bne	t9,at,800006ec <nh_caseORW>
 800006cc:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:683
-800006d0:	24050002 	li	a1,2
+800006d0:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:684
-800006d4:	24060002 	li	a2,2
+800006d4:	24050002 	li	a1,2
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:685
-800006d8:	24070005 	li	a3,5
+800006d8:	24060002 	li	a2,2
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:686
-800006dc:	1000000f 	b	8000071c <nh_endcase>
-800006e0:	00000000 	nop
+800006dc:	24070005 	li	a3,5
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:687
+800006e0:	1000000f 	b	80000720 <nh_endcase>
 800006e4:	00000000 	nop
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:688
+800006e8:	00000000 	nop
 
-800006e8 <nh_caseORW>:
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:689
-800006e8:	24010006 	li	at,6
-800006ec:	17210008 	bne	t9,at,80000710 <nh_caseORNW>
-800006f0:	00000000 	nop
+800006ec <nh_caseORW>:
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:690
+800006ec:	24010006 	li	at,6
+800006f0:	17210008 	bne	t9,at,80000714 <nh_caseORNW>
 800006f4:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:691
-800006f8:	24050002 	li	a1,2
+800006f8:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:692
-800006fc:	24060007 	li	a2,7
+800006fc:	24050002 	li	a1,2
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:693
-80000700:	24070000 	li	a3,0
+80000700:	24060007 	li	a2,7
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:694
-80000704:	10000005 	b	8000071c <nh_endcase>
-80000708:	00000000 	nop
+80000704:	24070000 	li	a3,0
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:695
+80000708:	10000005 	b	80000720 <nh_endcase>
 8000070c:	00000000 	nop
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:696
+80000710:	00000000 	nop
 
-80000710 <nh_caseORNW>:
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:698
-80000710:	24050003 	li	a1,3
+80000714 <nh_caseORNW>:
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:699
-80000714:	24060001 	li	a2,1
+80000714:	24050003 	li	a1,3
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:700
-80000718:	24070005 	li	a3,5
+80000718:	24060001 	li	a2,1
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:701
+8000071c:	24070005 	li	a3,5
 
-8000071c <nh_endcase>:
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:702
-8000071c:	3c018000 	lui	at,0x8000
-80000720:	a025020b 	sb	a1,523(at)
+80000720 <nh_endcase>:
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:703
-80000724:	3c018000 	lui	at,0x8000
-80000728:	a026020a 	sb	a2,522(at)
+80000720:	3c018000 	lui	at,0x8000
+80000724:	a025020b 	sb	a1,523(at)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:704
-8000072c:	3c018000 	lui	at,0x8000
-80000730:	a0270209 	sb	a3,521(at)
+80000728:	3c018000 	lui	at,0x8000
+8000072c:	a026020a 	sb	a2,522(at)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:705
-80000734:	03e00008 	jr	ra
-80000738:	00000000 	nop
+80000730:	3c018000 	lui	at,0x8000
+80000734:	a0270209 	sb	a3,521(at)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:706
+80000738:	03e00008 	jr	ra
 8000073c:	00000000 	nop
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:707
+80000740:	00000000 	nop
 
-80000740 <next_loc>:
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:714
-80000740:	3c198000 	lui	t9,0x8000
-80000744:	8339020c 	lb	t9,524(t9)
+80000744 <next_loc>:
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:715
-80000748:	232b0000 	addi	t3,t9,0
+80000744:	3c198000 	lui	t9,0x8000
+80000748:	8339020c 	lb	t9,524(t9)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:716
-8000074c:	316b000f 	andi	t3,t3,0xf
+8000074c:	232b0000 	addi	t3,t9,0
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:717
-80000750:	0019c902 	srl	t9,t9,0x4
+80000750:	316b000f 	andi	t3,t3,0xf
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:718
-80000754:	232c0000 	addi	t4,t9,0
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:720
-80000758:	3c198000 	lui	t9,0x8000
-8000075c:	8339020d 	lb	t9,525(t9)
+80000754:	0019c902 	srl	t9,t9,0x4
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:719
+80000758:	232c0000 	addi	t4,t9,0
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:721
-80000760:	232d0000 	addi	t5,t9,0
+8000075c:	3c198000 	lui	t9,0x8000
+80000760:	8339020d 	lb	t9,525(t9)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:722
-80000764:	31ad000f 	andi	t5,t5,0xf
+80000764:	232d0000 	addi	t5,t9,0
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:723
-80000768:	0019c902 	srl	t9,t9,0x4
+80000768:	31ad000f 	andi	t5,t5,0xf
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:724
-8000076c:	232e0000 	addi	t6,t9,0
+8000076c:	0019c902 	srl	t9,t9,0x4
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:725
-80000770:	3c018000 	lui	at,0x8000
-80000774:	a02b0206 	sb	t3,518(at)
+80000770:	232e0000 	addi	t6,t9,0
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:726
-80000778:	3c018000 	lui	at,0x8000
-8000077c:	a02c0207 	sb	t4,519(at)
+80000774:	3c018000 	lui	at,0x8000
+80000778:	a02b0206 	sb	t3,518(at)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:727
-80000780:	3c018000 	lui	at,0x8000
-80000784:	a02d0204 	sb	t5,516(at)
+8000077c:	3c018000 	lui	at,0x8000
+80000780:	a02c0207 	sb	t4,519(at)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:728
-80000788:	3c018000 	lui	at,0x8000
-8000078c:	a02e0205 	sb	t6,517(at)
+80000784:	3c018000 	lui	at,0x8000
+80000788:	a02d0204 	sb	t5,516(at)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:729
-80000790:	03e00008 	jr	ra
-80000794:	00000000 	nop
+8000078c:	3c018000 	lui	at,0x8000
+80000790:	a02e0205 	sb	t6,517(at)
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:730
+80000794:	03e00008 	jr	ra
 80000798:	00000000 	nop
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:731
+8000079c:	00000000 	nop
 
-8000079c <next_step>:
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:768
-8000079c:	24040001 	li	a0,1
+800007a0 <next_step>:
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:769
-800007a0:	1264000d 	beq	s3,a0,800007d8 <forward>
-800007a4:	00000000 	nop
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:771
-800007a8:	24040000 	li	a0,0
+800007a0:	24040001 	li	a0,1
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:770
+800007a4:	12640010 	beq	s3,a0,800007e8 <forward>
+800007a8:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:772
-800007ac:	12640007 	beq	s3,a0,800007cc <halt>
-800007b0:	00000000 	nop
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:774
-800007b4:	24040002 	li	a0,2
+800007ac:	24040000 	li	a0,0
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:773
+800007b0:	1264000a 	beq	s3,a0,800007dc <halt>
+800007b4:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:775
-800007b8:	1264000a 	beq	s3,a0,800007e4 <reverse>
-800007bc:	00000000 	nop
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:777
-800007c0:	24040003 	li	a0,3
+800007b8:	24040002 	li	a0,2
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:776
+800007bc:	1264000d 	beq	s3,a0,800007f4 <reverse>
+800007c0:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:778
-800007c4:	1264000a 	beq	s3,a0,800007f0 <rotate>
-800007c8:	00000000 	nop
-
-800007cc <halt>:
+800007c4:	24040003 	li	a0,3
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:779
+800007c8:	1264000d 	beq	s3,a0,80000800 <rotate>
+800007cc:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:781
-800007cc:	240f0000 	li	t7,0
+800007d0:	24040004 	li	a0,4
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:782
-800007d0:	1000000a 	b	800007fc <next_state>
-800007d4:	00000000 	nop
+800007d4:	12640004 	beq	s3,a0,800007e8 <forward>
+800007d8:	00000000 	nop
 
-800007d8 <forward>:
+800007dc <halt>:
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:785
-800007d8:	240f0033 	li	t7,51
+800007dc:	240f0000 	li	t7,0
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:786
-800007dc:	10000007 	b	800007fc <next_state>
-800007e0:	00000000 	nop
+800007e0:	1000000a 	b	8000080c <next_state>
+800007e4:	00000000 	nop
 
-800007e4 <reverse>:
+800007e8 <forward>:
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:789
-800007e4:	240f0022 	li	t7,34
+800007e8:	240f0033 	li	t7,51
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:790
-800007e8:	10000004 	b	800007fc <next_state>
-800007ec:	00000000 	nop
+800007ec:	10000007 	b	8000080c <next_state>
+800007f0:	00000000 	nop
 
-800007f0 <rotate>:
+800007f4 <reverse>:
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:793
-800007f0:	240f0030 	li	t7,48
+800007f4:	240f0022 	li	t7,34
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:794
-800007f4:	10000001 	b	800007fc <next_state>
-800007f8:	00000000 	nop
+800007f8:	10000004 	b	8000080c <next_state>
+800007fc:	00000000 	nop
 
-800007fc <next_state>:
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:806
-800007fc:	3c04bf80 	lui	a0,0xbf80
-80000800:	3484000c 	ori	a0,a0,0xc
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:807
-80000804:	8c990000 	lw	t9,0(a0)
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:808
-80000808:	33240200 	andi	a0,t9,0x200
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:809
-8000080c:	00048242 	srl	s0,a0,0x9
+80000800 <rotate>:
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:797
+80000800:	240f0030 	li	t7,48
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:798
+80000804:	10000001 	b	8000080c <next_state>
+80000808:	00000000 	nop
+
+8000080c <next_state>:
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:810
+8000080c:	3c04bf80 	lui	a0,0xbf80
+80000810:	3484000c 	ori	a0,a0,0xc
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:811
-80000810:	1200001f 	beqz	s0,80000890 <line_present>
-80000814:	00000000 	nop
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:814
-80000818:	24040001 	li	a0,1
+80000814:	8c990000 	lw	t9,0(a0)
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:812
+80000818:	33240200 	andi	a0,t9,0x200
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:813
+8000081c:	00048242 	srl	s0,a0,0x9
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:815
-8000081c:	1264000d 	beq	s3,a0,80000854 <nl_forward>
-80000820:	00000000 	nop
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:817
-80000824:	24040004 	li	a0,4
+80000820:	12000022 	beqz	s0,800008ac <line_present>
+80000824:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:818
-80000828:	1264000a 	beq	s3,a0,80000854 <nl_forward>
-8000082c:	00000000 	nop
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:820
-80000830:	24040000 	li	a0,0
+80000828:	24040001 	li	a0,1
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:819
+8000082c:	1264000d 	beq	s3,a0,80000864 <nl_forward>
+80000830:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:821
-80000834:	1264000a 	beq	s3,a0,80000860 <nl_halt>
-80000838:	00000000 	nop
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:823
-8000083c:	24040002 	li	a0,2
+80000834:	24040004 	li	a0,4
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:822
+80000838:	12640019 	beq	s3,a0,800008a0 <nl_postrotate>
+8000083c:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:824
-80000840:	1264000a 	beq	s3,a0,8000086c <nl_reverse>
-80000844:	00000000 	nop
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:826
-80000848:	24040003 	li	a0,3
+80000840:	24040000 	li	a0,0
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:825
+80000844:	1264000a 	beq	s3,a0,80000870 <nl_halt>
+80000848:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:827
-8000084c:	1264000d 	beq	s3,a0,80000884 <nl_rotate>
-80000850:	00000000 	nop
-
-80000854 <nl_forward>:
+8000084c:	24040002 	li	a0,2
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:828
+80000850:	1264000a 	beq	s3,a0,8000087c <nl_reverse>
+80000854:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:830
-80000854:	24130000 	li	s3,0
+80000858:	24040003 	li	a0,3
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:831
-80000858:	10000036 	b	80000934 <state_return>
-8000085c:	00000000 	nop
+8000085c:	1264000d 	beq	s3,a0,80000894 <nl_rotate>
+80000860:	00000000 	nop
 
-80000860 <nl_halt>:
+80000864 <nl_forward>:
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:834
-80000860:	24130002 	li	s3,2
+80000864:	24130000 	li	s3,0
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:835
-80000864:	10000033 	b	80000934 <state_return>
-80000868:	00000000 	nop
+80000868:	10000042 	b	80000974 <state_return>
+8000086c:	00000000 	nop
 
-8000086c <nl_reverse>:
+80000870 <nl_halt>:
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:838
-8000086c:	24130002 	li	s3,2
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:840
-80000870:	24040007 	li	a0,7
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:841
-80000874:	03249023 	subu	s2,t9,a0
+80000870:	24130002 	li	s3,2
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:839
+80000874:	1000003f 	b	80000974 <state_return>
+80000878:	00000000 	nop
+
+8000087c <nl_reverse>:
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:842
-80000878:	32520003 	andi	s2,s2,0x3
+8000087c:	24130002 	li	s3,2
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:844
-8000087c:	1000002d 	b	80000934 <state_return>
-80000880:	00000000 	nop
-
-80000884 <nl_rotate>:
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:847
-80000884:	24130001 	li	s3,1
+80000880:	24040007 	li	a0,7
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:845
+80000884:	03249023 	subu	s2,t9,a0
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:846
+80000888:	32520003 	andi	s2,s2,0x3
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:848
-80000888:	1000002a 	b	80000934 <state_return>
-8000088c:	00000000 	nop
+8000088c:	10000039 	b	80000974 <state_return>
+80000890:	00000000 	nop
 
-80000890 <line_present>:
+80000894 <nl_rotate>:
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:851
+80000894:	24130001 	li	s3,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:852
-80000890:	24040004 	li	a0,4
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:853
-80000894:	1264000d 	beq	s3,a0,800008cc <l_post_rotate>
-80000898:	00000000 	nop
+80000898:	10000036 	b	80000974 <state_return>
+8000089c:	00000000 	nop
+
+800008a0 <nl_postrotate>:
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:855
-8000089c:	24040001 	li	a0,1
+800008a0:	24130002 	li	s3,2
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:856
-800008a0:	1264000d 	beq	s3,a0,800008d8 <l_forward>
-800008a4:	00000000 	nop
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:858
-800008a8:	24040000 	li	a0,0
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:859
-800008ac:	12640010 	beq	s3,a0,800008f0 <l_halt>
-800008b0:	00000000 	nop
+800008a4:	10000033 	b	80000974 <state_return>
+800008a8:	00000000 	nop
+
+800008ac <line_present>:
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:860
+800008ac:	24040004 	li	a0,4
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:861
-800008b4:	24040002 	li	a0,2
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:862
-800008b8:	12640010 	beq	s3,a0,800008fc <l_reverse>
-800008bc:	00000000 	nop
+800008b0:	1264000d 	beq	s3,a0,800008e8 <l_post_rotate>
+800008b4:	00000000 	nop
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:863
+800008b8:	24040001 	li	a0,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:864
-800008c0:	24040003 	li	a0,3
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:865
-800008c4:	12640010 	beq	s3,a0,80000908 <l_rotate>
-800008c8:	00000000 	nop
-
-800008cc <l_post_rotate>:
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:868
-800008cc:	24130001 	li	s3,1
+800008bc:	12640012 	beq	s3,a0,80000908 <l_forward>
+800008c0:	00000000 	nop
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:866
+800008c4:	24040000 	li	a0,0
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:867
+800008c8:	12640013 	beq	s3,a0,80000918 <l_halt>
+800008cc:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:869
-800008d0:	10000018 	b	80000934 <state_return>
-800008d4:	00000000 	nop
+800008d0:	24040002 	li	a0,2
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:870
+800008d4:	12640016 	beq	s3,a0,80000930 <l_reverse>
+800008d8:	00000000 	nop
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:872
+800008dc:	24040003 	li	a0,3
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:873
+800008e0:	12640016 	beq	s3,a0,8000093c <l_rotate>
+800008e4:	00000000 	nop
 
-800008d8 <l_forward>:
+800008e8 <l_post_rotate>:
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:876
-800008d8:	24130001 	li	s3,1
+800008e8:	21080001 	addi	t0,t0,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:877
-800008dc:	24040004 	li	a0,4
+800008ec:	2409000f 	li	t1,15
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:878
-800008e0:	0324b823 	subu	s7,t9,a0
+800008f0:	15090020 	bne	t0,t1,80000974 <state_return>
+800008f4:	00000000 	nop
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:879
-800008e4:	32f70003 	andi	s7,s7,0x3
+800008f8:	24080000 	li	t0,0
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:880
+800008fc:	24130001 	li	s3,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:881
-800008e8:	10000012 	b	80000934 <state_return>
-800008ec:	00000000 	nop
-
-800008f0 <l_halt>:
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:884
-800008f0:	24130004 	li	s3,4
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:885
-800008f4:	1000000f 	b	80000934 <state_return>
-800008f8:	00000000 	nop
-
-800008fc <l_reverse>:
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:888
-800008fc:	24130000 	li	s3,0
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:889
-80000900:	1000000c 	b	80000934 <state_return>
+80000900:	1000001c 	b	80000974 <state_return>
 80000904:	00000000 	nop
 
-80000908 <l_rotate>:
+80000908 <l_forward>:
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:888
+80000908:	24130001 	li	s3,1
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:892
-80000908:	33240003 	andi	a0,t9,0x3
+8000090c:	24170000 	li	s7,0
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:893
-8000090c:	22e20000 	addi	v0,s7,0
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:894
-80000910:	10820004 	beq	a0,v0,80000924 <rotate_next>
+80000910:	10000018 	b	80000974 <state_return>
 80000914:	00000000 	nop
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:896
-80000918:	33240003 	andi	a0,t9,0x3
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:897
-8000091c:	10920004 	beq	a0,s2,80000930 <post_rotate_forward_next>
-80000920:	00000000 	nop
 
-80000924 <rotate_next>:
+80000918 <l_halt>:
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:897
+80000918:	24130003 	li	s3,3
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:898
+8000091c:	333800f0 	andi	t8,t9,0xf0
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:899
+80000920:	0319c020 	add	t8,t8,t9
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:900
-80000924:	24130003 	li	s3,3
+80000924:	0018c102 	srl	t8,t8,0x4
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:901
-80000928:	10000002 	b	80000934 <state_return>
+80000928:	10000012 	b	80000974 <state_return>
 8000092c:	00000000 	nop
 
-80000930 <post_rotate_forward_next>:
+80000930 <l_reverse>:
 N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:904
-80000930:	24130004 	li	s3,4
-
-80000934 <state_return>:
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:907
-80000934:	1000fe8f 	b	80000374 <ret_next_step>
+80000930:	24130000 	li	s3,0
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:905
+80000934:	1000000f 	b	80000974 <state_return>
 80000938:	00000000 	nop
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:908
-8000093c:	00000000 	nop
 
-80000940 <DEB_rdbtns>:
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:929
-80000940:	3c19bf80 	lui	t9,0xbf80
-80000944:	37390008 	ori	t9,t9,0x8
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:930
-80000948:	8f240000 	lw	a0,0(t9)
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:931
-8000094c:	3084001f 	andi	a0,a0,0x1f
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:932
-80000950:	03e00008 	jr	ra
-80000954:	00000000 	nop
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:933
+8000093c <l_rotate>:
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:910
+8000093c:	33240003 	andi	a0,t9,0x3
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:911
+80000940:	10920003 	beq	a0,s2,80000950 <rotate_continue>
+80000944:	00000000 	nop
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:912
+80000948:	1000000a 	b	80000974 <state_return>
+8000094c:	00000000 	nop
+
+80000950 <rotate_continue>:
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:916
+80000950:	24040003 	li	a0,3
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:917
+80000954:	10970004 	beq	a0,s7,80000968 <post_rotate_forward_next>
 80000958:	00000000 	nop
 
-8000095c <LED_wrleds>:
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:943
-8000095c:	20590000 	addi	t9,v0,0
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:944
-80000960:	333900ff 	andi	t9,t9,0xff
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:945
-80000964:	3c02bf80 	lui	v0,0xbf80
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:946
-80000968:	ac590000 	sw	t9,0(v0)
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:947
-8000096c:	03e00008 	jr	ra
-80000970:	00000000 	nop
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:948
-80000974:	00000000 	nop
+8000095c <rotate_next>:
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:921
+8000095c:	24130003 	li	s3,3
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:922
+80000960:	10000004 	b	80000974 <state_return>
+80000964:	00000000 	nop
 
-80000978 <SS_wrdpts>:
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:965
-80000978:	3c198000 	lui	t9,0x8000
-8000097c:	83390213 	lb	t9,531(t9)
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:966
-80000980:	3c02bf70 	lui	v0,0xbf70
-80000984:	3442000c 	ori	v0,v0,0xc
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:967
-80000988:	ac590000 	sw	t9,0(v0)
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:968
-8000098c:	03e00008 	jr	ra
-80000990:	00000000 	nop
-N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:969
+80000968 <post_rotate_forward_next>:
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:926
+80000968:	22f70001 	addi	s7,s7,1
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:927
+8000096c:	24080000 	li	t0,0
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:928
+80000970:	24130004 	li	s3,4
+
+80000974 <state_return>:
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:931
+80000974:	1000fe80 	b	80000378 <ret_next_step>
+80000978:	00000000 	nop
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:932
+8000097c:	00000000 	nop
+
+80000980 <DEB_rdbtns>:
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:953
+80000980:	3c19bf80 	lui	t9,0xbf80
+80000984:	37390008 	ori	t9,t9,0x8
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:954
+80000988:	8f240000 	lw	a0,0(t9)
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:955
+8000098c:	3084001f 	andi	a0,a0,0x1f
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:956
+80000990:	03e00008 	jr	ra
 80000994:	00000000 	nop
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:957
+80000998:	00000000 	nop
+
+8000099c <LED_wrleds>:
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:967
+8000099c:	20590000 	addi	t9,v0,0
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:968
+800009a0:	333900ff 	andi	t9,t9,0xff
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:969
+800009a4:	3c02bf80 	lui	v0,0xbf80
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:970
+800009a8:	ac590000 	sw	t9,0(v0)
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:971
+800009ac:	03e00008 	jr	ra
+800009b0:	00000000 	nop
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:972
+800009b4:	00000000 	nop
+
+800009b8 <SS_wrdpts>:
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:989
+800009b8:	3c198000 	lui	t9,0x8000
+800009bc:	83390213 	lb	t9,531(t9)
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:990
+800009c0:	3c02bf70 	lui	v0,0xbf70
+800009c4:	3442000c 	ori	v0,v0,0xc
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:991
+800009c8:	ac590000 	sw	t9,0(v0)
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:992
+800009cc:	03e00008 	jr	ra
+800009d0:	00000000 	nop
+N:\ECE540\ECE540_Project2\Project2\proj2_release_r1_0\firmware_part1\Proj2Demo/main.S:993
+800009d4:	00000000 	nop
 
 Disassembly of section .debug_aranges:
 
@@ -1726,7 +1760,7 @@ Disassembly of section .debug_aranges:
   88:	00040000 	sll	zero,a0,0x0
   8c:	00000000 	nop
   90:	80000204 	lb	zero,516(zero)
-  94:	00000794 	0x794
+  94:	000007d4 	0x7d4
 	...
 
 Disassembly of section .debug_info:
@@ -1856,7 +1890,7 @@ Disassembly of section .debug_info:
  1e4:	00005000 	sll	t2,zero,0x0
  1e8:	52010400 	beql	s0,at,11ec <MSKBOTINFO+0x10ed>
  1ec:	04000001 	bltz	zero,1f4 <MSKBOTINFO+0xf5>
- 1f0:	98800002 	lwr	zero,2(a0)
+ 1f0:	d8800002 	ldc2	$0,2(a0)
  1f4:	6d800009 	0x6d800009
  1f8:	2e6e6961 	sltiu	t6,s3,26977
  1fc:	3a4e0053 	xori	t6,s2,0x53
@@ -2002,7 +2036,7 @@ Disassembly of section .debug_line:
  144:	02000205 	0x2000205
  148:	3a038000 	xori	v1,s0,0x8000
  14c:	00040201 	0x40201
- 150:	01aa0101 	0x1aa0101
+ 150:	01b60101 	0x1b60101
  154:	00020000 	sll	zero,v0,0x0
  158:	0000001d 	0x1d
  15c:	0efb0101 	jal	bec0404 <MSKLOCy+0xaed0404>
@@ -2019,21 +2053,21 @@ Disassembly of section .debug_line:
  188:	83834b83 	lb	v1,19331(gp)
  18c:	834b834b 	lb	t3,-31925(k0)
  190:	4b834b4b 	c2	0x1834b4b
- 194:	4b834f4b 	c2	0x1834f4b
- 198:	4b834b83 	c2	0x1834b83
- 19c:	4b4c834c 	c2	0x14c834c
- 1a0:	844b4b84 	lh	t3,19332(v0)
- 1a4:	4b844b4b 	c2	0x1844b4b
- 1a8:	4b83844b 	c2	0x183844b
- 1ac:	4c834b83 	0x4c834b83
- 1b0:	83834b83 	lb	v1,19331(gp)
- 1b4:	4b4b834b 	c2	0x14b834b
- 1b8:	03834d83 	0x3834d83
- 1bc:	83834a10 	lb	v1,18960(gp)
- 1c0:	4b83834b 	c2	0x183834b
- 1c4:	834b4b4b 	lb	t3,19275(k0)
- 1c8:	834a0b03 	lb	t2,2819(k0)
- 1cc:	4b4b4b4b 	c2	0x14b4b4b
+ 194:	834f4b4b 	lb	t7,19275(k0)
+ 198:	834b834b 	lb	t3,-31925(k0)
+ 19c:	4c834c4b 	0x4c834c4b
+ 1a0:	4b4b844b 	c2	0x14b844b
+ 1a4:	844b4b84 	lh	t3,19332(v0)
+ 1a8:	83844b4b 	lb	a0,19275(gp)
+ 1ac:	834b834b 	lb	t3,-31925(k0)
+ 1b0:	834b834c 	lb	t3,-31924(k0)
+ 1b4:	4b834b83 	c2	0x1834b83
+ 1b8:	834d834b 	lb	t5,-31925(k0)
+ 1bc:	834a1003 	lb	t2,4099(k0)
+ 1c0:	83834b83 	lb	v1,19331(gp)
+ 1c4:	4b4b4b4b 	c2	0x14b4b4b
+ 1c8:	4a0b0383 	c2	0xb0383
+ 1cc:	4b4b4b83 	c2	0x14b4b83
  1d0:	4b4b4b4b 	c2	0x14b4b4b
  1d4:	4b4b4b4b 	c2	0x14b4b4b
  1d8:	4b4b4b4b 	c2	0x14b4b4b
@@ -2044,10 +2078,10 @@ Disassembly of section .debug_line:
  1ec:	4b4b4b4b 	c2	0x14b4b4b
  1f0:	4b4b4b4b 	c2	0x14b4b4b
  1f4:	4b4b4b4b 	c2	0x14b4b4b
- 1f8:	834b4b4b 	lb	t3,19275(k0)
- 1fc:	834a0a03 	lb	t2,2563(k0)
- 200:	4b4b4b4b 	c2	0x14b4b4b
- 204:	4b835183 	c2	0x1835183
+ 1f8:	4b4b4b4b 	c2	0x14b4b4b
+ 1fc:	4a0a0383 	c2	0xa0383
+ 200:	4b4b4b83 	c2	0x14b4b83
+ 204:	8351834b 	lb	s1,-31925(k0)
  208:	4b4b4b4b 	c2	0x14b4b4b
  20c:	4b4b4b4b 	c2	0x14b4b4b
  210:	4b4b4b4b 	c2	0x14b4b4b
@@ -2059,57 +2093,60 @@ Disassembly of section .debug_line:
  228:	4b4b4b4b 	c2	0x14b4b4b
  22c:	4b4b4b4b 	c2	0x14b4b4b
  230:	4b4b4b4b 	c2	0x14b4b4b
- 234:	03834b4b 	0x3834b4b
- 238:	4b834a0a 	c2	0x1834a0a
- 23c:	834b4b4b 	lb	t3,19275(k0)
- 240:	834a0c03 	lb	t2,3075(k0)
- 244:	4c834b83 	0x4c834b83
- 248:	834b8383 	lb	t3,-31869(k0)
- 24c:	844b8352 	lh	t3,-31918(v0)
- 250:	4b4b4b83 	c2	0x14b4b83
- 254:	bb4c834b 	swr	t4,-31925(k0)
- 258:	4b4b4b4b 	c2	0x14b4b4b
- 25c:	4bbb4c83 	c2	0x1bb4c83
- 260:	834b4b4b 	lb	t3,19275(k0)
- 264:	4b4bbb4c 	c2	0x14bbb4c
- 268:	4c834b4b 	0x4c834b4b
- 26c:	4b4b4bbb 	c2	0x14b4bbb
- 270:	bb4c834b 	swr	t4,-31925(k0)
- 274:	4b4b4b4b 	c2	0x14b4b4b
- 278:	4bbb4c83 	c2	0x1bb4c83
- 27c:	834b4b4b 	lb	t3,19275(k0)
- 280:	4c4b4b4d 	0x4c4b4b4d
- 284:	83838383 	lb	v1,-31869(gp)
- 288:	4b4b8352 	c2	0x14b8352
- 28c:	4b834c4b 	c2	0x1834c4b
- 290:	834b4b4b 	lb	t3,19275(k0)
+ 234:	834b4b4b 	lb	t3,19275(k0)
+ 238:	834a0a03 	lb	t2,2563(k0)
+ 23c:	4b4b4b4b 	c2	0x14b4b4b
+ 240:	4a0c0383 	c2	0xc0383
+ 244:	834b8383 	lb	t3,-31869(k0)
+ 248:	4b83834c 	c2	0x183834c
+ 24c:	4b835283 	c2	0x1835283
+ 250:	4b4b8384 	c2	0x14b8384
+ 254:	4c834b4b 	0x4c834b4b
+ 258:	4b4b4bbb 	c2	0x14b4bbb
+ 25c:	bb4c834b 	swr	t4,-31925(k0)
+ 260:	4b4b4b4b 	c2	0x14b4b4b
+ 264:	4bbb4c83 	c2	0x1bb4c83
+ 268:	834b4b4b 	lb	t3,19275(k0)
+ 26c:	4b4bbb4c 	c2	0x14bbb4c
+ 270:	4c834b4b 	0x4c834b4b
+ 274:	4b4b4bbb 	c2	0x14b4bbb
+ 278:	bb4c834b 	swr	t4,-31925(k0)
+ 27c:	4b4b4b4b 	c2	0x14b4b4b
+ 280:	4b4b4d83 	c2	0x14b4d83
+ 284:	8383834c 	lb	v1,-31924(gp)
+ 288:	4b835283 	c2	0x1835283
+ 28c:	834c4b4b 	lb	t4,19275(k0)
+ 290:	4b4b4b4b 	c2	0x14b4b4b
  294:	83838383 	lb	v1,-31869(gp)
- 298:	4b4a2603 	c2	0x14a2603
- 29c:	4b844b84 	c2	0x1844b84
- 2a0:	4b854b84 	c2	0x1854b84
- 2a4:	4b854b85 	c2	0x1854b85
- 2a8:	0c034b85 	jal	d2e14 <__memory_size+0xb3614>
- 2ac:	4b4b8382 	c2	0x14b8382
- 2b0:	844b854c 	lh	t3,-31412(v0)
- 2b4:	844b844b 	lh	t3,-31669(v0)
- 2b8:	854b844b 	lh	t3,-31669(t2)
- 2bc:	854b854b 	lh	t3,-31413(t2)
- 2c0:	4c4b4b4c 	0x4c4b4b4c
- 2c4:	4b864b85 	c2	0x1864b85
- 2c8:	4b844b84 	c2	0x1844b84
- 2cc:	4b844b84 	c2	0x1844b84
- 2d0:	4b894b85 	c2	0x1894b85
- 2d4:	854c4b4b 	lh	t4,19275(t2)
- 2d8:	854b854b 	lh	t3,-31413(t2)
- 2dc:	4b844b4b 	c2	0x1844b4b
- 2e0:	4d854b85 	0x4d854b85
- 2e4:	4a150383 	c2	0x150383
- 2e8:	834b4b83 	lb	t3,19331(k0)
- 2ec:	4b4a0a03 	c2	0x14a0a03
- 2f0:	834b4b4b 	lb	t3,19275(k0)
- 2f4:	834a1103 	lb	t2,4355(k0)
- 2f8:	02834b83 	0x2834b83
- 2fc:	01010004 	sllv	zero,at,t0
+ 298:	4a260383 	c2	0x260383
+ 29c:	844b844b 	lh	t3,-31669(v0)
+ 2a0:	844b844b 	lh	t3,-31669(v0)
+ 2a4:	854b854b 	lh	t3,-31413(t2)
+ 2a8:	854b854b 	lh	t3,-31413(t2)
+ 2ac:	820c034b 	lb	t4,843(s0)
+ 2b0:	4c4b4b83 	0x4c4b4b83
+ 2b4:	4b844b85 	c2	0x1844b85
+ 2b8:	4b844b84 	c2	0x1844b84
+ 2bc:	4b854b84 	c2	0x1854b84
+ 2c0:	4c854b85 	0x4c854b85
+ 2c4:	854c4b4b 	lh	t4,19275(t2)
+ 2c8:	864b854b 	lh	t3,-31413(s2)
+ 2cc:	844b844b 	lh	t3,-31669(v0)
+ 2d0:	844b844b 	lh	t3,-31669(v0)
+ 2d4:	4b4b854b 	c2	0x14b854b
+ 2d8:	894b4b83 	lwl	t3,19331(t2)
+ 2dc:	4b864b4e 	c2	0x1864b4e
+ 2e0:	854b4b4b 	lh	t3,19275(t2)
+ 2e4:	834b874b 	lb	t3,-30901(k0)
+ 2e8:	4b864b86 	c2	0x1864b86
+ 2ec:	4d4b4b86 	0x4d4b4b86
+ 2f0:	4a150383 	c2	0x150383
+ 2f4:	834b4b83 	lb	t3,19331(k0)
+ 2f8:	4b4a0a03 	c2	0x14a0a03
+ 2fc:	834b4b4b 	lb	t3,19275(k0)
+ 300:	834a1103 	lb	t2,4355(k0)
+ 304:	02834b83 	0x2834b83
+ 308:	01010004 	sllv	zero,at,t0
 
 Disassembly of section .pdr:
 

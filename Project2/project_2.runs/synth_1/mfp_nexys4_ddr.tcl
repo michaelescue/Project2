@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -250,7 +251,7 @@ set_property used_in_implementation false [get_files -all n:/ECE540/ECE540_Proje
 read_ip -quiet N:/ECE540/ECE540_Project2/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6.xci
 set_property used_in_implementation false [get_files -all n:/ECE540/ECE540_Project2/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6_ooc.xdc]
 
-read_edif N:/ECE540/ECE540_Project2/Project2/Project2/project_2.srcs/sources_1/imports/world_maps_part1/world_map.ngc
+read_edif N:/ECE540/ECE540_Project2/Project2/Project2/project_2.srcs/sources_1/imports/world_map_lr/world_map.ngc
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be

@@ -65,6 +65,7 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a100tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
@@ -85,7 +86,7 @@ set rc [catch {
   read_ip -quiet N:/ECE540/ECE540_Project2/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5.xci
   read_ip -quiet N:/ECE540/ECE540_Project2/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7.xci
   read_ip -quiet N:/ECE540/ECE540_Project2/Project2/Project2/project_2.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6.xci
-  read_edif N:/ECE540/ECE540_Project2/Project2/Project2/project_2.srcs/sources_1/imports/world_maps_part1/world_map.ngc
+  read_edif N:/ECE540/ECE540_Project2/Project2/Project2/project_2.srcs/sources_1/imports/world_map_lr/world_map.ngc
   read_xdc N:/ECE540/ECE540_Project2/Project2/Project2/project_2.srcs/constrs_1/imports/constraints/mfp_nexys4_ddr.xdc
   link_design -top mfp_nexys4_ddr -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
